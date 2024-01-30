@@ -40,7 +40,7 @@ export const SecondSection = () => {
         <Box>
           <img
             src={imgSect1}
-            style={{ width: '10%', zIndex: '-1', marginLeft: '100px' }}
+            style={{ width: '100%', zIndex: '-1', marginLeft: '180px' }}
           />
         </Box>
       </Box>
