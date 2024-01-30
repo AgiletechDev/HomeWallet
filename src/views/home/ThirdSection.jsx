@@ -47,7 +47,11 @@ export const ThirdSection = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          
+          width: '98vw',
+          height: '100vh',
+          margin: '0',
+          padding: '0.4em',
+          position: 'relative',
           background: `url(${imgSect1}) center/cover no-repeat`,
           mt: '5em',
         }}
