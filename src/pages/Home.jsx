@@ -1,13 +1,12 @@
 import { SecondSection, ThirdSection, FirstSection } from '../views/home'
-import { Box } from '@mui/material'
+import { Box,Container } from '@mui/material'
 
 const Home = () => {
   return (
-    <Box
+    <Container
       sx={{
         maxWidth: '1280px',
         marginInline: 'auto',
-        paddingInline: '16px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -17,7 +16,7 @@ const Home = () => {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
-    </Box>
+    </Container>
   )
 }
 
