@@ -15,7 +15,8 @@ const Navbar = () => {
       height: '0', 
       marginBottom: '40px', 
       background: 'rgba(255, 255, 255, 0.8)',
-      backdropFilter: 'blur(58px)'
+      backdropFilter: 'blur(58px)',
+   
     }}
     >
 
