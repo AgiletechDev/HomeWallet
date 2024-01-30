@@ -11,6 +11,7 @@ const Home = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        marginTop: '80px'
       }}
     >
       <FirstSection />
