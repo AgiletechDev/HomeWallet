@@ -11,7 +11,7 @@ const Footer = () => {
         display: 'flex',
         flexDirection: 'column',
         height: '500px',
-        marginTop: '30px',
+        // marginTop: '10px',
         width: '100%',
       }}
     >

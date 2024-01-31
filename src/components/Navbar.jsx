@@ -5,6 +5,7 @@ import playstore from '../assets/images/portal/playstore.png';
 import apple from '../assets/images/portal/apple.png';
 import { KeyboardArrowDown } from '@mui/icons-material';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -109,7 +110,17 @@ const Navbar = () => {
             <Button sx={{ marginLeft: '-12px'}}>
                 <img src={spainFlag} alt="spain flag" />
             </Button>
-            <Button variant='contained'  sx={{borderRadius: '20px', height: '40px'}}>Buy Wallet</Button>
+
+            <Link to='/buywallets'>
+              <Button variant='contained'
+                sx={{
+                  borderRadius: '20px',
+                  height: '40px'
+                }}
+              >
+                Buy Wallet
+              </Button>
+            </Link>
       
             <Divider orientation='vertical' variant='middle' sx={{ height: '30px', mx: '10px' }} />
             <Button sx={{backgroundColor: '#F7FAF5', mr: '5px', height: '40px'}}>
@@ -126,29 +137,35 @@ const Navbar = () => {
         sx={{borderRadius: '50px'}}
       >
       
-        <MenuItem onClick={handleClose} 
-          sx={{
-            '&:hover': {
-                  background: '#006EFD',
-                  color: 'white',
-                  borderRadius: '15px'
-                },
-            }}
+        <Link to='/' style={{textDecoration: 'none',}}>
+          <MenuItem onClick={handleClose}
+            sx={{
+              color: 'black',
+              '&:hover': {
+                    background: '#006EFD',
+                    color: 'white',
+                    borderRadius: '15px'
+                  },
+              }}
           >
             Wallet
           </MenuItem>
+        </Link>
 
-        <MenuItem onClick={handleClose} 
-          sx={{
-            '&:hover': {
-                  background: '#006EFD',
-                  color: 'white',
-                  borderRadius: '15px'
-                },
-            }}
+        <Link to='/' style={{textDecoration: 'none',}}>
+          <MenuItem onClick={handleClose}
+            sx={{
+              color: 'black',
+              '&:hover': {
+                    background: '#006EFD',
+                    color: 'white',
+                    borderRadius: '15px'
+                  },
+              }}
           >
             Launchpad
-          </MenuItem>     
+          </MenuItem>
+        </Link> 
 
       </Menu>
 
@@ -156,29 +173,35 @@ const Navbar = () => {
         sx={{borderRadius: '50px'}}
       >
       
-        <MenuItem onClick={handleClose2} 
-          sx={{
-            '&:hover': {
-                  background: '#006EFD',
-                  color: 'white',
-                  borderRadius: '15px'
-                },
-            }}
+        <Link to='/tokenomics' style={{textDecoration: 'none'}}>
+          <MenuItem onClick={handleClose2}
+            sx={{
+              color: 'black',
+              '&:hover': {
+                    background: '#006EFD',
+                    color: 'white',
+                    borderRadius: '15px'
+                  },
+              }}
           >
             Tokenomic
           </MenuItem>
+        </Link>
 
-        <MenuItem onClick={handleClose2} 
-          sx={{
-            '&:hover': {
-                  background: '#006EFD',
-                  color: 'white',
-                  borderRadius: '15px'
-                },
-            }}
+        <Link to='/smartcontract' style={{textDecoration: 'none'}}>
+          <MenuItem onClick={handleClose2}
+            sx={{
+              color: 'black',
+              '&:hover': {
+                    background: '#006EFD',
+                    color: 'white',
+                    borderRadius: '15px'
+                  },
+              }}
           >
             Smart Contract
-          </MenuItem>     
+          </MenuItem>
+        </Link>  
 
       </Menu>
 
@@ -186,41 +209,50 @@ const Navbar = () => {
         sx={{borderRadius: '50px'}}
       >
       
-        <MenuItem onClick={handleClose3} 
-          sx={{
-            '&:hover': {
-                  background: '#006EFD',
-                  color: 'white',
-                  borderRadius: '15px'
-                },
+        <Link to='/roadmap' style={{textDecoration: 'none'}}>
+          <MenuItem onClick={handleClose3}
+            sx={{
+              color: 'black',
+              '&:hover': {
+                    background: '#006EFD',
+                    color: 'white',
+                    borderRadius: '15px'
+                  },
             }}
           >
             Roadmap
           </MenuItem>
+        </Link>
 
-        <MenuItem onClick={handleClose3} 
-          sx={{
-            '&:hover': {
-                  background: '#006EFD',
-                  color: 'white',
-                  borderRadius: '15px'
-                },
-            }}
+        <Link to='/whitepaper' style={{textDecoration: 'none'}}>
+          <MenuItem onClick={handleClose3}
+            sx={{
+              color: 'black',
+              '&:hover': {
+                    background: '#006EFD',
+                    color: 'white',
+                    borderRadius: '15px'
+                  },
+              }}
           >
             WhitePaper
-          </MenuItem>   
+          </MenuItem>
+        </Link> 
 
-        <MenuItem onClick={handleClose3} 
-          sx={{
-            '&:hover': {
-                  background: '#006EFD',
-                  color: 'white',
-                  borderRadius: '15px'
-                },
-            }}
+        <Link to='/backersandpartners' style={{textDecoration: 'none'}}>
+          <MenuItem onClick={handleClose3}
+            sx={{
+              color: 'black',
+              '&:hover': {
+                    background: '#006EFD',
+                    color: 'white',
+                    borderRadius: '15px'
+                  },
+              }}
           >
             Backer & Partner
-          </MenuItem>     
+          </MenuItem>
+        </Link>   
 
       </Menu>
     </div>
