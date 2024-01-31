@@ -8,6 +8,7 @@ import BackersPartners from "../pages/BackersPartners";
 import RoadMap from "../pages/RoadMap";
 import WhitePaper from "../pages/WhitePaper";
 import SmartContract from "../pages/SmartContract";
+import Blog from "../pages/Blog";
 
 
 export const router = createBrowserRouter([
@@ -43,7 +44,10 @@ export const router = createBrowserRouter([
           path: '/whitepaper',
           element: <WhitePaper />,
         },
-        
+        {
+          path: '/blog',
+          element: <Blog/>,
+        },
       ],
     },
   ])

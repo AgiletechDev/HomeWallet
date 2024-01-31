@@ -25,13 +25,10 @@ export const FirstSection = () => {
       height: '800px',
       marginTop: '40px', 
       width: '100%',
-      // border: '1px solid'
       }}
     >
       <img src={smartcontract} alt="" height='15%' />
-      {/* <Typography variant="h2" component='h1'>SMART CONTRACT</Typography>
-      <Typography variant="h4" component='h2' sx={{mt: '-30px'}}>Smart Contract</Typography> */}
-        
+
         <Box sx={{
           display: 'flex', 
           flexDirection: 'column', 
@@ -53,6 +50,7 @@ export const FirstSection = () => {
                 </Typography>
 
                 <a href={url} target="_blank"
+                rel="noreferrer"
                   style={{
                     fontSize: '20px',
                     fontWeight: '600',
@@ -80,6 +78,7 @@ export const FirstSection = () => {
 
           <a href="https://github.com/solidproof/projects/tree/main/Wallet%20Token"
             target="_blank"
+            rel="noreferrer"
             style={{
               fontSize: '15px',
               fontWeight: '600',

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FirstSection } from '../views/backersPartners/FirstSection'
 
 const BackersPartners = () => {

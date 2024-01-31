@@ -104,8 +104,10 @@ const Navbar = () => {
                 </Typography>
               ))
             }
-      
+            <Link to="/blog">
             <Button sx={{fontSize: '17px', textTransform: 'capitalize', color: 'black'}}>Blog</Button>
+            </Link>
+            
 
             <Button sx={{ marginLeft: '-12px'}}>
                 <img src={spainFlag} alt="spain flag" />
@@ -253,6 +255,8 @@ const Navbar = () => {
             Backer & Partner
           </MenuItem>
         </Link>   
+
+        
 
       </Menu>
     </div>
