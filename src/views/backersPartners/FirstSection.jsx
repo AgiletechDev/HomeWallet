@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import huobi from '../../assets/images/portal/huobi.png'
 import mexcglobal from '../../assets/images/portal/mexcglobal.png'
+import backerandpartner from '../../assets/images/portal/backerandpartner.png'
 
 export const FirstSection = () => {
   return (
@@ -17,12 +18,14 @@ export const FirstSection = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        marginY: '35px',
+        marginTop: '75px',
         width: '70%',
         height: '80%',
       }}
       >
-        <Typography variant='h4' component='p' 
+
+        <img src={backerandpartner} alt="backerandpartner title" height='120px' />
+        {/* <Typography variant='h4' component='p' 
             sx={{
                 fontSize: '60px',
             }}
@@ -37,7 +40,7 @@ export const FirstSection = () => {
         >
             Backers & Partners
 
-        </Typography>
+        </Typography> */}
       
         <Box sx={{
             display: 'flex',

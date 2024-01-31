@@ -1,5 +1,8 @@
 import { Box, Typography } from '@mui/material'
 import huobi from '../../assets/images/portal/huobi.png'
+import buywallet from '../../assets/images/portal/buywallet.png'
+import mexcglobal from '../../assets/images/portal/mexcglobal.png'
+import pancakeswap from '../../assets/images/portal/pancakeswap.png'
 
 export const FirstSection = () => {
   return (
@@ -16,13 +19,14 @@ export const FirstSection = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        marginY: '35px',
+        marginTop: '75px',
         width: '70%',
         height: '80%',
       }}
       >
-        <Typography variant='h4' component='p' sx={{fontSize: '60px',}}>BUY WALLET</Typography>
-        <Typography variant='h4' component='p' sx={{marginTop: '-30px'}}>Buy Wallet</Typography>
+        <img src={buywallet} alt="buywallet title" height='120px' />
+        {/* <Typography variant='h4' component='p' sx={{fontSize: '60px',}}>BUY WALLET</Typography>
+        <Typography variant='h4' component='p' sx={{marginTop: '-30px'}}>Buy Wallet</Typography> */}
       
         <Box sx={{
             display: 'flex',
@@ -32,8 +36,8 @@ export const FirstSection = () => {
         }}
         >
             <img src={huobi} alt="" style={{width: '32%'}}/>
-            <img src={huobi} alt="" style={{width: '32%'}}/>
-            <img src={huobi} alt="" style={{width: '32%'}}/>
+            <img src={mexcglobal} alt="" style={{width: '32%'}}/>
+            <img src={pancakeswap} alt="" style={{width: '32%'}}/>
             
         </Box>
 
