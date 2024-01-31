@@ -99,13 +99,13 @@ export const FirstSection = () => {
             display: 'flex',
             justifyContent: 'center',
             width: '100%'
-        }}
-        >
+          }}
+          >
             <img src={huobi} alt="" style={{width: '22%'}}/>
             <img src={mexcglobal} alt="" style={{width: '22%'}}/>
             <img src={pancakeswap} alt="" style={{width: '22%'}}/>
             
-        </Box>
+          </Box>
 
           <Button variant="contained" 
           sx={{   
@@ -118,8 +118,8 @@ export const FirstSection = () => {
           >
               BUY WALLET
           </Button>
-
         </Box>
     </Box>
+
   )
 }

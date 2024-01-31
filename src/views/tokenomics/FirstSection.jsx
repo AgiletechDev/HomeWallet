@@ -4,7 +4,7 @@ import imgGraf from '../../assets/images/portal/image 2.png'
 
 export const FirstSection = () => {
   return (
-    <Box sx={{ width: '1000px', border: '1px solid black', padding: '1em' }}>
+    <Box sx={{ width: '1000px', padding: '1em' }}>
       <Box>
         <Typography textAlign="left" variant="h4" fontWeight="700">
           Tokenomics
