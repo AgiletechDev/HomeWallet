@@ -11,9 +11,6 @@ export const FirstSection = () => {
         </Typography>
         <Blog />
       </Box>
-      
-      
-    
     </Box>
   )
 }
