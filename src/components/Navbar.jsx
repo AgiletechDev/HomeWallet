@@ -154,7 +154,7 @@ const Navbar = () => {
           </MenuItem>
         </Link>
 
-        <Link to='/' style={{textDecoration: 'none',}}>
+        <Link to='/launchpad' style={{textDecoration: 'none',}}>
           <MenuItem onClick={handleClose}
             sx={{
               color: 'black',

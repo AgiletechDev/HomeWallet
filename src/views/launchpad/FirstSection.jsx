@@ -13,7 +13,6 @@ export const FirstSection = () => {
         height: '60%',
         paddingTop: '60px',
         paddingLeft: '300px',
-        // border: '1px solid',
         marginBottom: '40px'
       }}>
         <Box sx={{display: 'flex', flexDirection: 'column', paddingTop: '50px'}}>
