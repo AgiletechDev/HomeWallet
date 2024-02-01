@@ -9,6 +9,7 @@ import RoadMap from "../pages/RoadMap";
 import WhitePaper from "../pages/WhitePaper";
 import SmartContract from "../pages/SmartContract";
 import Blog from "../pages/Blog";
+import LaunchPad from "../pages/LaunchPad";
 
 
 export const router = createBrowserRouter([
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
         {
           path: '/blog',
           element: <Blog/>,
+        },
+        {
+          path: '/launchpad',
+          element: <LaunchPad/>,
         },
       ],
     },
