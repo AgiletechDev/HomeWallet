@@ -12,37 +12,38 @@ function createData(category, allocation, description, vesting) {
 
 const rows = [
   createData(
-    'Community',
-    '55% of max supply',
-    'The worldwide community of users holds the majority of the max supply of RAB Token to vote and recommend features, in-app updates, and other important changes',
-    'Already distributed to users'
+    'Comunidad',
+    '55% del suministro máximo',
+    'La comunidad mundial de usuarios posee la mayor parte del suministro máximo de VIC Token para votar y recomendar funciones, actualizaciones en la aplicación y otros cambios importantes.',
+    'Ya distribuido a usuarios de todo el mundo'
   ),
   createData(
-    'Liquidity Pool',
-    '7% of max supply',
-    'Used to add to the liquidity pool on a decentralized exchange (DEX). In which,  BSC network accounts for 6% and Arbitrum accounts for the 1% of the max supply',
-    'Locked for 5 years'
+    'Fondo de liquidez',
+    '7% del suministro máximo',
+    'Se utiliza para agregar al fondo de liquidez en un intercambio descentralizado (DEX). En el cual, la red BSC representa el 6% y Arbitrum representa el 1% del suministro máximo.',
+    'Bloqueado por 5 años'
   ),
   createData(
-    'Reserve Funding',
-    '2% of max supply',
-    'Used to meet any future expenses of financial obligations, especially unexpected arises',
-    'Distributed when needed and when unexpected arises'
+    'Financiamiento de reserva',
+    '2% del suministro máximo',
+    'Se utiliza para cubrir cualquier gasto u obligación financiera futura, especialmente si surge algo inesperado.',
+    'Distribuido cuando sea necesario y cuando surja imprevisto.'
   ),
   createData(
-    'Burn',
-    '36% of max supply',
-    `All 36% of RAB in max supply has been burned (including 21,6% of Team and 14,4% of Ecosystem) \n WALLET team will mint 100,000,000 RAB monthly until the max supply of 100,000,000 RAB is reached and distributed proportionally:\n600.000 RAB for Team is allocated to the company's operations each month to invest in R&D and Marketing departments\n400.000 RAB for Team is allocated to reward the wallet's ecosystem including Staking rewards and other incentives for users`,
-    'Mined and distributed monthly for 36 months from the time of TGE+1'
+    'Quemar',
+    '36% del suministro máximo',
+    `Se ha quemado el 36% del VIC en suministro máximo (incluido el 21,6% del Equipo y el 14,4% del Ecosistema).El equipo VICNET acuñará 1.000.000 VIC mensualmente hasta alcanzar el suministro máximo de 100.000.000 VIC y distribuirlo proporcionalmente:-600.000 VIC for Team se asignan cada mes a las operaciones de la empresa para invertir en los departamentos de I+D y Marketing.-400,000 VIC para Ecosytem asignados para recompensar el ecosistema de la billetera, incluidas recompensas de apuesta y otros incentivos para los usuarios.`,
+    'Extraído y distribuido mensualmente durante 36 meses desde el momento de TGE+1'
   ),
 ]
 export const TableWallet = () => {
   return (
     <TableContainer
       sx={{
-        mt: '2em',
+        mt: '5em',
         borderRadius: '12px',
         overflow: 'hidden',
+        mb: '5em',
       }}
       component={Paper}
     >
@@ -55,15 +56,49 @@ export const TableWallet = () => {
         aria-label="simple table"
       >
         <TableHead>
-          <TableRow sx={{ backgroundColor: '#26abdf' }}>
-            <TableCell sx={{ color: '#fff' }}>Category</TableCell>
-            <TableCell align="center" sx={{ color: '#fff' }}>
+          <TableRow sx={{}}>
+            <TableCell
+              align="center"
+              sx={{
+                color: '#fff',
+                borderRadius: '10px',
+                backgroundColor: '#7598cf',
+                fontWeight: 'bold',
+              }}
+            >
+              Category
+            </TableCell>
+            <TableCell
+              align="center"
+              sx={{
+                color: '#fff',
+                backgroundColor: '#7598cf',
+                borderRadius: '10px',
+                fontWeight: 'bold',
+              }}
+            >
               Allocation
             </TableCell>
-            <TableCell align="left" sx={{ color: '#fff' }}>
+            <TableCell
+              align="center"
+              sx={{
+                color: '#fff',
+                backgroundColor: '#7598cf',
+                borderRadius: '10px',
+                fontWeight: 'bold',
+              }}
+            >
               Description
             </TableCell>
-            <TableCell align="left" sx={{ color: '#fff' }}>
+            <TableCell
+              align="center"
+              sx={{
+                color: '#fff',
+                backgroundColor: '#7598cf',
+                borderRadius: '10px',
+                fontWeight: 'bold',
+              }}
+            >
               Vesting
             </TableCell>
           </TableRow>
@@ -74,15 +109,54 @@ export const TableWallet = () => {
               key={row.name}
               sx={{
                 '&:last-child td, &:last-child th': { borderBottom: 0 },
-                backgroundColor: '#f4f4f4',
               }}
             >
-              <TableCell component="th" scope="row">
+              <TableCell
+                align="center"
+                component="th"
+                scope="row"
+                sx={{
+                  color: '#fff',
+                  borderRadius: '10px',
+                  background:
+                    'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                }}
+              >
                 {row.category}
               </TableCell>
-              <TableCell align="center">{row.allocation}</TableCell>
-              <TableCell align="justify">{row.description}</TableCell>
-              <TableCell align="justify">{row.vesting}</TableCell>
+              <TableCell
+                align="center"
+                sx={{
+                  color: '#fff',
+                  borderRadius: '10px',
+                  background:
+                    'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                }}
+              >
+                {row.allocation}
+              </TableCell>
+              <TableCell
+                align="center"
+                sx={{
+                  color: '#fff',
+                  borderRadius: '10px',
+                  background:
+                    'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                }}
+              >
+                {row.description}
+              </TableCell>
+              <TableCell
+                align="center"
+                sx={{
+                  color: '#fff',
+                  borderRadius: '10px',
+                  background:
+                    'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                }}
+              >
+                {row.vesting}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

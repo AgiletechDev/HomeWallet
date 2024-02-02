@@ -28,7 +28,7 @@ export const FirstSection = () => {
         width: '99vw',
         }}
       >
-        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#6500B7' }}>COMPRAR BILLETERA</Typography>
+        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#33277b' }}>COMPRAR BILLETERA</Typography>
         <img src={lineahorizonta1} alt="" width='15%' />
        
         <Box sx={{

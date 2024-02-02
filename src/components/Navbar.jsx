@@ -56,8 +56,6 @@ const Navbar = () => {
       sx={{
         height: '0',
         marginBottom: '40px',
-        // background: 'rgba(255, 255, 255, 0.8)',
-        // backdropFilter: 'blur(58px)'
       }}
       >
         <Toolbar
@@ -65,7 +63,7 @@ const Navbar = () => {
             display: 'flex',
             alignItems: 'center',
             padding: '0',
-            background: '#191970',
+            background: '#33277b',
             backdropFilter: 'blur(18px)',
             position: 'relative'
           }}

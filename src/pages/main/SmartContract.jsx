@@ -1,5 +1,5 @@
 import React from 'react'
-import { FirstSection } from '../views/smartContract'
+import { FirstSection } from '../../views/smartContract'
 
 const SmartContract = () => {
   return (

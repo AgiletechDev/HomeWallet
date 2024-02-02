@@ -28,12 +28,12 @@ export const FirstSection = () => {
         width: '99vw',
         }}
       >
-        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#6500B7' }}>WHITEPAPER</Typography>
+        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#33277b' }}>WHITEPAPER</Typography>
         <img src={lineahorizonta1} alt="" width='15%' />
         <Typography sx={{
           width: '50%',
           mt: '30px',
-          color: '#6500B7',
+          color: '#33277b',
           fontWeight: '600',
           textAlign: 'center',
           marginBottom: '50px'

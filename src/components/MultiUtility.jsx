@@ -3,32 +3,32 @@ import { Box, Typography } from '@mui/material'
 
 const data = [
   {
-    title:'News',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nobis iusto veritatis cumque. Id incidunt unde',
+    title:'Noticias',
+    text: 'Actualizar información del mercado todos los días',
   },
   {
-    title:'Stalking',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nobis iusto veritatis cumque. Id incidunt unde',
+    title:'Replanteo',
+    text: 'Gana dinero pasivamente incluso mientras duermes',
   },
   {
     title:'Airdrop',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nobis iusto veritatis cumque. Id incidunt unde',
+    text: 'Obtenga tokens de valor gratuitos de los principales proyectos globales',
   },
   {
-    title:'Event',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nobis iusto veritatis cumque. Id incidunt unde',
+    title:'Eventos',
+    text: 'Gana grandes recompensas de eventos de billetera divirtiéndote',
   },
   {
     title:'Launchpad',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nobis iusto veritatis cumque. Id incidunt unde',
+    text: 'Participa IDO de los mejores proyectos a nivel global',
   },
   {
-    title:'Market strategy',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nobis iusto veritatis cumque. Id incidunt unde',
+    title:'Estrategia de mercado',
+    text: 'Obtenga estrategias diarias de expertos',
   },
   {
-    title:'Referral Program',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nobis iusto veritatis cumque. Id incidunt unde',
+    title:'Programa de referencia',
+    text: 'Recompensas gratuitas por compartir dispositivos de Wallets con la comunidad',
   },
 ]
 
@@ -42,9 +42,14 @@ const containerStyle = {
 };
 
 const boxStyle = {
-  borderBottom: '2px solid black',
+  borderBottom: '2px solid white',
   marginBottom: '2px',
   textAlign: 'justify',
+  background: 'linear-gradient(97deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
+  color:'white',
+  padding:'0.5em 1em',
+  borderRadius:'30px',
+
 };
 
 export const MultiUtility = () => {
@@ -52,8 +57,9 @@ export const MultiUtility = () => {
     <Box sx={containerStyle}>
       {data.map((item, index) => (
         <Box key={index} style={boxStyle}>
-            <Typography variant="h6" sx={{fontWeight:'bold'}}>{item.title}</Typography>
+          <Typography variant="h6" sx={{fontWeight:'bold'}}>{item.title}</Typography>
           <Typography sx={{mb:'2em', textAlign:'justify'}}>{item.text}</Typography>
+          <hr style={{color:'white', fontSize:'20px',}}/>
         </Box>
       ))}
     </Box>

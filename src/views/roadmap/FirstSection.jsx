@@ -29,7 +29,7 @@ export const FirstSection = () => {
         width: '99vw',
         }}
       >
-        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#6500B7' }}>ROADMAP</Typography>
+        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#33277b' }}>ROADMAP</Typography>
           <img src={lineahorizonta1} alt="" width='15%' />
           <img src={roadmap} alt="" width='1000px'  />
           <img src={fondo1Roadmap} alt="" width='100%'  />

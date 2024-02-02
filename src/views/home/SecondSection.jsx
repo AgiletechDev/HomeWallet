@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material'
-import imgSect1 from '../../assets/images/portal/Group 2.png'
-import imgSect2 from '../../assets/images/portal/section A.png'
-import imgSect3 from '../../assets/images/portal/A.png'
+import imgSect1 from '../../assets/images/portal/pag1/ilustracion 1.png'
+import imgSect2 from '../../assets/images/portal/pag1/vista 2.png'
+import imgSect3 from '../../assets/images/portal/pag1/vista 3.png'
 import { MultiUtility } from '../../components/MultiUtility'
 
 export const SecondSection = () => {
@@ -10,9 +10,10 @@ export const SecondSection = () => {
       <Box
         sx={{
           display: 'flex',
-          maxWidth: '900px',
+          maxWidth: '1000px',
           position: 'relative',
           mt: '5em',
+         
         }}
       >
         <Box
@@ -22,18 +23,19 @@ export const SecondSection = () => {
             flexDirection: 'column',
             textAlign: 'left',
             zIndex: '1',
-            position: 'absolute',
+            
             top: '300px',
           }}
         >
-          <Typography variant="h4" fontWeight="800" color="#26abdf">
+          <Typography variant="h4" fontWeight="800" color="#33277b">
             Wallet
           </Typography>
           <Typography>
-            Supports over{' '}
-            <span style={{ fontWeight: 'bold' }}>14 leading blockchains</span>{' '}
-            <br />
-            Track real-time charts and prices for each token
+            Admite más de
+            <span style={{ fontWeight: 'bold' }}>
+              14 blockchains líderes
+            </span><br />
+            Seguimiento de gráficos y precios en tiempo real para cada toke
           </Typography>
         </Box>
 
@@ -50,7 +52,7 @@ export const SecondSection = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          maxWidth: '900px',
+          maxWidth: '1000px',
           position: 'relative',
           mt: '5em',
         }}
@@ -66,17 +68,18 @@ export const SecondSection = () => {
             ml: '2em',
           }}
         >
-          <Typography variant="h4" fontWeight="800" color="#26abdf">
-            Swap
+          <Typography variant="h4" fontWeight="700" color="#4d4d4d">
+          Intercambio
           </Typography>
-          <Typography>
-            Swap over <span style={{ fontWeight: 'bold' }}>3000 tokens</span> on
-            multiple chains:
+          <Typography variant="h6" color="#4d4d4d">
+          Intercambia más de 300 tokens en múltiples cadenas:
           </Typography>
-          <ul>
+          <ul style={{listStyle:'none', color:"#4d4d4d" , fontSize:'25px'}}>
             <li>Ethereum</li>
             <li>Binance</li>
             <li>Bitcoin</li>
+            <li>Tron</li>
+
           </ul>
         </Box>
       </Box>
@@ -84,28 +87,28 @@ export const SecondSection = () => {
       <Box
         sx={{
           display: 'flex',
-          maxWidth: '900px',
+          maxWidth: '1000px',
           mt: '5em',
-          marginInline: 'auto',
-          gap:'50px'
+          gap: '110px',
+          justifyContent:'center',
+          alignItems:'center'
         }}
       >
         <Box
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            flex: '0 1 50%',
           }}
         >
-          <Typography variant="h4" fontWeight="800" color="#26abdf">
-            Multi utility
+          <Typography variant="h4" fontWeight="800" color="#4d4d4d">
+            Multiusos
           </Typography>
-          <Typography>Enhance user experience</Typography>
+          <Typography color="#4d4d4d" fontWeight="bold">Mejorar la experiencia de usuario</Typography>
           <MultiUtility />
         </Box>
         <Box
           sx={{
-            flex: '0 1 50%',
+  
           }}
         >
           <img src={imgSect3} />

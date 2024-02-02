@@ -1,6 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import imgLogo from '../../assets/images/portal/logo.png'
-import imgSect1 from '../../assets/images/portal/section A.png'
+import imgSect1 from '../../assets/images/portal/pag1/vista 1.png'
 import { Expectations } from '../../components/Expectations'
 
 export const FirstSection = () => {
@@ -15,24 +14,22 @@ export const FirstSection = () => {
             alignItems: 'center',
             padding: '2em',
             height: '300px',
-            boxShadow: '0 4px 8px rgba(38, 171, 223, 0.5)',
             position: 'relative',
             zIndex: 1,
           }}
         >
-          <img src={imgLogo} style={{ width: '20%' }} />
           <Typography
             variant="h4"
             sx={{
-              color: '#26abdf',
+              color: '#33277b',
               fontWeight: '800',
               textAlign: 'center',
               mt: '0.5em',
             }}
           >
-            NEW GENERATION MULTI-UTILITYDEX
+            SÚPER APLICACIÓN DEX WALLET <br />
+MULTIUTILIDAD DE NUEVA GENERACIÓN
             <br />
-            WALLET SUPER APP
           </Typography>
         </Box>
         <img
@@ -63,24 +60,24 @@ export const FirstSection = () => {
         <Typography
           variant="h4"
           sx={{
-            color: '#26abdf',
+            color: '#4d4d4d',
             fontWeight: '800',
             textAlign: 'center',
             mt: '0.5em',
           }}
         >
-          MORE THAN YOUR EXPECTATION
+          MÁS QUE TU EXPECTATIVA
         </Typography>
         <Typography
           variant="h6"
           sx={{
-            color: 'black',
+            color: '#4d4d4d',
             fontWeight: '700',
             textAlign: 'center',
             mt: '0.5em',
           }}
         >
-          Wallet is All You Need to Access Crypto World
+          La billetera que necesitas para entrar al mundo del Crypto
         </Typography>
         <Expectations />
       </Box>

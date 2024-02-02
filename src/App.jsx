@@ -1,12 +1,25 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import {Container } from '@mui/material'
+import NavbarLaunchpad from './components/NavbarLaunchpad';
 
 function App() {
+
+  const location = useLocation();
+  
+  const renderNavbar = () => {
+    if (location.pathname.startsWith('/launchpad')) {
+      return <NavbarLaunchpad />;
+    } else {
+      return <Navbar />;
+    }
+  };
+
+
   return (
     <>
-      <Navbar />
+      {renderNavbar()} 
       <Container
       sx={{
         maxWidth: '1280px',

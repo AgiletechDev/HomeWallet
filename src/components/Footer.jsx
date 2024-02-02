@@ -4,14 +4,14 @@ import iconox from '../assets/images/portal/svg/iconox.svg'
 import iconodiscord from '../assets/images/portal/svg/iconodiscord.svg'
 import iconoYT from '../assets/images/portal/svg/iconoYT.svg'
 
-
 const Footer = () => {
   return (
     <Box
       style={{
         display: 'flex',
         flexDirection: 'column',
-        background: '#191970',
+        background:
+          'linear-gradient(97deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
         height: '500px',
         marginLeft: '-8px',
         width: '99vw',
@@ -47,7 +47,7 @@ const Footer = () => {
               color: 'white',
               marginRight: '8px',
               fontSize: '15px',
-              letterSpacing: '1px'
+              letterSpacing: '1px',
             }}
           >
             Powered by
@@ -58,7 +58,7 @@ const Footer = () => {
             sx={{
               fontSize: '20px',
               fontWeight: '600',
-              color: 'white'
+              color: 'white',
             }}
           >
             AGILETECH
@@ -72,7 +72,7 @@ const Footer = () => {
             fontSize: '25px',
             letterSpacing: '2px',
             marginBottom: '20px',
-            color: 'white'
+            color: 'white',
           }}
         >
           CONTACT US
@@ -153,21 +153,6 @@ const Footer = () => {
           </a>
         </Box>
       </Box>
-
-      <footer
-        style={{
-          background: 'black',
-          height: '45px',
-          color: 'white',
-          textAlign: 'center',
-          marginBottom: '-10px',
-          // marginLeft:'-10px',
-          // marginRight:'-8px',
-
-        }}
-      >
-        <p>Copyright 2024 © Wallet. All Right Reserved</p>
-      </footer>
     </Box>
   )
 }

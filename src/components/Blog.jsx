@@ -26,7 +26,7 @@ export const Blog = () => {
               />
               <Typography
                 variant="h6"
-                color="#1fa2dc"
+                color="#33277b"
                 fontWeight="600"
                 sx={{ mt: '0.5em' }}
               >
@@ -64,85 +64,7 @@ export const Blog = () => {
               />
               <Typography
                 variant="h6"
-                color="#1fa2dc"
-                fontWeight="600"
-                sx={{ mt: '0.5em' }}
-              >
-                What is Blockchain Layer 1: Understanding the Foundation of
-                Blockchain Technology
-              </Typography>
-              <div
-                style={{
-                  width: '30px',
-                  height: '3px',
-                  backgroundColor: 'gray',
-                }}
-              />
-              <Typography variant="p">
-                Discover the fundamentals of Blockchain Layer 1 technology in
-                this comprehensive article. Explore the key [ ... ]
-              </Typography>
-            </Box>
-          </Box>
-          <Box sx={{ flex: '50%', paddingRight: '1em', display: 'flex' }}>
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                padding: '1em',
-                maxWidth: '300px',
-              }}
-            >
-              <img
-                src={imgPost}
-                style={{
-                  width: '300px',
-                  height: '200px',
-                  border: '1px solid darkgray',
-                  borderRadius: '25px',
-                }}
-              />
-              <Typography
-                variant="h6"
-                color="#1fa2dc"
-                fontWeight="600"
-                sx={{ mt: '0.5em' }}
-              >
-                What is Blockchain Layer 1: Understanding the Foundation of
-                Blockchain Technology
-              </Typography>
-              <div
-                style={{
-                  width: '30px',
-                  height: '3px',
-                  backgroundColor: 'gray',
-                }}
-              />
-              <Typography variant="p">
-                Discover the fundamentals of Blockchain Layer 1 technology in
-                this comprehensive article. Explore the key [ ... ]
-              </Typography>
-            </Box>
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                padding: '1em',
-                maxWidth: '300px',
-              }}
-            >
-              <img
-                src={imgPost}
-                style={{
-                  width: '300px',
-                  height: '200px',
-                  border: '1px solid darkgray',
-                  borderRadius: '25px',
-                }}
-              />
-              <Typography
-                variant="h6"
-                color="#1fa2dc"
+                color="#33277b"
                 fontWeight="600"
                 sx={{ mt: '0.5em' }}
               >
@@ -182,7 +104,7 @@ export const Blog = () => {
               />
               <Typography
                 variant="h6"
-                color="#1fa2dc"
+                color="#33277b"
                 fontWeight="600"
                 sx={{ mt: '0.5em' }}
               >
@@ -220,85 +142,7 @@ export const Blog = () => {
               />
               <Typography
                 variant="h6"
-                color="#1fa2dc"
-                fontWeight="600"
-                sx={{ mt: '0.5em' }}
-              >
-                What is Blockchain Layer 1: Understanding the Foundation of
-                Blockchain Technology
-              </Typography>
-              <div
-                style={{
-                  width: '30px',
-                  height: '3px',
-                  backgroundColor: 'gray',
-                }}
-              />
-              <Typography variant="p">
-                Discover the fundamentals of Blockchain Layer 1 technology in
-                this comprehensive article. Explore the key [ ... ]
-              </Typography>
-            </Box>
-          </Box>
-          <Box sx={{ flex: '50%', paddingRight: '1em', display: 'flex' }}>
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                padding: '1em',
-                maxWidth: '300px',
-              }}
-            >
-              <img
-                src={imgPost}
-                style={{
-                  width: '300px',
-                  height: '200px',
-                  border: '1px solid darkgray',
-                  borderRadius: '25px',
-                }}
-              />
-              <Typography
-                variant="h6"
-                color="#1fa2dc"
-                fontWeight="600"
-                sx={{ mt: '0.5em' }}
-              >
-                What is Blockchain Layer 1: Understanding the Foundation of
-                Blockchain Technology
-              </Typography>
-              <div
-                style={{
-                  width: '30px',
-                  height: '3px',
-                  backgroundColor: 'gray',
-                }}
-              />
-              <Typography variant="p">
-                Discover the fundamentals of Blockchain Layer 1 technology in
-                this comprehensive article. Explore the key [ ... ]
-              </Typography>
-            </Box>
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                padding: '1em',
-                maxWidth: '300px',
-              }}
-            >
-              <img
-                src={imgPost}
-                style={{
-                  width: '300px',
-                  height: '200px',
-                  border: '1px solid darkgray',
-                  borderRadius: '25px',
-                }}
-              />
-              <Typography
-                variant="h6"
-                color="#1fa2dc"
+                color="#33277b"
                 fontWeight="600"
                 sx={{ mt: '0.5em' }}
               >
@@ -338,7 +182,7 @@ export const Blog = () => {
               />
               <Typography
                 variant="h6"
-                color="#1fa2dc"
+                color="#33277b"
                 fontWeight="600"
                 sx={{ mt: '0.5em' }}
               >
@@ -376,7 +220,7 @@ export const Blog = () => {
               />
               <Typography
                 variant="h6"
-                color="#1fa2dc"
+                color="#33277b"
                 fontWeight="600"
                 sx={{ mt: '0.5em' }}
               >
@@ -416,7 +260,7 @@ export const Blog = () => {
               />
               <Typography
                 variant="h6"
-                color="#1fa2dc"
+                color="#33277b"
                 fontWeight="600"
                 sx={{ mt: '0.5em' }}
               >
@@ -454,7 +298,163 @@ export const Blog = () => {
               />
               <Typography
                 variant="h6"
-                color="#1fa2dc"
+                color="#33277b"
+                fontWeight="600"
+                sx={{ mt: '0.5em' }}
+              >
+                What is Blockchain Layer 1: Understanding the Foundation of
+                Blockchain Technology
+              </Typography>
+              <div
+                style={{
+                  width: '30px',
+                  height: '3px',
+                  backgroundColor: 'gray',
+                }}
+              />
+              <Typography variant="p">
+                Discover the fundamentals of Blockchain Layer 1 technology in
+                this comprehensive article. Explore the key [ ... ]
+              </Typography>
+            </Box>
+          </Box>
+          <Box sx={{ flex: '50%', paddingRight: '1em', display: 'flex' }}>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '1em',
+                maxWidth: '300px',
+              }}
+            >
+              <img
+                src={imgPost}
+                style={{
+                  width: '300px',
+                  height: '200px',
+                  border: '1px solid darkgray',
+                  borderRadius: '25px',
+                }}
+              />
+              <Typography
+                variant="h6"
+                color="#33277b"
+                fontWeight="600"
+                sx={{ mt: '0.5em' }}
+              >
+                What is Blockchain Layer 1: Understanding the Foundation of
+                Blockchain Technology
+              </Typography>
+              <div
+                style={{
+                  width: '30px',
+                  height: '3px',
+                  backgroundColor: 'gray',
+                }}
+              />
+              <Typography variant="p">
+                Discover the fundamentals of Blockchain Layer 1 technology in
+                this comprehensive article. Explore the key [ ... ]
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '1em',
+                maxWidth: '300px',
+              }}
+            >
+              <img
+                src={imgPost}
+                style={{
+                  width: '300px',
+                  height: '200px',
+                  border: '1px solid darkgray',
+                  borderRadius: '25px',
+                }}
+              />
+              <Typography
+                variant="h6"
+                color="#33277b"
+                fontWeight="600"
+                sx={{ mt: '0.5em' }}
+              >
+                What is Blockchain Layer 1: Understanding the Foundation of
+                Blockchain Technology
+              </Typography>
+              <div
+                style={{
+                  width: '30px',
+                  height: '3px',
+                  backgroundColor: 'gray',
+                }}
+              />
+              <Typography variant="p">
+                Discover the fundamentals of Blockchain Layer 1 technology in
+                this comprehensive article. Explore the key [ ... ]
+              </Typography>
+            </Box>
+          </Box>
+          <Box sx={{ flex: '50%', paddingRight: '1em', display: 'flex' }}>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '1em',
+                maxWidth: '300px',
+              }}
+            >
+              <img
+                src={imgPost}
+                style={{
+                  width: '300px',
+                  height: '200px',
+                  border: '1px solid darkgray',
+                  borderRadius: '25px',
+                }}
+              />
+              <Typography
+                variant="h6"
+                color="#33277b"
+                fontWeight="600"
+                sx={{ mt: '0.5em' }}
+              >
+                What is Blockchain Layer 1: Understanding the Foundation of
+                Blockchain Technology
+              </Typography>
+              <div
+                style={{
+                  width: '30px',
+                  height: '3px',
+                  backgroundColor: 'gray',
+                }}
+              />
+              <Typography variant="p">
+                Discover the fundamentals of Blockchain Layer 1 technology in
+                this comprehensive article. Explore the key [ ... ]
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '1em',
+                maxWidth: '300px',
+              }}
+            >
+              <img
+                src={imgPost}
+                style={{
+                  width: '300px',
+                  height: '200px',
+                  border: '1px solid darkgray',
+                  borderRadius: '25px',
+                }}
+              />
+              <Typography
+                variant="h6"
+                color="#33277b"
                 fontWeight="600"
                 sx={{ mt: '0.5em' }}
               >
@@ -483,7 +483,7 @@ export const Blog = () => {
             mt:'1em'
           }}
         >
-          <aside>
+          <aside style={{color:'#33277b', fontSize:'30px'}}>
             <Typography fontWeight="bold" variant="h6">
               Recent posts
             </Typography>

@@ -36,7 +36,7 @@ export const FirstSection = () => {
         width: '99vw',
         }}
       >
-        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#6500B7' }}>CONTRATO INTELIGENTE</Typography>
+        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#33277b' }}>CONTRATO INTELIGENTE</Typography>
         <img src={lineahorizonta1} alt="" width='25%' />
           <Box sx={{
             display: 'flex',
@@ -51,7 +51,7 @@ export const FirstSection = () => {
                   <Typography variant="h6"
                     sx={{
                       fontWeight: '600',
-                      color: '#6500B7',
+                      color: '#33277b',
                       mt: '20px',
                     }}
                   >
@@ -63,7 +63,7 @@ export const FirstSection = () => {
                       fontSize: '20px',
                       fontWeight: '600',
                       textDecoration: 'none',
-                      color: '#6500B7'
+                      color: '#33277b'
                     }}
                   >
                     {url}
@@ -75,7 +75,7 @@ export const FirstSection = () => {
               sx={{
                 fontSize: '15px',
                 fontWeight: '600',
-                color: '#6500B7',
+                color: '#33277b',
                 mt: '10px',
                 mb: '10px'
               }}
@@ -95,7 +95,7 @@ export const FirstSection = () => {
               https://github.com/solidproof/projects/tree/main/Wallet%20Token
             </a> */}
             <img src={solidprooficon} alt="img solidProof" style={{height: '100px', marginTop: '10px', marginBottom: '5px'}} />
-            <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '800', marginTop: '20px', marginBottom: '25px', color: '#6500B7' }}>LISTING ON</Typography>
+            <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '800', marginTop: '20px', marginBottom: '25px', color: '#33277b' }}>LISTING ON</Typography>
             <Box sx={{
               display: 'flex',
               justifyContent: 'center',

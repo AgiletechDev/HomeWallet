@@ -1,4 +1,4 @@
-import { FirstSection } from "../views/roadmap/"
+import { FirstSection } from "../../views/roadmap"
 
 const RoadMap = () => {
   return (

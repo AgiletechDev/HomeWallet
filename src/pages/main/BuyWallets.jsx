@@ -1,4 +1,4 @@
-import {FirstSection} from "../views/buyWallets"
+import {FirstSection} from "../../views/buyWallets"
 
 const BuyWallets = () => {
   return (

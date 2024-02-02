@@ -1,4 +1,4 @@
-import { SecondSection, ThirdSection, FirstSection } from '../views/home'
+import { SecondSection, ThirdSection, FirstSection } from '../../views/home'
 
 
 const Home = () => {

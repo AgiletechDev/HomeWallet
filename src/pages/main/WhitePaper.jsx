@@ -1,5 +1,5 @@
 import React from 'react'
-import { FirstSection } from '../views/whitePaper'
+import { FirstSection } from '../../views/whitePaper'
 
 const WhitePaper = () => {
   return (
