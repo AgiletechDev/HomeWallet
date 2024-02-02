@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import imgSect1 from '../../assets/images/portal/pag1/ilustracion 2.png'
-import imgSect2 from '../../assets/images/portal/pag1/fondo 3.png'
+
 import imgSect3 from '../../assets/images/portal/pag1/ilustracion 3.png'
 import qr from '../../assets/images/portal/pag1/apps 1.png'
 import { useState } from 'react'
@@ -120,54 +120,48 @@ export const ThirdSection = () => {
               'linear-gradient(97deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
             zIndex: 1,
             color: 'white',
-            justifyContent: 'space-between',
+            justifyContent:'space-between'
           }}
         >
+
           <Box>
-            <Typography
-              variant="h4"
-              sx={{
-                fontWeight: '800',
-                textAlign: 'center',
-                mt: '0.5em',
-              }}
-            >
-              Descargar ahora
-            </Typography>
-            <Typography fontWeight="bold" sx={{ marginLeft: '4em' }}>
+              <Typography
+                variant="h4"
+                sx={{
+                  fontWeight: '800',
+                  textAlign: 'center',
+                  mt: '0.5em',
+                }}
+              >
+                Descargar ahora
+              </Typography>
+              <Typography fontWeight="bold" sx={{marginLeft:'4em'}}>
               Acceso sencillo a criptomonedas
-            </Typography>
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                mt: '7em',
-                padding: '1em',
-                gap: '20px',
-              }}
-            >
-              <img src={qr} />
-              <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                <Typography>Escanear para descargar</Typography>
-                <Typography variant="h6" fontWeight="bold">
-                  App Wallet
-                </Typography>
+              </Typography>
+              <Box
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  mt: '7em',
+                  padding: '1em',
+                  gap: '20px',
+                }}
+              >
+                <img src={qr} />
+                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                  <Typography>Escanear para descargar</Typography>
+                  <Typography variant="h6" fontWeight="bold">
+                    App Wallet
+                  </Typography>
+                </Box>
               </Box>
-            </Box>
+            
           </Box>
           <Box>
-            <img src={imgSect3} style={{ width: '90%' }} />
+              <img src={imgSect3} style={{ width: '90%' }} />
           </Box>
         </Box>
-        <img
-          src={imgSect2}
-          style={{
-            position: 'absolute',
-            transform: 'translate(200%, -60%)',
-            zIndex: 2,
-          }}
-        />
       </Box>
 
       <Box
@@ -197,12 +191,13 @@ export const ThirdSection = () => {
 
             textAlign: 'justify',
             maxWidth: '100%',
-            mb: '3em',
+            mb:'3em',
 
             details: {
               borderRadius: '8px',
               marginBottom: '1em',
               padding: '1em',
+              
             },
             summary: {
               cursor: 'pointer',

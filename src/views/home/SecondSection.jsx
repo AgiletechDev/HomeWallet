@@ -13,7 +13,6 @@ export const SecondSection = () => {
           maxWidth: '1000px',
           position: 'relative',
           mt: '5em',
-         
         }}
       >
         <Box
@@ -42,7 +41,7 @@ export const SecondSection = () => {
         <Box>
           <img
             src={imgSect1}
-            style={{ width: '100%', zIndex: '-1', marginLeft: '180px' }}
+            style={{ width: '100%', zIndex: '-1', marginLeft: '50px' }}
           />
         </Box>
       </Box>
