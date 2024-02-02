@@ -1,12 +1,12 @@
-import { AppBar, Box, Button, Divider, IconButton, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
-import logo from '../assets/images/portal/logo.png';
+import { AppBar, Box, Button, Divider, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
 import spainFlag from '../assets/images/portal/spain.png';
-import playstore from '../assets/images/portal/playstore.png';
-import apple from '../assets/images/portal/apple.png';
-import { KeyboardArrowDown } from '@mui/icons-material';
+import logoconjunto from '../assets/images/portal/logoconjunto.png';
+import botoncomprar from '../assets/images/portal/botoncomprar.png';
+import flechadesplazamiento from '../assets/images/portal/svg/flechadesplazamiento.svg';
+import playstore from '../assets/images/portal/svg/playstore.svg';
+import apple from '../assets/images/portal/svg/apple.svg';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 
 
 const Navbar = () => {
@@ -56,8 +56,8 @@ const Navbar = () => {
       sx={{
         height: '0',
         marginBottom: '40px',
-        background: 'rgba(255, 255, 255, 0.8)',
-        backdropFilter: 'blur(58px)'
+        // background: 'rgba(255, 255, 255, 0.8)',
+        // backdropFilter: 'blur(58px)'
       }}
       >
         <Toolbar
@@ -65,19 +65,18 @@ const Navbar = () => {
             display: 'flex',
             alignItems: 'center',
             padding: '0',
-            background: 'rgba(255, 255, 255, 0.9)',
+            background: '#191970',
             backdropFilter: 'blur(18px)',
             position: 'relative'
           }}
           >
-          <img src={logo} alt="logo"
+          <img src={logoconjunto} alt="logo"
             style={{
-              width: '10%',
-              maxWidth: '10%',
+              width: '20%',
               height: '70%',
-              padding: '0',
+              padding: '30px',
               position: 'absolute',
-              left: '5px'
+              left: '5px',
             }}
           />
           <Box
@@ -95,17 +94,20 @@ const Navbar = () => {
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
-                  fontWeight: '540',
-                  color:'black'
+                  fontSize: '13px',
+                  fontWeight: '600',
+                  color:'white'
                   }}
                 >
                   {title}
-                  <IconButton sx={{marginLeft: '-10px'}} children={<KeyboardArrowDown/>} onClick={click}/>
+                  <Button sx={{marginLeft: '-20px'}} onClick={click}>
+                    <img src={flechadesplazamiento} style={{height: '10px', width: '10px'}} alt="" />
+                  </Button>
                 </Typography>
               ))
             }
             <Link to="/blog">
-            <Button sx={{fontSize: '17px', textTransform: 'capitalize', color: 'black'}}>Blog</Button>
+            <Button sx={{fontSize: '13px', paddingY: '10px' ,textTransform: 'capitalize', color: 'white', marginLeft: '-15px'}}>Blog</Button>
             </Link>
             
 
@@ -117,19 +119,25 @@ const Navbar = () => {
               <Button variant='contained'
                 sx={{
                   borderRadius: '20px',
-                  height: '40px'
+                  height: '40px',
+                  textTransform: 'capitalize',
+                  fontWeight: '600',
+                  fontSize: '13px',
+                  padding: '20px',
+                  background: `url(${botoncomprar})`
                 }}
               >
-                Buy Wallet
+                Comprar
               </Button>
             </Link>
       
-            <Divider orientation='vertical' variant='middle' sx={{ height: '30px', mx: '10px' }} />
-            <Button sx={{backgroundColor: '#F7FAF5', mr: '5px', height: '40px'}}>
-              <img src={apple} style={{width: '34px'}} />
+            {/* <Divider orientation='vertical' variant='middle' sx={{ height: '30px', mx: '10px', background: 'white' }} /> */}
+
+            <Button sx={{ height: '30px'}}>
+              <img src={apple} style={{width: '25px', paddingTop: '10px'}} />
             </Button>
-            <Button sx={{backgroundColor: '#F7FAF5', height: '40px'}}>
-              <img src={playstore} style={{width: '30px'}} />
+            <Button sx={{ height: '30px', marginLeft: '-15px'}}>
+              <img src={playstore} style={{width: '25px', paddingTop: '10px'}} />
             </Button>
           </Box>
         </Toolbar>
@@ -144,7 +152,7 @@ const Navbar = () => {
             sx={{
               color: 'black',
               '&:hover': {
-                    background: '#006EFD',
+                    background: '#191970',
                     color: 'white',
                     borderRadius: '15px'
                   },
@@ -159,7 +167,7 @@ const Navbar = () => {
             sx={{
               color: 'black',
               '&:hover': {
-                    background: '#006EFD',
+                    background: '#191970',
                     color: 'white',
                     borderRadius: '15px'
                   },
@@ -180,7 +188,7 @@ const Navbar = () => {
             sx={{
               color: 'black',
               '&:hover': {
-                    background: '#006EFD',
+                    background: '#191970',
                     color: 'white',
                     borderRadius: '15px'
                   },
@@ -195,7 +203,7 @@ const Navbar = () => {
             sx={{
               color: 'black',
               '&:hover': {
-                    background: '#006EFD',
+                    background: '#191970',
                     color: 'white',
                     borderRadius: '15px'
                   },
@@ -216,7 +224,7 @@ const Navbar = () => {
             sx={{
               color: 'black',
               '&:hover': {
-                    background: '#006EFD',
+                    background: '#191970',
                     color: 'white',
                     borderRadius: '15px'
                   },
@@ -231,7 +239,7 @@ const Navbar = () => {
             sx={{
               color: 'black',
               '&:hover': {
-                    background: '#006EFD',
+                    background: '#191970',
                     color: 'white',
                     borderRadius: '15px'
                   },
@@ -246,7 +254,7 @@ const Navbar = () => {
             sx={{
               color: 'black',
               '&:hover': {
-                    background: '#006EFD',
+                    background: '#191970',
                     color: 'white',
                     borderRadius: '15px'
                   },

@@ -1,8 +1,9 @@
 import { Box, Typography } from '@mui/material'
-import telegram from '../assets/images/portal/telegram.png'
-import twitter from '../assets/images/portal/twitter.png'
-import discord from '../assets/images/portal/discord.png'
-import youtube from '../assets/images/portal/youtube.png'
+import iconotelegram from '../assets/images/portal/svg/iconotelegram.svg'
+import iconox from '../assets/images/portal/svg/iconox.svg'
+import iconodiscord from '../assets/images/portal/svg/iconodiscord.svg'
+import iconoYT from '../assets/images/portal/svg/iconoYT.svg'
+
 
 const Footer = () => {
   return (
@@ -10,9 +11,10 @@ const Footer = () => {
       style={{
         display: 'flex',
         flexDirection: 'column',
+        background: '#191970',
         height: '500px',
-        // marginTop: '10px',
-        width: '100%',
+        marginLeft: '-8px',
+        width: '99vw',
       }}
     >
       <Box
@@ -24,7 +26,8 @@ const Footer = () => {
           height: '60%',
           textAlign: 'center',
           margin: 'auto',
-          borderRadius: '20px',
+          borderRadius: '10px',
+          background: 'linear-gradient(to right, #3b3f78 14%, #486284 83%)',
           boxShadow: '0px 10px 35px rgba(0, 0, 0, 0.1)',
         }}
       >
@@ -41,9 +44,10 @@ const Footer = () => {
             variant="h6"
             component="p"
             sx={{
-              color: '#006EFD',
+              color: 'white',
               marginRight: '8px',
-              fontSize: '18px',
+              fontSize: '15px',
+              letterSpacing: '1px'
             }}
           >
             Powered by
@@ -52,8 +56,9 @@ const Footer = () => {
             variant="h5"
             component="p"
             sx={{
-              fontSize: '25px',
+              fontSize: '20px',
               fontWeight: '600',
+              color: 'white'
             }}
           >
             AGILETECH
@@ -67,6 +72,7 @@ const Footer = () => {
             fontSize: '25px',
             letterSpacing: '2px',
             marginBottom: '20px',
+            color: 'white'
           }}
         >
           CONTACT US
@@ -83,15 +89,15 @@ const Footer = () => {
         >
           <Typography
             variant="p"
-            sx={{ fontSize: '20px', fontWeight: '600', mr: '10px' }}
+            sx={{ fontSize: '20px', mr: '10px', color: 'white' }}
           >
             Email:
           </Typography>
           <a
-            href="mailto:contact@wallet.com"
-            style={{ textDecoration: 'none', color: 'black', fontSize: '20px' }}
+            href="mailto:contact@agrawallet.com"
+            style={{ textDecoration: 'none', color: 'white', fontSize: '20px' }}
           >
-            contact@wallet.com
+            contact@agrawallet.com
           </a>
         </Box>
 
@@ -101,12 +107,13 @@ const Footer = () => {
             flexDirection: 'row',
             justifyContent: 'center',
             alignItems: 'center',
+            marginTop: '20px',
             marginBottom: '20px',
           }}
         >
           <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
             <img
-              src={telegram}
+              src={iconotelegram}
               alt="telegram"
               style={{ marginRight: '50px', width: '40px' }}
             />
@@ -117,7 +124,7 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={twitter}
+              src={iconox}
               alt="twitter"
               style={{ marginRight: '50px', width: '40px' }}
             />
@@ -128,9 +135,9 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={discord}
+              src={iconodiscord}
               alt="discord"
-              style={{ marginRight: '50px', width: '40px' }}
+              style={{ marginRight: '50px', width: '50px' }}
             />
           </a>
           <a
@@ -139,9 +146,9 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={youtube}
+              src={iconoYT}
               alt="youtube"
-              style={{ marginLeft: '10px', width: '40px' }}
+              style={{ marginLeft: '10px', width: '50px' }}
             />
           </a>
         </Box>
@@ -154,8 +161,8 @@ const Footer = () => {
           color: 'white',
           textAlign: 'center',
           marginBottom: '-10px',
-          marginLeft:'-10px',
-          marginRight:'-8px',
+          // marginLeft:'-10px',
+          // marginRight:'-8px',
 
         }}
       >

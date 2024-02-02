@@ -1,61 +1,51 @@
 import { Box, Typography } from '@mui/material'
-import huobi from '../../assets/images/portal/huobi.png'
-import mexcglobal from '../../assets/images/portal/mexcglobal.png'
-import backerandpartner from '../../assets/images/portal/backerandpartner.png'
+import lineahorizonta1 from '../../assets/images/portal/lineahorizonta1.png'
+import apoyo2_1 from '../../assets/images/portal/apoyo2_1.png'
+import apoyo4 from '../../assets/images/portal/apoyo4.png'
+import circulos from '../../assets/images/portal/circulos.png'
+import cuadro1 from '../../assets/images/portal/cuadro1.png'
 
 export const FirstSection = () => {
   return (
-    <Box sx={{ 
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%', 
-        height: '50vh', 
-        // border: '1px solid black',
-    }}
-    >
+    <Box sx={{
+      display: 'flex',
+      height: '500px',
+      width: '99vw',
+      overflow: 'hidden',
+      position: 'relative',
+
+    }}>
+
+      <img src={apoyo2_1} alt="circulo" height='500px' width='500px' style={{position: 'absolute', left: '0', bottom: '0'}} />
+
+
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        marginTop: '75px',
-        width: '70%',
-        height: '80%',
-      }}
-      >
-
-        <img src={backerandpartner} alt="backerandpartner title" height='120px' />
-        {/* <Typography variant='h4' component='p' 
-            sx={{
-                fontSize: '60px',
-            }}
-        >
-            BACKERS & PARTNERS
-        </Typography>
-
-        <Typography variant='h4' component='p' 
-            sx={{
-                marginTop: '-30px',
-            }}
-        >
-            Backers & Partners
-
-        </Typography> */}
-      
-        <Box sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            marginY: '10px',
-            width: '100%'
+        marginTop: '40px',
+        height: '1000px',
+        width: '99vw',
         }}
-        >
-            <img src={huobi} alt="" style={{width: '50%'}}/>
-            <img src={mexcglobal} alt="" style={{width: '50%'}}/>
-            
+      >
+        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#6500B7' }}>PATROCINADORES Y SOCIOS</Typography>
+        <img src={lineahorizonta1} alt="" width='15%' />
+       
+        <Box sx={{
+          display: 'flex',
+          zIndex: '1',
+          marginTop: '50px',
+        }}>
+          <img src={cuadro1} alt="cuadro1" style={{marginRight: '20px'}} />
+          <img src={cuadro1} alt="cuadro1" style={{marginRight: '20px'}} />
         </Box>
 
       </Box>
-      
+
+      <img src={apoyo4} alt="circulo" height='500px' width='500px' style={{position: 'absolute', right: '0', bottom: '0', zIndex: '-1'}} />
+      <img src={circulos} alt="circulo" height='150px' width='120px' style={{position: 'absolute', right: '5%', bottom: '5%', zIndex: '-1'}} />
+
+
     </Box>
   )
 }
