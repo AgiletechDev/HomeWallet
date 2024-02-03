@@ -6,19 +6,26 @@ import apoyo2 from '../../assets/images/portal/apoyo2.png'
 import apoyo2_1 from '../../assets/images/portal/apoyo2_1.png'
 import apoyo4 from '../../assets/images/portal/apoyo4.png'
 import circulos from '../../assets/images/portal/circulos.png'
+import { useTranslation } from 'react-i18next'
 
-const list = [
-  {
-    title: 'BNB Smart Chain:',
-    url:'https://bscscan.com/address/0x24Ef78C7092d255Ed14a028lac1800C359aF3afe',
-  },
-  {
-    title: 'Arbitrum:',
-    url:'https://bscscan.com/address/0x24Ef78C7092d255Ed14a028lac1800C359aF3afe',
-  },
-];
 
 export const FirstSection = () => {
+
+  const { t } = useTranslation();
+  const title1 =t("SUBTITLE1");
+  const title2 =t("SUBTITLE2");
+
+  const list = [
+    {
+      title: title1,
+      url:'https://bscscan.com/address/0x24Ef78C7092d255Ed14a028lac1800C359aF3afe',
+    },
+    {
+      title: title2,
+      url:'https://bscscan.com/address/0x24Ef78C7092d255Ed14a028lac1800C359aF3afe',
+    },
+  ];
+
   return (
     <Box sx={{
       display: 'flex',
@@ -36,7 +43,7 @@ export const FirstSection = () => {
         width: '99vw',
         }}
       >
-        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#33277b' }}>CONTRATO INTELIGENTE</Typography>
+        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#33277b' }}>{t("TITLE_SMARTCONTRACT")}</Typography>
         <img src={lineahorizonta1} alt="" width='25%' />
           <Box sx={{
             display: 'flex',
@@ -46,8 +53,8 @@ export const FirstSection = () => {
             }}
           >
             {
-              list.map(({title, url})=>(
-                <>
+              list.map(({title, url}, index)=>(
+                <div key={index} style={{textAlign: 'center'}}>
                   <Typography variant="h6"
                     sx={{
                       fontWeight: '600',
@@ -68,7 +75,7 @@ export const FirstSection = () => {
                   >
                     {url}
                   </a>
-                </>
+                </div>
                 ))
             }
             <Typography variant="h6"
@@ -80,7 +87,7 @@ export const FirstSection = () => {
                 mb: '10px'
               }}
             >
-              Wallet Smart Contract audited by SolidProof
+              {t("SUBTITLE3")}
             </Typography>
             {/* <a href="https://github.com/solidproof/projects/tree/main/Wallet%20Token"
               target="_blank"
@@ -95,7 +102,7 @@ export const FirstSection = () => {
               https://github.com/solidproof/projects/tree/main/Wallet%20Token
             </a> */}
             <img src={solidprooficon} alt="img solidProof" style={{height: '100px', marginTop: '10px', marginBottom: '5px'}} />
-            <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '800', marginTop: '20px', marginBottom: '25px', color: '#33277b' }}>LISTING ON</Typography>
+            <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '800', marginTop: '20px', marginBottom: '25px', color: '#33277b' }}>{t("SUBTITLE4")}</Typography>
             <Box sx={{
               display: 'flex',
               justifyContent: 'center',
@@ -117,7 +124,7 @@ export const FirstSection = () => {
                 textTransform: 'lowercase'
             }}
             >
-                BUY WALLET
+                {t("BUTTONNAME")}
             </Button>
           </Box>
       </Box>

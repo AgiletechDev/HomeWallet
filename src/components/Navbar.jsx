@@ -1,12 +1,14 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AppBar, Box, Button, Divider, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next'
 import spainFlag from '../assets/images/portal/spain.png';
+import estadosunidos from '../assets/images/portal/estadosunidos.png';
 import logoconjunto from '../assets/images/portal/logoconjunto.png';
 import botoncomprar from '../assets/images/portal/botoncomprar.png';
 import flechadesplazamiento from '../assets/images/portal/svg/flechadesplazamiento.svg';
 import playstore from '../assets/images/portal/svg/playstore.svg';
 import apple from '../assets/images/portal/svg/apple.svg';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -44,10 +46,31 @@ const Navbar = () => {
       setOpen3(true)
   }
 
+  
+  // Translate Method
+  
+  const [englishLanguage, setEnglishLanguage] = useState(false)
+  
+  const {t , i18n} = useTranslation();
+  
+  const handleLenguage = ()=>{
+    if(!englishLanguage){
+      i18n.changeLanguage("en");
+      setEnglishLanguage(!englishLanguage);
+      return
+    } 
+    i18n.changeLanguage("es");
+    setEnglishLanguage(!englishLanguage);
+    return
+  };
+  
+  const product = t("NAVBARTITLE1");
+  const Company = t("NAVBARTITLE3");
+
   const list = [
-    {title:'Product', click: handleClick}, 
+    {title:product, click: handleClick}, 
     {title:'Tokenomic', click: handleClick2}, 
-    {title:'Company', click: handleClick3}, 
+    {title:Company, click: handleClick3}, 
   ]
 
   return (
@@ -68,15 +91,21 @@ const Navbar = () => {
             position: 'relative'
           }}
           >
-          <img src={logoconjunto} alt="logo"
-            style={{
-              width: '20%',
-              height: '70%',
-              padding: '30px',
-              position: 'absolute',
-              left: '5px',
-            }}
-          />
+          <Link to='/' color='inherit' style={{
+                width: '300px',
+                padding: '30px',
+                position: 'relative',
+                left: '5px',
+              }}>
+            <img src={logoconjunto} alt="logo"
+              style={{
+                width: '100%',
+                height: '50px',
+                position: 'absolute',
+                top: '5px',
+              }}
+            />
+          </Link>
           <Box
           sx={{
             display: 'flex',
@@ -109,8 +138,8 @@ const Navbar = () => {
             </Link>
             
 
-            <Button sx={{ marginLeft: '-12px'}}>
-                <img src={spainFlag} alt="spain flag" />
+            <Button sx={{ marginLeft: '-12px'}} onClick={()=> handleLenguage()}>
+                {!englishLanguage ? <img src={spainFlag} alt="spain flag" /> : <img src={estadosunidos} alt="UE flag" />}
             </Button>
 
             <Link to='/buywallets'>
@@ -125,7 +154,7 @@ const Navbar = () => {
                   background: `url(${botoncomprar})`
                 }}
               >
-                Comprar
+                {t("NAVBUTTON")}
               </Button>
             </Link>
       
