@@ -9,9 +9,16 @@ import botoncomprar from '../assets/images/portal/botoncomprar.png';
 import flechadesplazamiento from '../assets/images/portal/svg/flechadesplazamiento.svg';
 import playstore from '../assets/images/portal/svg/playstore.svg';
 import apple from '../assets/images/portal/svg/apple.svg';
-
+import {useTheme, useMediaQuery
+} from '@mui/material'
 
 const Navbar = () => {
+
+// const isSmallScreen = useMediaQuery('(max-width:600px)');
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
+
   const [anchorElm, setAnchorElm] = useState(null);
   const [open, setOpen] = useState(false);
   const handleClose = ()=>{
@@ -91,12 +98,20 @@ const Navbar = () => {
             position: 'relative',
           }}
           >
-          <Link to='/'>
+          <Link to='/' color='inherit' style={{
+                width: '300px',
+                padding: isMobile ? '20px' : '30px',
+                position: 'relative',
+                left: isMobile ? '0':(isTablet ? '0' :'5px'),
+                
+              }}>
             <img src={logoconjunto} alt="logo"
               style={{
-                padding: '30px',
-                position: 'relative',
-                left: '5px',
+                width: isMobile ? '65%' : '100%',
+                height: isMobile ? '35px' : '50px',
+                position: 'absolute',
+                top: '5px',
+                marginLeft: isMobile ? '-10px' : '-50px',
               }}
             />
           </Link>
@@ -115,25 +130,26 @@ const Navbar = () => {
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
-                  fontSize: '13px',
+                  fontSize: isMobile ? '8px' : ( isTablet ? '11px' :'13px'),
                   fontWeight: '600',
-                  color:'white'
+                  color:'white',
+                  marginLeft: isMobile ? '-18px' : ( isTablet ? '-10px' :'0')
                   }}
                 >
                   {title}
-                  <Button sx={{marginLeft: '-20px'}} onClick={click}>
-                    <img src={flechadesplazamiento} style={{height: '10px', width: '10px'}} alt="" />
+                  <Button sx={{marginLeft: isMobile ? '-25px' : ( isTablet ? '-25px' :'-20px')}} onClick={click}>
+                    <img src={flechadesplazamiento} style={{height: '10px', width: isMobile ? '8px' : '10px'}} alt="" />
                   </Button>
                 </Typography>
               ))
             }
             <Link to="/blog">
-            <Button sx={{fontSize: '13px', paddingY: '10px' ,textTransform: 'capitalize', color: 'white', marginLeft: '-15px'}}>Blog</Button>
+            <Button sx={{fontSize: isMobile ? '10px' : '13px', paddingY: '10px' ,textTransform: 'capitalize', color: 'white', marginLeft: isMobile ? '-40px' : ( isTablet ? '-35px' :'-15px')}}>Blog</Button>
             </Link>
             
 
-            <Button sx={{ marginLeft: '-12px'}} onClick={()=> handleLenguage()}>
-                {!englishLanguage ? <img src={spainFlag} alt="spain flag" /> : <img src={estadosunidos} alt="UE flag" />}
+            <Button sx={{ marginLeft: isMobile ? '-28px' : ( isTablet ? '-25px' :'-12px')}} onClick={()=> handleLenguage()}>
+                {!englishLanguage ? <img src={spainFlag} alt="spain flag"  style={{width: isMobile ? '18px' : ( isTablet ? '18px' :'24px')}}/> : <img src={estadosunidos} alt="UE flag"  style={{width: isMobile ? '18px' : ( isTablet ? '18px' :'24px')}}/>}
             </Button>
 
             <Link to='/buywallets'>
@@ -143,9 +159,10 @@ const Navbar = () => {
                   height: '40px',
                   textTransform: 'capitalize',
                   fontWeight: '600',
-                  fontSize: '13px',
-                  padding: '20px',
-                  background: `url(${botoncomprar})`
+                  fontSize: isMobile ? '8px' : '13px',
+                  padding: isMobile ? '2px' : '20px',
+                  background: `url(${botoncomprar})`,
+                  marginLeft: isMobile ? '-10px' : ( isTablet ? '-12px' :'0')
                 }}
               >
                 {t("NAVBUTTON")}
@@ -154,11 +171,11 @@ const Navbar = () => {
       
             {/* <Divider orientation='vertical' variant='middle' sx={{ height: '30px', mx: '10px', background: 'white' }} /> */}
 
-            <Button sx={{ height: '30px'}}>
-              <img src={apple} style={{width: '25px', paddingTop: '10px'}} />
+            <Button sx={{ height: '30px', marginLeft: isMobile ? '-15px' : ( isTablet ? '-15px' :'0')}}>
+              <img src={apple} style={{width: isMobile ? '20px':( isTablet ? '18px' :'25px'), paddingTop: '10px'}} />
             </Button>
-            <Button sx={{ height: '30px', marginLeft: '-15px'}}>
-              <img src={playstore} style={{width: '25px', paddingTop: '10px'}} />
+            <Button sx={{ height: '30px', marginLeft: isMobile ? '-25px':( isTablet ? '-35px' :'-15px'), marginRight: isMobile ? '-15px':( isTablet ? '-35px' :'0')}}>
+              <img src={playstore} style={{width: isMobile ? '20px':( isTablet ? '18px' :'25px'), paddingTop: '10px'}} />
             </Button>
           </Box>
         </Toolbar>
