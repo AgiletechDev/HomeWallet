@@ -51,9 +51,8 @@ export const ThirdSection = () => {
         sx={{
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center',
-          width: '100vw',
-          height: '100vh',
+          flexDirection: 'row-reverse',
+          maxWidth:'1000px',
           margin: '0',
           mt: '5em',
           zIndex: '1',
@@ -62,13 +61,11 @@ export const ThirdSection = () => {
         <Box
           sx={{
             display: 'flex',
-            flexDirection: 'row-reverse',
             alignItems: 'center',
             justifyContent: 'flex-start',
             color: 'black',
             width: '100%',
-            ml: '15em',
-            paddingRight: '7em',
+  
           }}
         >
           <Box
@@ -101,9 +98,10 @@ export const ThirdSection = () => {
               </li>
             </ul>
           </Box>
-          <Box>
+         
+        </Box>
+        <Box>
             <img src={imgSect1} style={{ width: '90%' }} />
-          </Box>
         </Box>
       </Box>
 
