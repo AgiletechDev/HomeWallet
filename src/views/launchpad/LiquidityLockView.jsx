@@ -1,18 +1,19 @@
-import { Box, Typography, Button, TextField } from '@mui/material'
-import Table from '@mui/material/Table'
-import TableBody from '@mui/material/TableBody'
-import TableCell from '@mui/material/TableCell'
-import TableContainer from '@mui/material/TableContainer'
-import TableHead from '@mui/material/TableHead'
-import TableRow from '@mui/material/TableRow'
-import Paper from '@mui/material/Paper'
-import * as React from 'react'
-import Tabs from '@mui/material/Tabs'
-import Tab from '@mui/material/Tab'
+import { Box, Typography, Button, TextField, useTheme, useMediaQuery } from '@mui/material';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import * as React from 'react';
 
 function createData(token, symbol, address, amount, action) {
-  return { token, symbol, address, amount, action }
+  return { token, symbol, address, amount, action };
 }
+
 const rows = [
   createData(
     'Wrapped BNB/Test mainnet contract [WBNB/TMC]',
@@ -21,23 +22,26 @@ const rows = [
     '0',
     'View'
   ),
-]
+];
+
 export const LiquidityLockView = () => {
-  const [value, setValue] = React.useState('one')
+  const [value, setValue] = React.useState('one');
 
   const handleChange = (event, newValue) => {
-    setValue(newValue)
-  }
+    setValue(newValue);
+  };
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
-    <Box sx={{ width: '1000px', padding: '1em', mt: '5em' }}>
-      <Box
-        sx={{ display: 'flex', flexDirection: 'column',  alignItems: 'flex-start' }}
-      >
-         <Typography sx={{ textAlign: 'left' }} variant="h4" fontWeight="bold">
+    <Box sx={{ width: isMobile ? '100%' : '1000px', padding: '1em', mt: '5em' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+        <Typography sx={{ textAlign: 'left' }} variant="h4" fontWeight="bold">
           Liquidity Lock View
         </Typography>
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em', mt:'2em' }}>
-          <Box sx={{ width: '100%'}}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em', mt: '2em', width: '100%' }}>
+          <Box sx={{ width: '100%' }}>
             <Tabs
               value={value}
               onChange={handleChange}
@@ -48,24 +52,18 @@ export const LiquidityLockView = () => {
               <Tab value="one" label="All Lock" />
               <Tab value="two" label="My Lock" />
             </Tabs>
-            <TextField label="Search by name, symbol or token address..." placeholder="0.0" fullWidth="true" sx={{mt:'1em'}}/>
+            <TextField label="Search by name, symbol or token address..." placeholder="0.0" fullWidth={true} sx={{ mt: '1em' }} />
           </Box>
           <TableContainer
             sx={{
               mt: '2em',
               borderRadius: '12px',
-              overflow: 'hidden',
+              overflowX: 'auto',
+              width: '100%',
             }}
             component={Paper}
           >
-            <Table
-              sx={{
-                minWidth: 650,
-                borderCollapse: 'separate',
-                borderSpacing: '5px',
-              }}
-              aria-label="simple table"
-            >
+            <Table sx={{ minWidth: 650 }}>
               <TableHead>
                 <TableRow sx={{ backgroundColor: '#f4f4f4' }}>
                   <TableCell sx={{ color: 'black' }}>Token</TableCell>
@@ -86,7 +84,7 @@ export const LiquidityLockView = () => {
               <TableBody>
                 {rows.map((row) => (
                   <TableRow
-                    key={row.name}
+                    key={row.token}
                     sx={{
                       '&:last-child td, &:last-child th': { borderBottom: 0 },
                       backgroundColor: 'white',
@@ -96,8 +94,10 @@ export const LiquidityLockView = () => {
                       {row.token}
                     </TableCell>
                     <TableCell align="center">{row.symbol}</TableCell>
-                    <TableCell align="justify" sx={{color:"#14A8FC"}}>{row.address}</TableCell>
-                    <TableCell align="justify" >{row.amount}</TableCell>
+                    <TableCell align="justify" sx={{ color: '#14A8FC' }}>
+                      {row.address}
+                    </TableCell>
+                    <TableCell align="justify">{row.amount}</TableCell>
                     <TableCell align="justify">{row.action}</TableCell>
                   </TableRow>
                 ))}
@@ -111,7 +111,7 @@ export const LiquidityLockView = () => {
               alignItems: 'center',
               width: 'fit-content',
               margin: '0 auto',
-              mb:'5em'
+              mb: '5em',
             }}
           >
             <Typography textAlign="justify" variant="p">
@@ -129,7 +129,7 @@ export const LiquidityLockView = () => {
                 borderRadius: '10px',
                 textTransform: 'initial',
                 background:
-                    'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+                  'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
               }}
             >
               Connect Wallet
@@ -138,5 +138,5 @@ export const LiquidityLockView = () => {
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};

@@ -1,61 +1,112 @@
-import { Box, Typography, Button, Card, TextField } from '@mui/material'
+import {
+  Box,
+  Typography,
+  Button,
+  Card,
+  TextField,
+  useTheme,
+  useMediaQuery,
+} from '@mui/material'
 import Radio from '@mui/material/Radio'
 import RadioGroup from '@mui/material/RadioGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import FormControl from '@mui/material/FormControl'
 
-import image11 from '../../assets/images/launchpad/image 12.png'
+import image11 from '../../assets/images/launchpad/image11.png'
 
 export const RabSaleView = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
-    <Box sx={{ width: '900px', padding: '1em', mt: '5em' }}>
+    <Box sx={{ width: isMobile ? '100%' : '900px', padding: '1em', mt: '3em' }}>
       <Box
         sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
-        <Typography textAlign="center" variant="h3" fontWeight="bold">
+        <Typography
+          sx={{ textAlign: 'center', fontSize: isMobile ? '30px' : '40px' }}
+          variant="h3"
+          fontWeight="bold"
+        >
           Create RAB Sale
         </Typography>
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em' }}>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '3em',
+            mt: '2em',
+          }}
+        >
           <Card
             sx={{
-              mt: '3em',
               width: '100%',
               display: 'flex',
               justifyContent: 'space-between',
               borderRadius: '20px',
-              boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+              flexDirection: isMobile ? 'column' : 'row',
+              margin: 'auto',
             }}
           >
             <Box
               sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'center',
-                padding: '2em 3em',
+                padding: '1em 2em',
               }}
             >
               <Typography
-                variant="p"
+                variant="h5"
                 fontWeight="600"
-                sx={{ marginBottom: '10px', textAlign: 'justify' }}
+                sx={{
+                  marginBottom: '10px',
+                  textAlign: isMobile ? 'center' : 'justify',
+                }}
               >
                 Raise capital and launch your project with easy steps and the
                 best fees in the market to reach our global investors.
-                <br />
-                <br />
                 Automatically list your Token after successful fundraising on:
                 PancakeSwap, UniSwap
               </Typography>
+              <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: isMobile ? 'center' : 'start',
+                  marginTop: isMobile ? '30px' : '0',
+                  mt: '1em',
+                }}
+              >
+                <Button
+                  variant="contained"
+                  sx={{
+                    borderRadius: '10px',
+                    textTransform: 'initial',
+                    background:
+                      'linear-gradient(90deg, rgba(38,170,222,1) 0%, rgba(0,87,255,1) 100%)',
+                  }}
+                >
+                  Connect Wallet
+                </Button>
+              </Box>
             </Box>
 
-            <img src={image11} alt="image11" style={{}} />
+            <img
+              src={image11}
+              alt="image11"
+              style={{ width: isMobile ? '100%' : '30%' }}
+            />
           </Card>
 
-          <Typography textAlign="center" variant="h3" fontWeight="bold">
+          <Typography
+            textAlign="center"
+            variant="h3"
+            fontWeight="bold"
+            sx={{ fontSize: isMobile ? '30px' : '40px' }}
+          >
             Let`s Start
           </Typography>
           <Box
             sx={{
+              width: '100%',
               boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
               borderRadius: '20px',
               padding: '2em',
@@ -63,6 +114,7 @@ export const RabSaleView = () => {
               flexDirection: 'column',
               gap: '1em',
               background: 'white',
+              margin: 'auto',
             }}
           >
             <Box sx={{ display: 'flex', gap: '10px' }}>
@@ -102,7 +154,7 @@ export const RabSaleView = () => {
             <TextField
               label="Token Address"
               placeholder="0.0"
-              fullWidth="true"
+              fullWidth={true}
             />
             <Typography
               textAlign="left"
@@ -227,7 +279,8 @@ export const RabSaleView = () => {
               alignItems: 'center',
               width: 'fit-content',
               margin: '0 auto',
-              mb:'5em'
+              mb: '5em',
+              padding: '1em',
             }}
           >
             <Typography textAlign="justify" variant="p">
@@ -247,7 +300,7 @@ export const RabSaleView = () => {
                 borderRadius: '10px',
                 textTransform: 'initial',
                 background:
-                    'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+                  'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
               }}
             >
               Connect Wallet

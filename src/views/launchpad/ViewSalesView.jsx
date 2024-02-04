@@ -1,14 +1,17 @@
-import { Box, Typography, Button, TextField } from '@mui/material'
+import { Box, Typography, Button, TextField,useTheme,
+  useMediaQuery } from '@mui/material'
 import rabbit from '../../assets/images/launchpad/imagesectionA.png'
 import CurrentSale from '../../components/CurrentSale'
 import icono from '../../assets/images/launchpad/icono.png'
 
 
 export const ViewSalesView = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
-    <Box sx={{ width: '1000px', padding: '1em' }}>
+    <Box sx={{ width: isMobile ? '100%' : '1000px', padding: '1em' }}>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <Box sx={{ display: 'flex' }}>
+        <Box sx={{ display: 'flex', flexDirection:isMobile ? 'column' : 'row' }}>
           <Box
             sx={{
               display: 'flex',
@@ -18,20 +21,20 @@ export const ViewSalesView = () => {
             }}
           >
             <Typography
-              textAlign="left"
+              textAlign={isMobile ? "center" : "left"}
               variant="h3"
               fontWeight="700"
               color="#14A8FC"
             >
               Connect your wallet
             </Typography>
-            <Typography textAlign="left" variant="h3" fontWeight="700">
+            <Typography textAlign={isMobile ? "center" : "left"} variant="h3" fontWeight="700">
               & start exploring
             </Typography>
-            <Typography textAlign="left" variant="h5" fontWeight="700">
+            <Typography textAlign={isMobile ? "center" : "left"} variant="h5" fontWeight="700">
               Here you are - Wallet LaunchPad
             </Typography>
-            <Box sx={{ mt: '2em', display: 'flex', gap: '20px' }}>
+            <Box sx={{ mt: '2em', display: 'flex', gap: '20px', justifyContent:isMobile ? 'center' : 'start' }}>
               <Button
                 sx={{
                   background:
@@ -75,7 +78,7 @@ export const ViewSalesView = () => {
 
           <TextField
             placeholder="Enter token name or token symbol"
-            fullWidth="true"
+            fullWidth={true}
           />
           <img src={icono} alt="icono" style={{ width: '50px', marginTop:'2em' }} />
           <Button
