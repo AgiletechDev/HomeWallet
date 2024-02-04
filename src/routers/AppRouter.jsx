@@ -9,14 +9,22 @@ import RoadMap from "../pages/main/RoadMap";
 import WhitePaper from "../pages/main/WhitePaper";
 import SmartContract from "../pages/main/SmartContract";
 import Blog from "../pages/main/Blog";
-import LaunchPad from "../pages/main/LaunchPad";
-import { BuyWallet, ConnectWallet, Lock, RabGrow, Token } from "../pages/launchpad";
+import LaunchPad from "../pages/launchpad/LaunchPad";
+import {  Lock, RabGrow, Token, ViewSales } from "../pages/launchpad";
 import RabSale from "../pages/launchpad/RabSale";
+import { LockList } from "../pages/launchpad/LockList";
+import { LiquidityLock } from "../pages/launchpad/LiquidityLock";
+import { ListGrow } from "../pages/launchpad/ListGrow";
+
 
 
 export const launchPadRoutes = [
   {
-    path: 'rabsale',  // Cambiado a ruta relativa
+    path: 'rabsale',
+    element: <ViewSales />,
+  },
+  {
+    path: 'createsale',
     element: <RabSale />,
   },
   {
@@ -32,17 +40,24 @@ export const launchPadRoutes = [
     element: <RabGrow />,
   },
   {
-    path: 'buywallet',
-    element: <BuyWallet />,
+    path: '/launchpad/listgrow',
+    element: <ListGrow />,
+  },
+
+  {
+    path: 'liquidity',
+    element: <LiquidityLock />,
   },
   {
-    path: 'connectwallet',
-    element: <ConnectWallet />,
+    path:'listlocks',
+    element:<LockList/>
   },
+
   {
     path: '',
     element: <Home />,
   },
+  
 ];
 
 export const router = createBrowserRouter([
@@ -88,8 +103,12 @@ export const router = createBrowserRouter([
 
         },
         {
-          path: '/launchpad/rabsale',
+          path: '/launchpad/createsale',
           element: <RabSale />,
+        },
+        {
+          path: '/launchpad/rabsale',
+          element: <ViewSales />,
         },
         {
           path: '/launchpad/token',
@@ -100,16 +119,20 @@ export const router = createBrowserRouter([
           element: <Lock />,
         },
         {
+          path: '/launchpad/listgrow',
+          element: <ListGrow />,
+        },
+        {
           path: '/launchpad/rabgrow',
           element: <RabGrow />,
         },
         {
-          path: '/launchpad/buywallet',
-          element: <BuyWallet />,
+          path: '/launchpad/liquidity',
+          element: <LiquidityLock />,
         },
         {
-          path: '/launchpad/connectwallet',
-          element: <ConnectWallet />,
+          path:'/launchpad/listlocks',
+          element:<LockList/>
         },
         {
           path: '',

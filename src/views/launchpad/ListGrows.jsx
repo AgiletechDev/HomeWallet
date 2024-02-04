@@ -1,9 +1,8 @@
 import { Box, Typography, Button, TextField } from '@mui/material'
 import rabbit from '../../assets/images/launchpad/imagesectionA.png'
 import CurrentSale from '../../components/CurrentSale'
-import { FooterLaunchpad } from '../../components'
 
-export const NineSection = () => {
+export const ListGrowsView = () => {
   return (
     <Box sx={{ width: '1000px', padding: '1em' }}>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -70,7 +69,6 @@ export const NineSection = () => {
           </Button>
         </Box>
       </Box>
-      <FooterLaunchpad/>
     </Box>
   )
 }

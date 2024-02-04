@@ -1,7 +1,10 @@
-import React from 'react'
+import { RabGrowView } from "../../views/launchpad/RabGrowView"
+
 
 export const RabGrow = () => {
   return (
-    <div>RabGrow</div>
+    <>
+    <RabGrowView />
+    </>
   )
 }

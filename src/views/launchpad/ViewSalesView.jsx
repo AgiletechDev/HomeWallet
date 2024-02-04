@@ -1,9 +1,10 @@
 import { Box, Typography, Button, TextField } from '@mui/material'
 import rabbit from '../../assets/images/launchpad/imagesectionA.png'
 import CurrentSale from '../../components/CurrentSale'
-import { FooterLaunchpad } from '../../components'
+import icono from '../../assets/images/launchpad/icono.png'
+import { Link } from 'react-router-dom'
 
-export const ThirdSection = () => {
+export const ViewSalesView = () => {
   return (
     <Box sx={{ width: '1000px', padding: '1em' }}>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -30,9 +31,22 @@ export const ThirdSection = () => {
             <Typography textAlign="left" variant="h5" fontWeight="700">
               Here you are - Wallet LaunchPad
             </Typography>
-            <Box sx={{ mt: '2em' }}>
-              <Button>Connect Wallet</Button>
-              <Button>How to Start</Button>
+            <Box sx={{ mt: '2em', display: 'flex', gap: '20px' }}>
+              <Button
+                sx={{
+                  background:
+                    'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+                  color: 'white',
+                  borderRadius: '5px',
+                }}
+              >
+                Connect Wallet
+              </Button>
+              <Link to="/launchpad/rabsale">
+                <Button sx={{ border: '1px solid gray', borderRadius: '5px' }}>
+                  How to Start
+                </Button>
+              </Link>
             </Box>
             <Typography textAlign="left" variant="h6" fontWeight="700">
               Powered by Agiletech
@@ -43,7 +57,12 @@ export const ThirdSection = () => {
             <img src={rabbit} alt="img rabbbit" />
           </Box>
         </Box>
-        <Box width="85%" marginTop="40px" marginBottom="50px">
+        <Box
+          width="100%"
+          marginTop="40px"
+          marginBottom="50px"
+          sx={{ display:'flex',flexDirection:'column',alignItems: 'center' }}
+        >
           <Typography
             variant="h6"
             component="p"
@@ -63,6 +82,7 @@ export const ThirdSection = () => {
             placeholder="Enter token name or token symbol"
             fullWidth="true"
           />
+          <img src={icono} alt="icono" style={{ width: '50px' }} />
           <Button
             sx={{ mt: '2em', border: '1px solid #14A8FC', alignSelf: 'strech' }}
           >
@@ -70,7 +90,6 @@ export const ThirdSection = () => {
           </Button>
         </Box>
       </Box>
-      <FooterLaunchpad/>
     </Box>
   )
 }

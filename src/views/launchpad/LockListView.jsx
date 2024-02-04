@@ -1,6 +1,4 @@
-import { Box, Typography, Button, Card } from '@mui/material'
-import { FooterLaunchpad } from '../../components'
-import image11 from '../../assets/images/launchpad/image11.png'
+import { Box, Typography, Button } from '@mui/material'
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
 import TableCell from '@mui/material/TableCell'
@@ -9,77 +7,53 @@ import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 
-function createData(token, symbol, address, amount, action) {
-  return { token, symbol, address, amount, action }
+function createData(index, name, symbol, address, amount, action) {
+  return { index, name, symbol, address, amount, action }
 }
 const rows = [
   createData(
-    'Wrapped BNB/Test mainnet contract [WBNB/TMC]',
-    'Cake-LP',
-    '0x4b868889...c315305',
+    '0',
+    'Enetty',
+    'ENT',
+    'Ox13774 _. be23f24',
+    '2000',
+    'View'
+  ),
+  createData(
+    '1',
+    'Noni_PIE',
+    'NOMI',
+    'Ox13774 _. be23f24',
+    '1000',
+    'View'
+  ),
+  createData(
+    '2',
+    'Bread D',
+    'Cooke',
+    'Ox13774 _. be23f24',
+    '30000',
+    'View'
+  ),
+  createData(
+    '3',
+    'CDT',
+    'TTT',
+    'Ox13774 _. be23f24',
     '0',
     'View'
   ),
 ]
-export const EightSection = () => {
+export const LockListView = () => {
   return (
     <Box sx={{ width: '1000px', padding: '1em', mt: '5em' }}>
       <Box
         sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
         <Typography textAlign="center" variant="h3" fontWeight="bold">
-          Create RAB Sale
+          Tokens Lock
         </Typography>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em' }}>
-          <Card
-            sx={{
-              mt: '3em',
-              width: '100%',
-              height: '300px',
-              display: 'flex',
-              justifyContent: 'space-between',
-              borderRadius: '20px',
-              paddingLeft: '50px',
-              boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-            }}
-          >
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-              }}
-            >
-              <Typography
-                variant="h5"
-                fontWeight="600"
-                sx={{ marginBottom: '10px' }}
-              >
-                Raise capital and launch your project with easy steps and the
-                best fees in the market to reach our global investors.
-                Automatically list your Token after successful fundraising on:
-                PancakeSwap, UniSwap
-              </Typography>
-
-              <Button
-                variant="contained"
-                sx={{
-                  marginTop: '30px',
-                  marginBottom: '30px',
-                  borderRadius: '10px',
-                  textTransform: 'initial',
-                  marginRight: '330px',
-                }}
-              >
-                Connect Wallet
-              </Button>
-            </Box>
-
-            <img src={image11} alt="image11" />
-          </Card>
-          <Typography textAlign="center" variant="h3" fontWeight="bold">
-            Let`s Start
-          </Typography>
           <TableContainer
             sx={{
               mt: '2em',
@@ -98,7 +72,10 @@ export const EightSection = () => {
             >
               <TableHead>
                 <TableRow sx={{ backgroundColor: '#f4f4f4' }}>
-                  <TableCell sx={{ color: 'black' }}>Token</TableCell>
+                  <TableCell sx={{ color: 'black' }}>Index</TableCell>
+                  <TableCell align="center" sx={{ color: 'black' }}>
+                    Name
+                  </TableCell>
                   <TableCell align="center" sx={{ color: 'black' }}>
                     Symbol
                   </TableCell>
@@ -123,7 +100,10 @@ export const EightSection = () => {
                     }}
                   >
                     <TableCell component="th" scope="row">
-                      {row.token}
+                      {row.index}
+                    </TableCell>
+                    <TableCell component="th" scope="row">
+                      {row.name}
                     </TableCell>
                     <TableCell align="center">{row.symbol}</TableCell>
                     <TableCell align="justify">{row.address}</TableCell>
@@ -156,7 +136,6 @@ export const EightSection = () => {
           </Button>
         </Box>
       </Box>
-      <FooterLaunchpad />
     </Box>
   )
 }

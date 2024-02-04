@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AppBar, Box, Button, Divider, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Button, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next'
 import spainFlag from '../assets/images/portal/spain.png';
 import estadosunidos from '../assets/images/portal/estadosunidos.png';
@@ -95,7 +95,7 @@ const Navbar = () => {
             padding: '0',
             background: '#33277b',
             backdropFilter: 'blur(18px)',
-            position: 'relative'
+            position: 'relative',
           }}
           >
           <Link to='/' color='inherit' style={{

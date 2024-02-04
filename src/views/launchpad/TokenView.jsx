@@ -1,8 +1,7 @@
 import { Box, Typography, Button, Card, TextField } from '@mui/material'
-import { FooterLaunchpad } from '../../components'
 import image11 from '../../assets/images/launchpad/image11.png'
 
-export const SevenSection = () => {
+export const TokenView = () => {
   return (
     <Box sx={{ width: '1000px', padding: '1em', mt: '5em' }}>
       <Box
@@ -111,7 +110,6 @@ export const SevenSection = () => {
           </Button>
         </Box>
       </Box>
-      <FooterLaunchpad />
     </Box>
   )
 }

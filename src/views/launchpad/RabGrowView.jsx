@@ -1,8 +1,8 @@
 import { Box, Typography, Button, Card, TextField } from '@mui/material'
-import { FooterLaunchpad } from '../../components'
+
 import image11 from '../../assets/images/launchpad/image11.png'
 
-export const FourthSection = () => {
+export const RabGrowView = () => {
   return (
     <Box sx={{ width: '1000px', padding: '1em', mt: '5em' }}>
       <Box
@@ -138,7 +138,6 @@ export const FourthSection = () => {
           </Button>
         </Box>
       </Box>
-      <FooterLaunchpad />
     </Box>
   )
 }

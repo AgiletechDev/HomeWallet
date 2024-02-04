@@ -1,8 +1,7 @@
 import { Box, Typography, Button, Card, TextField } from '@mui/material'
-import { FooterLaunchpad } from '../../components'
 import image11 from '../../assets/images/launchpad/image11.png'
 
-export const FifthSection = () => {
+export const LockView = () => {
   return (
     <Box sx={{ width: '1000px', padding: '1em', mt: '5em' }}>
       <Box
@@ -110,7 +109,6 @@ export const FifthSection = () => {
           </Button>
         </Box>
       </Box>
-      <FooterLaunchpad />
     </Box>
   )
 }
