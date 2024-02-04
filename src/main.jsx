@@ -6,6 +6,7 @@ import i18next from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import es from '../i18n/español/es.json'
 import en from '../i18n/ingles/en.json'
+import './App.css'
 
 i18next.use(initReactI18next).init({
   lng: "es", 

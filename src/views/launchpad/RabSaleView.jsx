@@ -1,10 +1,9 @@
 import { Box, Typography, Button, Card, TextField } from '@mui/material'
-import { FooterLaunchpad } from '../../components'
 import image11 from '../../assets/images/launchpad/image11.png'
 
-export const SixSection = () => {
+export const RabSaleView = () => {
   return (
-    <Box sx={{ width: '1000px', padding: '1em', mt: '5em' }}>
+    <Box sx={{  padding: '1em', mt: '5em' }}>
       <Box
         sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
@@ -140,7 +139,6 @@ export const SixSection = () => {
           </Button>
         </Box>
       </Box>
-      <FooterLaunchpad />
     </Box>
   )
 }

@@ -1,7 +1,9 @@
-import React from 'react'
+import { LockView } from "../../views/launchpad/LockView"
 
 export const Lock = () => {
   return (
-    <div>Lock</div>
+    <>
+    <LockView />
+    </>
   )
 }

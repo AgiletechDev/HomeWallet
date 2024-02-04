@@ -7,7 +7,7 @@ import imgLogo from '../assets/images/portal/logo.png'
 export const FooterLaunchpad = () => {
   return (
     <Box
-    sx={{ mt: '5em', display: 'flex', flexDirection: 'column', gap: '2em' }}
+    sx={{ mt: '5em', display: 'flex', flexDirection: 'column', gap: '2em', maxWidth:'1000px', margin:'auto', padding:'2em' }}
   >
     <img src={imgLogo} width="20%" />
     <Typography>

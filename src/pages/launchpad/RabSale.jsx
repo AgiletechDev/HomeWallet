@@ -1,8 +1,11 @@
-import React from 'react'
+import { RabSaleView } from "../../views/launchpad/RabSaleView"
+
 
 const RabSale = () => {
   return (
-    <div>RabSale</div>
+    <>
+    <RabSaleView />
+    </>
   )
 }
 

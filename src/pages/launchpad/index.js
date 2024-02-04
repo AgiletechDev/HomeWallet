@@ -1,5 +1,4 @@
-export * from './BuyWallet'
-export * from './ConnectWallet'
+export * from './ViewSales'
 export * from './Lock'
 export * from './RabGrow'
 export * from './RabSale'
