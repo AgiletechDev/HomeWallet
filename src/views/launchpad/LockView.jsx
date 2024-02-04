@@ -1,9 +1,19 @@
-import { Box, Typography, Button, Card, TextField } from '@mui/material'
-import image11 from '../../assets/images/launchpad/image11.png'
+import {
+  Box,
+  Typography,
+  Button,
+  Card,
+  TextField,
+  InputAdornment,
+} from '@mui/material'
+import image11 from '../../assets/images/launchpad/image 15.png'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import Checkbox from '@mui/material/Checkbox'
+import InfoIcon from '@mui/icons-material/Info'
 
 export const LockView = () => {
   return (
-    <Box sx={{ width: '1000px', padding: '1em', mt: '5em' }}>
+    <Box sx={{ width: '900px', padding: '1em', mt: '5em' }}>
       <Box
         sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
@@ -15,11 +25,10 @@ export const LockView = () => {
             sx={{
               mt: '3em',
               width: '100%',
-              height: '300px',
+              height: '200px',
               display: 'flex',
               justifyContent: 'space-between',
               borderRadius: '20px',
-              paddingLeft: '50px',
               boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
             }}
           >
@@ -28,29 +37,17 @@ export const LockView = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
+                padding: '2em',
               }}
             >
               <Typography
-                variant="h5"
+                variant="h6"
                 fontWeight="600"
-                sx={{ marginBottom: '10px' }}
+                sx={{ marginBottom: '10px', textAlign: 'justify' }}
               >
                 Token lock feature is used for Developer/Founding Team Token
                 unlocking can be done on set time with flexible amount
               </Typography>
-
-              <Button
-                variant="contained"
-                sx={{
-                  marginTop: '30px',
-                  marginBottom: '30px',
-                  borderRadius: '10px',
-                  textTransform: 'initial',
-                  marginRight: '330px',
-                }}
-              >
-                Connect Wallet
-              </Button>
             </Box>
 
             <img src={image11} alt="image11" />
@@ -63,50 +60,108 @@ export const LockView = () => {
               padding: '2em',
               display: 'flex',
               flexDirection: 'column',
-              gap: '1em',
+              gap: '3em',
+              backgroundColor: 'white',
             }}
           >
-            <Typography textAlign="left" variant="h5" fontWeight="bold">
-              Token or LP Token address
-            </Typography>
-            <TextField
-              label="Token Address"
-              placeholder="0.0"
-              fullWidth="true"
-            />
-            <Typography textAlign="left" variant="h6" fontWeight="bold">
-              Title
-            </Typography>
-
-            <TextField label="ex Muck" placeholder="0.0" fullWidth="true" />
-            <Typography textAlign="left" variant="h6" fontWeight="bold">
-              Amount
-            </Typography>
-            <TextField label="ex Muck" placeholder="0.0" fullWidth="true" />
-            <Typography textAlign="left" variant="h5" fontWeight="bold">
-              Lock until (UTC time)
-            </Typography>
-            <TextField label="ex Muck" placeholder="0.0" fullWidth="true" />
+            <Box>
+              <Typography textAlign="left" variant="h6" fontWeight="bold">
+                <span style={{ color: '#14A8FC' }}>*</span> Token or LP Token
+                address
+              </Typography>
+              <TextField
+                label="Token Address"
+                placeholder="0.0"
+                fullWidth="true"
+              />
+            </Box>
+            <Box>
+              <Typography textAlign="left" variant="h6" fontWeight="bold">
+                <span style={{ color: '#14A8FC' }}>*</span> Title
+              </Typography>
+              <TextField label="ex Muck" placeholder="0.0" fullWidth="true" />
+            </Box>
+            <Box>
+              <Typography textAlign="left" variant="h6" fontWeight="bold">
+                <span style={{ color: '#14A8FC' }}>*</span> Amount
+              </Typography>
+              <TextField
+                label="ex Muck"
+                placeholder="0"
+                fullWidth
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <Button
+                        variant="body1"
+                        fontWeight="bold"
+                        sx={{ color: '#14A8FC', backgroundColor: 'white' }}
+                      >
+                        MAX
+                      </Button>
+                    </InputAdornment>
+                  ),
+                }}
+                sx={{ justifyContent: 'flex-start' }}
+              />
+              <FormControlLabel control={<Checkbox />} label="Using Vesting?" />
+            </Box>
+            <Box>
+              <Typography textAlign="left" variant="h5" fontWeight="bold">
+                <span style={{ color: '#14A8FC' }}>*</span> Lock until (UTC
+                time)
+              </Typography>
+              <TextField label="ex Muck" placeholder="0.0" fullWidth="true" />
+            </Box>
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                backgroundColor: '#e8f0fb',
+                padding: '1em',
+              }}
+            >
+              <InfoIcon sx={{ color: '#0a85d9' }} />
+              <Typography color="#0a85d9">
+                Please exclude lockup address
+                0x79554D1AAc42F42177509B5e55E2614B2415C11B from fees, rewards,
+                max tx amount to start locking tokens. We don&apos;t support
+                rebase tokens
+              </Typography>
+            </Box>
           </Box>
-          <Typography textAlign="left" variant="p">
-            Disclaimer: The information provided shall not in any way constitute
-            a recommendation as to whether you should invest in any product
-            discussed. We accept no liability for any loss occasioned to any
-            person acting or refraining from action as a result of any material
-            provided or published.
-          </Typography>
-          <Button
-            variant="contained"
+          <Box
             sx={{
-              marginTop: '30px',
-              marginBottom: '30px',
-              borderRadius: '10px',
-              textTransform: 'initial',
-              marginRight: '330px',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              width: 'fit-content',
+              margin: '0 auto',
+              mb: '5em',
             }}
           >
-            Connect Wallet
-          </Button>
+            <Typography textAlign="justify" variant="p">
+              <span style={{ color: '#14A8FC' }}>Disclaimer: </span>T The
+              information provided shall not in any way constitute a
+              recommendation as to whether you should invest in any product
+              discussed. We accept no liability for any loss occasioned to any
+              person acting or refraining from action as a result of any
+              material provided or published
+            </Typography>
+            <Button
+              variant="contained"
+              sx={{
+                marginTop: '30px',
+                borderRadius: '10px',
+                textTransform: 'initial',
+                background:
+                  'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+              }}
+            >
+              Connect Wallet
+            </Button>
+          </Box>
         </Box>
       </Box>
     </Box>

@@ -1,4 +1,4 @@
-import { Box, Typography, Button } from '@mui/material'
+import { Box, Typography, Button, TextField } from '@mui/material'
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
 import TableCell from '@mui/material/TableCell'
@@ -6,10 +6,14 @@ import TableContainer from '@mui/material/TableContainer'
 import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
+import * as React from 'react'
+import Tabs from '@mui/material/Tabs'
+import Tab from '@mui/material/Tab'
 
-function createData(index, name, symbol, address, amount, action) {
-  return { index, name, symbol, address, amount, action }
+function createData(index, name, symbol, address, amount) {
+  return { index, name, symbol, address, amount, action: <Button variant="contained" sx={{ color: 'white', backgroundColor: '#14A8FC' }}>View</Button> };
 }
+
 const rows = [
   createData(
     '0',
@@ -17,7 +21,7 @@ const rows = [
     'ENT',
     'Ox13774 _. be23f24',
     '2000',
-    'View'
+
   ),
   createData(
     '1',
@@ -25,7 +29,6 @@ const rows = [
     'NOMI',
     'Ox13774 _. be23f24',
     '1000',
-    'View'
   ),
   createData(
     '2',
@@ -33,7 +36,6 @@ const rows = [
     'Cooke',
     'Ox13774 _. be23f24',
     '30000',
-    'View'
   ),
   createData(
     '3',
@@ -41,19 +43,37 @@ const rows = [
     'TTT',
     'Ox13774 _. be23f24',
     '0',
-    'View'
   ),
 ]
 export const LockListView = () => {
+  const [value, setValue] = React.useState('one')
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue)
+  }
+
   return (
     <Box sx={{ width: '1000px', padding: '1em', mt: '5em' }}>
       <Box
-        sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+        sx={{ display: 'flex', flexDirection: 'column',  alignItems: 'flex-start' }}
       >
-        <Typography textAlign="center" variant="h3" fontWeight="bold">
+         <Typography sx={{ textAlign: 'left' }} variant="h4" fontWeight="bold">
           Tokens Lock
         </Typography>
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em', mt:'2em' }}>
+          <Box sx={{ width: '100%'}}>
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              textColor="primary"
+              indicatorColor="primary"
+              aria-label="secondary tabs example"
+            >
+              <Tab value="one" label="All Lock" />
+              <Tab value="two" label="My Lock" />
+            </Tabs>
+            <TextField label="Search by name, symbol or token address..." placeholder="0.0" fullWidth="true" sx={{mt:'1em'}}/>
+          </Box>
           <TableContainer
             sx={{
               mt: '2em',
@@ -96,44 +116,55 @@ export const LockListView = () => {
                     key={row.name}
                     sx={{
                       '&:last-child td, &:last-child th': { borderBottom: 0 },
-                      backgroundColor: '#f4f4f4',
+                      backgroundColor: 'white',
                     }}
                   >
-                    <TableCell component="th" scope="row">
+                    <TableCell component="th" scope="row" sx={{color:'#14A8FC'}}>
                       {row.index}
                     </TableCell>
                     <TableCell component="th" scope="row">
                       {row.name}
                     </TableCell>
                     <TableCell align="center">{row.symbol}</TableCell>
-                    <TableCell align="justify">{row.address}</TableCell>
+                    <TableCell align="justify" sx={{color:'#14A8FC'}}>{row.address}</TableCell>
                     <TableCell align="justify">{row.amount}</TableCell>
-                    <TableCell align="justify">{row.action}</TableCell>
+                    <TableCell align="center">{row.action}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
             </Table>
           </TableContainer>
-          <Typography textAlign="left" variant="p">
-            Warning: Disclaimer: Make sure your token is not listed on any AMM
-            yet The information provided shall not in any way constitute a
+          <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            width: 'fit-content',
+            margin: '0 auto',
+            mb:'5em'
+          }}
+        >
+          <Typography textAlign="justify" variant="p">
+            <span style={{ color: '#14A8FC' }}>Disclaimer: </span>The
+            information provided shall not in any way constitute a
             recommendation as to whether you should invest in any product
             discussed. We accept no liability for any loss occasioned to any
-            person acting or refraining from action as a result of any material
-            provided or published
+            person acting or refraining from action as a result of any
+            material provided or published
           </Typography>
           <Button
             variant="contained"
             sx={{
               marginTop: '30px',
-              marginBottom: '30px',
               borderRadius: '10px',
               textTransform: 'initial',
-              marginRight: '330px',
+              background:
+                  'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
             }}
           >
             Connect Wallet
           </Button>
+        </Box>
         </Box>
       </Box>
     </Box>

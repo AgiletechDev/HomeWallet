@@ -2,7 +2,7 @@ import { Box, Typography, Button, TextField } from '@mui/material'
 import rabbit from '../../assets/images/launchpad/imagesectionA.png'
 import CurrentSale from '../../components/CurrentSale'
 import icono from '../../assets/images/launchpad/icono.png'
-import { Link } from 'react-router-dom'
+
 
 export const ViewSalesView = () => {
   return (
@@ -42,14 +42,9 @@ export const ViewSalesView = () => {
               >
                 Connect Wallet
               </Button>
-              <Link to="/launchpad/rabsale">
-                <Button sx={{ border: '1px solid gray', borderRadius: '5px' }}>
-                  How to Start
-                </Button>
-              </Link>
             </Box>
             <Typography textAlign="left" variant="h6" fontWeight="700">
-              Powered by Agiletech
+              Powered by <span style={{color:'#14A8FC', textTransform:'uppercase', textStyle:'italic'}}>Agiletech</span>
             </Typography>
           </Box>
 
@@ -82,9 +77,10 @@ export const ViewSalesView = () => {
             placeholder="Enter token name or token symbol"
             fullWidth="true"
           />
-          <img src={icono} alt="icono" style={{ width: '50px' }} />
+          <img src={icono} alt="icono" style={{ width: '50px', marginTop:'2em' }} />
           <Button
-            sx={{ mt: '2em', border: '1px solid #14A8FC', alignSelf: 'strech' }}
+            sx={{color:'white', mt: '2em', border: '1px solid #14A8FC', alignSelf: 'strech',background:
+            'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)', }}
           >
             Connect Wallet
           </Button>
