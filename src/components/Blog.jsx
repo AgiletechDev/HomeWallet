@@ -1,5 +1,6 @@
 import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
 import imgPost from '../assets/images/portal/section A.png';
+import { useTranslation } from 'react-i18next'
 
 const posts = [
   {
@@ -52,6 +53,8 @@ const posts = [
 export const Blog = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+  const { t } = useTranslation();
 
  return (
   <Box
@@ -108,7 +111,7 @@ export const Blog = () => {
   >
     <aside style={{ color: '#33277b', fontSize: '30px' }}>
       <Typography fontWeight="bold" variant="h6">
-        Recent posts
+        {t("WALLETBLOG_SUBTITLE1")}
       </Typography>
       <div style={{ width: '30px', height: '3px', backgroundColor: 'gray' }} />
       <br />

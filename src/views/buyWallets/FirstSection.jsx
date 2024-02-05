@@ -4,8 +4,13 @@ import apoyo2_1 from '../../assets/images/portal/apoyo2_1.png'
 import apoyo4 from '../../assets/images/portal/apoyo4.png'
 import circulos from '../../assets/images/portal/circulos.png'
 import cuadro1 from '../../assets/images/portal/cuadro1.png'
+import { useTranslation } from 'react-i18next'
 
 export const FirstSection = () => {
+
+  const { t } = useTranslation();
+
+
   return (
     <Box sx={{
       display: 'flex',
@@ -28,7 +33,7 @@ export const FirstSection = () => {
         width: '99vw',
         }}
       >
-        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#33277b' }}>COMPRAR BILLETERA</Typography>
+        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#33277b' }}>{t("BUYWALLET_TITLE")}</Typography>
         <img src={lineahorizonta1} alt="" width='15%' />
        
         <Box sx={{

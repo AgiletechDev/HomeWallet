@@ -1,64 +1,46 @@
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Paper,
-  useTheme,
-  useMediaQuery,
-  Box,
-} from '@mui/material';
-import { useTranslation } from 'react-i18next';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, useTheme, useMediaQuery, Box } from '@mui/material';
+import { useTranslation } from 'react-i18next'
 
-function createData(t, categoryKey, allocationKey, descriptionKey, vestingKey) {
-  return {
-    category: t(categoryKey),
-    allocation: t(allocationKey),
-    description: t(descriptionKey),
-    vesting: t(vestingKey),
-  };
+function createData(category, allocation, description, vesting) {
+  return { category, allocation, description, vesting };
 }
 
-export const TableWallet = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const { t } = useTranslation();
 
+export const TableWallet = () => {
+
+  const { t } = useTranslation();
   const rows = [
     createData(
-      t,
-      'ROW1_CATEGORY_TOK',
-      'ROW1_ALLOCATION_TOK',
-      'ROW1_DESCRIPTION_TOK',
-      'ROW1_VESTING_TOK'
+      t("TOKENOMIC_CATEGORY1"),
+      t("TOKENOMIC_ALLOCATION1"),
+      t("TOKENOMIC_DESCRIPTION1"),
+      t("TOKENOMIC_VESTING1")
     ),
     createData(
-      t,
-      'ROW2_CATEGORY_TOK',
-      'ROW2_ALLOCATION_TOK',
-      'ROW2_DESCRIPTION_TOK',
-      'ROW2_VESTING_TOK'
+      t("TOKENOMIC_CATEGORY2"),
+      t("TOKENOMIC_ALLOCATION2"),
+      t("TOKENOMIC_DESCRIPTION2"),
+      t("TOKENOMIC_VESTING2")
     ),
     createData(
-      t,
-      'ROW3_CATEGORY_TOK',
-      'ROW3_ALLOCATION_TOK',
-      'ROW3_DESCRIPTION_TOK',
-      'ROW3_VESTING_TOK'
+      t("TOKENOMIC_CATEGORY3"),
+      t("TOKENOMIC_ALLOCATION3"),
+      t("TOKENOMIC_DESCRIPTION3"),
+      t("TOKENOMIC_VESTING3")
     ),
     createData(
-      t,
-      'ROW4_CATEGORY_TOK',
-      'ROW4_ALLOCATION_TOK',
-      'ROW4_DESCRIPTION_TOK',
-      'ROW4_VESTING_TOK'
+      t("TOKENOMIC_CATEGORY4"),
+      t("TOKENOMIC_ALLOCATION4"),
+      t("TOKENOMIC_DESCRIPTION4"),
+      t("TOKENOMIC_VESTING4")
     ),
   ];
 
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
-    <Box sx={{ width: isMobile ? '100%' : '1000px', mt: '5em' }}>
+    <Box sx={{ width: isMobile ? '100%' : '1000px',  mt: '5em' }}>
       <TableContainer
         sx={{
           mt: '5em',
@@ -68,14 +50,7 @@ export const TableWallet = () => {
         }}
         component={Paper}
       >
-         <Table
-          sx={{
-            minWidth: 650,
-            borderCollapse: 'separate',
-            borderSpacing: '5px',
-          }}
-          aria-label="simple table"
-        >
+        <Table sx={{ minWidth: 650, borderCollapse: 'separate', borderSpacing: '5px' }} aria-label="simple table">
           <TableHead>
             <TableRow sx={{}}>
               <TableCell
@@ -87,7 +62,7 @@ export const TableWallet = () => {
                   fontWeight: 'bold',
                 }}
               >
-                {t("HEADER_CATEGORY_TOK")}
+                {t("TOKENOMIC_CATEGORY")}
               </TableCell>
               <TableCell
                 align="center"
@@ -98,7 +73,7 @@ export const TableWallet = () => {
                   fontWeight: 'bold',
                 }}
               >
-                {t("HEADER_ALLOCATION_TOK")}
+                {t("TOKENOMIC_ALLOCATION")}
               </TableCell>
               <TableCell
                 align="center"
@@ -109,7 +84,7 @@ export const TableWallet = () => {
                   fontWeight: 'bold',
                 }}
               >
-                {t("HEADER_DESCRIPTION_TOK")}
+                {t("TOKENOMIC_DESCRIPTION")}
               </TableCell>
               <TableCell
                 align="center"
@@ -120,7 +95,7 @@ export const TableWallet = () => {
                   fontWeight: 'bold',
                 }}
               >
-                {t("HEADER_VESTING_TOK")}
+                {t("TOKENOMIC_VESTING")}
               </TableCell>
             </TableRow>
           </TableHead>
@@ -139,8 +114,7 @@ export const TableWallet = () => {
                   sx={{
                     color: '#fff',
                     borderRadius: '10px',
-                    background:
-                      'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
                   }}
                 >
                   {row.category}
@@ -150,8 +124,7 @@ export const TableWallet = () => {
                   sx={{
                     color: '#fff',
                     borderRadius: '10px',
-                    background:
-                      'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
                   }}
                 >
                   {row.allocation}
@@ -161,8 +134,7 @@ export const TableWallet = () => {
                   sx={{
                     color: '#fff',
                     borderRadius: '10px',
-                    background:
-                      'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
                   }}
                 >
                   {row.description}
@@ -172,8 +144,7 @@ export const TableWallet = () => {
                   sx={{
                     color: '#fff',
                     borderRadius: '10px',
-                    background:
-                      'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
                   }}
                 >
                   {row.vesting}
