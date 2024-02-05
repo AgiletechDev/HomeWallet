@@ -3,10 +3,12 @@ import iconotelegram from '../assets/images/portal/svg/iconotelegram.svg'
 import iconox from '../assets/images/portal/svg/iconox.svg'
 import iconodiscord from '../assets/images/portal/svg/iconodiscord.svg'
 import iconoYT from '../assets/images/portal/svg/iconoYT.svg'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+  const { t } = useTranslation();
 
   return (
     <Box
@@ -78,7 +80,7 @@ const Footer = () => {
             color: 'white',
           }}
         >
-          CONTACT US
+          {t("CONTACT_US")}
         </Typography>
 
         <Box

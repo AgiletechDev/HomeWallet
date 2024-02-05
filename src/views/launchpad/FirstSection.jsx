@@ -2,10 +2,13 @@ import { Box, Button, Typography, useTheme, useMediaQuery  } from '@mui/material
 import rabbit from '../../assets/images/launchpad/imagesectionA.png'
 import bitcoin from '../../assets/images/launchpad/bitcoin.png'
 import etherum from '../../assets/images/launchpad/etherum.png'
+import { useTranslation } from 'react-i18next'
 
 export const FirstSection = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+  const { t } = useTranslation();
 
   return (
     <Box
