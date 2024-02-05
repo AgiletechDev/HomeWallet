@@ -1,37 +1,41 @@
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, useTheme, useMediaQuery, Box, Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next'
 
 function createData(category, allocation, description, vesting) {
   return { category, allocation, description, vesting };
 }
 
-const rows = [
-  createData(
-    'Comunidad',
-    '55% del suministro máximo',
-    'La comunidad mundial de usuarios posee la mayor parte del suministro máximo de VIC Token para votar y recomendar funciones, actualizaciones en la aplicación y otros cambios importantes.',
-    'Ya distribuido a usuarios de todo el mundo'
-  ),
-  createData(
-    'Fondo de liquidez',
-    '7% del suministro máximo',
-    'Se utiliza para agregar al fondo de liquidez en un intercambio descentralizado (DEX). En el cual, la red BSC representa el 6% y Arbitrum representa el 1% del suministro máximo.',
-    'Bloqueado por 5 años'
-  ),
-  createData(
-    'Financiamiento de reserva',
-    '2% del suministro máximo',
-    'Se utiliza para cubrir cualquier gasto u obligación financiera futura, especialmente si surge algo inesperado.',
-    'Distribuido cuando sea necesario y cuando surja imprevisto.'
-  ),
-  createData(
-    'Quemar',
-    '36% del suministro máximo',
-    `Se ha quemado el 36% del VIC en suministro máximo (incluido el 21,6% del Equipo y el 14,4% del Ecosistema).El equipo VICNET acuñará 1.000.000 VIC mensualmente hasta alcanzar el suministro máximo de 100.000.000 VIC y distribuirlo proporcionalmente:-600.000 VIC for Team se asignan cada mes a las operaciones de la empresa para invertir en los departamentos de I+D y Marketing.-400,000 VIC para Ecosytem asignados para recompensar el ecosistema de la billetera, incluidas recompensas de apuesta y otros incentivos para los usuarios.`,
-    'Extraído y distribuido mensualmente durante 36 meses desde el momento de TGE+1'
-  ),
-];
 
 export const TableWallet = () => {
+
+  const { t } = useTranslation();
+  const rows = [
+    createData(
+      t("TOKENOMIC_CATEGORY1"),
+      t("TOKENOMIC_ALLOCATION1"),
+      t("TOKENOMIC_DESCRIPTION1"),
+      t("TOKENOMIC_VESTING1")
+    ),
+    createData(
+      t("TOKENOMIC_CATEGORY2"),
+      t("TOKENOMIC_ALLOCATION2"),
+      t("TOKENOMIC_DESCRIPTION2"),
+      t("TOKENOMIC_VESTING2")
+    ),
+    createData(
+      t("TOKENOMIC_CATEGORY3"),
+      t("TOKENOMIC_ALLOCATION3"),
+      t("TOKENOMIC_DESCRIPTION3"),
+      t("TOKENOMIC_VESTING3")
+    ),
+    createData(
+      t("TOKENOMIC_CATEGORY4"),
+      t("TOKENOMIC_ALLOCATION4"),
+      t("TOKENOMIC_DESCRIPTION4"),
+      t("TOKENOMIC_VESTING4")
+    ),
+  ];
+
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -58,7 +62,7 @@ export const TableWallet = () => {
                   fontWeight: 'bold',
                 }}
               >
-                Category
+                {t("TOKENOMIC_CATEGORY")}
               </TableCell>
               <TableCell
                 align="center"
@@ -69,7 +73,7 @@ export const TableWallet = () => {
                   fontWeight: 'bold',
                 }}
               >
-                Allocation
+                {t("TOKENOMIC_ALLOCATION")}
               </TableCell>
               <TableCell
                 align="center"
@@ -80,7 +84,7 @@ export const TableWallet = () => {
                   fontWeight: 'bold',
                 }}
               >
-                Description
+                {t("TOKENOMIC_DESCRIPTION")}
               </TableCell>
               <TableCell
                 align="center"
@@ -91,7 +95,7 @@ export const TableWallet = () => {
                   fontWeight: 'bold',
                 }}
               >
-                Vesting
+                {t("TOKENOMIC_VESTING")}
               </TableCell>
             </TableRow>
           </TableHead>

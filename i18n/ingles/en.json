@@ -68,6 +68,46 @@
     "PREGUNTA5": "Transaction fees in the wallet",
     "RESPUESTA5": "As each load is picked up and delivered, data is collected and time-stamped at each point in the supply chain. All parties are updated in real time as each transaction is made.",
     "PREGUNTA6": "Is it possible to create multiple wallets in Agra wallet?",
-    "RESPUESTA6": "As each load is picked up and delivered, data is collected and time-stamped at each point in the supply chain. All parties are updated in real time as each transaction is made."
+    "RESPUESTA6": "As each load is picked up and delivered, data is collected and time-stamped at each point in the supply chain. All parties are updated in real time as each transaction is made.",
+
+    "TOKENOMIC_TITLE": "Tokenómica",
+    "TOKENOMIC_CATEGORY": "Category",
+    "TOKENOMIC_ALLOCATION": "Allocation",
+    "TOKENOMIC_DESCRIPTION": "Description",
+    "TOKENOMIC_VESTING": "Vesting",
+    
+    
+    "TOKENDESC_TEXT1": "Token name: ",
+    "TOKENDESC_TEXT2": "Token Type",
+    "TOKENDESC_TEXT3": "Maximum supply: ",
+
+    "TOKENOMIC_CATEGORY1": "Community",
+    "TOKENOMIC_ALLOCATION1": "55% of maximum supply",
+    "TOKENOMIC_DESCRIPTION1": "The global user community holds the majority of the maximum supply of VIC Token to vote and recommend features, in-app updates, and other important changes.",
+    "TOKENOMIC_VESTING1": "Already distributed to users around the world",
+
+    "TOKENOMIC_CATEGORY2": "Liquidity fund",
+    "TOKENOMIC_ALLOCATION2": "7% of maximum supply",
+    "TOKENOMIC_DESCRIPTION2": "It is used to add to the liquidity pool on a decentralized exchange (DEX). In which, the BSC network represents 6% and Arbitrum represents 1% of the maximum supply.",
+    "TOKENOMIC_VESTING2": "Blocked for 5 years",
+    
+    "TOKENOMIC_CATEGORY3": "Reserve Financing",
+    "TOKENOMIC_ALLOCATION3": "2% of maximum supply",
+    "TOKENOMIC_DESCRIPTION3": "It is used to cover any future expenses or financial obligations, especially if something unexpected arises.",
+    "TOKENOMIC_VESTING3": "Distributed when necessary and when the unforeseen arises.",
+   
+    "TOKENOMIC_CATEGORY4": "Burn",
+    "TOKENOMIC_ALLOCATION4": "36% of maximum supply",
+    "TOKENOMIC_DESCRIPTION4": "36% of the VIC has been burned at maximum supply (including 21.6% of the Team and 14.4% of the Ecosystem). The VICNET team will mint 1,000,000 VIC monthly until reaching the maximum supply of 100,000,000 VIC and distribute it proportionally:-600,000 VIC for Team are allocated each month to company operations to invest in R&D and Marketing departments.-400,000 VIC for Ecosytem allocated to reward the wallet ecosystem, including staking rewards and others incentives for users.",
+    "TOKENOMIC_VESTING4": "Extracted and distributed monthly for 36 months from the time of TGE+1",
+
+    "WHITEPAPER_TEXT": "This detailed document is your exclusive passport to fully understanding our innovative technology, our platform goals, and the exciting future we are building",
+    "WHITEPAPER_DOWNLOAD": "DOWNLOAD",
+
+    "BACKERSANDPARTNERS": "BACKERS AND PARTNERS",
+
+    "WALLETBLOG_SUBTITLE1": "Recent post",
+    "BUYWALLET_TITLE": "BUY WALLET"
+
 
 }

@@ -4,8 +4,11 @@ import apoyo2_1 from '../../assets/images/portal/apoyo2_1.png'
 import apoyo4 from '../../assets/images/portal/apoyo4.png'
 import circulos from '../../assets/images/portal/circulos.png'
 import cuadro1 from '../../assets/images/portal/cuadro1.png'
+import { useTranslation } from 'react-i18next'
 
 export const FirstSection = () => {
+  const { t } = useTranslation();
+
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
@@ -47,7 +50,7 @@ export const FirstSection = () => {
             color: '#33277b',
           }}
         >
-          PATROCINADORES Y SOCIOS
+          {t("BACKERSANDPARTNERS")}
         </Typography>
         <img src={lineahorizonta1} alt="" width="15%" />
 

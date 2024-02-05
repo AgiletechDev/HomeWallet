@@ -1,8 +1,12 @@
 import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
 import ArrowRight from '@mui/icons-material/KeyboardArrowRight'
+import { useTranslation } from 'react-i18next'
+
+
 export const TokenDesc = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+  const { t } = useTranslation();
 
   return (
     <Box sx={{ padding: '1em' }}>
@@ -35,7 +39,7 @@ export const TokenDesc = () => {
           }}
         >
           <Typography fontWeight="bold" sx={{ mt: '1em', fontSize: isMobile ? '20px' : '25px' }}>
-            Nombre del token:{' '}
+            {t("TOKENDESC_TEXT1")}
           </Typography>
           <Typography sx={{ mt: '1em', fontSize: isMobile ? '20px' :'25px' }}>VIC</Typography>
         </Box>
@@ -51,7 +55,7 @@ export const TokenDesc = () => {
           }}
         >
           <Typography fontWeight="bold" sx={{ mt: '1em', fontSize: isMobile ? '20px' :'25px' }}>
-            Suministro máximo:
+            {t("TOKENDESC_TEXT3")}
           </Typography>
           <Typography sx={{ mt: '1em', fontSize:isMobile ? '20px' : '25px' }}>
             100,000,000
@@ -101,7 +105,7 @@ export const TokenDesc = () => {
           }}
         >
           <Typography fontWeight="bold" sx={{ fontSize:isMobile ? '20px' : '25px' }}>
-            Tipo de Token:
+            {t("TOKENDESC_TEXT2")}
           </Typography>
           <Typography sx={{ fontSize: isMobile ? '20px' :'25px' }}>
             Utility & Governance

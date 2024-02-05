@@ -4,8 +4,12 @@ import apoyo2_1 from '../../assets/images/portal/apoyo2_1.png'
 import apoyo4 from '../../assets/images/portal/apoyo4.png'
 import circulos from '../../assets/images/portal/circulos.png'
 import cuadrodescargar from '../../assets/images/portal/cuadrodescargar.png'
+import { useTranslation } from 'react-i18next'
 
 export const FirstSection = () => {
+
+  const { t } = useTranslation();
+
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
@@ -60,9 +64,7 @@ export const FirstSection = () => {
             marginBottom: '50px',
           }}
         >
-          Este documento detallado es tu pasaporte exclusivo hacia la
-          comprensión completa de nuestra tecnología innovadora, los objetivos
-          de nuestra plataforma y el futuro emocionante que estamos construyendo
+          {t("WHITEPAPER_TEXT")}
         </Typography>
         <Button
           sx={{
@@ -76,7 +78,7 @@ export const FirstSection = () => {
             borderRadius: '20px',
           }}
         >
-          Descargar
+          {t("WHITEPAPER_DOWNLOAD")}
         </Button>
       </Box>
       {!isMobile && (

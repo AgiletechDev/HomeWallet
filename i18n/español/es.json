@@ -68,7 +68,44 @@
     "PREGUNTA5": "Tarifas de transacción en la billetera",
     "RESPUESTA5": "A medida que se recoge y entrega cada carga, se recopilan datos y se les marca la hora en cada punto de la cadena de suministro. Todas las partes se actualizan en tiempo real a medida que se realiza cada transacción.",
     "PREGUNTA6": "¿Es posible crear varias billeteras en la billetera Agra?",
-    "RESPUESTA6": "A medida que se recoge y entrega cada carga, se recopilan datos y se les marca la hora en cada punto de la cadena de suministro. Todas las partes se actualizan en tiempo real a medida que se realiza cada transacción."
+    "RESPUESTA6": "A medida que se recoge y entrega cada carga, se recopilan datos y se les marca la hora en cada punto de la cadena de suministro. Todas las partes se actualizan en tiempo real a medida que se realiza cada transacción.",
 
+    "TOKENOMIC_TITLE": "Tokenomic",
+    "TOKENOMIC_CATEGORY": "Categoría",
+    "TOKENOMIC_ALLOCATION": "Asignación",
+    "TOKENOMIC_DESCRIPTION": "Descripción",
+    "TOKENOMIC_VESTING": "Adquisición de derechos",
 
+    "TOKENDESC_TEXT1": "Nombre del token: ",
+    "TOKENDESC_TEXT2": "Tipo de Token",
+    "TOKENDESC_TEXT3": "Suministro máximo:",
+
+    "TOKENOMIC_CATEGORY1": "Comunidad",
+    "TOKENOMIC_ALLOCATION1": "55% del suministro máximo",
+    "TOKENOMIC_DESCRIPTION1": "La comunidad mundial de usuarios posee la mayor parte del suministro máximo de VIC Token para votar y recomendar funciones, actualizaciones en la aplicación y otros cambios importantes.",
+    "TOKENOMIC_VESTING1": "Ya distribuido a usuarios de todo el mundo",
+    
+    "TOKENOMIC_CATEGORY2": "Fondo de liquidez",
+    "TOKENOMIC_ALLOCATION2": "7% del suministro máximo",
+    "TOKENOMIC_DESCRIPTION2": "Se utiliza para agregar al fondo de liquidez en un intercambio descentralizado (DEX). En el cual, la red BSC representa el 6% y Arbitrum representa el 1% del suministro máximo.",
+    "TOKENOMIC_VESTING2": "Bloqueado por 5 años",
+    
+    "TOKENOMIC_CATEGORY3": "Financiamiento de reserva",
+    "TOKENOMIC_ALLOCATION3": "2% del suministro máximo",
+    "TOKENOMIC_DESCRIPTION3": "Se utiliza para cubrir cualquier gasto u obligación financiera futura, especialmente si surge algo inesperado.",
+    "TOKENOMIC_VESTING3": "Distribuido cuando sea necesario y cuando surja imprevisto.",
+   
+    "TOKENOMIC_CATEGORY4": "Quemar",
+    "TOKENOMIC_ALLOCATION4": "36% del suministro máximo",
+    "TOKENOMIC_DESCRIPTION4": "Se ha quemado el 36% del VIC en suministro máximo (incluido el 21,6% del Equipo y el 14,4% del Ecosistema).El equipo VICNET acuñará 1.000.000 VIC mensualmente hasta alcanzar el suministro máximo de 100.000.000 VIC y distribuirlo proporcionalmente:-600.000 VIC for Team se asignan cada mes a las operaciones de la empresa para invertir en los departamentos de I+D y Marketing.-400,000 VIC para Ecosytem asignados para recompensar el ecosistema de la billetera, incluidas recompensas de apuesta y otros incentivos para los usuarios.",
+    "TOKENOMIC_VESTING4": "Extraído y distribuido mensualmente durante 36 meses desde el momento de TGE+1",
+    
+   "WHITEPAPER_TEXT": "Este documento detallado es tu pasaporte exclusivo hacia la comprensión completa de nuestra tecnología innovadora, los objetivos de nuestra plataforma y el futuro emocionante que estamos construyendo",
+   "WHITEPAPER_DOWNLOAD": "Descargar",
+
+    "BACKERSANDPARTNERS": "PATROCINADORES Y SOCIOS",
+
+    "WALLETBLOG_SUBTITLE": "Publicaciones Recientes",
+
+    "BUYWALLET_TITLE": "COMPRAR BILLETERA"
 }
