@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
 
 import imgLogo from '../assets/images/portal/logo.png'
 import TwitterIcon from '@mui/icons-material/Twitter'
@@ -13,6 +13,8 @@ const iconStyle = {
 }
 
 export const FooterLaunchpad = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
     <Box
       sx={{
@@ -25,10 +27,11 @@ export const FooterLaunchpad = () => {
         padding: '2em',
       }}
     >
-      <img src={imgLogo} width="20%" />
+      <img src={imgLogo} width={isMobile ? '100%' : "20%"} />
       <Box
         sx={{
           display: 'flex',
+          flexDirection: isMobile ? 'column' : 'row',
           alignItems: 'center',
           gap: '100px',
         }}
@@ -56,7 +59,13 @@ export const FooterLaunchpad = () => {
             contact@therabbit.io
           </Typography>
         </Box>
-        <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'flex-end',
+          }}
+        >
           <Box sx={iconStyle}>
             <TwitterIcon sx={{ color: '#b1b5c3' }} />
           </Box>
@@ -77,15 +86,22 @@ export const FooterLaunchpad = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={{ width: '100%', borderTop: '1px solid black', mt: '0.5em', pt: '0.5em' }} />
-      <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+      <Box
+        sx={{
+          width: '100%',
+          borderTop: '1px solid black',
+          mt: '0.5em',
+          pt: '0.5em',
+        }}
+      />
+      <Box sx={{ display: 'flex', flexDirection: isMobile ?'column':'row',  justifyContent: 'space-between' }}>
         <Box sx={{ display: 'flex', gap: '1em' }}>
           <Typography>About us</Typography>
           <Typography>FAQs</Typography>
           <Typography>Docs</Typography>
           <Typography>Terms of use</Typography>
         </Box>
-        <Box>
+        <Box >
           <Typography>© 2000-2024, All Rights Reserved</Typography>
         </Box>
       </Box>

@@ -1,11 +1,13 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
 import imgSect1 from '../../assets/images/portal/pag1/vista 1.png'
 import { Expectations } from '../../components/Expectations'
 
 export const FirstSection = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
     <>
-      <Box sx={{ position: 'relative' }}>
+      <Box sx={{ width: isMobile ? '100%' : '900px', position: 'relative' }}>
         <Box
           sx={{
             borderRadius: '10px',
@@ -13,9 +15,8 @@ export const FirstSection = () => {
             flexDirection: 'column',
             alignItems: 'center',
             padding: '2em',
-            height: '300px',
             position: 'relative',
-            zIndex: 1,
+            gap: '50px',
           }}
         >
           <Typography
@@ -28,33 +29,27 @@ export const FirstSection = () => {
             }}
           >
             SÚPER APLICACIÓN DEX WALLET <br />
-MULTIUTILIDAD DE NUEVA GENERACIÓN
+            MULTIUTILIDAD DE NUEVA GENERACIÓN
             <br />
           </Typography>
+          <img
+            src={imgSect1}
+            style={{
+              width: '100%',
+            }}
+          />
         </Box>
-        <img
-          src={imgSect1}
-          style={{
-            width: '100%',
-            position: 'absolute',
-            top: '100%',
-            left: '50%',
-            transform: 'translate(-50%, -40%)',
-            zIndex: 2,
-          }}
-        />
       </Box>
 
       <Box
         sx={{
-          mt: '15em',
           borderRadius: '10px',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           padding: '1em',
           position: 'relative',
-          maxWidth: '900px',
+          maxWidth: isMobile ? '100%' : '900px', 
         }}
       >
         <Typography

@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery  } from '@mui/material'
 import imgIcon1 from '../assets/images/portal/pag1/icono 1.png'
 import imgIcon2 from '../assets/images/portal/pag1/icono 2.png'
 import imgIcon3 from '../assets/images/portal/pag1/icono 3.png'
@@ -49,10 +49,17 @@ const data = [
   },
 ]
 
+
+
+
+export const Expectations = () => {
+  const theme = useTheme();
+const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
 const containerStyle = {
   mt: '3em',
   display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
+  gridTemplateColumns: isMobile ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)',
   gridGap: 40,
   marginInline: 'auto',
   justifyContent: 'center',
@@ -67,13 +74,11 @@ const boxStyle = {
   padding:'1em',
   color:'white',
   justifyContent:'center',
-  height:'200px',
   display:'flex',
   flexDirection:'column',
   alignItems:'center'
 };
 
-export const Expectations = () => {
   return (
     <Box sx={containerStyle}>
       {data.map((item, index) => (

@@ -1,13 +1,7 @@
-import Table from '@mui/material/Table'
-import TableBody from '@mui/material/TableBody'
-import TableCell from '@mui/material/TableCell'
-import TableContainer from '@mui/material/TableContainer'
-import TableHead from '@mui/material/TableHead'
-import TableRow from '@mui/material/TableRow'
-import Paper from '@mui/material/Paper'
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, useTheme, useMediaQuery, Box, Typography } from '@mui/material';
 
 function createData(category, allocation, description, vesting) {
-  return { category, allocation, description, vesting }
+  return { category, allocation, description, vesting };
 }
 
 const rows = [
@@ -35,132 +29,127 @@ const rows = [
     `Se ha quemado el 36% del VIC en suministro máximo (incluido el 21,6% del Equipo y el 14,4% del Ecosistema).El equipo VICNET acuñará 1.000.000 VIC mensualmente hasta alcanzar el suministro máximo de 100.000.000 VIC y distribuirlo proporcionalmente:-600.000 VIC for Team se asignan cada mes a las operaciones de la empresa para invertir en los departamentos de I+D y Marketing.-400,000 VIC para Ecosytem asignados para recompensar el ecosistema de la billetera, incluidas recompensas de apuesta y otros incentivos para los usuarios.`,
     'Extraído y distribuido mensualmente durante 36 meses desde el momento de TGE+1'
   ),
-]
+];
+
 export const TableWallet = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
-    <TableContainer
-      sx={{
-        mt: '5em',
-        borderRadius: '12px',
-        overflow: 'hidden',
-        mb: '5em',
-      }}
-      component={Paper}
-    >
-      <Table
+    <Box sx={{ width: isMobile ? '100%' : '1000px',  mt: '5em' }}>
+      <TableContainer
         sx={{
-          minWidth: 650,
-          borderCollapse: 'separate',
-          borderSpacing: '5px',
+          mt: '5em',
+          borderRadius: '12px',
+          overflowX: 'auto',
+          mb: '5em',
         }}
-        aria-label="simple table"
+        component={Paper}
       >
-        <TableHead>
-          <TableRow sx={{}}>
-            <TableCell
-              align="center"
-              sx={{
-                color: '#fff',
-                borderRadius: '10px',
-                backgroundColor: '#7598cf',
-                fontWeight: 'bold',
-              }}
-            >
-              Category
-            </TableCell>
-            <TableCell
-              align="center"
-              sx={{
-                color: '#fff',
-                backgroundColor: '#7598cf',
-                borderRadius: '10px',
-                fontWeight: 'bold',
-              }}
-            >
-              Allocation
-            </TableCell>
-            <TableCell
-              align="center"
-              sx={{
-                color: '#fff',
-                backgroundColor: '#7598cf',
-                borderRadius: '10px',
-                fontWeight: 'bold',
-              }}
-            >
-              Description
-            </TableCell>
-            <TableCell
-              align="center"
-              sx={{
-                color: '#fff',
-                backgroundColor: '#7598cf',
-                borderRadius: '10px',
-                fontWeight: 'bold',
-              }}
-            >
-              Vesting
-            </TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow
-              key={row.name}
-              sx={{
-                '&:last-child td, &:last-child th': { borderBottom: 0 },
-              }}
-            >
+        <Table sx={{ minWidth: 650, borderCollapse: 'separate', borderSpacing: '5px' }} aria-label="simple table">
+          <TableHead>
+            <TableRow sx={{}}>
               <TableCell
                 align="center"
-                component="th"
-                scope="row"
                 sx={{
                   color: '#fff',
                   borderRadius: '10px',
-                  background:
-                    'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                  backgroundColor: '#7598cf',
+                  fontWeight: 'bold',
                 }}
               >
-                {row.category}
+                Category
               </TableCell>
               <TableCell
                 align="center"
                 sx={{
                   color: '#fff',
+                  backgroundColor: '#7598cf',
                   borderRadius: '10px',
-                  background:
-                    'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                  fontWeight: 'bold',
                 }}
               >
-                {row.allocation}
+                Allocation
               </TableCell>
               <TableCell
                 align="center"
                 sx={{
                   color: '#fff',
+                  backgroundColor: '#7598cf',
                   borderRadius: '10px',
-                  background:
-                    'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                  fontWeight: 'bold',
                 }}
               >
-                {row.description}
+                Description
               </TableCell>
               <TableCell
                 align="center"
                 sx={{
                   color: '#fff',
+                  backgroundColor: '#7598cf',
                   borderRadius: '10px',
-                  background:
-                    'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                  fontWeight: 'bold',
                 }}
               >
-                {row.vesting}
+                Vesting
               </TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-  )
-}
+          </TableHead>
+          <TableBody>
+            {rows.map((row) => (
+              <TableRow
+                key={row.name}
+                sx={{
+                  '&:last-child td, &:last-child th': { borderBottom: 0 },
+                }}
+              >
+                <TableCell
+                  align="center"
+                  component="th"
+                  scope="row"
+                  sx={{
+                    color: '#fff',
+                    borderRadius: '10px',
+                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                  }}
+                >
+                  {row.category}
+                </TableCell>
+                <TableCell
+                  align="center"
+                  sx={{
+                    color: '#fff',
+                    borderRadius: '10px',
+                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                  }}
+                >
+                  {row.allocation}
+                </TableCell>
+                <TableCell
+                  align="center"
+                  sx={{
+                    color: '#fff',
+                    borderRadius: '10px',
+                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                  }}
+                >
+                  {row.description}
+                </TableCell>
+                <TableCell
+                  align="center"
+                  sx={{
+                    color: '#fff',
+                    borderRadius: '10px',
+                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                  }}
+                >
+                  {row.vesting}
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </Box>
+  );
+};

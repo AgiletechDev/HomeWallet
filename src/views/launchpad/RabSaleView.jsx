@@ -15,36 +15,26 @@ import FormControl from '@mui/material/FormControl'
 import image11 from '../../assets/images/launchpad/image11.png'
 
 export const RabSaleView = () => {
+  
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
-    <Box sx={{ width: isMobile ? '100%' : '900px', padding: '1em', mt: '3em' }}>
-      <Box
-        sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
-      >
-        <Typography
-          sx={{ textAlign: 'center', fontSize: isMobile ? '30px' : '40px' }}
-          variant="h3"
-          fontWeight="bold"
-        >
-          Create RAB Sale
-        </Typography>
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '3em',
-            mt: '2em',
-          }}
-        >
+    <Box sx={{  width: isMobile ? '100%' : '900px',  padding: '1em', mt: '5em' }}>
+    <Box
+      sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+    >
+      <Typography textAlign="center" variant="h3" fontWeight="bold">
+        Create Token
+      </Typography>
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em' }}>
           <Card
             sx={{
               width: '100%',
               display: 'flex',
+              flexDirection: isMobile ? 'column' : 'row',
               justifyContent: 'space-between',
               borderRadius: '20px',
-              flexDirection: isMobile ? 'column' : 'row',
-              margin: 'auto',
+              boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
             }}
           >
             <Box
