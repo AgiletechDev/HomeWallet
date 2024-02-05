@@ -497,10 +497,10 @@ const NavbarLaunchpad = () => {
                   fontWeight: '600',
                   fontSize: '13px',
                   padding: '20px',
-                  background: `url(${botoncomprar})`,
+                  background: `black`,
                 }}
               >
-                Comprar
+                Buy Rabbit
               </Button>
             </Link>
             <Link to="/launchpad/connectwallet">
@@ -516,7 +516,7 @@ const NavbarLaunchpad = () => {
                   background: `url(${botoncomprar})`,
                 }}
               >
-                Comprar
+                Connect Wallet
               </Button>
             </Link>
           </Box>

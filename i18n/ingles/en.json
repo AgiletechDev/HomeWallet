@@ -29,7 +29,7 @@
     "TEXT3_SECTION2": "Track real-time charts and prices for each token",
     "SECTION2_SUBTITLE1": "Exchange",
     "SECTION2_TEXT1": "Trade 300+ tokens on multiple chains:",
-    "SECTION2_SUBTITLE2": "Multiusos",
+    "SECTION2_SUBTITLE2": "Multipurpose",
     "SECTION2_TEXT2": "Improve user experience",
 
     "MULTIPLY_TITLE1": "News",
@@ -68,6 +68,43 @@
     "PREGUNTA5": "Transaction fees in the wallet",
     "RESPUESTA5": "As each load is picked up and delivered, data is collected and time-stamped at each point in the supply chain. All parties are updated in real time as each transaction is made.",
     "PREGUNTA6": "Is it possible to create multiple wallets in Agra wallet?",
-    "RESPUESTA6": "As each load is picked up and delivered, data is collected and time-stamped at each point in the supply chain. All parties are updated in real time as each transaction is made."
+    "RESPUESTA6": "As each load is picked up and delivered, data is collected and time-stamped at each point in the supply chain. All parties are updated in real time as each transaction is made.",
+
+
+    "TITLE_TOK": "Tokenomics",
+    "SUBTITLE_TOK": "VICNET TOKEN",
+    "TOKEN_NAME_TOK": "Token Name",
+    "MAX_SUPPLY_TOK": "Max Supply",
+    "TOKEN_SYMBOL_TOK": "Token Symbol",
+    "RED_BLOCKCHAIN_TOK": "Blockchain Network",
+    "TOKEN_TYPE_TOK": "Token Type",
+    "TOKEN_DECIMAL_TOK": "Token Decimal",
+    
+    "HEADER_CATEGORY_TOK": "Category",
+    "HEADER_ALLOCATION_TOK": "Allocation",
+    "HEADER_DESCRIPTION_TOK": "Description",
+    "HEADER_VESTING_TOK": "Vesting",
+    "ROW1_CATEGORY_TOK": "Community",
+    "ROW1_ALLOCATION_TOK": "55% of Max Supply",
+    "ROW1_DESCRIPTION_TOK": "The global community of users holds the majority of VIC Token's max supply to vote and propose features, app updates, and other significant changes.",
+    "ROW1_VESTING_TOK": "Already distributed to users worldwide",
+    "ROW2_CATEGORY_TOK": "Liquidity Pool",
+    "ROW2_ALLOCATION_TOK": "7% of Max Supply",
+    "ROW2_DESCRIPTION_TOK": "Used to add to the liquidity pool on a decentralized exchange (DEX). Wherein, the BSC network represents 6%, and Arbitrum represents 1% of the max supply.",
+    "ROW2_VESTING_TOK": "Locked for 5 years",
+    "ROW3_CATEGORY_TOK": "Reserve Funding",
+    "ROW3_ALLOCATION_TOK": "2% of Max Supply",
+    "ROW3_DESCRIPTION_TOK": "Used to cover any future financial expenses or obligations, especially if anything unexpected arises.",
+    "ROW3_VESTING_TOK": "Distributed as needed and when unforeseen circumstances arise.",
+    "ROW4_CATEGORY_TOK": "Burn",
+    "ROW4_ALLOCATION_TOK": "36% of Max Supply",
+    "ROW4_DESCRIPTION_TOK": "36% of VIC from max supply has been burned (including 21.6% for Team and 14.4% for Ecosystem). The VICNET team will mint 1,000,000 VIC monthly until reaching the max supply of 100,000,000 VIC and distribute it proportionally: -600,000 VIC for Team are allocated each month for company operations to invest in R&D and Marketing. -400,000 VIC for Ecosystem are allocated to reward the wallet ecosystem, including staking rewards and other incentives for users.",
+    "ROW4_VESTING_TOK": "Minted and distributed monthly over 36 months from the TGE+1 moment.",
+
+    "TITLE_WHI": "WHITEPAPER",
+    "SUBTITLE_WHI": "This detailed document is your exclusive passport to a complete understanding of our innovative technology, the goals of our platform, and the exciting future we are building.",
+    "BUTTON_WHI": "Download",
+
+    "TITLE_BACK": "SPONSORS AND PARTNERS"
 
 }
