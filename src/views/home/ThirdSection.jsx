@@ -1,9 +1,10 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
 import imgSect1 from '../../assets/images/portal/pag1/ilustracion 2.png'
 
 import imgSect3 from '../../assets/images/portal/pag1/ilustracion 3.png'
 import qr from '../../assets/images/portal/pag1/apps 1.png'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export const ThirdSection = () => {
   //
@@ -13,46 +14,53 @@ export const ThirdSection = () => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index))
   }
 
+  const { t } = useTranslation()
+
+
   const preguntasRespuestas = [
     {
-      pregunta: '¿Es segura la billetera?',
+      pregunta: t("PREGUNTA1"),
       respuesta:
-        'La capa de blockchain pública facilita contratos inteligentes de productos básicos, contratos inteligentes de carga, datos de prueba de origen y transacciones AGRA. La blockchain pública de Ethereum y los intercambios de terceros operan independientemente de Graintech y brindan seguridad y descentralización para contratos inteligentes y tokens AGRA.',
+      t("RESPUESTA1"),
     },
     {
-      pregunta: '¿Cómo instalar la billetera?',
+      pregunta: t("PREGUNTA2"),
       respuesta:
-        'La criptomoneda AGRA, ya que con esta se podra uso de las funciones de la app, para acceder a ellas se realiza pagos con tarjeta de crédito en la cual se utilizarán para comprar tokens AGRA en intercambios públicos, que luego seguirán el mismo proceso que un pago directo de AGRA.',
+      t("RESPUESTA2"),
     },
     {
-      pregunta: '¿Cómo importo o restauro mi billetera?',
+      pregunta: t("PREGUNTA3"),
       respuesta:
-        'A medida que los productos básicos avanzan a lo largo de la cadena de suministro, se puede establecer una prueba de origen creando un registro blockchain inmutable.En cada etapa se registran los participantes clave de la cadena de suministro, así como los nodos de la cadena de suministro que pertenecen y están controlados por cada una de estas entidades (como campos, silos, camiones y lugares de entrega).',
+      t("RESPUESTA3"),
     },
     {
-      pregunta: '¿Cómo recibir dinero (moneda digital) en la billetera?',
+      pregunta: t("PREGUNTA4"),
       respuesta:
-        'La Plataforma de Pago Graintech permite realizar pagos directos por el acceso a las Aplicaciones. Las pasarelas de pago admiten pagos en tokens AGRA.',
+      t("RESPUESTA4"),
     },
     {
-      pregunta: 'Tarifas de transacción en la billeter',
+      pregunta: t("PREGUNTA5"),
       respuesta:
-        'A medida que se recoge y entrega cada carga, se recopilan datos y se les marca la hora en cada punto de la cadena de suministro. Todas las partes se actualizan en tiempo real a medida que se realiza cada transacción.',
+      t("RESPUESTA5"),
     },
     {
-      pregunta: '¿Es posible crear varias billeteras en la billetera Agra?',
+      pregunta: t("PREGUNTA6"),
       respuesta:
-        'A medida que se recoge y entrega cada carga, se recopilan datos y se les marca la hora en cada punto de la cadena de suministro. Todas las partes se actualizan en tiempo real a medida que se realiza cada transacción.',
+      t("RESPUESTA6"),
     },
   ]
+
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+  
   return (
     <>
       <Box
         sx={{
           display: 'flex',
           alignItems: 'center',
-          flexDirection: 'row-reverse',
-          maxWidth:'1000px',
+          flexDirection: isMobile ? 'column' : 'row-reverse',
+          width: isMobile ? '100%' : '900px',
           margin: '0',
           mt: '5em',
           zIndex: '1',
@@ -65,7 +73,6 @@ export const ThirdSection = () => {
             justifyContent: 'flex-start',
             color: 'black',
             width: '100%',
-  
           }}
         >
           <Box
@@ -79,29 +86,23 @@ export const ThirdSection = () => {
             }}
           >
             <Typography variant="h4" fontWeight="800" color="#4d4d4d">
-              La seguridad es y siempre será la máxima prioridad para las
-              billeteras
+              {t("SUBTITLE_SECTION3")}
             </Typography>
             <ul style={{ fontSize: '20px' }}>
               <li>
-                Creemos que la seguridad y la privacidad de los datos son
-                esenciales para establecer la confianza del usuario.
+                {t("TEXT1_SECTION3")}
               </li>
               <li>
-                Invertimos mucho en capacitación continua sobre seguridad y
-                privacidad para todos los empleados para reforzar nuestra
-                postura de seguridad.
+                {t("TEXT2_SECTION3")}
               </li>
               <li>
-                Su billetera está cifrada localmente en su dispositivo y
-                protegida bimétricamente.
+                {t("TEXT3_SECTION3")}
               </li>
             </ul>
           </Box>
-         
         </Box>
         <Box>
-            <img src={imgSect1} style={{ width: '90%' }} />
+          <img src={imgSect1} style={{ width: '90%' }} />
         </Box>
       </Box>
 
@@ -110,54 +111,50 @@ export const ThirdSection = () => {
           sx={{
             borderRadius: '10px',
             display: 'flex',
-            flexDirection: 'row',
+            flexDirection: isMobile ? 'column' : 'row',
             alignItems: 'center',
             padding: '2em',
-            width: '900px',
+            width: isMobile ? '100%' : '900px',
             background:
               'linear-gradient(97deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
             zIndex: 1,
             color: 'white',
-            justifyContent:'space-between'
+            justifyContent: 'space-between',
           }}
         >
-
-          <Box>
-              <Typography
-                variant="h4"
-                sx={{
-                  fontWeight: '800',
-                  textAlign: 'center',
-                  mt: '0.5em',
-                }}
-              >
-                Descargar ahora
-              </Typography>
-              <Typography fontWeight="bold" sx={{marginLeft:'4em'}}>
-              Acceso sencillo a criptomonedas
-              </Typography>
-              <Box
-                sx={{
-                  display: 'flex',
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  mt: '7em',
-                  padding: '1em',
-                  gap: '20px',
-                }}
-              >
-                <img src={qr} />
-                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                  <Typography>Escanear para descargar</Typography>
-                  <Typography variant="h6" fontWeight="bold">
-                    App Wallet
-                  </Typography>
-                </Box>
+          <Box sx={{textAlign:isMobile ? 'center' : 'left'}}>
+            <Typography
+              variant="h4"
+              sx={{
+                fontWeight: '800',
+                mt: '0.5em',
+              }}
+            >
+              {t("DOWNLOAD")}
+            </Typography>
+            <Typography fontWeight="bold" sx={{ }}>
+              {t("DOWNLOAD_TEXT")}
+            </Typography>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: isMobile ? 'column' : 'row',
+                alignItems: 'center',
+                mt: '7em',
+                gap: '20px',
+              }}
+            >
+              <img src={qr} />
+              <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                <Typography>{t("SCAN_DONWLOAD")}</Typography>
+                <Typography variant="h6" fontWeight="bold">
+                  App Wallet
+                </Typography>
               </Box>
-            
+            </Box>
           </Box>
           <Box>
-              <img src={imgSect3} style={{ width: '90%' }} />
+            <img src={imgSect3} style={{ marginTop: '1em',width: '100%' }} />
           </Box>
         </Box>
       </Box>
@@ -165,8 +162,8 @@ export const ThirdSection = () => {
       <Box
         sx={{
           display: 'flex',
-          maxWidth: '900px',
-          mt: '20em',
+          width: isMobile ? '100%' : '900px',
+          mt: '5em',
           marginInline: 'auto',
           gap: '50px',
           flexDirection: 'column',
@@ -179,7 +176,7 @@ export const ThirdSection = () => {
           color="#4d4d4d"
           sx={{ textAlign: 'center' }}
         >
-          Preguntas Frecuentes
+          {t("FREQUENT_QUESTIONS")}
         </Typography>
 
         <Box
@@ -189,13 +186,12 @@ export const ThirdSection = () => {
 
             textAlign: 'justify',
             maxWidth: '100%',
-            mb:'3em',
+            mb: '3em',
 
             details: {
               borderRadius: '8px',
               marginBottom: '1em',
               padding: '1em',
-              
             },
             summary: {
               cursor: 'pointer',

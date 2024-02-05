@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery  } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import imgIcon1 from '../assets/images/portal/pag1/icono 1.png'
 import imgIcon2 from '../assets/images/portal/pag1/icono 2.png'
@@ -9,16 +9,16 @@ import imgIcon6 from '../assets/images/portal/pag1/icono 6.png'
 import imgIcon7 from '../assets/images/portal/pag1/icono 7.png'
 import imgIcon8 from '../assets/images/portal/pag1/icono 8.png'
 import imgIcon9 from '../assets/images/portal/pag1/icono 9.png'
-import { t } from 'i18next'
 
 
-
-
+export const Expectations = () => {
+  const theme = useTheme();
+const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
 const containerStyle = {
   mt: '3em',
   display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
+  gridTemplateColumns: isMobile ? 'repeat(1, 1fr)' : 'repeat(3, 1fr)',
   gridGap: 40,
   marginInline: 'auto',
   justifyContent: 'center',
@@ -33,14 +33,12 @@ const boxStyle = {
   padding:'1em',
   color:'white',
   justifyContent:'center',
-  height:'200px',
   display:'flex',
   flexDirection:'column',
   alignItems:'center'
 };
 
 
-export const Expectations = () => {
 
   const { t } = useTranslation();
   const data = [

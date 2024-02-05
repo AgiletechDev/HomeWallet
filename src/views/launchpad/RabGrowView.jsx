@@ -1,4 +1,12 @@
-import { Box, Typography, Button, Card, TextField } from '@mui/material'
+import {
+  Box,
+  Typography,
+  Button,
+  Card,
+  TextField,
+  useTheme,
+  useMediaQuery,
+} from '@mui/material'
 import Radio from '@mui/material/Radio'
 import RadioGroup from '@mui/material/RadioGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
@@ -7,59 +15,72 @@ import FormControl from '@mui/material/FormControl'
 import image11 from '../../assets/images/launchpad/image 17.png'
 
 export const RabGrowView = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
-    <Box sx={{ padding: '1em', mt: '5em', maxWidth: '900px' }}>
+    <Box sx={{ padding: '1em', mt: '5em', width: isMobile ? '100%' : '900px' }}>
       <Box
         sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
         <Typography textAlign="center" variant="h3" fontWeight="bold">
           Create RAB Grow
         </Typography>
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em', mt:'2em' }}>
           <Card
             sx={{
-              mt: '3em',
               width: '100%',
               display: 'flex',
               justifyContent: 'space-between',
               borderRadius: '20px',
-              boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+              flexDirection: isMobile ? 'column' : 'row',
+              margin: 'auto',
             }}
           >
             <Box
               sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'center',
-                padding: '2em 3em',
+                padding: '1em 2em',
               }}
             >
               <Typography
-                variant="p"
+                variant="h5"
                 fontWeight="600"
-                sx={{ marginBottom: '10px', textAlign: 'justify' }}
+                sx={{
+                  marginBottom: '10px',
+                  textAlign: isMobile ? 'center' : 'justify',
+                }}
               >
                 Direct connect the top 30 VCs from Rabbit Launchpad and get
                 comprehensive Marketing support on social media platforms
               </Typography>
-
-              <Button
-                variant="contained"
+              <Box
                 sx={{
-                  marginTop: '30px',
-                  marginBottom: '30px',
-                  borderRadius: '10px',
-                  textTransform: 'initial',
-                  marginRight: '330px',
-                  background:
-                    'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+                  display: 'flex',
+                  justifyContent: isMobile ? 'center' : 'start',
+                  marginTop: isMobile ? '30px' : '0',
+                  mt: '1em',
                 }}
               >
-                Connect Wallet
-              </Button>
+                <Button
+                  variant="contained"
+                  sx={{
+                    borderRadius: '10px',
+                    textTransform: 'initial',
+                    background:
+                      'linear-gradient(90deg, rgba(38,170,222,1) 0%, rgba(0,87,255,1) 100%)',
+                  }}
+                >
+                  Connect Wallet
+                </Button>
+              </Box>
             </Box>
 
-            <img src={image11} alt="image11" style={{}} />
+            <img
+              src={image11}
+              alt="image11"
+              style={{ width: isMobile ? '100%' : '30%' }}
+            />
           </Card>
           <Typography
             textAlign="center"
@@ -117,7 +138,7 @@ export const RabGrowView = () => {
             <TextField
               label="Token Address"
               placeholder="0.0"
-              fullWidth="true"
+              fullWidth={true}
             />
             <Typography
               textAlign="left"
@@ -242,7 +263,8 @@ export const RabGrowView = () => {
               alignItems: 'center',
               width: 'fit-content',
               margin: '0 auto',
-              mb:'5em'
+              mb: '5em',
+              padding: '1em',
             }}
           >
             <Typography textAlign="justify" variant="p">
@@ -262,7 +284,7 @@ export const RabGrowView = () => {
                 borderRadius: '10px',
                 textTransform: 'initial',
                 background:
-                    'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+                  'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
               }}
             >
               Connect Wallet

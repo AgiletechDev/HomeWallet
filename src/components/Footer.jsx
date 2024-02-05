@@ -1,10 +1,13 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery  } from '@mui/material'
 import iconotelegram from '../assets/images/portal/svg/iconotelegram.svg'
 import iconox from '../assets/images/portal/svg/iconox.svg'
 import iconodiscord from '../assets/images/portal/svg/iconodiscord.svg'
 import iconoYT from '../assets/images/portal/svg/iconoYT.svg'
 
 const Footer = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+
   return (
     <Box
       style={{
@@ -12,7 +15,8 @@ const Footer = () => {
         flexDirection: 'column',
         background:
           'linear-gradient(97deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
-        height: '500px',
+        height: '100%',
+        padding:'2em'
       }}
     >
       <Box
@@ -20,8 +24,8 @@ const Footer = () => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          width: '70%',
-          height: '60%',
+          width: isMobile ? '90%' :'70%',
+          height:  isMobile ? '80%' :'60%',
           textAlign: 'center',
           margin: 'auto',
           borderRadius: '10px',
@@ -32,10 +36,11 @@ const Footer = () => {
         <Box
           sx={{
             display: 'flex',
-            flexDirection: 'row',
+            flexDirection: isMobile ? 'column' : 'row',
             justifyContent: 'center',
             alignItems: 'center',
             marginBottom: '20px',
+            mt:'1em'
           }}
         >
           <Typography
@@ -79,7 +84,7 @@ const Footer = () => {
         <Box
           sx={{
             display: 'flex',
-            flexDirection: 'row',
+            flexDirection: isMobile ? 'column' : 'row',
             justifyContent: 'center',
             alignItems: 'center',
             marginBottom: '20px',
@@ -102,18 +107,19 @@ const Footer = () => {
         <Box
           sx={{
             display: 'flex',
-            flexDirection: 'row',
+            flexDirection: isMobile ? 'column' : 'row',
             justifyContent: 'center',
             alignItems: 'center',
             marginTop: '20px',
             marginBottom: '20px',
+            gap:'40px'
           }}
         >
           <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
             <img
               src={iconotelegram}
               alt="telegram"
-              style={{ marginRight: '50px', width: '40px' }}
+              style={{width: '40px' }}
             />
           </a>
           <a
@@ -124,7 +130,7 @@ const Footer = () => {
             <img
               src={iconox}
               alt="twitter"
-              style={{ marginRight: '50px', width: '40px' }}
+              style={{ width: '40px' }}
             />
           </a>
           <a
@@ -135,7 +141,7 @@ const Footer = () => {
             <img
               src={iconodiscord}
               alt="discord"
-              style={{ marginRight: '50px', width: '50px' }}
+              style={{ width: '50px' }}
             />
           </a>
           <a
@@ -146,7 +152,7 @@ const Footer = () => {
             <img
               src={iconoYT}
               alt="youtube"
-              style={{ marginLeft: '10px', width: '50px' }}
+              style={{ width: '50px' }}
             />
           </a>
         </Box>

@@ -1,36 +1,6 @@
 import { Box, Typography } from '@mui/material'
+import { useTranslation } from 'react-i18next'
 
-
-const data = [
-  {
-    title:'Noticias',
-    text: 'Actualizar información del mercado todos los días',
-  },
-  {
-    title:'Replanteo',
-    text: 'Gana dinero pasivamente incluso mientras duermes',
-  },
-  {
-    title:'Airdrop',
-    text: 'Obtenga tokens de valor gratuitos de los principales proyectos globales',
-  },
-  {
-    title:'Eventos',
-    text: 'Gana grandes recompensas de eventos de billetera divirtiéndote',
-  },
-  {
-    title:'Launchpad',
-    text: 'Participa IDO de los mejores proyectos a nivel global',
-  },
-  {
-    title:'Estrategia de mercado',
-    text: 'Obtenga estrategias diarias de expertos',
-  },
-  {
-    title:'Programa de referencia',
-    text: 'Recompensas gratuitas por compartir dispositivos de Wallets con la comunidad',
-  },
-]
 
 const containerStyle = {
   mt: '3em',
@@ -53,6 +23,40 @@ const boxStyle = {
 };
 
 export const MultiUtility = () => {
+
+  const { t } = useTranslation()
+
+  const data = [
+    {
+      title: t("MULTIPLY_TITLE1"),
+      text: t("MULTIPLY_TEXT1"),
+    },
+    {
+      title: t("MULTIPLY_TITLE2"),
+      text: t("MULTIPLY_TEXT2"),
+    },
+    {
+      title: t("MULTIPLY_TITLE3"),
+      text: t("MULTIPLY_TEXT3"),
+    },
+    {
+      title: t("MULTIPLY_TITLE4"),
+      text: t("MULTIPLY_TEXT4"),
+    },
+    {
+      title: t("MULTIPLY_TITLE5"),
+      text: t("MULTIPLY_TEXT5"),
+    },
+    {
+      title: t("MULTIPLY_TITLE6"),
+      text: t("MULTIPLY_TEXT6"),
+    },
+    {
+      title: t("MULTIPLY_TITLE7"),
+      text: t("MULTIPLY_TEXT7"),
+    },
+  ]
+
   return (
     <Box sx={containerStyle}>
       {data.map((item, index) => (

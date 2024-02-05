@@ -22,7 +22,53 @@
     "TEXT_EXPECTATIONS6": "Noticias de última hora diarias y estrategias de mercado",
     "TEXT_EXPECTATIONS7": "Participe en lanzamientos aéreos e IDO de los proyectos líderes",
     "TEXT_EXPECTATIONS8": "Compre tokens directamente a través de Visa y Mastercard",
-    "TEXT_EXPECTATIONS9": "Recompensas de un programa de referencia de afiliados"
+    "TEXT_EXPECTATIONS9": "Recompensas de un programa de referencia de afiliados",
 
-    
+    "TEXT_SECTION2": "Admite más de ",
+    "TEXT1_SECTION2": "14 blockchains líderes ",
+    "TEXT3_SECTION2": "Seguimiento de gráficos y precios en tiempo real para cada token",
+    "SECTION2_SUBTITLE1": "Intercambio",
+    "SECTION2_TEXT1": "Intercambia más de 300 tokens en múltiples cadenas:",
+    "SECTION2_SUBTITLE2": "Multiusos",
+    "SECTION2_TEXT2": "Mejorar la experiencia de usuario",
+
+    "MULTIPLY_TITLE1": "Noticias",
+    "MULTIPLY_TEXT1": "Actualizar información del mercado todos los días",
+    "MULTIPLY_TITLE2": "Replanteo",
+    "MULTIPLY_TEXT2": "Gana dinero pasivamente incluso mientras duermes",
+    "MULTIPLY_TITLE3": "Airdrop",
+    "MULTIPLY_TEXT3": "Obtenga tokens de valor gratuitos de los principales proyectos globales",
+    "MULTIPLY_TITLE4": "Eventos",
+    "MULTIPLY_TEXT4": "Gana grandes recompensas de eventos de billetera divirtiéndote",
+    "MULTIPLY_TITLE5": "Launchpad",
+    "MULTIPLY_TEXT5": "Participa IDO de los mejores proyectos a nivel global",
+    "MULTIPLY_TITLE6": "Estrategia de mercado",
+    "MULTIPLY_TEXT6": "Obtenga estrategias diarias de expertos",
+    "MULTIPLY_TITLE7": "Programa de referencia",
+    "MULTIPLY_TEXT7": "Recompensas gratuitas por compartir dispositivos de Wallets con la comunidad",
+
+    "SUBTITLE_SECTION3": "La seguridad es y siempre será la máxima prioridad para las billeteras",
+    "TEXT1_SECTION3": "Creemos que la seguridad y la privacidad de los datos son esenciales para establecer la confianza del usuario.",
+    "TEXT2_SECTION3": "Invertimos mucho en capacitación continua sobre seguridad y privacidad para todos los empleados para reforzar nuestra postura de seguridad.",
+    "TEXT3_SECTION3": "Su billetera está cifrada localmente en su dispositivo y protegida bimétricamente.",
+
+    "DOWNLOAD": "Descargar ahora",
+    "DOWNLOAD_TEXT": "Acceso sencillo a criptomonedas",
+    "SCAN_DONWLOAD": "Escanear para descargar",
+
+    "FREQUENT_QUESTIONS": "Preguntas Frecuentes",
+    "PREGUNTA1": "¿Es segura la billetera?",
+    "RESPUESTA1": "La capa de blockchain pública facilita contratos inteligentes de productos básicos, contratos inteligentes de carga, datos de prueba de origen y transacciones AGRA. La blockchain pública de Ethereum y los intercambios de terceros operan independientemente de Graintech y brindan seguridad y descentralización para contratos inteligentes y tokens AGRA.",
+    "PREGUNTA2": "¿Cómo instalar la billetera?",
+    "RESPUESTA2": "La criptomoneda AGRA, ya que con esta se podra uso de las funciones de la app, para acceder a ellas se realiza pagos con tarjeta de crédito en la cual se utilizarán para comprar tokens AGRA en intercambios públicos, que luego seguirán el mismo proceso que un pago directo de AGRA.",
+    "PREGUNTA3": "¿Cómo importo o restauro mi billetera?",
+    "RESPUESTA3": "A medida que los productos básicos avanzan a lo largo de la cadena de suministro, se puede establecer una prueba de origen creando un registro blockchain inmutable.En cada etapa se registran los participantes clave de la cadena de suministro, así como los nodos de la cadena de suministro que pertenecen y están controlados por cada una de estas entidades (como campos, silos, camiones y lugares de entrega).",
+    "PREGUNTA4": "¿Cómo recibir dinero (moneda digital) en la billetera?",
+    "RESPUESTA4": "La Plataforma de Pago Graintech permite realizar pagos directos por el acceso a las Aplicaciones. Las pasarelas de pago admiten pagos en tokens AGRA.",
+    "PREGUNTA5": "Tarifas de transacción en la billetera",
+    "RESPUESTA5": "A medida que se recoge y entrega cada carga, se recopilan datos y se les marca la hora en cada punto de la cadena de suministro. Todas las partes se actualizan en tiempo real a medida que se realiza cada transacción.",
+    "PREGUNTA6": "¿Es posible crear varias billeteras en la billetera Agra?",
+    "RESPUESTA6": "A medida que se recoge y entrega cada carga, se recopilan datos y se les marca la hora en cada punto de la cadena de suministro. Todas las partes se actualizan en tiempo real a medida que se realiza cada transacción."
+
+
 }

@@ -1,29 +1,39 @@
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button, Typography, useTheme, useMediaQuery  } from '@mui/material'
 import rabbit from '../../assets/images/launchpad/imagesectionA.png'
 import bitcoin from '../../assets/images/launchpad/bitcoin.png'
 import etherum from '../../assets/images/launchpad/etherum.png'
 
 export const FirstSection = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <Box
       sx={{
-        width: '99vw',
-        height: '840px',
-        background: 'linear-gradient(60deg, #d8f0ff, #FFF ,  #d8f0ff)',
+        maxWidth: '100%',
       }}
     >
       <Box
         sx={{
           display: 'flex',
-          alignItems: 'flex-start',
-          height: '60%',
+          flexDirection: isMobile ? 'column' : 'row',
+          alignItems:  isMobile ? 'center' : 'start',
+          justifyContent:  isMobile ? 'center' : 'start',
+          minHeight: '60%',
           paddingTop: '60px',
-          paddingLeft: '300px',
+          paddingLeft: isMobile ? '1em' : '1em',
+          paddingRight: isMobile ? '1em' : 0,
           marginBottom: '40px',
         }}
       >
         <Box
-          sx={{ display: 'flex', flexDirection: 'column', paddingTop: '50px' }}
+          sx={{  display: 'flex',
+          flexDirection: 'column',
+          alignItems:  isMobile ? 'center' : 'start',
+          textAlign: isMobile ? 'center' : 'left',
+          width: '100%',
+          maxWidth: isMobile ? '100%' : '600px',
+          margin: isMobile ? 'auto' : 0, }}
         >
           <Typography
             variant="h2"
@@ -100,20 +110,27 @@ export const FirstSection = () => {
             </Typography>
           </Box>
         </Box>
-
-        <img src={rabbit} alt="img rabbbit" />
+          <Box>
+          <img src={rabbit} alt="img rabbbit" style={{height: isMobile ? '50%' : '60%',
+            flexShrink: 0,
+            marginLeft: isMobile ? 'auto' : '0',
+            marginRight: isMobile ? 'auto' : '0',}}/>
+          </Box>
+       
       </Box>
       <Box
         sx={{
           background: 'white',
-          width: '99vw',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          marginTop: '150px',
+          alignItems:'center',
+          marginTop: '50px',
           backgroundColor:'#f1fbff',
           padding:'2em',
           boxShadow: '0px 8px 10px -5px rgba(0, 0, 0, 0.1), 0px -8px 10px -5px rgba(0, 0, 0, 0.1)',
+          width: isMobile ? '90%' : '100%',
+          margin:'auto'
           
         }}
       >
@@ -142,9 +159,10 @@ export const FirstSection = () => {
         <Box
           sx={{
             display: 'flex',
+            flexDirection: isMobile ? 'column' : 'row',
             justifyContent: 'center',
             alignItems: 'center',
-     
+            gap:'10px'
           }}
         >
           <img src={etherum} alt="etherum" style={{ marginRight: '50px' }} />
@@ -156,5 +174,6 @@ export const FirstSection = () => {
         </Box>
       </Box>
     </Box>
+    
   )
 }

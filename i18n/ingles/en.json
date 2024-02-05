@@ -22,6 +22,52 @@
     "TEXT_EXPECTATIONS6": "Daily breaking news and market strategies",
     "TEXT_EXPECTATIONS7": "Participate in airdrops and IDOs of leading projects",
     "TEXT_EXPECTATIONS8": "Buy tokens directly through Visa and Mastercard",
-    "TEXT_EXPECTATIONS9": "Rewards from an affiliate referral program"
+    "TEXT_EXPECTATIONS9": "Rewards from an affiliate referral program",
+
+    "TEXT_SECTION2": "Supports more than",
+    "TEXT1_SECTION2": "14 leading blockchains",
+    "TEXT3_SECTION2": "Track real-time charts and prices for each token",
+    "SECTION2_SUBTITLE1": "Exchange",
+    "SECTION2_TEXT1": "Trade 300+ tokens on multiple chains:",
+    "SECTION2_SUBTITLE2": "Multiusos",
+    "SECTION2_TEXT2": "Improve user experience",
+
+    "MULTIPLY_TITLE1": "News",
+    "MULTIPLY_TEXT1": "Update market information every day",
+    "MULTIPLY_TITLE2": "Staking",
+    "MULTIPLY_TEXT2": "Earn money passively even while you sleep",
+    "MULTIPLY_TITLE3": "Airdrop",
+    "MULTIPLY_TEXT3": "Get free security tokens from top global projects",
+    "MULTIPLY_TITLE4": "Events",
+    "MULTIPLY_TEXT4": "Earn big wallet event rewards by having fun",
+    "MULTIPLY_TITLE5": "Launchpad",
+    "MULTIPLY_TEXT5": "IDO participates in the best projects globally",
+    "MULTIPLY_TITLE6": "Market strategy",
+    "MULTIPLY_TEXT6": "Get daily strategies from experts",
+    "MULTIPLY_TITLE7": "Referral program",
+    "MULTIPLY_TEXT7": "Free rewards for sharing Wallets devices with the community",
+
+    "SUBTITLE_SECTION3": "Security is and always will be the top priority for wallets",
+    "TEXT1_SECTION3": "We believe that data security and privacy are essential to establishing user trust.",
+    "TEXT2_SECTION3": "We invest heavily in ongoing security and privacy training for all employees to strengthen our security posture.",
+    "TEXT3_SECTION3": "Your wallet is encrypted locally on your device and bimetrically protected.",
+
+    "DOWNLOAD": "Download now",
+    "DOWNLOAD_TEXT": "Easy access to cryptocurrencies",
+    "SCAN_DONWLOAD": "Scan to download",
+
+    "FREQUENT_QUESTIONS": "Frequent Questions",
+    "PREGUNTA1": "Is the wallet safe?",
+    "RESPUESTA1": "The public blockchain layer facilitates commodity smart contracts, cargo smart contracts, proof of origin data, and AGRA transactions. The Ethereum public blockchain and third-party exchanges operate independently of Graintech and provide security and decentralization for smart contracts and AGRA tokens.",
+    "PREGUNTA2": "How to install the wallet?",
+    "RESPUESTA2": "The AGRA cryptocurrency, since with this you can use the functions of the app, to access them you make payments with a credit card in which they will be used to buy AGRA tokens in public exchanges, which will then follow the same process as a direct payment from AGRA.",
+    "PREGUNTA3": "How do I import or restore my wallet?",
+    "RESPUESTA3": "As commodities move along the supply chain, proof of origin can be established by creating an immutable blockchain record. At each stage key supply chain participants as well as chain nodes are recorded. that are owned and controlled by each of these entities (such as fields, silos, trucks, and delivery locations).",
+    "PREGUNTA4": "How to receive money (digital currency) in the wallet?",
+    "RESPUESTA4": "The Graintech Payment Platform allows direct payments to be made for access to the Applications. Payment gateways support payments in AGRA tokens.",
+    "PREGUNTA5": "Transaction fees in the wallet",
+    "RESPUESTA5": "As each load is picked up and delivered, data is collected and time-stamped at each point in the supply chain. All parties are updated in real time as each transaction is made.",
+    "PREGUNTA6": "Is it possible to create multiple wallets in Agra wallet?",
+    "RESPUESTA6": "As each load is picked up and delivered, data is collected and time-stamped at each point in the supply chain. All parties are updated in real time as each transaction is made."
 
 }

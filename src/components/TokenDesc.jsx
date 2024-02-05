@@ -1,6 +1,9 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
 import ArrowRight from '@mui/icons-material/KeyboardArrowRight'
 export const TokenDesc = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+
   return (
     <Box sx={{ padding: '1em' }}>
       <Typography
@@ -14,7 +17,7 @@ export const TokenDesc = () => {
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
+          gridTemplateColumns: isMobile ? 'repeat(1, 1fr)' :'1fr 1fr',
           gap: '5px',
           padding: '0.5em',
           color: '#33277b',
@@ -23,18 +26,18 @@ export const TokenDesc = () => {
         <Box
           sx={{
             display: 'flex',
-            flexDirection: 'row',
+            flexDirection:'row',
             alignItems: 'center',
             gap: '5px',
-            borderTop: '5px solid #33277b',
-            width: '350px',
+            borderTop: isMobile ? 'none' : '5px solid #33277b',
+            width: isMobile ? '100%' : '350px',
             pb: '5px',
           }}
         >
-          <Typography fontWeight="bold" sx={{ mt: '1em', fontSize: '25px' }}>
+          <Typography fontWeight="bold" sx={{ mt: '1em', fontSize: isMobile ? '20px' : '25px' }}>
             Nombre del token:{' '}
           </Typography>
-          <Typography sx={{ mt: '1em', fontSize: '25px' }}>VIC</Typography>
+          <Typography sx={{ mt: '1em', fontSize: isMobile ? '20px' :'25px' }}>VIC</Typography>
         </Box>
         <Box
           sx={{
@@ -42,15 +45,15 @@ export const TokenDesc = () => {
             flexDirection: 'row',
             alignItems: 'center',
             gap: '5px',
-            borderTop: '5px solid #33277b',
-            width: '500px',
+            borderTop: isMobile ? 'none' :'5px solid #33277b',
+            width: isMobile ? '100%' : '500px',
             pb: '5px',
           }}
         >
-          <Typography fontWeight="bold" sx={{ mt: '1em', fontSize: '25px' }}>
+          <Typography fontWeight="bold" sx={{ mt: '1em', fontSize: isMobile ? '20px' :'25px' }}>
             Suministro máximo:
           </Typography>
-          <Typography sx={{ mt: '1em', fontSize: '25px' }}>
+          <Typography sx={{ mt: '1em', fontSize:isMobile ? '20px' : '25px' }}>
             100,000,000
           </Typography>
         </Box>
@@ -60,14 +63,14 @@ export const TokenDesc = () => {
             flexDirection: 'row',
             alignItems: 'center',
             gap: '5px',
-            width: '350px',
+            width: isMobile ? '100%' : '350px',
             pb: '5px',
           }}
         >
-          <Typography fontWeight="bold" sx={{ fontSize: '25px' }}>
+          <Typography fontWeight="bold" sx={{ fontSize: isMobile ? '20px' :'25px' }}>
             Token Symbol:
           </Typography>
-          <Typography sx={{ fontSize: '25px' }}>RAB</Typography>
+          <Typography sx={{ fontSize:isMobile ? '20px' : '25px' }}>RAB</Typography>
         </Box>
         <Box
           sx={{
@@ -75,14 +78,14 @@ export const TokenDesc = () => {
             flexDirection: 'row',
             alignItems: 'center',
             gap: '5px',
-            width: '500px',
+            width: isMobile ? '100%' : '500px',
             pb: '5px',
           }}
         >
-          <Typography fontWeight="bold" sx={{ fontSize: '25px' }}>
+          <Typography fontWeight="bold" sx={{ fontSize:isMobile ? '20px' : '25px' }}>
             Red Blockchain:
           </Typography>
-          <Typography sx={{ fontSize: '25px' }}>
+          <Typography sx={{ fontSize: isMobile ? '20px' :'25px' }}>
             {' '}
             BNB Smart Chain (BEP20)& Arbitrum (ETH)
           </Typography>
@@ -93,14 +96,14 @@ export const TokenDesc = () => {
             flexDirection: 'row',
             alignItems: 'center',
             gap: '5px',
-            width: '350px',
+            width: isMobile ? '100%' : '350px',
             pb: '5px',
           }}
         >
-          <Typography fontWeight="bold" sx={{ fontSize: '25px' }}>
+          <Typography fontWeight="bold" sx={{ fontSize:isMobile ? '20px' : '25px' }}>
             Tipo de Token:
           </Typography>
-          <Typography sx={{ fontSize: '25px' }}>
+          <Typography sx={{ fontSize: isMobile ? '20px' :'25px' }}>
             Utility & Governance
           </Typography>
         </Box>
@@ -110,14 +113,14 @@ export const TokenDesc = () => {
             flexDirection: 'row',
             alignItems: 'center',
             gap: '5px',
-            width: '500px',
+            width: isMobile ? '100%' : '500px',
             pb: '5px',
           }}
         >
-          <Typography fontWeight="bold" sx={{ fontSize: '25px' }}>
+          <Typography fontWeight="bold" sx={{ fontSize:isMobile ? '20px' : '25px' }}>
             Token Decimal:{' '}
           </Typography>
-          <Typography sx={{ fontSize: '25px' }}>18</Typography>
+          <Typography sx={{ fontSize:isMobile ? '20px' : '25px' }}>18</Typography>
         </Box>
       </Box>
     </Box>

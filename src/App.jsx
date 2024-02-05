@@ -28,7 +28,6 @@ function App() {
     if (location.pathname.startsWith('/launchpad')) {
       return (
         <Box
-       
           sx={{
             background: 'linear-gradient(60deg, #d8f0ff, #FFF ,  #d8f0ff)',
             marginInline: 'auto',
@@ -36,7 +35,6 @@ function App() {
             flexDirection: 'column',
             alignItems: 'center',
             marginTop: '50px',
-            
           }}
         >
           <Outlet />
@@ -44,18 +42,20 @@ function App() {
       )
     } else {
       return (
-        <Container
-          sx={{
-            maxWidth: '1280px',
-            marginInline: 'auto',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginTop: '80px',
-          }}
-        >
-          <Outlet />
-        </Container>
+
+          <Container
+            sx={{
+              maxWidth: '1280px',
+              marginInline: 'auto',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              marginTop: '50px',
+            }}
+          >
+            <Outlet />
+          </Container>
+
       )
     }
   }

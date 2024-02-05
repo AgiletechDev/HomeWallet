@@ -1,9 +1,12 @@
-import { Box, Typography, Button, Card, TextField } from '@mui/material'
+import { Box, Typography, Button, Card, TextField,useTheme,
+  useMediaQuery } from '@mui/material'
 import image11 from '../../assets/images/launchpad/image 13.png'
 
 export const TokenView = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
-    <Box sx={{ width: '900px', padding: '1em', mt: '5em' }}>
+    <Box sx={{  width: isMobile ? '100%' : '900px',  padding: '1em', mt: '5em' }}>
       <Box
         sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
@@ -16,6 +19,7 @@ export const TokenView = () => {
               mt: '3em',
               width: '100%',
               display: 'flex',
+              flexDirection: isMobile ? 'column' : 'row',
               justifyContent: 'space-between',
               borderRadius: '20px',
               boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
@@ -57,19 +61,19 @@ export const TokenView = () => {
             <Typography textAlign="left" variant="h6" fontWeight="bold">
               <span style={{ color: '#14A8FC' }}>* </span>Name
             </Typography>
-            <TextField label="Binance" placeholder="0.0" fullWidth="true" />
+            <TextField label="Binance" placeholder="0.0" fullWidth={true}/>
             <Typography textAlign="left" variant="h6" fontWeight="bold">
               <span style={{ color: '#14A8FC' }}>* </span>Symbol
             </Typography>
-            <TextField label="ex Muck" placeholder="0.0" fullWidth="true" />
+            <TextField label="ex Muck" placeholder="0.0" fullWidth={true} />
             <Typography textAlign="left" variant="h6" fontWeight="bold">
               <span style={{ color: '#14A8FC' }}>* </span>Decimals
             </Typography>
-            <TextField label="ex Muck" placeholder="0.0" fullWidth="true" />
+            <TextField label="ex Muck" placeholder="0.0" fullWidth={true} />
             <Typography textAlign="left" variant="h6" fontWeight="bold">
               <span style={{ color: '#14A8FC' }}>* </span>Total Supply
             </Typography>
-            <TextField label="ex Muck" placeholder="0.0" fullWidth="true" />
+            <TextField label="ex Muck" placeholder="0.0" fullWidth={true}/>
             <Typography
               textAlign="left"
               variant="body"
