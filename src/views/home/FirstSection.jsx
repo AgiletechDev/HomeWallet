@@ -1,8 +1,13 @@
 import { Box, Typography } from '@mui/material'
 import imgSect1 from '../../assets/images/portal/pag1/vista 1.png'
 import { Expectations } from '../../components/Expectations'
+import { useTranslation } from 'react-i18next'
 
 export const FirstSection = () => {
+
+  const { t } = useTranslation();
+
+
   return (
     <>
       <Box sx={{ position: 'relative' }}>
@@ -27,8 +32,8 @@ export const FirstSection = () => {
               mt: '0.5em',
             }}
           >
-            SÚPER APLICACIÓN DEX WALLET <br />
-MULTIUTILIDAD DE NUEVA GENERACIÓN
+            {t("TITLE_HOME")} <br />
+            {t("TITLE_HOME2")}
             <br />
           </Typography>
         </Box>
@@ -66,7 +71,7 @@ MULTIUTILIDAD DE NUEVA GENERACIÓN
             mt: '0.5em',
           }}
         >
-          MÁS QUE TU EXPECTATIVA
+          {t("SUBTITLE_HOME1")}
         </Typography>
         <Typography
           variant="h6"
@@ -77,7 +82,7 @@ MULTIUTILIDAD DE NUEVA GENERACIÓN
             mt: '0.5em',
           }}
         >
-          La billetera que necesitas para entrar al mundo del Crypto
+          {t("SUBTITLE_PARRAFO")}
         </Typography>
         <Expectations />
       </Box>

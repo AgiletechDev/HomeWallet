@@ -8,5 +8,20 @@
 
     "NAVBARTITLE1": "Product",
     "NAVBARTITLE3": "Company",
-    "NAVBUTTON": "Buy"
+    "NAVBUTTON": "Buy",
+
+    "TITLE_HOME": "DEX WALLET SUPER APP",
+    "TITLE_HOME2": "NEW GENERATION MULTI-UTILITY",
+    "SUBTITLE_HOME1": "MORE THAN YOUR EXPECTATION",
+    "SUBTITLE_PARRAFO": "The wallet you need to enter the world of Crypto",
+    "TEXT_EXPECTATIONS": "Storing assets using private keys ensures a high level of security and reputation",
+    "TEXT_EXPECTATIONS2": "Easy accessibility and anonymity for transactions anytime, anywhere.",
+    "TEXT_EXPECTATIONS3": "Trade over one million tokens on fourteen leading blockchains",
+    "TEXT_EXPECTATIONS4": "Connect to multiple DApps",
+    "TEXT_EXPECTATIONS5": "Passive income through betting",
+    "TEXT_EXPECTATIONS6": "Daily breaking news and market strategies",
+    "TEXT_EXPECTATIONS7": "Participate in airdrops and IDOs of leading projects",
+    "TEXT_EXPECTATIONS8": "Buy tokens directly through Visa and Mastercard",
+    "TEXT_EXPECTATIONS9": "Rewards from an affiliate referral program"
+
 }

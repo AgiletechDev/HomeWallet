@@ -7,9 +7,15 @@ import apoyo2_1 from '../../assets/images/portal/apoyo2_1.png'
 import apoyo4 from '../../assets/images/portal/apoyo4.png'
 import circulos from '../../assets/images/portal/circulos.png'
 import { useTranslation } from 'react-i18next'
-
+import {useTheme, useMediaQuery
+} from '@mui/material'
+import { Link } from "react-router-dom"
 
 export const FirstSection = () => {
+
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
 
   const { t } = useTranslation();
   const title1 =t("SUBTITLE1");
@@ -31,20 +37,29 @@ export const FirstSection = () => {
       display: 'flex',
     }}>
 
-      <img src={apoyo2} alt="lineas" width='400px' height='300px' style={{position: 'absolute', top: '50%', left:'-200px', }} />
-      <img src={apoyo2_1} alt="lineas" width='500px' height='600px' style={{position: 'absolute', top: '55%', left:'0', zIndex: -1}} />
+      <img src={apoyo2} alt="lineas"
+      style={{
+        width: isMobile ?  '200px' : (isTablet ? '300px' : '400px'),
+        height: isMobile ?  '100px' : '300px',
+        position: 'absolute', 
+        top: isMobile ?  '10%' : (isTablet ? '10%' : '30%'), 
+        left:isMobile ?  '-120px' : (isTablet ? '-190px' : '-200px'), 
+        zIndex: isMobile ? '-1' : '-1'
+        }} 
+      />
+      <img src={apoyo2_1} alt="lineas"  style={{position: 'absolute', top: isMobile ? '55%' :'55%', left:'0', zIndex: -1, width:  isMobile ?  '270px' : '500px'}} />
 
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        height: '800px',
-        marginTop: '40px',
-        width: '99vw',
+        height: isMobile ?  '100%' : '20%',
+        marginTop: isMobile ?  '0' : '40px',
+        width: isMobile ?  '100%' : '99vw',
         }}
       >
-        <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px', color: '#33277b' }}>{t("TITLE_SMARTCONTRACT")}</Typography>
-        <img src={lineahorizonta1} alt="" width='25%' />
+        <Typography variant="h5" sx={{fontSize: isMobile ?  '20px' : '35px', fontWeight: '600', marginTop: '20px', color: '#33277b' }}>{t("TITLE_SMARTCONTRACT")}</Typography>
+        <img src={lineahorizonta1} alt="linea" style={{width: isMobile ?  '25%' : '25%'}} />
           <Box sx={{
             display: 'flex',
             flexDirection: 'column',
@@ -67,7 +82,7 @@ export const FirstSection = () => {
                   <a href={url} target="_blank"
                   rel="noreferrer"
                     style={{
-                      fontSize: '20px',
+                      fontSize: isMobile ?  '10px' : (isTablet ? '15px' : '20px'),
                       fontWeight: '600',
                       textDecoration: 'none',
                       color: '#33277b'
@@ -80,7 +95,7 @@ export const FirstSection = () => {
             }
             <Typography variant="h6"
               sx={{
-                fontSize: '15px',
+                fontSize: isMobile ?  '10px' : '15px',
                 fontWeight: '600',
                 color: '#33277b',
                 mt: '10px',
@@ -101,37 +116,39 @@ export const FirstSection = () => {
             >
               https://github.com/solidproof/projects/tree/main/Wallet%20Token
             </a> */}
-            <img src={solidprooficon} alt="img solidProof" style={{height: '100px', marginTop: '10px', marginBottom: '5px'}} />
-            <Typography variant="h5" sx={{fontSize: '35px', fontWeight: '800', marginTop: '20px', marginBottom: '25px', color: '#33277b' }}>{t("SUBTITLE4")}</Typography>
+            <img src={solidprooficon} alt="img solidProof" style={{height: isMobile ?  '50px' : '100px', marginTop: '10px', marginBottom: '5px'}} />
+            <Typography variant="h5" sx={{fontSize: isMobile ?  '20px' : '35px', fontWeight: '800', marginTop: '20px', marginBottom: '25px', color: '#33277b' }}>{t("SUBTITLE4")}</Typography>
             <Box sx={{
               display: 'flex',
               justifyContent: 'center',
               width: '100%'
             }}
             >
-              <img src={cuadro1} alt="" style={{width: '25%', marginRight: '10px'}}/>
-              <img src={cuadro1} alt="" style={{width: '25%', marginRight: '10px'}}/>
-              <img src={cuadro1} alt="" style={{width: '25%', marginRight: '10px'}}/>
+              <img src={cuadro1} alt="" style={{width: isMobile ? '30%' :'25%', marginRight: '10px'}}/>
+              <img src={cuadro1} alt="" style={{width: isMobile ? '30%' :'25%', marginRight: '10px'}}/>
+              <img src={cuadro1} alt="" style={{width: isMobile ? '30%' :'25%', marginRight: '10px'}}/>
       
             </Box>
-            <Button
-            sx={{
-                borderRadius: '20px',
-                marginTop: '50px',
-                fontWeight: '600',
-                fontSize: '25px',
-                color: 'black',
-                textTransform: 'lowercase'
-            }}
-            >
-                {t("BUTTONNAME")}
-            </Button>
+            <Link to='/buywallets'>
+              <Button
+              sx={{
+                  borderRadius: '20px',
+                  marginTop: (isTablet ? '0' : '50px'),
+                  fontWeight: '600',
+                  fontSize: '25px',
+                  color: 'black',
+                  textTransform: 'lowercase'
+              }}
+              >
+                  {t("BUTTONNAME")}
+              </Button>
+            </Link>
           </Box>
       </Box>
 
 
-      <img src={circulos} alt="lineas" width='100px' height='100px' style={{position: 'absolute', bottom: '0%', right:'1%', }} />
-      <img src={apoyo4} alt="lineas" width='500px' height='600px' style={{position: 'absolute', top: '55%', right:'0', zIndex: -1}} />
+      <img src={circulos} alt="lineas"   style={{position: 'absolute', bottom: isMobile ?  '150px' : (isTablet ? '30%' : '10%'), right:'1%', width: isMobile ?  '30px' : (isTablet ? '80px' : '125px') }} />
+      <img src={apoyo4} alt="lineas"  style={{position: 'absolute', top: isMobile ?  '55%' : '50%', right:'0', zIndex: -1, width: isMobile ?  '270px' : '500px'}} />
 
     </Box>
 
