@@ -13,17 +13,21 @@ import FormControlLabel from '@mui/material/FormControlLabel'
 import FormControl from '@mui/material/FormControl'
 
 import image11 from '../../assets/images/launchpad/cuadro imagen der3.png'
+import { useTranslation } from 'react-i18next'
 
 export const RabSaleView = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+ 
+  const { t } = useTranslation();
+
   return (
     <Box sx={{ width: isMobile ? '100%' : '900px', padding: '1em', mt: '5em' }}>
       <Box
         sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
         <Typography textAlign="center" variant="h3" fontWeight="bold">
-          RAB Sale
+          {t("CREATE_SALE_TITLE")}
         </Typography>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em' }}>
           <Card
@@ -52,10 +56,7 @@ export const RabSaleView = () => {
                   textAlign: isMobile ? 'center' : 'justify',
                 }}
               >
-                Recaude capital y lance su proyecto con pasos sencillos y las
-                mejores tarifas del mercado para llegar a nuestros inversores
-                globales. Incluya automáticamente su Token después de una
-                recaudación de fondos exitosa en: PancakeSwap, UniSwap
+                {t("CREATE_SALE_DESCRIPTION")}
               </Typography>
             </Box>
 
@@ -107,7 +108,7 @@ export const RabSaleView = () => {
                 1
               </Typography>
               <Typography textAlign="left" variant="h5" fontWeight="bold">
-                Verify Token
+                {t("FORM_VERIFY_TITLE")}
               </Typography>
             </Box>
             <Typography
@@ -116,10 +117,10 @@ export const RabSaleView = () => {
               fontWeight="600"
               color="#938f99"
             >
-              Enter the token address and verify
+              {t("FORM_VERIFY_TEXT")}
             </Typography>
             <Typography textAlign="left" variant="h6" fontWeight="600">
-              <span style={{ color: '#14A8FC' }}>*</span> Token Address
+              <span style={{ color: '#14A8FC' }}>*</span> {t("FORM_VERIFY_ADDRESS")}
             </Typography>
             <TextField
               label="Token Address"
@@ -132,7 +133,7 @@ export const RabSaleView = () => {
               fontWeight="600"
               color="#14A8FC"
             >
-              Pool creation fee: 0.7 BNB
+              {t("FORM_VERIFY_HELPERTEXT")} 0.7 BNB
             </Typography>
             <Typography
               textAlign="left"
@@ -140,7 +141,7 @@ export const RabSaleView = () => {
               fontWeight="bold"
               mt="0.5em"
             >
-              <span style={{ color: '#14A8FC' }}>*</span> Currency
+              <span style={{ color: '#14A8FC' }}>*</span> {t("FORM_VERIFY_CURRENCY")}
             </Typography>
 
             <FormControl>
@@ -192,7 +193,7 @@ export const RabSaleView = () => {
             </FormControl>
 
             <Typography textAlign="left" variant="h6" fontWeight="bold">
-              <span style={{ color: '#14A8FC' }}>*</span> Afiliate Program
+              <span style={{ color: '#14A8FC' }}>*</span> {t("FORM_VERIFY_AFILIATE")}
             </Typography>
             <FormControl>
               <RadioGroup
@@ -220,7 +221,7 @@ export const RabSaleView = () => {
                     <FormControlLabel
                       value="Disable Afiliate"
                       control={<Radio />}
-                      label="Disable Afiliate"
+                      label={t("FORM_VERIFY_DISABLE")}
                     />
                   </Box>
                   <Box
@@ -235,7 +236,7 @@ export const RabSaleView = () => {
                     <FormControlLabel
                       value="Enable Afiliate"
                       control={<Radio />}
-                      label="Enabel Afiliate"
+                      label={t("FORM_VERIFY_ENABLE")}
                     />
                   </Box>
                 </Box>
@@ -254,14 +255,10 @@ export const RabSaleView = () => {
             }}
           >
             <Typography textAlign="justify" variant="p">
-              <span style={{ color: '#14A8FC' }}>Warning: </span>Make sure your
-              token is not listed on any AMM yet <br />
-              <span style={{ color: '#14A8FC' }}>Disclaimer: </span>The
-              information provided shall not in any way constitute a
-              recommendation as to whether you should invest in any product
-              discussed. We accept no liability for any loss occasioned to any
-              person acting or refraining from action as a result of any
-              material provided or published
+              <span style={{ color: '#14A8FC' }}>{t("ADVERTENCIA")} </span>
+              {t("ADVERTENCIA_DESCRIPTION")} <br />
+              <span style={{ color: '#14A8FC' }}>{t("LAUNCHPAD_DISCLAIMER")} </span>
+              {t("LAUNCHPAD_DISCLAIMER_TEXT")}
             </Typography>
             <Button
               variant="contained"
@@ -273,7 +270,7 @@ export const RabSaleView = () => {
                 'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
               }}
             >
-              Connect Wallet
+              {t("LAUNCHPAD_SECTION2_BUTTON1")}
             </Button>
           </Box>
         </Box>

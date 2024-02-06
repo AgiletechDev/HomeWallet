@@ -167,6 +167,8 @@
     "FORM_VERIFY_HELPERTEXT": "Pool creation fee: ",
     "FORM_VERIFY_CURRENCY": "Currency",
     "FORM_VERIFY_AFILIATE": "Afiliate Program",
+    "FORM_VERIFY_DISABLE": "Disable Afiliate",
+    "FORM_VERIFY_ENABLE": "Enable Afiliate",
 
     "ADVERTENCIA": "Warning",
     "ADVERTENCIA_DESCRIPTION": "Make sure your token is not listed on any AMM yet",
@@ -185,7 +187,10 @@
     "FORM_TOKEN_TITLE4": "Lock until (UTC time)",
     "FORM_TOKEN_CHECK": "Using Vesting?",
     "FORM_TOKEN_TEXTFIELDDATE": "Select Date",
-    "TOKEN_ALERT": "Please exclude lockup address 0x7955....5C11B from fees, rewards, max tx amount to start locking tokens. We don't support rebase tokens"
+    "TOKEN_ALERT": "Please exclude lockup address 0x7955....5C11B from fees, rewards, max tx amount to start locking tokens. We don't support rebase tokens",
+
+    "CREATE_SALE_TITLE": "Create Sale VIC",
+    "CREATE_SALE_DESCRIPTION": "Raise capital and launch your project with easy steps and the best rates on the market to reach our global investors. Automatically list your Token after a successful fundraising on: PancakeSwap, UniSwap"
 
 
 

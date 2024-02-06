@@ -167,6 +167,8 @@
     "FORM_VERIFY_HELPERTEXT": "Tarifa de creación del pool: ",
     "FORM_VERIFY_CURRENCY": "Divisa",
     "FORM_VERIFY_AFILIATE": "Programa de afiliación",
+    "FORM_VERIFY_DISABLE": "Deshabilitar afiliado",
+    "FORM_VERIFY_ENABLE": "Habilitar afiliado",
 
     "ADVERTENCIA": "Advertencia",
     "ADVERTENCIA_DESCRIPTION": "Asegúrese de que su token aún no aparezca en ningún AMM",
@@ -185,7 +187,9 @@
     "FORM_TOKEN_TITLE4": "Bloquear hasta (hora UTC)",
     "FORM_TOKEN_CHECK": "¿Usando derechos adquiridos?",
     "FORM_TOKEN_TEXTFIELDDATE": "Seleccionar fecha",
-    "TOKEN_ALERT": "Excluya la dirección de bloqueo 0x79554D14Ac42F42177509B5e55E2614B2415C118 de las tarifas, recompensas y monto máximo de transmisión para comenzar a bloquear tokens. No admitimos tokens de rebase"
+    "TOKEN_ALERT": "Excluya la dirección de bloqueo 0x79554D14Ac42F42177509B5e55E2614B2415C118 de las tarifas, recompensas y monto máximo de transmisión para comenzar a bloquear tokens. No admitimos tokens de rebase",
 
+    "CREATE_SALE_TITLE": "Crear venta VIC",
+    "CREATE_SALE_DESCRIPTION": "Recaude capital y lance su proyecto con pasos sencillos y las mejores tarifas del mercado para llegar a nuestros inversores globales.Incluya automáticamente su Token después de una recaudación de fondos exitosa en: PancakeSwap, UniSwap"
 
 }    
