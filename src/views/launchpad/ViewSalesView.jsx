@@ -9,10 +9,14 @@ import {
 import rabbit from '../../assets/images/launchpad/personaje3.png'
 import CurrentSale from '../../components/CurrentSale'
 import icono from '../../assets/images/launchpad/icono.png'
+import { useTranslation } from 'react-i18next'
 
 export const ViewSalesView = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+  
+  const { t } = useTranslation();
+ 
   return (
     <Box sx={{ width: isMobile ? '100%' : '1000px', padding: '1em' }}>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -33,7 +37,7 @@ export const ViewSalesView = () => {
               fontWeight="700"
               color="#14A8FC"
             >
-              Connect your wallet
+              {t("RABSALE_TITLE1")}
             </Typography>
             <Typography
               textAlign={isMobile ? 'center' : 'left'}
@@ -41,7 +45,7 @@ export const ViewSalesView = () => {
               fontWeight="700"
               color="#3e387b"
             >
-              & start exploring
+              {t("RABSALE_TITLE2")}
             </Typography>
             <Box
               sx={{
@@ -59,7 +63,7 @@ export const ViewSalesView = () => {
                   borderRadius: '5px',
                 }}
               >
-                Connect Wallet
+                {t("LAUNCHPAD_SECTION2_BUTTON1")}
               </Button>
             </Box>
             <Typography textAlign="left" variant="h6" fontWeight="700" color="#3e387b">
@@ -100,7 +104,7 @@ export const ViewSalesView = () => {
               marginBottom: '10px',
             }}
           >
-            Current Sale
+            {t("LAUNCHPAD_SUBTITLE1")}
           </Typography>
 
           <CurrentSale />
@@ -123,7 +127,7 @@ export const ViewSalesView = () => {
               'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
             }}
           >
-            Connect Wallet
+            {t("LAUNCHPAD_SECTION2_BUTTON1")}
           </Button>
         </Box>
       </Box>

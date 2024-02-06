@@ -4,6 +4,7 @@ import imgLogo from '../assets/images/portal/logoconjunto.png'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import TelegramIcon from '@mui/icons-material/Telegram'
 import DiscordIcon from '../assets/icons/icons8-discord.svg'
+import { useTranslation } from 'react-i18next'
 
 const iconStyle = {
   borderRadius: '50%',
@@ -15,6 +16,8 @@ const iconStyle = {
 export const FooterLaunchpad = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+  const { t } = useTranslation();
+ 
   return (
     <Box sx={{background:'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',}}>
  <Box
@@ -46,11 +49,7 @@ export const FooterLaunchpad = () => {
           }}
         >
           <Typography>
-            Disclaimer: Rabbit LaunchPad will never endorse or encourage you to
-            invest in any of the projects listed, therefore is not liable for
-            any loss that occurs. It is the responsibility of investors to do
-            their own research and seek financial advice from a professional.
-            More information about (DYOR) can be found via Wallet Educat
+            {t("LAUNCHPAD_FOOTER")}
           </Typography>
           <Typography
             textAlign="left"

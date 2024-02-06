@@ -102,12 +102,90 @@
     
    "WHITEPAPER_TEXT": "Este documento detallado es tu pasaporte exclusivo hacia la comprensión completa de nuestra tecnología innovadora, los objetivos de nuestra plataforma y el futuro emocionante que estamos construyendo",
    "WHITEPAPER_DOWNLOAD": "Descargar",
+   
+   "BACKERSANDPARTNERS": "PATROCINADORES Y SOCIOS",
+   
+   "WALLETBLOG_SUBTITLE1": "Publicaciones Recientes",
+   
+   "BUYWALLET_TITLE": "COMPRAR BILLETERA",
+   
+   "CONTACT_US": "CONTACTANOS",
+   
+   "LAUNCHPAD_FOOTER": "Descargo de responsabilidad: VicNet LaunchPad nunca lo respaldará ni lo alentará a invertir en ninguno de los proyectos enumerados, por lo tanto, no es responsable de ninguna pérdida que ocurra. Es responsabilidad de los inversores hacer su propia investigación y buscar asesoramiento financiero de un profesional. Puede encontrar más información sobre (DYOR) a través de Wallet Educate",
 
-    "BACKERSANDPARTNERS": "PATROCINADORES Y SOCIOS",
+    "LAUNCHPAD_SECTION1_TITLE1": "Más seguro",
+    "LAUNCHPAD_SECTION1_TITLE2": "El más rentable",
+    "LAUNCHPAD_SECTION1_TITLE3": "Lo más conveniente",
+    "LAUNCHPAD_SECTION1_TEXT": "Aquí está - Wallet LaunchPad",
+    "LAUNCHPAD_SECTION1_BUTTON": "Conectar billetera",
+    "LAUNCHPAD_SECTION1_BUTTON2": "Cómo empezar",
 
-    "WALLETBLOG_SUBTITLE1": "Publicaciones Recientes",
+    "LAUNCHPAD_SECTION2_TITLE1": "Wallet LaunchPad ofrece las mejores",
+    "LAUNCHPAD_SECTION2_TITLE2": "ventajas en todo el ecosistema para",
+    "LAUNCHPAD_SECTION2_TITLE3": "inversores y proyectos",
+    "LAUNCHPAD_CARD_TITLE1": "Más seguro",
+    "LAUNCHPAD_CARD_TEXT": "Construido sobre una plataforma descentralizada que agiliza y asegura el proceso de crowdfunding en criptografía, además de eliminar las vulnerabilidades y riesgos que enfrentan muchos proyectos anteriores.",
+    "LAUNCHPAD_CARD_TITLE2": "El más rentable",
+    "LAUNCHPAD_CARD2_TEXT": "El privilegio de participar tempranamente en los proyectos blockchain más prometedores. Garantizar los beneficios y generar el mayor beneficio para los inversores.",
+    "LAUNCHPAD_CARD_TITLE3": "Lo más conveniente",
+    "LAUNCHPAD_CARD3_TEXT": "Enfoque la conveniencia y la facilidad de operación para que todos los profesionales o principiantes aprovechen las oportunidades en el mercado de las criptomonedas. No necesitas conocimientos complicados, puedes operar con solo unos pocos clics.",
+    "LAUNCHPAD_SUBTITLE1": "Venta Actual",
+    "LAUNCHPAD_SUBTITLE1_TEXT1": "Todos los proyectos",
+    "LAUNCHPAD_SUBTITLE1_TEXT2": "En vivo",
+    "LAUNCHPAD_SUBTITLE1_TEXT3": "Próximo",
+    "LAUNCHPAD_SUBTITLE1_TEXT4": "Finalizado",
+    "LAUNCHPAD_SECTION2_INPUT1": "Introduzca el nombre del token o el símbolo del token",
+    "LAUNCHPAD_SECTION2_BUTTON1": "Conectar",
+    "LAUNCHPAD_CARD4": "Solicite el lanzamiento ahora para llevar su proyecto a más de 30 capitalistas de riesgo e inversores globales de VicNet LaunchPad",
+    "LAUNCHPAD_CARD4_BUTTON": "Conectar",
 
-    "BUYWALLET_TITLE": "COMPRAR BILLETERA",
+    "LAUNCHPAD_LOCKLIST_TITLE": "Bloqueo de Fichas",
+    "LAUNCHPAD_LOCKLIST_SUBTITLE1": "Todas las cerraduras",
+    "LAUNCHPAD_LOCKLIST_SUBTITLE2": "Mis cerraduras",
+    "LAUNCHPAD_LOCKLIST_INPUT": "Buscar por el nombre del token o el símbolo del token",
+    "LAUNCHPAD_LOCKLIST_TABLECELL": "Indíce",
+    "LAUNCHPAD_LOCKLIST_TABLECELL0": "Nombre",
+    "LAUNCHPAD_LOCKLIST_TABLECELL1": "Símbolo",
+    "LAUNCHPAD_LOCKLIST_TABLECELL2": "Dirección",
+    "LAUNCHPAD_LOCKLIST_TABLECELL3": "Importe",
+    "LAUNCHPAD_LOCKLIST_TABLECELL4": "Acción",
+    "LAUNCHPAD_LOCKLIST_BUTTON": "Ver",
+    "LAUNCHPAD_DISCLAIMER": "Descargo de responsabilidad: ",
+    "LAUNCHPAD_DISCLAIMER_TEXT":"La información proporcionada no constituirá de ninguna manera una recomendación sobre si debe invertir en alguno de los productos discutidos. No aceptamos ninguna responsabilidad por cualquier pérdida ocasionada a cualquier persona que actúe o se abstenga de actuar como resultado de cualquier material proporcionado o publicado.",
 
-    "CONTACT_US": "CONTACTANOS"
-}
+    "LAUNCHPAD_LIQUIDITY_TITLE": "Bloqueo de liquidez",
+
+    "RABSALE_TITLE1": "Conecte su billetera y",
+    "RABSALE_TITLE2": "comience a explorar",
+
+    "VICGROW_DESCRIPTION": "Solicite el lanzamiento ahora para llevar su proyecto a más de 30 capitalistas de riesgo e inversores globales de VicNet LaunchPad",
+    "VICGROW_SUBTITLE": "Empecemos",
+
+    "FORM_VERIFY_TITLE": "Verificar token",
+    "FORM_VERIFY_TEXT": "Ingrese la dirección del token y verifique",
+    "FORM_VERIFY_ADDRESS": "Dirección del token",
+    "FORM_VERIFY_HELPERTEXT": "Tarifa de creación del pool: ",
+    "FORM_VERIFY_CURRENCY": "Divisa",
+    "FORM_VERIFY_AFILIATE": "Programa de afiliación",
+
+    "ADVERTENCIA": "Advertencia",
+    "ADVERTENCIA_DESCRIPTION": "Asegúrese de que su token aún no aparezca en ningún AMM",
+
+    "TOKEN_TITLE": "Crear Token",
+    "TOKEN_DESCRIPTION": "Con VicNet Create Token no necesitas conocimientos complicados, crea un Token separado para ti y tu proyecto con operaciones simples después de unos pocos clics del mouse.",
+
+    "DECIMALS": "Decimales",
+    "TOTAL_SUPPLY": "Oferta total",
+
+    "CREATELOCK_TITLE": "Crear Bloqueo",
+    "CREATELOCK_DESCRIPTION": "La función de bloqueo de token se utiliza para el desarrollador/equipo fundador. El desbloqueo de token se puede realizar en un tiempo establecido con una cantidad flexible.",
+    "FORM_TOKEN_TITLE": "Dirección del token o token LP",
+    "FORM_TOKEN_TITLE2": "Título",
+    "FORM_TOKEN_TITLE3": "Cantidad",
+    "FORM_TOKEN_TITLE4": "Bloquear hasta (hora UTC)",
+    "FORM_TOKEN_CHECK": "¿Usando derechos adquiridos?",
+    "FORM_TOKEN_TEXTFIELDDATE": "Seleccionar fecha",
+    "TOKEN_ALERT": "Excluya la dirección de bloqueo 0x79554D14Ac42F42177509B5e55E2614B2415C118 de las tarifas, recompensas y monto máximo de transmisión para comenzar a bloquear tokens. No admitimos tokens de rebase"
+
+
+}    

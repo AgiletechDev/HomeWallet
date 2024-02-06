@@ -105,12 +105,91 @@
     "WHITEPAPER_DOWNLOAD": "DOWNLOAD",
 
     "BACKERSANDPARTNERS": "BACKERS AND PARTNERS",
-
+    
     "WALLETBLOG_SUBTITLE1": "Recent post",
     "BUYWALLET_TITLE": "BUY WALLET",
     
-    "CONTACT_US": "CONTACT US"
+    "CONTACT_US": "CONTACT US",
+    
+    "LAUNCHPAD_FOOTER": "Disclaimer: Rabbit LaunchPad will never endorse or encourage you to invest in any of the projects listed, therefore is not liable for any loss that occurs. It is the responsibility of investors to do their own research and seek financial advice from a professional. More information about (DYOR) can be found via Wallet Educat",
+    
+    "LAUNCHPAD_SECTION1_TITLE1": "Safest",
+    "LAUNCHPAD_SECTION1_TITLE2": "The most Profitable",
+    "LAUNCHPAD_SECTION1_TITLE3": "The most Convenient",
+    "LAUNCHPAD_SECTION1_TEXT": "Here you are - Wallet LaunchPad",
+    "LAUNCHPAD_SECTION1_BUTTON": "Connect Wallet",
+    "LAUNCHPAD_SECTION1_BUTTON2": "How to Start",
 
+    "LAUNCHPAD_SECTION2_TITLE1": "Wallet LaunchPad provides",
+    "LAUNCHPAD_SECTION2_TITLE2": "the best perks across the ecosystem",
+    "LAUNCHPAD_SECTION2_TITLE3": "for investors and projects",
+    "LAUNCHPAD_CARD_TITLE1": "Safest",
+    "LAUNCHPAD_CARD_TEXT": "Built on a decentralized platform that streamlines and secures the crowdfunding process in crypto, as well as eliminates the vulnerabilities and risks faced by many previous projects.",
+    "LAUNCHPAD_CARD_TITLE2": "The most Profitable",
+    "LAUNCHPAD_CARD2_TEXT": "The privilege of early participation in the most promising blockchain projects. Guarantee the benefits and bring the highest profit for investors.",
+    "LAUNCHPAD_CARD_TITLE3": "The most convenient",
+    "LAUNCHPAD_CARD3_TEXT": "Focus convenience, ease of operation for all professionals or beginners to seize opportunities in the Crypto market. No need for complicated knowledge, you can operate with just a few clicks.",
+    "LAUNCHPAD_SUBTITLE1": "Current Sale",
+    "LAUNCHPAD_SUBTITLE1_TEXT1": "All Projects",
+    "LAUNCHPAD_SUBTITLE1_TEXT2": "Live",
+    "LAUNCHPAD_SUBTITLE1_TEXT3": "Upcoming",
+    "LAUNCHPAD_SUBTITLE1_TEXT4": "Ended",
+    "LAUNCHPAD_SECTION2_INPUT1": "Enter token name or token symbol",
+    "LAUNCHPAD_SECTION2_BUTTON1": "Connect",
+    "LAUNCHPAD_CARD4": "Apply to launch now to bring your project to over 30 VCs and global investors of Rabbit LaunchPad",
+    "LAUNCHPAD_CARD4_BUTTON": "Connect",
+
+    "LAUNCHPAD_LOCKLIST_TITLE": "Tokens Lock",
+    "LAUNCHPAD_LOCKLIST_SUBTITLE1": "ALL LOCK",
+    "LAUNCHPAD_LOCKLIST_SUBTITLE2": "MY LOCK",
+    "LAUNCHPAD_LOCKLIST_INPUT": "Search by name, symbol or token address...",
+    "LAUNCHPAD_LOCKLIST_TABLECELL": "Index",
+    "LAUNCHPAD_LOCKLIST_TABLECELL0": "Name",
+    "LAUNCHPAD_LOCKLIST_TABLECELL1": "Symbol",
+    "LAUNCHPAD_LOCKLIST_TABLECELL2": "Address",
+    "LAUNCHPAD_LOCKLIST_TABLECELL3": "Amount",
+    "LAUNCHPAD_LOCKLIST_TABLECELL4": "Action",
+    "LAUNCHPAD_LOCKLIST_BUTTON": "View",
+    "LAUNCHPAD_DISCLAIMER": "Disclaimer: ",
+    "LAUNCHPAD_DISCLAIMER_TEXT":"The information provided shall not in any way constitute a recommendation as to whether you should invest in any product discussed. We accept no liability for any loss occasioned to any person acting or refraining from action as a result of any material provided or published",
+
+    "LAUNCHPAD_LIQUIDITY_TITLE": "Liquidity Lock",
+    
+    "RABSALE_TITLE1": "Connect your wallet",
+    "RABSALE_TITLE2": "& start exploring",
+    
+    "VICGROW_DESCRIPTION": "Solicite el lanzamiento ahora para llevar su proyecto a más de 30 capitalistas de riesgo e inversores globales de VicNet LaunchPad",
+    "VICGROW_SUBTITLE": "Let`s Start",
+
+    "FORM_VERIFY_TITLE": "Verify Token",
+    "FORM_VERIFY_TEXT": "Enter the token address and verify",
+    "FORM_VERIFY_ADDRESS": "Token Address",
+    "FORM_VERIFY_HELPERTEXT": "Pool creation fee: ",
+    "FORM_VERIFY_CURRENCY": "Currency",
+    "FORM_VERIFY_AFILIATE": "Afiliate Program",
+
+    "ADVERTENCIA": "Warning",
+    "ADVERTENCIA_DESCRIPTION": "Make sure your token is not listed on any AMM yet",
+
+    "TOKEN_TITLE": "Create Token",
+    "TOKEN_DESCRIPTION": "With Rabbit Create Token you do not need complicated knowledge, create a separate Token for you and your project with simple operations after a few mouse clicks",
+
+    "DECIMALS": "Decimals",
+    "TOTAL_SUPPLY": "Total Supply",
+
+    "CREATELOCK_TITLE": "Create Lock",
+    "CREATELOCK_DESCRIPTION": "The token lock feature is used for the developer/founding team. Token unlocking can be done in a set time with a flexible amount.",
+    "FORM_TOKEN_TITLE": "Token or LP Token address",
+    "FORM_TOKEN_TITLE2": "Title",
+    "FORM_TOKEN_TITLE3": "Amount",
+    "FORM_TOKEN_TITLE4": "Lock until (UTC time)",
+    "FORM_TOKEN_CHECK": "Using Vesting?",
+    "FORM_TOKEN_TEXTFIELDDATE": "Select Date",
+    "TOKEN_ALERT": "Please exclude lockup address 0x7955....5C11B from fees, rewards, max tx amount to start locking tokens. We don't support rebase tokens"
+
+
+
+    
 
 
 }

@@ -9,6 +9,7 @@ import Paper from '@mui/material/Paper';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import * as React from 'react';
+import { useTranslation } from 'react-i18next'
 
 function createData(token, symbol, address, amount, action) {
   return { token, symbol, address, amount, action };
@@ -34,11 +35,14 @@ export const LiquidityLockView = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
+  const { t } = useTranslation();
+
+
   return (
     <Box sx={{ width: isMobile ? '100%' : '1000px', padding: '1em', mt: '5em' }}>
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
         <Typography sx={{ textAlign: 'left' }} variant="h4" fontWeight="bold">
-          Liquidity Lock View
+          {t("LAUNCHPAD_LIQUIDITY_TITLE")}
         </Typography>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em', mt: '2em', width: '100%' }}>
           <Box sx={{ width: '100%' }}>
@@ -49,10 +53,10 @@ export const LiquidityLockView = () => {
               indicatorColor="primary"
               aria-label="secondary tabs example"
             >
-              <Tab value="one" label="All Lock" />
-              <Tab value="two" label="My Lock" />
+              <Tab value="one" label={t("LAUNCHPAD_LOCKLIST_SUBTITLE1")} />
+              <Tab value="two" label={t("LAUNCHPAD_LOCKLIST_SUBTITLE2")} />
             </Tabs>
-            <TextField label="Search by name, symbol or token address..." placeholder="0.0" fullWidth={true} sx={{ mt: '1em' }} />
+            <TextField label={t("LAUNCHPAD_LOCKLIST_INPUT")} placeholder="0.0" fullWidth={true} sx={{ mt: '1em' }} />
           </Box>
           <TableContainer
             sx={{
@@ -70,16 +74,16 @@ export const LiquidityLockView = () => {
                 <TableRow sx={{ backgroundColor: '#e3e3e3' }}>
                   <TableCell sx={{ color: 'black' }}>Token</TableCell>
                   <TableCell align="center" sx={{ color: 'black' }}>
-                    Symbol
+                    {t("LAUNCHPAD_LOCKLIST_TABLECELL1")}
                   </TableCell>
                   <TableCell align="left" sx={{ color: 'black' }}>
-                    Address
+                    {t("LAUNCHPAD_LOCKLIST_TABLECELL2")}
                   </TableCell>
                   <TableCell align="left" sx={{ color: 'black' }}>
-                    Amount
+                    {t("LAUNCHPAD_LOCKLIST_TABLECELL3")}
                   </TableCell>
                   <TableCell align="left" sx={{ color: 'black' }}>
-                    Action
+                    {t("LAUNCHPAD_LOCKLIST_TABLECELL4")}
                   </TableCell>
                 </TableRow>
               </TableHead>
@@ -117,12 +121,8 @@ export const LiquidityLockView = () => {
             }}
           >
             <Typography textAlign="justify" variant="p">
-              <span style={{ color: '#14A8FC' }}>Disclaimer: </span>The
-              information provided shall not in any way constitute a
-              recommendation as to whether you should invest in any product
-              discussed. We accept no liability for any loss occasioned to any
-              person acting or refraining from action as a result of any
-              material provided or published
+              <span style={{ color: '#14A8FC' }}>{t("LAUNCHPAD_DISCLAIMER")}</span>
+              {t("LAUNCHPAD_DISCLAIMER_TEXT")}
             </Typography>
           </Box>
         </Box>

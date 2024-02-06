@@ -13,10 +13,12 @@ import imageC from '../../assets/images/launchpad/icono 3.png'
 import icono from '../../assets/images/launchpad/caja conectar.png'
 import image11 from '../../assets/images/launchpad/cuadro imagen der.png'
 import CurrentSale from '../../components/CurrentSale'
+import { useTranslation } from 'react-i18next'
 
 export const SecondSection = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+  const { t } = useTranslation();
 
   return (
     <Box
@@ -32,13 +34,13 @@ export const SecondSection = () => {
       }}
     >
       <Typography variant="h4" sx={{ fontWeight: '600', marginTop: '50px' }}>
-        Wallet LaunchPad provides
+        {t("LAUNCHPAD_SECTION2_TITLE1")}
       </Typography>
       <Typography variant="h4" sx={{ fontWeight: '600', color: '#3e387b' }}>
-        the best perks across the ecosystem
+        {t("LAUNCHPAD_SECTION2_TITLE2")}
       </Typography>
       <Typography variant="h4" sx={{ fontWeight: '600' }}>
-        for investors and projects
+        {t("LAUNCHPAD_SECTION2_TITLE3")}
       </Typography>
 
       <Box
@@ -73,12 +75,10 @@ export const SecondSection = () => {
             fontWeight="600"
             mt="1em"
           >
-            Safest
+            {t("LAUNCHPAD_CARD_TITLE1")}
           </Typography>
           <Typography variant="p" fontSize="20px">
-            Built on a decentralized platform that streamlines and secures the
-            crowdfunding process in crypto, as well as eliminates the
-            vulnerabilities and risks faced by many previous projects.
+            {t("LAUNCHPAD_CARD_TEXT")}
           </Typography>
         </Card>
 
@@ -105,12 +105,10 @@ export const SecondSection = () => {
             fontWeight="600"
             mt="1em"
           >
-            The most Profitable
+            {t("LAUNCHPAD_CARD_TITLE2")}
           </Typography>
           <Typography variant="p" fontSize="20px">
-            The privilege of early participation in the most promising
-            blockchain projects. Guarantee the benefits and bring the highest
-            profit for investors.
+            {t("LAUNCHPAD_CARD2_TEXT")}
           </Typography>
         </Card>
 
@@ -137,12 +135,10 @@ export const SecondSection = () => {
             fontWeight="600"
             mt="1em"
           >
-            The most convenient
+            {t("LAUNCHPAD_CARD_TITLE3")}
           </Typography>
           <Typography variant="p" fontSize="20px">
-            Focus convenience, ease of operation for all professionals or
-            beginners to seize opportunities in the Crypto market. No need for
-            complicated knowledge, you can operate with just a few clicks
+          {t("LAUNCHPAD_CARD3_TEXT")}
           </Typography>
         </Card>
       </Box>
@@ -163,13 +159,13 @@ export const SecondSection = () => {
             textAlign: 'left',
           }}
         >
-          Current Sale
+          {t("LAUNCHPAD_SUBTITLE1")}
         </Typography>
 
         <CurrentSale />
 
         <TextField
-          placeholder="Enter token name or token symbol"
+          placeholder={t("LAUNCHPAD_SECTION2_INPUT1")}
           fullWidth={true}
         />
       </Box>
@@ -187,7 +183,7 @@ export const SecondSection = () => {
             'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
         }}
       >
-        Connect Wallet
+        {t("LAUNCHPAD_SECTION2_BUTTON1")}
       </Button>
 
       <Card
@@ -217,8 +213,7 @@ export const SecondSection = () => {
               textAlign: isMobile ? 'center' : 'start',
             }}
           >
-            Apply to launch now to bring your project to over 30 VCs and global
-            investors of Rabbit LaunchPad
+            {t("LAUNCHPAD_CARD4")}
           </Typography>
           <Button
             variant="contained"
@@ -232,7 +227,7 @@ export const SecondSection = () => {
               marginX: 'auto',
             }}
           >
-            Connect Wallet
+            {t("LAUNCHPAD_CARD4_BUTTON")}
           </Button>
         </Box>
 

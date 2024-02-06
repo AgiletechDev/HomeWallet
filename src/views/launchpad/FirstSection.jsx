@@ -49,7 +49,7 @@ export const FirstSection = () => {
               marginBottom: '35px',
             }}
           >
-            Safest
+            {t("LAUNCHPAD_SECTION1_TITLE1")}
           </Typography>
           <Typography
             variant="h2"
@@ -61,7 +61,7 @@ export const FirstSection = () => {
               marginBottom: '35px',
             }}
           >
-            The most Profitable
+            {t("LAUNCHPAD_SECTION1_TITLE2")}
           </Typography>
           <Typography
             variant="h2"
@@ -73,7 +73,7 @@ export const FirstSection = () => {
               marginBottom: '35px',
             }}
           >
-            The most Convenient
+            {t("LAUNCHPAD_SECTION1_TITLE3")}
           </Typography>
           <Typography
             variant="h6"
@@ -85,7 +85,7 @@ export const FirstSection = () => {
               marginBottom: '35px',
             }}
           >
-            Here you are - Wallet LaunchPad
+            {t("LAUNCHPAD_SECTION1_TEXT")}
           </Typography>
 
           <Box sx={{ display: 'flex', marginBottom: '30px' }}>
@@ -98,10 +98,10 @@ export const FirstSection = () => {
               background: 'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)'
               }}
             >
-              Connect Wallet
+              {t("LAUNCHPAD_SECTION1_BUTTON")}
             </Button>
             <Button variant="outlined" sx={{ textTransform: 'initial', border: '1px solid #3e387b', color:'black' }}>
-              How to Start
+              {t("LAUNCHPAD_SECTION1_BUTTON2")}
             </Button>
           </Box>
 

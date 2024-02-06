@@ -12,17 +12,21 @@ import image11 from '../../assets/images/launchpad/cuadro imagen der2.png'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import Checkbox from '@mui/material/Checkbox'
 import InfoIcon from '@mui/icons-material/Info'
+import { useTranslation } from 'react-i18next'
 
 export const LockView = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+
+  const { t } = useTranslation();
+
   return (
     <Box sx={{ width: isMobile ? '100%' : '900px', padding: '1em', mt: '5em' }}>
       <Box
         sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
         <Typography textAlign="center" variant="h3" fontWeight="bold">
-          Create Lock
+          {t("CREATELOCK_TITLE")}
         </Typography>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em', mt:'2em' }}>
 
@@ -50,9 +54,7 @@ export const LockView = () => {
                 fontWeight="600"
                 sx={{ marginBottom: '10px', textAlign: 'justify' }}
               >
-                With Rabbit Create Token you do not need complicated knowledge,
-                create a separate Token for you and your project with simple
-                operations after a few mouse clicks
+               {t("CREATELOCK_DESCRIPTION")}
               </Typography>
             </Box>
 
@@ -73,8 +75,7 @@ export const LockView = () => {
           >
             <Box>
               <Typography textAlign="left" variant="h6" fontWeight="bold">
-                <span style={{ color: '#14A8FC' }}>*</span> Token or LP Token
-                address
+                <span style={{ color: '#14A8FC' }}>*</span> {t("FORM_TOKEN_TITLE")}
               </Typography>
               <TextField
                 label="Token Address"
@@ -84,16 +85,16 @@ export const LockView = () => {
             </Box>
             <Box>
               <Typography textAlign="left" variant="h6" fontWeight="bold">
-                <span style={{ color: '#14A8FC' }}>*</span> Title
+                <span style={{ color: '#14A8FC' }}>*</span> {t("FORM_TOKEN_TITLE2")}
               </Typography>
-              <TextField label="ex Muck" placeholder="0.0" fullWidth={true} />
+              <TextField label="Ejem Muck Lock..." placeholder="0.0" fullWidth={true} />
             </Box>
             <Box>
               <Typography textAlign="left" variant="h6" fontWeight="bold">
-                <span style={{ color: '#14A8FC' }}>*</span> Amount
+                <span style={{ color: '#14A8FC' }}>*</span> {t("FORM_TOKEN_TITLE3")}
               </Typography>
               <TextField
-                label="ex Muck"
+                label="Ejem Muck"
                 placeholder="0"
                 fullWidth={true}
                 InputProps={{
@@ -111,14 +112,14 @@ export const LockView = () => {
                 }}
                 sx={{ justifyContent: 'flex-start' }}
               />
-              <FormControlLabel control={<Checkbox />} label="Using Vesting?" />
+              <FormControlLabel control={<Checkbox />} label={t("FORM_TOKEN_CHECK")} />
             </Box>
             <Box>
               <Typography textAlign="left" variant="h5" fontWeight="bold">
-                <span style={{ color: '#14A8FC' }}>*</span> Lock until (UTC
-                time)
+                <span style={{ color: '#14A8FC' }}>*</span>
+                  {t("FORM_TOKEN_TITLE4")}
               </Typography>
-              <TextField label="ex Muck" placeholder="0.0" fullWidth={true} />
+              <TextField label={t("FORM_TOKEN_TEXTFIELDDATE")} placeholder="0.0" fullWidth={true} />
             </Box>
             <Box
   sx={{
@@ -135,10 +136,7 @@ export const LockView = () => {
 >
   <InfoIcon sx={{ color: '#3e387b' }} />
   <Typography sx={{ color: '#0a85d9' }}>
-    Please exclude lockup address
-    0x7955....5C11B from fees, rewards,
-    max tx amount to start locking tokens. We don&apos;t support
-    rebase tokens
+    {t("TOKEN_ALERT")}
   </Typography>
 </Box>
           </Box>
@@ -153,12 +151,8 @@ export const LockView = () => {
             }}
           >
             <Typography textAlign="justify" variant="p" padding='1em'>
-              <span style={{ color: '#14A8FC' }}>Disclaimer: </span>T The
-              information provided shall not in any way constitute a
-              recommendation as to whether you should invest in any product
-              discussed. We accept no liability for any loss occasioned to any
-              person acting or refraining from action as a result of any
-              material provided or published
+              <span style={{ color: '#14A8FC' }}>{t("LAUNCHPAD_DISCLAIMER")} </span>
+                {t("LAUNCHPAD_DISCLAIMER_TEXT")}
             </Typography>
             <Button
               variant="contained"
@@ -170,7 +164,7 @@ export const LockView = () => {
                 'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
               }}
             >
-              Connect Wallet
+              {t("LAUNCHPAD_SECTION2_BUTTON1")}
             </Button>
           </Box>
         </Box>

@@ -1,17 +1,21 @@
 import { Box, Typography, Button, Card, TextField,useTheme,
   useMediaQuery } from '@mui/material'
 import image11 from '../../assets/images/launchpad/cuadro de imagen der4.png'
+import { useTranslation } from 'react-i18next'
 
 export const TokenView = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+
+  const { t } = useTranslation();
+
   return (
     <Box sx={{  width: isMobile ? '100%' : '900px',  padding: '1em', mt: '5em' }}>
       <Box
         sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
         <Typography textAlign="center" variant="h3" fontWeight="bold">
-          Create Token
+          {t("TOKEN_TITLE")}
         </Typography>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em' }}>
           <Card
@@ -38,9 +42,7 @@ export const TokenView = () => {
                 fontWeight="600"
                 sx={{ marginBottom: '10px', textAlign: 'justify' }}
               >
-                With Rabbit Create Token you do not need complicated knowledge,
-                create a separate Token for you and your project with simple
-                operations after a few mouse clicks
+                {t("TOKEN_DESCRIPTION")}
               </Typography>
             </Box>
 
@@ -59,19 +61,19 @@ export const TokenView = () => {
             }}
           >
             <Typography textAlign="left" variant="h6" fontWeight="bold">
-              <span style={{ color: '#14A8FC' }}>* </span>Name
+              <span style={{ color: '#14A8FC' }}>* </span>{t("LAUNCHPAD_LOCKLIST_TABLECELL0")}
             </Typography>
             <TextField label="Binance" placeholder="0.0" fullWidth={true}/>
             <Typography textAlign="left" variant="h6" fontWeight="bold">
-              <span style={{ color: '#14A8FC' }}>* </span>Symbol
+              <span style={{ color: '#14A8FC' }}>* </span>{t("LAUNCHPAD_LOCKLIST_TABLECELL1")}
             </Typography>
             <TextField label="ex Muck" placeholder="0.0" fullWidth={true} />
             <Typography textAlign="left" variant="h6" fontWeight="bold">
-              <span style={{ color: '#14A8FC' }}>* </span>Decimals
+              <span style={{ color: '#14A8FC' }}>* </span>{t("DECIMALS")}
             </Typography>
             <TextField label="ex Muck" placeholder="0.0" fullWidth={true} />
             <Typography textAlign="left" variant="h6" fontWeight="bold">
-              <span style={{ color: '#14A8FC' }}>* </span>Total Supply
+              <span style={{ color: '#14A8FC' }}>* </span>{t("TOTAL_SUPPLY")}
             </Typography>
             <TextField label="ex Muck" placeholder="0.0" fullWidth={true}/>
             <Typography
@@ -80,7 +82,7 @@ export const TokenView = () => {
               fontWeight="600"
               color="#14A8FC"
             >
-              Token creation fee: 0.18 BNB
+             {t("FORM_VERIFY_HELPERTEXT")} 0.18 BNB
             </Typography>
           </Box>
           <Box
@@ -94,12 +96,8 @@ export const TokenView = () => {
             }}
           >
             <Typography textAlign="justify" variant="p">
-              <span style={{ color: '#14A8FC' }}>Disclaimer: </span>The
-              information provided shall not in any way constitute a
-              recommendation as to whether you should invest in any product
-              discussed. We accept no liability for any loss occasioned to any
-              person acting or refraining from action as a result of any
-              material provided or published
+              <span style={{ color: '#14A8FC' }}>{t("LAUNCHPAD_DISCLAIMER")} </span>
+                {t("LAUNCHPAD_DISCLAIMER_TEXT")}
             </Typography>
             <Button
               variant="contained"
@@ -111,7 +109,7 @@ export const TokenView = () => {
                 'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
               }}
             >
-              Connect Wallet
+              {t("LAUNCHPAD_SECTION2_BUTTON1")}
             </Button>
           </Box>
         </Box>
