@@ -1,6 +1,6 @@
 import { Box, Typography, Button, Card, TextField,useTheme,
   useMediaQuery } from '@mui/material'
-import image11 from '../../assets/images/launchpad/image 13.png'
+import image11 from '../../assets/images/launchpad/cuadro de imagen der4.png'
 
 export const TokenView = () => {
   const theme = useTheme()
@@ -108,7 +108,7 @@ export const TokenView = () => {
                 borderRadius: '10px',
                 textTransform: 'initial',
                 background:
-                  'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+                'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
               }}
             >
               Connect Wallet

@@ -6,7 +6,7 @@ import {
   useTheme,
   useMediaQuery,
 } from '@mui/material'
-import rabbit from '../../assets/images/launchpad/imagesectionA.png'
+import rabbit from '../../assets/images/launchpad/personaje3.png'
 import CurrentSale from '../../components/CurrentSale'
 import icono from '../../assets/images/launchpad/icono.png'
 
@@ -39,15 +39,9 @@ export const ListGrowsView = () => {
               textAlign={isMobile ? 'center' : 'left'}
               variant="h3"
               fontWeight="700"
+              color="#3e387b"
             >
               & start exploring
-            </Typography>
-            <Typography
-              textAlign={isMobile ? 'center' : 'left'}
-              variant="h5"
-              fontWeight="700"
-            >
-              Here you are - Wallet LaunchPad
             </Typography>
             <Box
               sx={{
@@ -60,7 +54,7 @@ export const ListGrowsView = () => {
               <Button
                 sx={{
                   background:
-                    'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+                  'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
                   color: 'white',
                   borderRadius: '5px',
                 }}
@@ -68,11 +62,11 @@ export const ListGrowsView = () => {
                 Connect Wallet
               </Button>
             </Box>
-            <Typography textAlign="left" variant="h6" fontWeight="700">
+            <Typography textAlign="left" variant="h6" fontWeight="700" color="#3e387b">
               Powered by{' '}
               <span
                 style={{
-                  color: '#14A8FC',
+                  color: '#3e387b',
                   textTransform: 'uppercase',
                   textStyle: 'italic',
                 }}
@@ -124,10 +118,9 @@ export const ListGrowsView = () => {
             sx={{
               color: 'white',
               mt: '2em',
-              border: '1px solid #14A8FC',
               alignSelf: 'strech',
               background:
-                'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+              'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
             }}
           >
             Connect Wallet

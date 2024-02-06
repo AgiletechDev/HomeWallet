@@ -12,7 +12,7 @@ import RadioGroup from '@mui/material/RadioGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import FormControl from '@mui/material/FormControl'
 
-import image11 from '../../assets/images/launchpad/image 17.png'
+import image11 from '../../assets/images/launchpad/cuadro imagen der.png'
 
 export const RabGrowView = () => {
   const theme = useTheme()
@@ -68,7 +68,7 @@ export const RabGrowView = () => {
                     borderRadius: '10px',
                     textTransform: 'initial',
                     background:
-                      'linear-gradient(90deg, rgba(38,170,222,1) 0%, rgba(0,87,255,1) 100%)',
+                    'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
                   }}
                 >
                   Connect Wallet
@@ -82,6 +82,7 @@ export const RabGrowView = () => {
               style={{ width: isMobile ? '100%' : '30%' }}
             />
           </Card>
+
           <Typography
             textAlign="center"
             variant="h3"
@@ -106,10 +107,10 @@ export const RabGrowView = () => {
                 textAlign="left"
                 variant="h5"
                 fontWeight="bold"
-                color="#14A8FC"
+                color="white"
                 sx={{
                   padding: '5px',
-                  backgroundColor: '#d8f0ff',
+                  background: 'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
                   borderRadius: '50%',
                   width: '30px',
                   height: '30px',
@@ -284,7 +285,7 @@ export const RabGrowView = () => {
                 borderRadius: '10px',
                 textTransform: 'initial',
                 background:
-                  'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+                'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
               }}
             >
               Connect Wallet

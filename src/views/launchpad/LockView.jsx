@@ -8,7 +8,7 @@ import {
   useTheme,
   useMediaQuery
 } from '@mui/material'
-import image11 from '../../assets/images/launchpad/image 15.png'
+import image11 from '../../assets/images/launchpad/cuadro imagen der2.png'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import Checkbox from '@mui/material/Checkbox'
 import InfoIcon from '@mui/icons-material/Info'
@@ -133,7 +133,7 @@ export const LockView = () => {
     textAlign: isMobile ? 'center' : 'left',
   }}
 >
-  <InfoIcon sx={{ color: '#0a85d9' }} />
+  <InfoIcon sx={{ color: '#3e387b' }} />
   <Typography sx={{ color: '#0a85d9' }}>
     Please exclude lockup address
     0x7955....5C11B from fees, rewards,
@@ -167,7 +167,7 @@ export const LockView = () => {
                 borderRadius: '10px',
                 textTransform: 'initial',
                 background:
-                  'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+                'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
               }}
             >
               Connect Wallet

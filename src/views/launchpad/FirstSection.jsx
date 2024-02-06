@@ -1,5 +1,5 @@
 import { Box, Button, Typography, useTheme, useMediaQuery  } from '@mui/material'
-import rabbit from '../../assets/images/launchpad/imagesectionA.png'
+import rabbit from '../../assets/images/launchpad/personaje.png'
 import bitcoin from '../../assets/images/launchpad/bitcoin.png'
 import etherum from '../../assets/images/launchpad/etherum.png'
 import { useTranslation } from 'react-i18next'
@@ -20,13 +20,14 @@ export const FirstSection = () => {
         sx={{
           display: 'flex',
           flexDirection: isMobile ? 'column' : 'row',
-          alignItems:  isMobile ? 'center' : 'start',
-          justifyContent:  isMobile ? 'center' : 'start',
+          alignItems:  isMobile ? 'center' : 'center',
+          justifyContent:  isMobile ? 'center' : 'center',
           minHeight: '60%',
           paddingTop: '60px',
           paddingLeft: isMobile ? '1em' : '1em',
           paddingRight: isMobile ? '1em' : 0,
           marginBottom: '40px',
+          maxWidth: isMobile ? '100%' : '1000px'
         }}
       >
         <Box
@@ -35,14 +36,14 @@ export const FirstSection = () => {
           alignItems:  isMobile ? 'center' : 'start',
           textAlign: isMobile ? 'center' : 'left',
           width: '100%',
-          maxWidth: isMobile ? '100%' : '600px',
+          maxWidth: isMobile ? '100%' : '900px',
           margin: isMobile ? 'auto' : 0, }}
         >
           <Typography
             variant="h2"
             component="p"
             sx={{
-              color: '#14A8FC',
+              color: '#3e387b',
               fontSize: '45px',
               fontWeight: '600',
               marginBottom: '35px',
@@ -54,7 +55,7 @@ export const FirstSection = () => {
             variant="h2"
             component="p"
             sx={{
-              color: '#14A8FC',
+              color: '#3e387b',
               fontSize: '45px',
               fontWeight: '600',
               marginBottom: '35px',
@@ -66,7 +67,7 @@ export const FirstSection = () => {
             variant="h2"
             component="p"
             sx={{
-              color: '#14A8FC',
+              color: '#3e387b',
               fontSize: '45px',
               fontWeight: '600',
               marginBottom: '35px',
@@ -94,12 +95,12 @@ export const FirstSection = () => {
                 marginRight: '10px',
                 borderRadius: '10px',
                 textTransform: 'initial',
-                background: 'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)'
+              background: 'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)'
               }}
             >
               Connect Wallet
             </Button>
-            <Button variant="outlined" sx={{ textTransform: 'initial' }}>
+            <Button variant="outlined" sx={{ textTransform: 'initial', border: '1px solid #3e387b', color:'black' }}>
               How to Start
             </Button>
           </Box>
@@ -108,19 +109,21 @@ export const FirstSection = () => {
             <Typography sx={{ marginRight: '10px', fontSize: '13px' }}>
               Powered by
             </Typography>
-            <Typography sx={{ color: '#14A8FC', fontWeight: '600' }}>
+            <Typography sx={{ color: '#3e387b', fontWeight: '600' }}>
               AGILETECH
             </Typography>
           </Box>
         </Box>
           <Box>
-          <img src={rabbit} alt="img rabbbit" style={{height: isMobile ? '50%' : '60%',
+          <img src={rabbit} alt="img rabbbit" style={{width: isMobile ? '50%' : '100%',
             flexShrink: 0,
             marginLeft: isMobile ? 'auto' : '0',
             marginRight: isMobile ? 'auto' : '0',}}/>
           </Box>
        
       </Box>
+
+
       <Box
         sx={{
           background: 'white',

@@ -7,11 +7,11 @@ import {
   useTheme,
   useMediaQuery,
 } from '@mui/material'
-import imageA from '../../assets/images/launchpad/imageA.png'
-import imageB from '../../assets/images/launchpad/imageB.png'
-import imageC from '../../assets/images/launchpad/imageC.png'
-import icono from '../../assets/images/launchpad/icono.png'
-import image11 from '../../assets/images/launchpad/image11.png'
+import imageA from '../../assets/images/launchpad/icono 1.png'
+import imageB from '../../assets/images/launchpad/icono 2.png'
+import imageC from '../../assets/images/launchpad/icono 3.png'
+import icono from '../../assets/images/launchpad/caja conectar.png'
+import image11 from '../../assets/images/launchpad/cuadro imagen der.png'
 import CurrentSale from '../../components/CurrentSale'
 
 export const SecondSection = () => {
@@ -34,7 +34,7 @@ export const SecondSection = () => {
       <Typography variant="h4" sx={{ fontWeight: '600', marginTop: '50px' }}>
         Wallet LaunchPad provides
       </Typography>
-      <Typography variant="h4" sx={{ fontWeight: '600', color: '#14A8FC' }}>
+      <Typography variant="h4" sx={{ fontWeight: '600', color: '#3e387b' }}>
         the best perks across the ecosystem
       </Typography>
       <Typography variant="h4" sx={{ fontWeight: '600' }}>
@@ -45,27 +45,27 @@ export const SecondSection = () => {
         sx={{
           display: 'flex',
           marginTop: '60px',
-          gap: '20px',
+          gap: '50px',
           padding: isMobile ? '1em' : '1em 12em',
-          flexDirection: isMobile ? 'column':'row',
+          flexDirection: isMobile ? 'column' : 'row',
         }}
       >
         <Card
           sx={{
             width: '100%',
-            background: '#ACDAFF',
-            padding: '20px',
+            background:
+              'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
+            padding: '30px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
             textAlign: 'justify',
+            alignItems: 'center',
+            color: 'white',
+            borderRadius: '20px',
           }}
         >
-          <img
-            src={imageA}
-            alt="imagec"
-            style={{ marginLeft: '20px', width: '250px' }}
-          />
+          <img src={imageA} alt="imagec" style={{ width: '100px' }} />
           <Typography
             gutterBottom
             variant="h5"
@@ -85,19 +85,19 @@ export const SecondSection = () => {
         <Card
           sx={{
             width: '100%',
-            background: '#c9efff',
-            padding: '20px',
+            background:
+              'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
+            padding: '30px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
             textAlign: 'justify',
+            alignItems: 'center',
+            color: 'white',
+            borderRadius: '20px',
           }}
         >
-          <img
-            src={imageB}
-            alt="imagec"
-            style={{ marginLeft: '20px', width: '250px' }}
-          />
+          <img src={imageB} alt="imagec" style={{ width: '100px' }} />
           <Typography
             gutterBottom
             variant="h5"
@@ -117,19 +117,19 @@ export const SecondSection = () => {
         <Card
           sx={{
             width: '100%',
-            background: '#c9efff',
-            padding: '20px',
+            background:
+              'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
+            padding: '30px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
             textAlign: 'justify',
+            alignItems: 'center',
+            color: 'white',
+            borderRadius: '20px',
           }}
         >
-          <img
-            src={imageC}
-            alt="imagec"
-            style={{ marginLeft: '20px', width: '250px' }}
-          />
+          <img src={imageC} alt="imagec" style={{ width: '100px' }} />
           <Typography
             gutterBottom
             variant="h5"
@@ -147,7 +147,11 @@ export const SecondSection = () => {
         </Card>
       </Box>
 
-      <Box  marginTop="50px" marginBottom="50px" sx={{width:isMobile?'100%' : "70%"}}>
+      <Box
+        marginTop="50px"
+        marginBottom="50px"
+        sx={{ width: isMobile ? '100%' : '70%' }}
+      >
         <Typography
           variant="h5"
           component="p"
@@ -156,7 +160,7 @@ export const SecondSection = () => {
             fontWeight: '600',
             fontSize: '25px',
             marginBottom: '10px',
-            textAlign:'left'
+            textAlign: 'left',
           }}
         >
           Current Sale
@@ -180,7 +184,7 @@ export const SecondSection = () => {
           borderRadius: '10px',
           textTransform: 'initial',
           background:
-            'linear-gradient(90deg, rgba(38,170,222,1) 0%, rgba(0,87,255,1) 100%)',
+            'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
         }}
       >
         Connect Wallet
@@ -188,12 +192,13 @@ export const SecondSection = () => {
 
       <Card
         sx={{
-          mt:'3em',
+          mt: '3em',
           width: isMobile ? '100%' : '70%',
           display: 'flex',
           justifyContent: 'space-between',
           borderRadius: '20px',
-          flexDirection:isMobile ? 'column':'row'
+          flexDirection: isMobile ? 'column' : 'row',
+          background: '#e3e3e3',
         }}
       >
         <Box
@@ -201,32 +206,34 @@ export const SecondSection = () => {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            padding:'1em 2em',
+            padding: '1em 2em',
           }}
         >
           <Typography
             variant="h5"
             fontWeight="600"
-            sx={{ marginBottom: '10px' ,   textAlign: isMobile ? 'center':'start'}}
+            sx={{
+              marginBottom: '10px',
+              textAlign: isMobile ? 'center' : 'start',
+            }}
           >
-            Apply to launch now to bring your
-            project to over 30 VCs and global
-
-investors of Rabbit LaunchPad
+            Apply to launch now to bring your project to over 30 VCs and global
+            investors of Rabbit LaunchPad
           </Typography>
           <Button
-  variant="contained"
-  sx={{
-    marginTop: '30px',
-    borderRadius: '10px',
-    textTransform: 'initial',
-    background: 'linear-gradient(90deg, rgba(38,170,222,1) 0%, rgba(0,87,255,1) 100%)',
-    width: 'auto',
-    marginX: 'auto',
-  }}
->
-  Connect Wallet
-</Button>
+            variant="contained"
+            sx={{
+              marginTop: '30px',
+              borderRadius: '10px',
+              textTransform: 'initial',
+              background:
+                'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
+              width: 'auto',
+              marginX: 'auto',
+            }}
+          >
+            Connect Wallet
+          </Button>
         </Box>
 
         <img src={image11} alt="image11" />

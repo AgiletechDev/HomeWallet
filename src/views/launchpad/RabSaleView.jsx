@@ -12,29 +12,29 @@ import RadioGroup from '@mui/material/RadioGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import FormControl from '@mui/material/FormControl'
 
-import image11 from '../../assets/images/launchpad/image11.png'
+import image11 from '../../assets/images/launchpad/cuadro imagen der3.png'
 
 export const RabSaleView = () => {
-  
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
-    <Box sx={{  width: isMobile ? '100%' : '900px',  padding: '1em', mt: '5em' }}>
-    <Box
-      sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
-    >
-      <Typography textAlign="center" variant="h3" fontWeight="bold">
-        Create Token
-      </Typography>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em' }}>
+    <Box sx={{ width: isMobile ? '100%' : '900px', padding: '1em', mt: '5em' }}>
+      <Box
+        sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+      >
+        <Typography textAlign="center" variant="h3" fontWeight="bold">
+          RAB Sale
+        </Typography>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em' }}>
           <Card
             sx={{
               width: '100%',
               display: 'flex',
-              flexDirection: isMobile ? 'column' : 'row',
               justifyContent: 'space-between',
               borderRadius: '20px',
-              boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+              flexDirection: isMobile ? 'column' : 'row',
+              margin: 'auto',
+              mt: '1em',
             }}
           >
             <Box
@@ -52,31 +52,11 @@ export const RabSaleView = () => {
                   textAlign: isMobile ? 'center' : 'justify',
                 }}
               >
-                Raise capital and launch your project with easy steps and the
-                best fees in the market to reach our global investors.
-                Automatically list your Token after successful fundraising on:
-                PancakeSwap, UniSwap
+                Recaude capital y lance su proyecto con pasos sencillos y las
+                mejores tarifas del mercado para llegar a nuestros inversores
+                globales. Incluya automáticamente su Token después de una
+                recaudación de fondos exitosa en: PancakeSwap, UniSwap
               </Typography>
-              <Box
-                sx={{
-                  display: 'flex',
-                  justifyContent: isMobile ? 'center' : 'start',
-                  marginTop: isMobile ? '30px' : '0',
-                  mt: '1em',
-                }}
-              >
-                <Button
-                  variant="contained"
-                  sx={{
-                    borderRadius: '10px',
-                    textTransform: 'initial',
-                    background:
-                      'linear-gradient(90deg, rgba(38,170,222,1) 0%, rgba(0,87,255,1) 100%)',
-                  }}
-                >
-                  Connect Wallet
-                </Button>
-              </Box>
             </Box>
 
             <img
@@ -112,10 +92,10 @@ export const RabSaleView = () => {
                 textAlign="left"
                 variant="h5"
                 fontWeight="bold"
-                color="#14A8FC"
+                color="white"
                 sx={{
                   padding: '5px',
-                  backgroundColor: '#d8f0ff',
+                  backgroundColor: '#3e387b',
                   borderRadius: '50%',
                   width: '30px',
                   height: '30px',
@@ -290,7 +270,7 @@ export const RabSaleView = () => {
                 borderRadius: '10px',
                 textTransform: 'initial',
                 background:
-                  'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
+                'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
               }}
             >
               Connect Wallet

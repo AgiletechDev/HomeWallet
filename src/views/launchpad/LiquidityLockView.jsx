@@ -1,4 +1,4 @@
-import { Box, Typography, Button, TextField, useTheme, useMediaQuery } from '@mui/material';
+import { Box, Typography, TextField, useTheme, useMediaQuery } from '@mui/material';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -60,12 +60,14 @@ export const LiquidityLockView = () => {
               borderRadius: '12px',
               overflowX: 'auto',
               width: '100%',
+              padding:'1em',
+              border: '3px solid #e3e3e3'
             }}
             component={Paper}
           >
             <Table sx={{ minWidth: 650 }}>
               <TableHead>
-                <TableRow sx={{ backgroundColor: '#f4f4f4' }}>
+                <TableRow sx={{ backgroundColor: '#e3e3e3' }}>
                   <TableCell sx={{ color: 'black' }}>Token</TableCell>
                   <TableCell align="center" sx={{ color: 'black' }}>
                     Symbol
@@ -122,18 +124,6 @@ export const LiquidityLockView = () => {
               person acting or refraining from action as a result of any
               material provided or published
             </Typography>
-            <Button
-              variant="contained"
-              sx={{
-                marginTop: '30px',
-                borderRadius: '10px',
-                textTransform: 'initial',
-                background:
-                  'linear-gradient(242deg, rgba(1,89,255,1) 0%, rgba(54,182,255,1) 100%)',
-              }}
-            >
-              Connect Wallet
-            </Button>
           </Box>
         </Box>
       </Box>
