@@ -16,7 +16,6 @@ import {
 import { useTranslation } from 'react-i18next'
 import spainFlag from '../assets/images/portal/spain.png'
 import estadosunidos from '../assets/images/portal/estadosunidos.png'
-import logoconjunto from '../assets/images/portal/logoconjunto.png'
 import playstore from '../assets/images/portal/svg/playstore.svg'
 import apple from '../assets/images/portal/svg/apple.svg'
 
@@ -118,7 +117,7 @@ const Navbar = () => {
               justifyContent: 'space-between',
               alignItems: 'center',
               padding: '0',
-              background: '#33277b',
+              background: 'white',
               backdropFilter: 'blur(18px)',
               position: 'relative',
             }}
@@ -132,16 +131,17 @@ const Navbar = () => {
                 position: 'relative',
               }}
             >
-              <img
+              <Logo />
+              {/* <img
                 src={logoconjunto}
                 alt="logo"
                 style={{
                   width: '100%',
                   height: '50px',
                 }}
-              />
+              /> */}
             </Link>
-            <IconButton color="inherit" onClick={handleDrawerOpen}>
+            <IconButton color="black" onClick={handleDrawerOpen}>
               <MenuIcon />
             </IconButton>
           </Toolbar>
@@ -156,13 +156,12 @@ const Navbar = () => {
             style: {
               right: 0,
               width: '250px',
-              background: '#33277b',
+              background: 'white',
             },
           }}
         >
           <Box
             sx={{
-              background: '#33277b',
               padding: '20px',
               textAlign: 'center',
               mt: '2em',
@@ -173,14 +172,15 @@ const Navbar = () => {
             }}
           >
             <Link to="/" onClick={handleDrawerClose}>
-              <img
+              <Logo />
+              {/* <img
                 src={logoconjunto}
                 alt="logo"
                 style={{
                   width: '80%',
                   marginBottom: '20px',
                 }}
-              />
+              /> */}
             </Link>
 
             <Link
