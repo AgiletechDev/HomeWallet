@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import { Container, Box } from '@mui/material'
 import NavbarLaunchpad from './components/NavbarLaunchpad'
 import { FooterLaunchpad } from './components'
+import { AppTheme } from './theme/AppTheme'
 
 function App() {
   const location = useLocation()
@@ -60,12 +61,12 @@ function App() {
     }
   }
   return (
-    <>
+    <AppTheme>
       {renderNavbar()}
       {renderOutlet()}
 
       {renderFooter()}
-    </>
+    </AppTheme>
   )
 }
 

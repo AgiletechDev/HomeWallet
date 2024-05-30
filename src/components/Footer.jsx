@@ -1,4 +1,4 @@
-import { Box, Typography, useTheme, useMediaQuery  } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery, Stack  } from '@mui/material'
 import iconotelegram from '../assets/images/portal/svg/iconotelegram.svg'
 import iconox from '../assets/images/portal/svg/iconox.svg'
 import iconodiscord from '../assets/images/portal/svg/iconodiscord.svg'
@@ -15,10 +15,8 @@ const Footer = () => {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        background:
-          'linear-gradient(97deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
+        background: 'white',
         height: '100%',
-        padding:'2em'
       }}
     >
       <Box
@@ -31,8 +29,7 @@ const Footer = () => {
           textAlign: 'center',
           margin: 'auto',
           borderRadius: '10px',
-          background: 'linear-gradient(to right, #3b3f78 14%, #486284 83%)',
-          boxShadow: '0px 10px 35px rgba(0, 0, 0, 0.1)',
+          background: 'white',
         }}
       >
         <Box
@@ -48,8 +45,8 @@ const Footer = () => {
           <Typography
             variant="h6"
             component="p"
+            className='bg-gradient-main bg-clip-text text-transparent'
             sx={{
-              color: 'white',
               marginRight: '8px',
               fontSize: '15px',
               letterSpacing: '1px',
@@ -63,7 +60,6 @@ const Footer = () => {
             sx={{
               fontSize: '20px',
               fontWeight: '600',
-              color: 'white',
             }}
           >
             AGILETECH
@@ -77,7 +73,6 @@ const Footer = () => {
             fontSize: '25px',
             letterSpacing: '2px',
             marginBottom: '20px',
-            color: 'white',
           }}
         >
           {t("CONTACT_US")}
@@ -94,13 +89,13 @@ const Footer = () => {
         >
           <Typography
             variant="p"
-            sx={{ fontSize: '20px', mr: '10px', color: 'white' }}
+            sx={{ fontSize: '20px', mr: '10px' }}
           >
             Email:
           </Typography>
           <a
             href="mailto:contact@agrawallet.com"
-            style={{ textDecoration: 'none', color: 'white', fontSize: '20px' }}
+            style={{ textDecoration: 'none', fontSize: '20px' }}
           >
             contact@agrawallet.com
           </a>
@@ -112,13 +107,14 @@ const Footer = () => {
             flexDirection: isMobile ? 'column' : 'row',
             justifyContent: 'center',
             alignItems: 'center',
+            gap: 8,
             marginTop: '20px',
             marginBottom: '20px',
-            gap:'40px'
           }}
         >
           <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
             <img
+              className='invert'
               src={iconotelegram}
               alt="telegram"
               style={{width: '40px' }}
@@ -130,6 +126,7 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <img
+              className='invert'
               src={iconox}
               alt="twitter"
               style={{ width: '40px' }}
@@ -141,6 +138,7 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <img
+              className='invert'
               src={iconodiscord}
               alt="discord"
               style={{ width: '50px' }}
@@ -150,8 +148,9 @@ const Footer = () => {
             href="https://www.youtube.com/"
             target="_blank"
             rel="noopener noreferrer"
-          >
+            >
             <img
+              className='invert'
               src={iconoYT}
               alt="youtube"
               style={{ width: '50px' }}
@@ -159,6 +158,11 @@ const Footer = () => {
           </a>
         </Box>
       </Box>
+      <Stack sx={{background: 'black', justifyContent: 'center', alignItems:'center', padding: 2}}>
+        <Typography color='white'>
+          Copyright 2024 © Wallet. All Right Reserved
+        </Typography>
+      </Stack>
     </Box>
   )
 }

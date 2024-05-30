@@ -17,12 +17,12 @@ import { useTranslation } from 'react-i18next'
 import spainFlag from '../assets/images/portal/spain.png'
 import estadosunidos from '../assets/images/portal/estadosunidos.png'
 import logoconjunto from '../assets/images/portal/logoconjunto.png'
-import botoncomprar from '../assets/images/portal/botoncomprar.png'
-import flechadesplazamiento from '../assets/images/portal/svg/flechadesplazamiento.svg'
 import playstore from '../assets/images/portal/svg/playstore.svg'
 import apple from '../assets/images/portal/svg/apple.svg'
 
 import MenuIcon from '@mui/icons-material/Menu'
+import { Logo } from './Logo'
+import { FaChevronDown } from 'react-icons/fa'
 
 const Navbar = () => {
   const theme = useTheme()
@@ -165,7 +165,6 @@ const Navbar = () => {
               background: '#33277b',
               padding: '20px',
               textAlign: 'center',
-              color: 'white',
               mt: '2em',
               display: 'flex',
               flexDirection: 'column',
@@ -240,13 +239,19 @@ const Navbar = () => {
   }
 
   return (
-    <div>
+    <div style={{marginTop: '104px'}}>
       <AppBar
         component="nav"
         position="fixed"
+        elevation={0}
         sx={{
-          height: '0',
+          display: 'flex',
+          justifyContent: 'center',
+          height: '104px',
           marginBottom: '40px',
+          background: 'white',
+          top: 0,
+          left: 0,
         }}
       >
         <Toolbar
@@ -254,7 +259,6 @@ const Navbar = () => {
             display: 'flex',
             alignItems: 'center',
             padding: '0',
-            background: '#33277b',
             backdropFilter: 'blur(18px)',
             position: 'relative',
           }}
@@ -269,7 +273,8 @@ const Navbar = () => {
               left: isMobile ? '0' : '5px',
             }}
           >
-            <img
+            <Logo />
+            {/* <img
               src={logoconjunto}
               alt="logo"
               style={{
@@ -279,13 +284,13 @@ const Navbar = () => {
                 top: '5px',
                 marginLeft: isMobile ? '-10px' : '-50px',
               }}
-            />
+            /> */}
           </Link>
           <Box
             sx={{
               display: 'flex',
               justifyContent: 'flex-end',
-              width: '100%',
+              flexGrow: 1,
             }}
           >
             {links.map(({ title, path, click }, index) => (
@@ -297,13 +302,12 @@ const Navbar = () => {
                   alignItems: 'center',
                   fontSize: isMobile ? '8px' : '13px',
                   fontWeight: '600',
-                  color: 'white',
                   marginLeft: isMobile ? '-18px' : '0',
                 }}
               >
                 <Link
                   to={path}
-                  style={{ textDecoration: 'none', color: 'white' }}
+                  style={{ textDecoration: 'none', color: 'black' }}
                 >
                   {title}
                 </Link>
@@ -311,21 +315,17 @@ const Navbar = () => {
                   sx={{ marginLeft: isMobile ? '-25px' : '-20px' }}
                   onClick={click}
                 >
-                  <img
-                    src={flechadesplazamiento}
-                    style={{ height: '10px', width: isMobile ? '8px' : '10px' }}
-                    alt=""
-                  />
+                  <FaChevronDown size={10} />
                 </Button>
               </Typography>
             ))}
             <Link to="/blog">
               <Button
                 sx={{
+                  color: 'black',
                   fontSize: isMobile ? '10px' : '13px',
                   paddingY: '10px',
                   textTransform: 'capitalize',
-                  color: 'white',
                   marginLeft: isMobile ? '-40px' : '-15px',
                 }}
               >
@@ -362,7 +362,6 @@ const Navbar = () => {
                   fontWeight: '600',
                   fontSize: isMobile ? '8px' : '13px',
                   padding: isMobile ? '2px' : '20px',
-                  background: `url(${botoncomprar})`,
                   marginLeft: isMobile ? '-10px' : '0',
                 }}
               >
@@ -374,6 +373,7 @@ const Navbar = () => {
               sx={{ height: '30px', marginLeft: isMobile ? '-15px' : '0' }}
             >
               <img
+                className='invert'
                 src={apple}
                 style={{
                   width: isMobile ? '20px' : '25px',
@@ -411,10 +411,12 @@ const Navbar = () => {
             onClick={handleClose}
             sx={{
               color: 'black',
+              borderRadius: '10px',
+              minWidth: '150px',
+              marginX: 1,
               '&:hover': {
-                background: '#191970',
+                background: '#29b0ea',
                 color: 'white',
-                borderRadius: '15px',
               },
             }}
           >
@@ -427,10 +429,12 @@ const Navbar = () => {
             onClick={handleClose}
             sx={{
               color: 'black',
+              borderRadius: '10px',
+              minWidth: '150px',
+              marginX: 1,
               '&:hover': {
-                background: '#191970',
+                background: '#29b0ea',
                 color: 'white',
-                borderRadius: '15px',
               },
             }}
           >
@@ -450,10 +454,12 @@ const Navbar = () => {
             onClick={handleClose2}
             sx={{
               color: 'black',
+              borderRadius: '10px',
+              minWidth: '150px',
+              marginX: 1,
               '&:hover': {
-                background: '#191970',
+                background: '#29b0ea',
                 color: 'white',
-                borderRadius: '15px',
               },
             }}
           >
@@ -466,10 +472,12 @@ const Navbar = () => {
             onClick={handleClose2}
             sx={{
               color: 'black',
+              borderRadius: '10px',
+              minWidth: '150px',
+              marginX: 1,
               '&:hover': {
-                background: '#191970',
+                background: '#29b0ea',
                 color: 'white',
-                borderRadius: '15px',
               },
             }}
           >
@@ -489,10 +497,12 @@ const Navbar = () => {
             onClick={handleClose3}
             sx={{
               color: 'black',
+              borderRadius: '10px',
+              minWidth: '150px',
+              marginX: 1,
               '&:hover': {
-                background: '#191970',
+                background: '#29b0ea',
                 color: 'white',
-                borderRadius: '15px',
               },
             }}
           >
@@ -505,10 +515,12 @@ const Navbar = () => {
             onClick={handleClose3}
             sx={{
               color: 'black',
+              borderRadius: '10px',
+              minWidth: '150px',
+              marginX: 1,
               '&:hover': {
-                background: '#191970',
+                background: '#29b0ea',
                 color: 'white',
-                borderRadius: '15px',
               },
             }}
           >
@@ -521,10 +533,12 @@ const Navbar = () => {
             onClick={handleClose3}
             sx={{
               color: 'black',
+              borderRadius: '10px',
+              minWidth: '150px',
+              marginX: 1,
               '&:hover': {
-                background: '#191970',
+                background: '#29b0ea',
                 color: 'white',
-                borderRadius: '15px',
               },
             }}
           >

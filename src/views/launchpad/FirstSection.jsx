@@ -13,7 +13,10 @@ export const FirstSection = () => {
   return (
     <Box
       sx={{
-        maxWidth: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
       }}
     >
       <Box
@@ -42,38 +45,26 @@ export const FirstSection = () => {
           <Typography
             variant="h2"
             component="p"
+            className='bg-gradient-main bg-clip-text'
             sx={{
-              color: '#3e387b',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 4,
+              color: 'transparent',
               fontSize: '45px',
               fontWeight: '600',
               marginBottom: '35px',
             }}
           >
-            {t("LAUNCHPAD_SECTION1_TITLE1")}
-          </Typography>
-          <Typography
-            variant="h2"
-            component="p"
-            sx={{
-              color: '#3e387b',
-              fontSize: '45px',
-              fontWeight: '600',
-              marginBottom: '35px',
-            }}
-          >
-            {t("LAUNCHPAD_SECTION1_TITLE2")}
-          </Typography>
-          <Typography
-            variant="h2"
-            component="p"
-            sx={{
-              color: '#3e387b',
-              fontSize: '45px',
-              fontWeight: '600',
-              marginBottom: '35px',
-            }}
-          >
-            {t("LAUNCHPAD_SECTION1_TITLE3")}
+            <span>
+              {t("LAUNCHPAD_SECTION1_TITLE1")}
+            </span>
+            <span>
+              {t("LAUNCHPAD_SECTION1_TITLE2")}
+            </span>
+            <span>
+              {t("LAUNCHPAD_SECTION1_TITLE3")}
+            </span>
           </Typography>
           <Typography
             variant="h6"
@@ -91,16 +82,16 @@ export const FirstSection = () => {
           <Box sx={{ display: 'flex', marginBottom: '30px' }}>
             <Button
               variant="contained"
+              className='bg-gradient-main-45'
               sx={{
                 marginRight: '10px',
                 borderRadius: '10px',
                 textTransform: 'initial',
-              background: 'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)'
               }}
             >
               {t("LAUNCHPAD_SECTION1_BUTTON")}
             </Button>
-            <Button variant="outlined" sx={{ textTransform: 'initial', border: '1px solid #3e387b', color:'black' }}>
+            <Button variant="outlined" sx={{ textTransform: 'initial', border: '1px solid #7b7b7b', color:'primary' }}>
               {t("LAUNCHPAD_SECTION1_BUTTON2")}
             </Button>
           </Box>
@@ -109,7 +100,7 @@ export const FirstSection = () => {
             <Typography sx={{ marginRight: '10px', fontSize: '13px' }}>
               Powered by
             </Typography>
-            <Typography sx={{ color: '#3e387b', fontWeight: '600' }}>
+            <Typography className='bg-gradient-main-45 bg-clip-text italic' sx={{ color: 'transparent', fontWeight: '900' }}>
               AGILETECH
             </Typography>
           </Box>
@@ -120,7 +111,7 @@ export const FirstSection = () => {
             marginLeft: isMobile ? 'auto' : '0',
             marginRight: isMobile ? 'auto' : '0',}}/>
           </Box>
-       
+
       </Box>
 
 
@@ -132,9 +123,8 @@ export const FirstSection = () => {
           justifyContent: 'center',
           alignItems:'center',
           marginTop: '50px',
-          backgroundColor:'#f1fbff',
+          backgroundColor:'white',
           padding:'2em',
-          boxShadow: '0px 8px 10px -5px rgba(0, 0, 0, 0.1), 0px -8px 10px -5px rgba(0, 0, 0, 0.1)',
           width: isMobile ? '90%' : '100%',
           margin:'auto'
           
@@ -168,6 +158,7 @@ export const FirstSection = () => {
             flexDirection: isMobile ? 'column' : 'row',
             justifyContent: 'center',
             alignItems: 'center',
+            width: '100%',
             gap:'10px'
           }}
         >

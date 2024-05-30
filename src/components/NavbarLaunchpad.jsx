@@ -11,12 +11,12 @@ import {
   Drawer,
   useTheme,
   useMediaQuery,
+  Stack,
 } from '@mui/material'
-import flechadesplazamiento from '../assets/images/portal/svg/flechadesplazamiento.svg'
-import logoconjunto from '../assets/images/portal/logoconjunto.png'
-import botoncomprar from '../assets/images/portal/botoncomprar.png'
 import { Link } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
+import { FaChevronDown } from 'react-icons/fa'
+import { Logo } from './Logo'
 
 const NavbarLaunchpad = () => {
   const [anchorElm, setAnchorElm] = useState(null)
@@ -101,30 +101,31 @@ const NavbarLaunchpad = () => {
               display: 'flex',
               alignItems: 'center',
               padding: '0',
-              background: '#33277b',
+              background: 'white',
               backdropFilter: 'blur(18px)',
               position: 'relative',
+              justifyContent: 'space-between'
             }}
           >
             <Link
               to="/launchpad"
               color="inherit"
               style={{
-                width: '300px',
                 padding: '20px',
                 position: 'relative',
               }}
             >
-              <img
+              <Logo />
+              {/* <img
                 src={logoconjunto}
                 alt="logo"
                 style={{
                   width: '80%',
                   height: '50px',
                 }}
-              />
+              /> */}
             </Link>
-            <IconButton color="inherit" onClick={handleDrawerOpen}>
+            <IconButton color="black" onClick={handleDrawerOpen}>
               <MenuIcon />
             </IconButton>
           </Toolbar>
@@ -139,13 +140,12 @@ const NavbarLaunchpad = () => {
             style: {
               right: 0,
               width: '250px',
-              background: '#33277b',
+              background: 'white',
             },
           }}
         >
           <Box
             sx={{
-              background: '#33277b',
               padding: '20px',
               textAlign: 'center',
               color: 'white',
@@ -157,76 +157,77 @@ const NavbarLaunchpad = () => {
             }}
           >
             <Link to="/launchpad" onClick={handleDrawerClose}>
-              <img
+              <Logo />
+              {/* <img
                 src={logoconjunto}
                 alt="logo"
                 style={{
                   width: '80%',
                   marginBottom: '20px',
                 }}
-              />
+              /> */}
             </Link>
 
             <Link
               to="/launchpad/createsale"
               onClick={handleDrawerClose}
-              style={{ textDecoration: 'none', color: 'inherit' }}
+              style={{ textDecoration: 'none', color: 'black' }}
             >
               <Typography>Create Sale</Typography>
             </Link>
             <Link
               to="/launchpad/rabsale"
               onClick={handleDrawerClose}
-              style={{ textDecoration: 'none', color: 'inherit' }}
+              style={{ textDecoration: 'none', color: 'black' }}
             >
               <Typography>View Sales</Typography>
             </Link>
             <Link
               to="/launchpad/token"
               onClick={handleDrawerClose}
-              style={{ textDecoration: 'none', color: 'inherit' }}
+              style={{ textDecoration: 'none', color: 'black' }}
             >
               <Typography>Token</Typography>
             </Link>
             <Link
               to="/launchpad/lock"
               onClick={handleDrawerClose}
-              style={{ textDecoration: 'none', color: 'inherit' }}
+              style={{ textDecoration: 'none', color: 'black' }}
             >
               <Typography>Create Lock</Typography>
             </Link>
             <Link
               to="/launchpad/listlocks"
               onClick={handleDrawerClose}
-              style={{ textDecoration: 'none', color: 'inherit' }}
+              style={{ textDecoration: 'none', color: 'black' }}
             >
               <Typography>List Locks</Typography>
             </Link>
             <Link
               to="/launchpad/liquidity"
               onClick={handleDrawerClose}
-              style={{ textDecoration: 'none', color: 'inherit' }}
+              style={{ textDecoration: 'none', color: 'black' }}
             >
               <Typography>Liquidity</Typography>
             </Link>
             <Link
               to="/launchpad/rabgrow"
               onClick={handleDrawerClose}
-              style={{ textDecoration: 'none', color: 'inherit' }}
+              style={{ textDecoration: 'none', color: 'black' }}
             >
               <Typography>Create Grow</Typography>
             </Link>
             <Link
               to="/launchpad/listgrow"
               onClick={handleDrawerClose}
-              style={{ textDecoration: 'none', color: 'inherit' }}
+              style={{ textDecoration: 'none', color: 'black' }}
             >
               <Typography>List Grows</Typography>
             </Link>
             <Link
               to="/"
               onClick={handleDrawerClose}
-              style={{ textDecoration: 'none', color: 'inherit' }}
+              style={{ textDecoration: 'none', color: 'black' }}
             >
               <Typography>HomePage</Typography>
             </Link>
@@ -237,13 +238,19 @@ const NavbarLaunchpad = () => {
   }
 
   return (
-    <div>
+    <header style={{marginTop: '104px'}}>
       <AppBar
         component="nav"
         position="fixed"
+        elevation={0}
         sx={{
-          height: '0',
+          display: 'flex',
+          justifyContent: 'center',
+          height: '104px',
           marginBottom: '40px',
+          background: 'white',
+          top: 0,
+          left: 0,
         }}
       >
         <Toolbar
@@ -252,13 +259,16 @@ const NavbarLaunchpad = () => {
               justifyContent: 'space-between',
               alignItems: 'center',
               padding: '0',
-              background: '#33277b',
-              backdropFilter: 'blur(18px)',
+              background: 'primary',
+              // backdropFilter: 'blur(18px)',
               position: 'relative',
             }}
           >
-          <Link to="/launchpad">
-            <img
+          <Stack direction='row' gap={10}>
+
+          <Link to="/launchpad" style={{display:'block'}}>
+            <Logo/>
+            {/* <img
               src={logoconjunto}
               alt="logo"
               style={{
@@ -266,46 +276,39 @@ const NavbarLaunchpad = () => {
                 padding: '30px',
                 left: '5px',
               }}
-            />
+            /> */}
           </Link>
 
           <Box
             sx={{
               display: 'flex',
               justifyContent: 'flex-start',
-              width: '100%',
+              alignItems: 'center',
               gap: '20px',
             }}
           >
             {list.map(({ title, click }, index) => (
-              <Typography
-                key={index}
-                sx={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  fontSize: '13px',
-                  fontWeight: '600',
-                  color: 'white',
-                }}
-              >
-                {title}
-                <Button sx={{ marginLeft: '-20px' }} onClick={click}>
-                  <img
-                    src={flechadesplazamiento}
-                    style={{ height: '10px', width: '10px' }}
-                    alt=""
-                  />
-                </Button>
-              </Typography>
+              <Button key={index} sx={{ display:'flex', gap:1, marginLeft: '-20px' }} onClick={click}>
+                <FaChevronDown size={10} />
+                <Typography
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    fontSize: '13px',
+                    fontWeight: '600',
+                    color: 'black',
+                  }}
+                >
+                  {title}
+                </Typography>
+              </Button>
             ))}
             <Link to="/">
               <Button
                 sx={{
-                  fontSize: '13px',
-                  paddingY: '10px',
                   textTransform: 'capitalize',
-                  color: 'white',
+                  color: 'black',
                   marginLeft: '-15px',
                 }}
               >
@@ -327,10 +330,12 @@ const NavbarLaunchpad = () => {
                   onClick={handleClose}
                   sx={{
                     color: 'black',
+                    borderRadius: '10px',
+                    minWidth: '150px',
+                    marginX: 1,
                     '&:hover': {
-                      background: '#191970',
+                      background: '#29b0ea',
                       color: 'white',
-                      borderRadius: '15px',
                     },
                   }}
                 >
@@ -343,10 +348,12 @@ const NavbarLaunchpad = () => {
                   onClick={handleClose}
                   sx={{
                     color: 'black',
+                    borderRadius: '10px',
+                    minWidth: '150px',
+                    marginX: 1,
                     '&:hover': {
-                      background: '#191970',
+                      background: '#29b0ea',
                       color: 'white',
-                      borderRadius: '15px',
                     },
                   }}
                 >
@@ -366,10 +373,12 @@ const NavbarLaunchpad = () => {
                   onClick={handleClose2}
                   sx={{
                     color: 'black',
+                    borderRadius: '10px',
+                    minWidth: '150px',
+                    marginX: 1,
                     '&:hover': {
-                      background: '#191970',
+                      background: '#29b0ea',
                       color: 'white',
-                      borderRadius: '15px',
                     },
                   }}
                 >
@@ -389,10 +398,12 @@ const NavbarLaunchpad = () => {
                   onClick={handleClose3}
                   sx={{
                     color: 'black',
+                    borderRadius: '10px',
+                    minWidth: '150px',
+                    marginX: 1,
                     '&:hover': {
-                      background: '#191970',
+                      background: '#29b0ea',
                       color: 'white',
-                      borderRadius: '15px',
                     },
                   }}
                 >
@@ -408,10 +419,12 @@ const NavbarLaunchpad = () => {
                   onClick={handleClose3}
                   sx={{
                     color: 'black',
+                    borderRadius: '10px',
+                    minWidth: '150px',
+                    marginX: 1,
                     '&:hover': {
-                      background: '#191970',
+                      background: '#29b0ea',
                       color: 'white',
-                      borderRadius: '15px',
                     },
                   }}
                 >
@@ -427,10 +440,12 @@ const NavbarLaunchpad = () => {
                   onClick={handleClose3}
                   sx={{
                     color: 'black',
+                    borderRadius: '10px',
+                    minWidth: '150px',
+                    marginX: 1,
                     '&:hover': {
-                      background: '#191970',
+                      background: '#29b0ea',
                       color: 'white',
-                      borderRadius: '15px',
                     },
                   }}
                 >
@@ -450,10 +465,12 @@ const NavbarLaunchpad = () => {
                   onClick={handleClose4}
                   sx={{
                     color: 'black',
+                    borderRadius: '10px',
+                    minWidth: '150px',
+                    marginX: 1,
                     '&:hover': {
-                      background: '#191970',
+                      background: '#29b0ea',
                       color: 'white',
-                      borderRadius: '15px',
                     },
                   }}
                 >
@@ -466,10 +483,12 @@ const NavbarLaunchpad = () => {
                   onClick={handleClose4}
                   sx={{
                     color: 'black',
+                    borderRadius: '10px',
+                    minWidth: '150px',
+                    marginX: 1,
                     '&:hover': {
-                      background: '#191970',
+                      background: '#29b0ea',
                       color: 'white',
-                      borderRadius: '15px',
                     },
                   }}
                 >
@@ -479,11 +498,12 @@ const NavbarLaunchpad = () => {
             </Menu>
           </Box>
 
+          </Stack>
+
           <Box
             sx={{
               display: 'flex',
               justifyContent: 'flex-end',
-              width: '100%',
               gap: '20px',
             }}
           >
@@ -491,13 +511,13 @@ const NavbarLaunchpad = () => {
               <Button
                 variant="contained"
                 sx={{
-                  borderRadius: '20px',
-                  height: '40px',
+                  borderRadius: '10px',
                   textTransform: 'capitalize',
+                  textWrap: 'nowrap',
                   fontWeight: '600',
                   fontSize: '13px',
-                  padding: '20px',
-                  background: `black`,
+                  backgroundColor: 'black',
+                  color: 'white',
                 }}
               >
                 Buy Rabbit
@@ -507,13 +527,11 @@ const NavbarLaunchpad = () => {
               <Button
                 variant="contained"
                 sx={{
-                  borderRadius: '20px',
-                  height: '40px',
+                  borderRadius: '10px',
                   textTransform: 'capitalize',
+                  textWrap: 'nowrap',
                   fontWeight: '600',
                   fontSize: '13px',
-                  padding: '20px',
-                  background: `url(${botoncomprar})`,
                 }}
               >
                 Connect Wallet
@@ -522,7 +540,7 @@ const NavbarLaunchpad = () => {
           </Box>
         </Toolbar>
       </AppBar>
-    </div>
+    </header>
   )
 }
 

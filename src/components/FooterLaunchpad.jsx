@@ -1,10 +1,10 @@
 import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
 
-import imgLogo from '../assets/images/portal/logoconjunto.png'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import TelegramIcon from '@mui/icons-material/Telegram'
 import DiscordIcon from '../assets/icons/icons8-discord.svg'
 import { useTranslation } from 'react-i18next'
+import { Logo } from './Logo'
 
 const iconStyle = {
   borderRadius: '50%',
@@ -19,8 +19,8 @@ export const FooterLaunchpad = () => {
   const { t } = useTranslation();
  
   return (
-    <Box sx={{background:'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',}}>
- <Box
+    <Box sx={{background:'white',}}>
+    <Box
       sx={{
         mt: '5em',
         display: 'flex',
@@ -29,10 +29,10 @@ export const FooterLaunchpad = () => {
         maxWidth: '1000px',
         margin: 'auto',
         padding: '2em',
-        color:'white'
       }}
     >
-      <img src={imgLogo} width={isMobile ? '100%' : "20%"} />
+      {/* <img src={imgLogo} width={isMobile ? '100%' : "20%"} /> */}
+      <Logo />
       <Box
         sx={{
           display: 'flex',

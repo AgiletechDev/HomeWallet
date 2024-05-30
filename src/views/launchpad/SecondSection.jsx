@@ -6,6 +6,7 @@ import {
   Typography,
   useTheme,
   useMediaQuery,
+  Stack,
 } from '@mui/material'
 import imageA from '../../assets/images/launchpad/icono 1.png'
 import imageB from '../../assets/images/launchpad/icono 2.png'
@@ -36,7 +37,7 @@ export const SecondSection = () => {
       <Typography variant="h4" sx={{ fontWeight: '600', marginTop: '50px' }}>
         {t("LAUNCHPAD_SECTION2_TITLE1")}
       </Typography>
-      <Typography variant="h4" sx={{ fontWeight: '600', color: '#3e387b' }}>
+      <Typography variant="h4" className='bg-gradient-main bg-clip-text' sx={{ fontWeight: '600', color: 'transparent' }}>
         {t("LAUNCHPAD_SECTION2_TITLE2")}
       </Typography>
       <Typography variant="h4" sx={{ fontWeight: '600' }}>
@@ -47,27 +48,28 @@ export const SecondSection = () => {
         sx={{
           display: 'flex',
           marginTop: '60px',
-          gap: '50px',
-          padding: isMobile ? '1em' : '1em 12em',
+          maxWidth: '1000px',
+          gap: {xs: 2,md:4},
           flexDirection: isMobile ? 'column' : 'row',
         }}
       >
         <Card
+          elevation={0}
           sx={{
             width: '100%',
-            background:
-              'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
+            background: '#CDE6FF',
             padding: '30px',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center',
-            textAlign: 'justify',
-            alignItems: 'center',
-            color: 'white',
+            justifyContent: 'space-between',
+            textAlign: 'start',
+            color: 'black',
             borderRadius: '20px',
           }}
         >
-          <img src={imageA} alt="imagec" style={{ width: '100px' }} />
+          <Stack justifyContent='center' sx={{flexGrow: 1}}>
+            <img src={imageA} alt="imagec" style={{ width: '100px' }} />
+          </Stack>
           <Typography
             gutterBottom
             variant="h5"
@@ -77,27 +79,28 @@ export const SecondSection = () => {
           >
             {t("LAUNCHPAD_CARD_TITLE1")}
           </Typography>
-          <Typography variant="p" fontSize="20px">
+          <Typography variant="body2">
             {t("LAUNCHPAD_CARD_TEXT")}
           </Typography>
         </Card>
 
         <Card
+          elevation={0}
           sx={{
             width: '100%',
-            background:
-              'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
+            background: '#CDE6FF',
             padding: '30px',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center',
-            textAlign: 'justify',
-            alignItems: 'center',
-            color: 'white',
+            justifyContent: 'space-between',
+            textAlign: 'start',
+            color: 'black',
             borderRadius: '20px',
           }}
         >
-          <img src={imageB} alt="imagec" style={{ width: '100px' }} />
+          <Stack justifyContent='center' sx={{flexGrow: 1}}>
+            <img src={imageB} alt="imagec" style={{ width: '100px' }} />
+          </Stack>
           <Typography
             gutterBottom
             variant="h5"
@@ -107,27 +110,28 @@ export const SecondSection = () => {
           >
             {t("LAUNCHPAD_CARD_TITLE2")}
           </Typography>
-          <Typography variant="p" fontSize="20px">
+          <Typography variant="body2">
             {t("LAUNCHPAD_CARD2_TEXT")}
           </Typography>
         </Card>
 
         <Card
+          elevation={0}
           sx={{
             width: '100%',
-            background:
-              'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
+            background: '#CDE6FF',
             padding: '30px',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center',
-            textAlign: 'justify',
-            alignItems: 'center',
-            color: 'white',
+            justifyContent: 'space-between',
+            textAlign: 'start',
+            color: 'black',
             borderRadius: '20px',
           }}
         >
-          <img src={imageC} alt="imagec" style={{ width: '100px' }} />
+          <Stack justifyContent='center' sx={{flexGrow: 1}}>
+            <img src={imageC} alt="imagec" style={{ width: '100px' }} />
+          </Stack>
           <Typography
             gutterBottom
             variant="h5"
@@ -137,7 +141,7 @@ export const SecondSection = () => {
           >
             {t("LAUNCHPAD_CARD_TITLE3")}
           </Typography>
-          <Typography variant="p" fontSize="20px">
+          <Typography variant="body2">
           {t("LAUNCHPAD_CARD3_TEXT")}
           </Typography>
         </Card>
@@ -187,6 +191,7 @@ export const SecondSection = () => {
       </Button>
 
       <Card
+        elevation={0}
         sx={{
           mt: '3em',
           width: isMobile ? '100%' : '70%',
@@ -194,7 +199,7 @@ export const SecondSection = () => {
           justifyContent: 'space-between',
           borderRadius: '20px',
           flexDirection: isMobile ? 'column' : 'row',
-          background: '#e3e3e3',
+          background: 'white',
         }}
       >
         <Box
