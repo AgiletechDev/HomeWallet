@@ -45,13 +45,13 @@ export const RabSaleView = () => {
               sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                padding: '1em 2em',
               }}
             >
               <Typography
                 variant="h5"
                 fontWeight="600"
                 sx={{
+                  padding: '2em',
                   marginBottom: '10px',
                   textAlign: isMobile ? 'center' : 'justify',
                 }}
@@ -93,10 +93,10 @@ export const RabSaleView = () => {
                 textAlign="left"
                 variant="h5"
                 fontWeight="bold"
-                color="white"
+                color="#0A85D9"
                 sx={{
                   padding: '5px',
-                  backgroundColor: '#3e387b',
+                  backgroundColor: '#0A85D940',
                   borderRadius: '50%',
                   width: '30px',
                   height: '30px',
@@ -171,6 +171,8 @@ export const RabSaleView = () => {
                       value="BUSD"
                       control={<Radio />}
                       label="BUSD"
+                      labelPlacement='start'
+                      className='flex w-full justify-between pr-4'
                     />
                   </Box>
                   <Box
@@ -186,6 +188,8 @@ export const RabSaleView = () => {
                       value="BNB"
                       control={<Radio />}
                       label="BNB"
+                      labelPlacement='start'
+                      className='flex w-full justify-between pr-4'
                     />
                   </Box>
                 </Box>
@@ -222,6 +226,8 @@ export const RabSaleView = () => {
                       value="Disable Afiliate"
                       control={<Radio />}
                       label={t("FORM_VERIFY_DISABLE")}
+                      labelPlacement='start'
+                      className='flex w-full justify-between pr-4'
                     />
                   </Box>
                   <Box
@@ -237,6 +243,8 @@ export const RabSaleView = () => {
                       value="Enable Afiliate"
                       control={<Radio />}
                       label={t("FORM_VERIFY_ENABLE")}
+                      labelPlacement='start'
+                      className='flex w-full justify-between pr-4'
                     />
                   </Box>
                 </Box>
@@ -262,12 +270,11 @@ export const RabSaleView = () => {
             </Typography>
             <Button
               variant="contained"
+              className='bg-gradient-main-45'
               sx={{
                 marginTop: '30px',
                 borderRadius: '10px',
                 textTransform: 'initial',
-                background:
-                'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
               }}
             >
               {t("LAUNCHPAD_SECTION2_BUTTON1")}

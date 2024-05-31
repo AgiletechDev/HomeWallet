@@ -91,7 +91,7 @@ export const FirstSection = () => {
             >
               {t("LAUNCHPAD_SECTION1_BUTTON")}
             </Button>
-            <Button variant="outlined" sx={{ textTransform: 'initial', border: '1px solid #7b7b7b', color:'primary' }}>
+            <Button variant="outlined" sx={{ textTransform: 'initial', border: '1px solid #7b7b7b40', color:'primary' }}>
               {t("LAUNCHPAD_SECTION1_BUTTON2")}
             </Button>
           </Box>

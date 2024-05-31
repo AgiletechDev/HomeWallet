@@ -31,7 +31,9 @@ export const ListGrowsView = () => {
               textAlign={isMobile ? 'center' : 'left'}
               variant="h3"
               fontWeight="700"
-              color="#14A8FC"
+              className='bg-gradient-main bg-clip-text'
+              color='transparent'
+              noWrap
             >
               Connect your wallet
             </Typography>
@@ -39,7 +41,6 @@ export const ListGrowsView = () => {
               textAlign={isMobile ? 'center' : 'left'}
               variant="h3"
               fontWeight="700"
-              color="#3e387b"
             >
               & start exploring
             </Typography>
@@ -52,9 +53,8 @@ export const ListGrowsView = () => {
               }}
             >
               <Button
+                className='bg-gradient-main-45'
                 sx={{
-                  background:
-                  'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
                   color: 'white',
                   borderRadius: '5px',
                 }}
@@ -62,11 +62,13 @@ export const ListGrowsView = () => {
                 Connect Wallet
               </Button>
             </Box>
-            <Typography textAlign="left" variant="h6" fontWeight="700" color="#3e387b">
+            <Typography textAlign="left" variant="h6" fontWeight="700">
               Powered by{' '}
               <span
+                className='bg-gradient-main bg-clip-text'
                 style={{
-                  color: '#3e387b',
+                  color: 'transparent',
+                  fontWeight: 'bold',
                   textTransform: 'uppercase',
                   textStyle: 'italic',
                 }}
@@ -115,12 +117,11 @@ export const ListGrowsView = () => {
             style={{ width: '50px', marginTop: '2em' }}
           />
           <Button
+            className='bg-gradient-main'
             sx={{
               color: 'white',
               mt: '2em',
               alignSelf: 'strech',
-              background:
-              'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
             }}
           >
             Connect Wallet

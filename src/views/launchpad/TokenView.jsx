@@ -101,12 +101,11 @@ export const TokenView = () => {
             </Typography>
             <Button
               variant="contained"
+              className='bg-gradient-main-45'
               sx={{
                 marginTop: '30px',
                 borderRadius: '10px',
                 textTransform: 'initial',
-                background:
-                'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
               }}
             >
               {t("LAUNCHPAD_SECTION2_BUTTON1")}

@@ -5,6 +5,7 @@ import {
   TextField,
   useTheme,
   useMediaQuery,
+  Stack,
 } from '@mui/material'
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
@@ -17,6 +18,7 @@ import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 import * as React from 'react'
 import { useTranslation } from 'react-i18next'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
 function createData(index, name, symbol, address, amount) {
   return {
@@ -30,8 +32,7 @@ function createData(index, name, symbol, address, amount) {
         variant="contained"
         sx={{
           color: 'white',
-          background:
-            'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
+          backgroundColor: '#0a85d9'
         }}
       >
         View
@@ -157,6 +158,37 @@ export const LockListView = () => {
                 ))}
               </TableBody>
             </Table>
+            <Stack direction='row' paddingX={2} paddingY={2} gap={2}>
+              <Button
+                variant='outlined'
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  paddingX: 1,
+                  minWidth: 0,
+                  color: '#333',
+                  borderColor: '#3334',
+                }}
+              >
+                <FaChevronLeft size={14} />
+              </Button>
+              <Typography border={1} paddingX={2} borderColor='#3334'>
+                1
+              </Typography>
+              <Button variant='outlined'
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  paddingX: 1,
+                  minWidth: 0,
+                  color: '#333',
+                  borderColor: '#3334',
+                }}>
+                <FaChevronRight size={14} />
+              </Button>
+            </Stack>
           </TableContainer>
           <Box
             sx={{
@@ -174,12 +206,11 @@ export const LockListView = () => {
             </Typography>
             <Button
               variant="contained"
+              className='bg-gradient-main-45'
               sx={{
                 marginTop: '30px',
                 borderRadius: '10px',
                 textTransform: 'initial',
-                background:
-                'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
               }}
             >
               Connect Wallet

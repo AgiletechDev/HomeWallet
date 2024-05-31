@@ -46,7 +46,7 @@ export const LockView = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                padding: '2em 3em',
+                padding: 2,
               }}
             >
               <Typography
@@ -134,7 +134,7 @@ export const LockView = () => {
     textAlign: isMobile ? 'center' : 'left',
   }}
 >
-  <InfoIcon sx={{ color: '#3e387b' }} />
+  <InfoIcon sx={{ color: '#0a85d9' }} />
   <Typography sx={{ color: '#0a85d9' }}>
     {t("TOKEN_ALERT")}
   </Typography>
@@ -156,12 +156,11 @@ export const LockView = () => {
             </Typography>
             <Button
               variant="contained"
+              className='bg-gradient-main-45'
               sx={{
                 marginTop: '30px',
                 borderRadius: '10px',
                 textTransform: 'initial',
-                background:
-                'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
               }}
             >
               {t("LAUNCHPAD_SECTION2_BUTTON1")}

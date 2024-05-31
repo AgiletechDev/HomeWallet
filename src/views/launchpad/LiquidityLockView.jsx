@@ -1,4 +1,4 @@
-import { Box, Typography, TextField, useTheme, useMediaQuery } from '@mui/material';
+import { Box, Typography, TextField, useTheme, useMediaQuery, Button } from '@mui/material';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -104,7 +104,9 @@ export const LiquidityLockView = () => {
                       {row.address}
                     </TableCell>
                     <TableCell align="justify">{row.amount}</TableCell>
-                    <TableCell align="justify">{row.action}</TableCell>
+                    <TableCell align="justify">
+                      <Button variant='contained' >{row.action}</Button>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>

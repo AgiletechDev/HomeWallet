@@ -32,10 +32,12 @@ export const ViewSalesView = () => {
             }}
           >
             <Typography
+              className='bg-gradient-main bg-clip-text'
               textAlign={isMobile ? 'center' : 'left'}
               variant="h3"
               fontWeight="700"
-              color="#14A8FC"
+              noWrap
+              color="transparent"
             >
               {t("RABSALE_TITLE1")}
             </Typography>
@@ -43,7 +45,7 @@ export const ViewSalesView = () => {
               textAlign={isMobile ? 'center' : 'left'}
               variant="h3"
               fontWeight="700"
-              color="#3e387b"
+              color="black"
             >
               {t("RABSALE_TITLE2")}
             </Typography>
@@ -56,21 +58,22 @@ export const ViewSalesView = () => {
               }}
             >
               <Button
+                className='bg-gradient-main-45'
                 sx={{
-                  background:
-                  'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
                   color: 'white',
                   borderRadius: '5px',
                 }}
               >
                 {t("LAUNCHPAD_SECTION2_BUTTON1")}
               </Button>
+              <Button variant="outlined" sx={{ textTransform: 'initial', border: '1px solid #7b7b7b40', color:'primary' }}>
+                {t("LAUNCHPAD_SECTION1_BUTTON2")}
+              </Button>
             </Box>
-            <Typography textAlign="left" variant="h6" fontWeight="700" color="#3e387b">
+            <Typography textAlign="left" variant="h6" fontWeight="700">
               Powered by{' '}
-              <span
+              <span className='bg-gradient-main-45 bg-clip-text italic text-transparent'
                 style={{
-                  color: '#3e387b',
                   textTransform: 'uppercase',
                   textStyle: 'italic',
                 }}
@@ -119,12 +122,11 @@ export const ViewSalesView = () => {
             style={{ width: '50px', marginTop: '2em' }}
           />
           <Button
+            className='bg-gradient-main-45'
             sx={{
               color: 'white',
               mt: '2em',
-              alignSelf: 'strech',
-              background:
-              'linear-gradient(83deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
+              borderRadius: '5px',
             }}
           >
             {t("LAUNCHPAD_SECTION2_BUTTON1")}
