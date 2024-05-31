@@ -1,8 +1,16 @@
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, useTheme, useMediaQuery, Box } from '@mui/material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Box } from '@mui/material';
 import { useTranslation } from 'react-i18next'
 
-function createData(category, allocation, description, vesting) {
-  return { category, allocation, description, vesting };
+function createData(category, allocation, description, vesting, rows=[]) {
+  return {
+    category,
+    allocation,
+    description: {
+      main: description,
+      rows: rows
+    },
+    vesting
+  };
 }
 
 
@@ -32,15 +40,16 @@ export const TableWallet = () => {
       t("TOKENOMIC_CATEGORY4"),
       t("TOKENOMIC_ALLOCATION4"),
       t("TOKENOMIC_DESCRIPTION4"),
-      t("TOKENOMIC_VESTING4")
+      t("TOKENOMIC_VESTING4"),
+      [
+        "-600,000 VIC for Team are allocated each month to company operations to invest in R&D and Marketing departments.",
+        "-400,000 VIC for Ecosytem allocated to reward the wallet ecosystem, including staking rewards and others incentives for users.",
+      ]
     ),
   ];
 
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-
   return (
-    <Box sx={{ width: isMobile ? '100%' : '1000px',  mt: '5em' }}>
+    <Box sx={{ width: '100%', maxWidth: '1000px',  mt: '5em' }}>
       <TableContainer
         sx={{
           mt: '5em',
@@ -130,14 +139,31 @@ export const TableWallet = () => {
                   {row.allocation}
                 </TableCell>
                 <TableCell
-                  align="center"
                   sx={{
+                    gap: 3,
                     color: 'black',
                     borderRadius: '10px',
                     background: '#f4f4f4',
                   }}
                 >
-                  {row.description}
+                  <span>{row.description.main}</span>
+                  {
+                    !!row.description.rows?.length && 
+                    <ul className='flex gap-2 flex-col mt-6'>
+                      {
+                        row.description.rows.map((text, index) => (
+                          <li key={index} className='flex gap-2'>
+                            <div>
+                              <div className='flex justify-center items-center border-2 border-black rounded-full'>
+                                <div className='bg-[#5db5ff] w-2 h-2 m-[1px] rounded-full' />
+                              </div>
+                            </div>
+                            <span className='text-start italic text-black'>{text}</span>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  }
                 </TableCell>
                 <TableCell
                   align="center"

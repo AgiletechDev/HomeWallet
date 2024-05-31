@@ -100,7 +100,7 @@
    
     "TOKENOMIC_CATEGORY4": "Burn",
     "TOKENOMIC_ALLOCATION4": "36% of maximum supply",
-    "TOKENOMIC_DESCRIPTION4": "36% of the VIC has been burned at maximum supply (including 21.6% of the Team and 14.4% of the Ecosystem). The VICNET team will mint 1,000,000 VIC monthly until reaching the maximum supply of 100,000,000 VIC and distribute it proportionally:-600,000 VIC for Team are allocated each month to company operations to invest in R&D and Marketing departments.-400,000 VIC for Ecosytem allocated to reward the wallet ecosystem, including staking rewards and others incentives for users.",
+    "TOKENOMIC_DESCRIPTION4": "36% of the VIC has been burned at maximum supply (including 21.6% of the Team and 14.4% of the Ecosystem). The VICNET team will mint 1,000,000 VIC monthly until reaching the maximum supply of 100,000,000 VIC and distribute it proportionally:",
     "TOKENOMIC_VESTING4": "Extracted and distributed monthly for 36 months from the time of TGE+1",
 
     "WHITEPAPER_TEXT": "This detailed document is your exclusive passport to fully understanding our innovative technology, our platform goals, and the exciting future we are building",
