@@ -3,6 +3,20 @@ html{
     padding:0 ;
 }
 
+.text-shadow {
+  text-shadow:
+    2px 0px #0A85D9,
+    -2px 0px #0A85D9,
+    0px 2px #0A85D9,
+    0px -2px #0A85D9,
+
+    2px 2px #0A85D9,
+    2px -2px #0A85D9,
+    -2px 2px #0A85D9,
+    -2px -2px #0A85D9
+;
+}
+
 
 
 @tailwind base;

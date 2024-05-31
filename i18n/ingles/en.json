@@ -27,10 +27,10 @@
     "TEXT_SECTION2": "Supports more than",
     "TEXT1_SECTION2": "14 leading blockchains",
     "TEXT3_SECTION2": "Track real-time charts and prices for each token",
-    "SECTION2_SUBTITLE1": "Exchange",
-    "SECTION2_TEXT1": "Trade 300+ tokens on multiple chains:",
+    "SECTION2_SUBTITLE1": "Swap",
+    "SECTION2_TEXT1": "Swap over 3000 tokens on multiple chains.",
     "SECTION2_SUBTITLE2": "Multiusos",
-    "SECTION2_TEXT2": "Improve user experience",
+    "SECTION2_TEXT2": "Enhance user experience",
 
     "MULTIPLY_TITLE1": "News",
     "MULTIPLY_TEXT1": "Update market information every day",
@@ -47,7 +47,9 @@
     "MULTIPLY_TITLE7": "Referral program",
     "MULTIPLY_TEXT7": "Free rewards for sharing Wallets devices with the community",
 
-    "SUBTITLE_SECTION3": "Security is and always will be the top priority for wallets",
+    "SUBTITLE_SECTION3": "Security is and will",
+    "SUBTITLE_SECTION3.2": "always be",
+    "SUBTITLE_SECTION3.3": "Wallet's top priority",
     "TEXT1_SECTION3": "We believe that data security and privacy are essential to establishing user trust.",
     "TEXT2_SECTION3": "We invest heavily in ongoing security and privacy training for all employees to strengthen our security posture.",
     "TEXT3_SECTION3": "Your wallet is encrypted locally on your device and bimetrically protected.",
@@ -56,7 +58,7 @@
     "DOWNLOAD_TEXT": "Easy access to cryptocurrencies",
     "SCAN_DONWLOAD": "Scan to download",
 
-    "FREQUENT_QUESTIONS": "Frequent Questions",
+    "FREQUENT_QUESTIONS": "Frequent Ask Questions",
     "PREGUNTA1": "Is the wallet safe?",
     "RESPUESTA1": "The public blockchain layer facilitates commodity smart contracts, cargo smart contracts, proof of origin data, and AGRA transactions. The Ethereum public blockchain and third-party exchanges operate independently of Graintech and provide security and decentralization for smart contracts and AGRA tokens.",
     "PREGUNTA2": "How to install the wallet?",

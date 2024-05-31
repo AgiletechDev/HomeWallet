@@ -102,7 +102,7 @@ export const SecondSection = () => {
             flexDirection: 'column',
           }}
         >
-          <Typography variant="h4" fontWeight="800" color="#4d4d4d">
+          <Typography variant="h4" fontWeight="800" color="#0A85D9">
             {t("SECTION2_SUBTITLE2")}
           </Typography>
           <Typography color="#4d4d4d" fontWeight="bold">

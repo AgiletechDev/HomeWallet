@@ -1,10 +1,10 @@
-import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery, Stack } from '@mui/material'
 import imgSect1 from '../../assets/images/portal/pag1/ilustracion 2.png'
-
-import imgSect3 from '../../assets/images/portal/pag1/ilustracion 3.png'
+import imgSect3 from '../../assets/images/portal/pag1/vista 3.png'
 import qr from '../../assets/images/portal/pag1/apps 1.png'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { FaAngleDown, FaAngleUp, FaChevronRight } from 'react-icons/fa'
 
 export const ThirdSection = () => {
   //
@@ -82,21 +82,39 @@ export const ThirdSection = () => {
               textAlign: 'justify',
               zIndex: '10',
               padding: '2em',
-              color: '#4d4d4d',
             }}
           >
-            <Typography variant="h4" fontWeight="800" color="#4d4d4d">
-              {t("SUBTITLE_SECTION3")}
+            <Typography
+              className='text-white text-shadow translate-y-8 -z-10'
+              variant='h3'
+              fontWeight='900'
+              fontSize='80px'
+            >
+              SECURITY
             </Typography>
-            <ul style={{ fontSize: '20px' }}>
-              <li>
-                {t("TEXT1_SECTION3")}
+            <Typography
+              variant="h4"
+              fontWeight="800"
+            >
+              <span className='text-nowrap'>{t("SUBTITLE_SECTION3")}</span>
+              <br />
+              <span className='text-white text-nowrap saturate-0 text-shadow px-2'>
+                {t("SUBTITLE_SECTION3.2")}
+              </span>
+              <span className='text-2xl text-nowrap'>{t("SUBTITLE_SECTION3.3")}</span>
+            </Typography>
+            <ul className='mt-16 flex flex-col gap-4' style={{ fontSize: '20px' }}>
+              <li className='flex gap-3'>
+                <FaChevronRight color='#0A85D9' size={16} className='size-4' />
+                <span>{t("TEXT1_SECTION3")}</span>
               </li>
-              <li>
-                {t("TEXT2_SECTION3")}
+              <li className='flex gap-3'>
+                <FaChevronRight color='#0A85D9' size={16} className='size-4' />
+                <span>{t("TEXT2_SECTION3")}</span>
               </li>
-              <li>
-                {t("TEXT3_SECTION3")}
+              <li className='flex gap-3'>
+                <FaChevronRight color='#0A85D9' size={16} className='size-4' />
+                <span>{t("TEXT3_SECTION3")}</span>
               </li>
             </ul>
           </Box>
@@ -106,58 +124,55 @@ export const ThirdSection = () => {
         </Box>
       </Box>
 
-      <Box sx={{ position: 'relative', mt: '5em' }}>
+      <Stack
+        justifyContent='space-between'
+        sx={{
+          width: isMobile ? '100%' : '900px',
+          position: 'relative',
+          mt: '5em',
+          flexDirection: isMobile ? 'column' : 'row',
+        }}
+      >
         <Box
           sx={{
-            borderRadius: '10px',
             display: 'flex',
-            flexDirection: isMobile ? 'column' : 'row',
-            alignItems: 'center',
+            flexDirection: 'column',
+            textAlign: 'left',
+            gap: 8,
             padding: '2em',
-            width: isMobile ? '100%' : '900px',
-            background:
-              'linear-gradient(97deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
-            zIndex: 1,
-            color: 'white',
-            justifyContent: 'space-between',
           }}
         >
-          <Box sx={{textAlign:isMobile ? 'center' : 'left'}}>
-            <Typography
-              variant="h4"
-              sx={{
-                fontWeight: '800',
-                mt: '0.5em',
-              }}
-            >
-              {t("DOWNLOAD")}
-            </Typography>
-            <Typography fontWeight="bold" sx={{ }}>
-              {t("DOWNLOAD_TEXT")}
-            </Typography>
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: isMobile ? 'column' : 'row',
-                alignItems: 'center',
-                mt: '7em',
-                gap: '20px',
-              }}
-            >
-              <img src={qr} />
-              <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                <Typography>{t("SCAN_DONWLOAD")}</Typography>
-                <Typography variant="h6" fontWeight="bold">
-                  App Wallet
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
           <Box>
-            <img src={imgSect3} style={{ marginTop: '1em',width: '100%' }} />
+            <Typography
+              className='bg-gradient-main bg-clip-text text-transparent'
+              variant="h4"
+              fontWeight="800"
+            >
+              DOWNLOAD NOW
+            </Typography>
+            <Typography>
+              {t("TEXT3_SECTION2")}
+            </Typography>
           </Box>
+          <Stack direction='row'>
+            <Box>
+              <img width={133} height={133} src={qr} />
+            </Box>
+            <Stack flexGrow={1} justifyContent='center'>
+              <Typography>
+                Scan to download
+              </Typography>
+              <Typography>
+                App Wallet
+              </Typography>
+            </Stack>
+          </Stack>
         </Box>
-      </Box>
+
+        <Box>
+          <img src={imgSect3} style={{ width: '100%', zIndex: '-1' }} />
+        </Box>
+      </Stack>
 
       <Box
         sx={{
@@ -165,11 +180,19 @@ export const ThirdSection = () => {
           width: isMobile ? '100%' : '900px',
           mt: '5em',
           marginInline: 'auto',
-          gap: '50px',
+          gap: '20px',
           flexDirection: 'column',
           alignItems: 'center',
         }}
       >
+        <Typography
+          variant='h3'
+          fontWeight='900'
+          fontSize='80px'
+          className='text-white text-shadow'
+        >
+          FAQ
+        </Typography>
         <Typography
           variant="h4"
           fontWeight="800"
@@ -185,8 +208,9 @@ export const ThirdSection = () => {
             flexDirection: 'column',
 
             textAlign: 'justify',
-            maxWidth: '100%',
+            width: '100%',
             mb: '3em',
+            gap: 2,
 
             details: {
               borderRadius: '8px',
@@ -209,8 +233,14 @@ export const ThirdSection = () => {
             <div key={index} style={{ listStyle: 'none' }}>
               <summary
                 onClick={() => handleToggle(index)}
-                style={{ cursor: 'pointer', outline: 'none' }}
+                className='flex items-center gap-2'
+                style={{ cursor: 'pointer', outline: 'none', color: '#0A85D9' }}
               >
+                {
+                  openIndex === index ?
+                  <FaAngleUp size={16} />:
+                  <FaAngleDown size={16} />
+                }
                 {item.pregunta}
               </summary>
               {openIndex === index && (
@@ -227,7 +257,9 @@ export const ThirdSection = () => {
                   {item.respuesta}
                 </Typography>
               )}
-              <hr />
+              <Box
+                className='h-[1px] my-1 bg-[#0A85D9]/40'
+              />
             </div>
           ))}
         </Box>

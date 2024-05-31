@@ -57,8 +57,8 @@ export const TableWallet = () => {
                 align="center"
                 sx={{
                   color: '#fff',
-                  borderRadius: '10px',
-                  backgroundColor: '#7598cf',
+                  borderTopLeftRadius: '10px',
+                  backgroundColor: '#5db5ff',
                   fontWeight: 'bold',
                 }}
               >
@@ -68,8 +68,7 @@ export const TableWallet = () => {
                 align="center"
                 sx={{
                   color: '#fff',
-                  backgroundColor: '#7598cf',
-                  borderRadius: '10px',
+                  backgroundColor: '#5db5ff',
                   fontWeight: 'bold',
                 }}
               >
@@ -79,8 +78,7 @@ export const TableWallet = () => {
                 align="center"
                 sx={{
                   color: '#fff',
-                  backgroundColor: '#7598cf',
-                  borderRadius: '10px',
+                  backgroundColor: '#5db5ff',
                   fontWeight: 'bold',
                 }}
               >
@@ -90,8 +88,8 @@ export const TableWallet = () => {
                 align="center"
                 sx={{
                   color: '#fff',
-                  backgroundColor: '#7598cf',
-                  borderRadius: '10px',
+                  backgroundColor: '#5db5ff',
+                  borderTopRightRadius: '10px',
                   fontWeight: 'bold',
                 }}
               >
@@ -100,9 +98,9 @@ export const TableWallet = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
+            {rows.map((row, index) => (
               <TableRow
-                key={row.name}
+                key={index}
                 sx={{
                   '&:last-child td, &:last-child th': { borderBottom: 0 },
                 }}
@@ -112,9 +110,10 @@ export const TableWallet = () => {
                   component="th"
                   scope="row"
                   sx={{
-                    color: '#fff',
-                    borderRadius: '10px',
-                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                    color: 'black',
+                    fontWeight: 'bold',
+                    textWrap: 'nowrap',
+                    background: '#f4f4f4',
                   }}
                 >
                   {row.category}
@@ -122,9 +121,10 @@ export const TableWallet = () => {
                 <TableCell
                   align="center"
                   sx={{
-                    color: '#fff',
-                    borderRadius: '10px',
-                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                    color: 'black',
+                    fontWeight: 'bold',
+                    textWrap: 'nowrap',
+                    background: '#f4f4f4',
                   }}
                 >
                   {row.allocation}
@@ -132,9 +132,9 @@ export const TableWallet = () => {
                 <TableCell
                   align="center"
                   sx={{
-                    color: '#fff',
+                    color: 'black',
                     borderRadius: '10px',
-                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                    background: '#f4f4f4',
                   }}
                 >
                   {row.description}
@@ -142,9 +142,9 @@ export const TableWallet = () => {
                 <TableCell
                   align="center"
                   sx={{
-                    color: '#fff',
+                    color: 'black',
                     borderRadius: '10px',
-                    background: 'linear-gradient(97deg, rgba(51,39,123,1) 0%, rgba(32,58,115,1) 100%)',
+                    background: '#f4f4f4',
                   }}
                 >
                   {row.vesting}

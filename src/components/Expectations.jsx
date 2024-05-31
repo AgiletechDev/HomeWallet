@@ -26,16 +26,13 @@ const containerStyle = {
 };
 
 const boxStyle = {
-  borderRadius:'20px',
   marginBottom: '2px',
   textAlign: 'center',
-  background: 'linear-gradient(97deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
   padding:'1em',
-  color:'white',
   justifyContent:'center',
   display:'flex',
   flexDirection:'column',
-  alignItems:'center'
+  alignItems:'center',
 };
 
 
@@ -83,9 +80,27 @@ const boxStyle = {
   return (
     <Box sx={containerStyle}>
       {data.map((item, index) => (
-        <Box key={index} style={boxStyle}>
-          <img src={item.image} alt={`Image ${index + 1}`} style={{ width: '20%', margin: 'auto' }} />
-          <Typography sx={{mt:'0.5em',mb:'2em', textAlign:'center',fontWeight:'bold'}}>{item.text}</Typography>
+        <Box
+          key={index}
+          className='border-b-4 border-black/70'
+          style={boxStyle}
+        >
+          <img
+            className='invert'
+            src={item.image}
+            alt={`Image ${index + 1}`}
+            style={{ width: '20%', margin: 'auto' }}
+          />
+          <Typography
+            sx={{
+              mt:'0.5em',
+              mb:'2em',
+              textAlign:'center',
+              fontWeight:'bold'
+            }}
+          >
+            {item.text}
+          </Typography>
         </Box>
       ))}
     </Box>

@@ -2,6 +2,7 @@ import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
 import imgSect1 from '../../assets/images/portal/pag1/vista 1.png'
 import { Expectations } from '../../components/Expectations'
 import { useTranslation } from 'react-i18next'
+import { Logo } from '../../components/Logo'
 
 export const FirstSection = () => {
 
@@ -23,10 +24,12 @@ export const FirstSection = () => {
             gap: '50px',
           }}
         >
+          <Logo />
           <Typography
             variant="h4"
+            className='bg-gradient-main bg-clip-text'
             sx={{
-              color: '#33277b',
+              color: 'transparent',
               fontWeight: '800',
               textAlign: 'center',
               mt: '0.5em',
@@ -59,8 +62,9 @@ export const FirstSection = () => {
       >
         <Typography
           variant="h4"
+          className='bg-gradient-main bg-clip-text'
           sx={{
-            color: '#4d4d4d',
+            color: 'transparent',
             fontWeight: '800',
             textAlign: 'center',
             mt: '0.5em',
@@ -71,7 +75,7 @@ export const FirstSection = () => {
         <Typography
           variant="h6"
           sx={{
-            color: '#4d4d4d',
+            color: 'black',
             fontWeight: '700',
             textAlign: 'center',
             mt: '0.5em',

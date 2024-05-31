@@ -1,4 +1,4 @@
-import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
+import { Box, Typography, useTheme, useMediaQuery, Stack } from '@mui/material';
 import imgPost from '../assets/images/portal/section A.png';
 import { useTranslation } from 'react-i18next'
 
@@ -92,10 +92,10 @@ export const Blog = () => {
               borderRadius: '25px',
             }}
           />
-          <Typography variant="h6" color="#33277b" fontWeight="600" sx={{ mt: '0.5em' }}>
+          <Typography variant="h6" color="#0A85D9" fontWeight="600" sx={{ mt: '0.5em' }}>
             {post.title}
           </Typography>
-          <div style={{ width: '30px', height: '3px', backgroundColor: 'gray' }} />
+          <div style={{ width: '30px', height: '3px', backgroundColor: '#7777' }} />
           <Typography variant="p">{post.description}</Typography>
         </Box>
       </Box>
@@ -114,14 +114,19 @@ export const Blog = () => {
         {t("WALLETBLOG_SUBTITLE1")}
       </Typography>
       <div style={{ width: '30px', height: '3px', backgroundColor: 'gray' }} />
-      <br />
-      Aside 2
-      <br />
-      Aside 3
-      <br />
-      Aside 4
-      <br />
-      Aside 5
+      
+      <Stack mt={5} gap={2}>
+        {
+          [1, 2, 3, 4, 5, 6].map((index) => (
+            <Stack key={index}>
+              <Typography variant='h5'>
+                Post {index}
+              </Typography>
+              <Box className='h-1 bg-gray-700/20'/>
+            </Stack>
+          ))
+        }
+      </Stack>
     </aside>
   </Box>
 </Box>
