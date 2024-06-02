@@ -510,6 +510,24 @@ const Navbar = () => {
           </MenuItem>
         </Link>
 
+        <Link to="/buywallets" style={{ textDecoration: 'none' }}>
+          <MenuItem
+            onClick={handleClose3}
+            sx={{
+              color: 'black',
+              borderRadius: '10px',
+              minWidth: '150px',
+              marginX: 1,
+              '&:hover': {
+                background: '#29b0ea',
+                color: 'white',
+              },
+            }}
+          >
+            Buy Wallets
+          </MenuItem>
+        </Link>
+
         <Link to="/whitepaper" style={{ textDecoration: 'none' }}>
           <MenuItem
             onClick={handleClose3}

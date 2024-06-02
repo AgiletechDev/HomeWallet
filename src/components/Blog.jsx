@@ -1,50 +1,65 @@
 import { Box, Typography, useTheme, useMediaQuery, Stack } from '@mui/material';
-import imgPost from '../assets/images/portal/section A.png';
+import imgPost from '../assets/pages/blog/profile.svg';
 import { useTranslation } from 'react-i18next'
 
 const posts = [
   {
     title: 'What is Blockchain Layer 1: Understanding the Foundation of Blockchain Technology',
+    imageTitle: 'What is Blockchain Layer 1',
     image: imgPost,
     description: 'Discover the fundamentals of Blockchain Layer 1 technology in this comprehensive article. Explore the key...',
   },
   {
     title: 'What is Blockchain Layer 1: Understanding the Foundation of Blockchain Technology',
+    imageTitle: 'What is Blockchain Layer 1',
     image: imgPost,
     description: 'Discover the fundamentals of Blockchain Layer 1 technology in this comprehensive article. Explore the key...',
   },
   {
     title: 'What is Blockchain Layer 1: Understanding the Foundation of Blockchain Technology',
+    imageTitle: 'What is Blockchain Layer 1',
     image: imgPost,
     description: 'Discover the fundamentals of Blockchain Layer 1 technology in this comprehensive article. Explore the key...',
   },
   {
     title: 'What is Blockchain Layer 1: Understanding the Foundation of Blockchain Technology',
+    imageTitle: 'What is Blockchain Layer 1',
     image: imgPost,
     description: 'Discover the fundamentals of Blockchain Layer 1 technology in this comprehensive article. Explore the key...',
   },
   {
     title: 'What is Blockchain Layer 1: Understanding the Foundation of Blockchain Technology',
+    imageTitle: 'What is Blockchain Layer 1',
     image: imgPost,
     description: 'Discover the fundamentals of Blockchain Layer 1 technology in this comprehensive article. Explore the key...',
   },
   {
     title: 'What is Blockchain Layer 1: Understanding the Foundation of Blockchain Technology',
+    imageTitle: 'What is Blockchain Layer 1',
     image: imgPost,
     description: 'Discover the fundamentals of Blockchain Layer 1 technology in this comprehensive article. Explore the key...',
   },
   {
     title: 'What is Blockchain Layer 1: Understanding the Foundation of Blockchain Technology',
+    imageTitle: 'What is Blockchain Layer 1',
     image: imgPost,
     description: 'Discover the fundamentals of Blockchain Layer 1 technology in this comprehensive article. Explore the key...',
   },
   {
     title: 'What is Blockchain Layer 1: Understanding the Foundation of Blockchain Technology',
+    imageTitle: 'What is Blockchain Layer 1',
     image: imgPost,
     description: 'Discover the fundamentals of Blockchain Layer 1 technology in this comprehensive article. Explore the key...',
   },
   {
     title: 'What is Blockchain Layer 1: Understanding the Foundation of Blockchain Technology',
+    imageTitle: 'What is Blockchain Layer 1',
+    image: imgPost,
+    description: 'Discover the fundamentals of Blockchain Layer 1 technology in this comprehensive article. Explore the key...',
+  },
+  {
+    title: 'What is Blockchain Layer 1: Understanding the Foundation of Blockchain Technology',
+    imageTitle: 'What is Blockchain Layer 1',
     image: imgPost,
     description: 'Discover the fundamentals of Blockchain Layer 1 technology in this comprehensive article. Explore the key...',
   },
@@ -62,8 +77,10 @@ export const Blog = () => {
     display: 'flex',
     mt: '3em',
     flexDirection: isMobile ? 'column' : 'row',
+    gap: 2,
   }}
 >
+  <Stack>
   <Box
     sx={{
       flex: '70%',
@@ -83,15 +100,30 @@ export const Blog = () => {
             textAlign: 'justify'
           }}
         >
-          <img
-            src={post.image}
-            style={{
+          <Stack
+            direction='row'
+            justifyContent='space-evenly'
+            alignItems='center'
+            sx={{
               width: '300px',
               height: '200px',
               border: '1px solid darkgray',
               borderRadius: '25px',
             }}
-          />
+          >
+            <Typography
+              fontWeight={900}
+              fontSize='20px'
+              sx={{ maxWidth: '10ch' }}
+            >
+              {
+                post.imageTitle
+              }
+            </Typography>
+            <img
+              src={post.image}
+            />
+          </Stack>
           <Typography variant="h6" color="#0A85D9" fontWeight="600" sx={{ mt: '0.5em' }}>
             {post.title}
           </Typography>
@@ -101,15 +133,40 @@ export const Blog = () => {
       </Box>
     ))}
   </Box>
+    <Stack
+      mt={4}
+      justifyContent='center'
+      alignItems='center'
+      gap={2}
+      direction='row'
+    >
+      <Stack
+        className='justify-center items-center w-8 h-8 bg-[#0A85D9] text-white rounded-full'
+      >
+        <span>1</span>
+      </Stack>
+      <Stack
+        className='justify-center items-center w-8 h-8 border-2 border-black text-black rounded-full'
+      >
+        <span>2</span>
+      </Stack>
+      <Stack
+        className='justify-center items-center w-8 h-8 border-2 border-black text-black rounded-full'
+      >
+        <span>{'>'}</span>
+      </Stack>
+    </Stack>
+  </Stack>
+
   <Box
     sx={{
       flex: '30%',
       paddingLeft: '1em',
-      borderLeft: '1px solid gray',
+      borderLeft: '1px solid #CAC4D0',
       mt: isMobile ? '1em' : 0,
     }}
   >
-    <aside style={{ color: '#33277b', fontSize: '30px' }}>
+    <aside style={{ color: 'black', fontSize: '30px' }}>
       <Typography fontWeight="bold" variant="h6">
         {t("WALLETBLOG_SUBTITLE1")}
       </Typography>
@@ -119,10 +176,10 @@ export const Blog = () => {
         {
           [1, 2, 3, 4, 5, 6].map((index) => (
             <Stack key={index}>
-              <Typography variant='h5'>
+              <Typography variant='h5' color='#79747E'>
                 Post {index}
               </Typography>
-              <Box className='h-1 bg-gray-700/20'/>
+              <Box className='h-[1px] bg-[#CAC4D0]'/>
             </Stack>
           ))
         }

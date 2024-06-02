@@ -1,14 +1,14 @@
 import { Box, Typography, useTheme, useMediaQuery  } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import imgIcon1 from '../assets/images/portal/pag1/icono 1.png'
-import imgIcon2 from '../assets/images/portal/pag1/icono 2.png'
-import imgIcon3 from '../assets/images/portal/pag1/icono 3.png'
-import imgIcon4 from '../assets/images/portal/pag1/icono 4.png'
-import imgIcon5 from '../assets/images/portal/pag1/icono 5.png'
-import imgIcon6 from '../assets/images/portal/pag1/icono 6.png'
-import imgIcon7 from '../assets/images/portal/pag1/icono 7.png'
-import imgIcon8 from '../assets/images/portal/pag1/icono 8.png'
-import imgIcon9 from '../assets/images/portal/pag1/icono 9.png'
+import imgIcon1 from '../assets/pages/home/grid.01.svg'
+import imgIcon2 from '../assets/pages/home/grid.02.svg'
+import imgIcon3 from '../assets/pages/home/grid.03.svg'
+import imgIcon4 from '../assets/pages/home/grid.04.svg'
+import imgIcon5 from '../assets/pages/home/grid.05.svg'
+import imgIcon6 from '../assets/pages/home/grid.06.svg'
+import imgIcon7 from '../assets/pages/home/grid.07.svg'
+import imgIcon8 from '../assets/pages/home/grid.08.svg'
+import imgIcon9 from '../assets/pages/home/grid.09.svg'
 
 
 export const Expectations = () => {
@@ -86,7 +86,6 @@ const boxStyle = {
           style={boxStyle}
         >
           <img
-            className='invert'
             src={item.image}
             alt={`Image ${index + 1}`}
             style={{ width: '20%', margin: 'auto' }}

@@ -5,6 +5,7 @@ import icon2 from '../../assets/images/portal/smart/image-2.png'
 import icon3 from '../../assets/images/portal/smart/image-3.png'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
+import background from './../../assets/images/background.svg'
 
 const shortenUrl = (url, isMobile) => {
   if (isMobile) {
@@ -76,6 +77,11 @@ export const FirstSection = () => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
+            width: '100%',
+            paddingX: 'calc(50% - 450px)',
+            backgroundImage: `url(${background})`,
+            backgroundSize: '100% auto',
+            backgroundPosition: 'center center',
           }}
         >
           {list.map(({ title, url }, index) => (
@@ -141,9 +147,9 @@ export const FirstSection = () => {
               display: 'flex',
               flexDirection: isMobile ? 'column' : 'row',
               justifyContent: 'center',
-              width: '100%',
               gap: '30px',
               maxWidth: '700px',
+              width: '100%',
             }}
           >
             {

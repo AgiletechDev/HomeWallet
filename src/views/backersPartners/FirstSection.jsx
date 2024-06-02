@@ -1,10 +1,8 @@
-import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
-import lineahorizonta1 from '../../assets/images/portal/lineahorizonta1.png'
-import apoyo2_1 from '../../assets/images/portal/apoyo2_1.png'
-import apoyo4 from '../../assets/images/portal/apoyo4.png'
-import circulos from '../../assets/images/portal/circulos.png'
-import cuadro1 from '../../assets/images/portal/cuadro1.png'
+import { Box, Typography, useTheme, useMediaQuery, Stack } from '@mui/material'
+import cuadro1 from '../../assets/images/portal/smart/image-1.png'
+import cuadro2 from '../../assets/images/portal/smart/image-2.png'
 import { useTranslation } from 'react-i18next'
+import background from './../../assets/images/background.svg'
 
 export const FirstSection = () => {
   const { t } = useTranslation();
@@ -16,43 +14,49 @@ export const FirstSection = () => {
       sx={{
         display: 'flex',
         height:  isMobile ? '100%' :  '500px',
-        width:  isMobile ? '100%' : '99vw',
         overflow: 'hidden',
         position: 'relative',
+        marginTop: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+        paddingX: 'calc(50% - 450px)',
+        backgroundImage: `url(${background})`,
+        backgroundSize: '100% auto',
+        backgroundPosition: 'center center',
       }}
     >
-      {!isMobile && (
-        <img
-          src={apoyo2_1}
-          alt="circulo"
-          height="500px"
-          width="500px"
-          style={{ position: 'absolute', left: '0', bottom: '0' }}
-        />
-      )}
-
       <Box
         sx={{
+          position: 'absolute',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           marginTop: '40px',
-          height: isMobile ? '100%' :  '1000px',
-          width: isMobile ? '100%' :  '99vw',
+          height: '100%',
         }}
       >
         <Typography
+          noWrap
+          variant='h3'
+          fontWeight='900'
+          fontSize='80px'
+          top={-35}
+          className='absolute text-white text-shadow z-0'
+        >
+          Backers & Partners
+        </Typography>
+        <Typography
           variant="h5"
+          className='z-10'
           sx={{
             fontSize: '30px',
             fontWeight: '600',
             marginTop: '20px',
-            color: '#33277b',
           }}
         >
           {t("BACKERSANDPARTNERS")}
         </Typography>
-        <img src={lineahorizonta1} alt="" width="15%" />
 
         <Box
           sx={{
@@ -64,38 +68,18 @@ export const FirstSection = () => {
             mb:'2em'
           }}
         >
-          <img src={cuadro1} alt="cuadro1" style={{ marginRight: '20px' }} />
-          <img src={cuadro1} alt="cuadro1" style={{ marginRight: '20px' }} />
+          {/* <img src={cuadro1} alt="cuadro1" style={{ marginRight: '20px' }} />
+          <img src={cuadro1} alt="cuadro1" style={{ marginRight: '20px' }} /> */}
+          {
+            [cuadro1, cuadro2].map((src, index) => (
+              <Stack key={index} gap={2}>
+                <img src={src} width={328} height={98} style={{ marginRight: '10px' }} />
+                <Box className='h-1 my-1 rounded-lg bg-black' />
+              </Stack>
+            ))
+          }
         </Box>
       </Box>
-      {!isMobile && (
-        <>
-          <img
-            src={apoyo4}
-            alt="circulo"
-            height="500px"
-            width="500px"
-            style={{
-              position: 'absolute',
-              right: '0',
-              bottom: '0',
-              zIndex: '-1',
-            }}
-          />
-          <img
-            src={circulos}
-            alt="circulo"
-            height="150px"
-            width="120px"
-            style={{
-              position: 'absolute',
-              right: '5%',
-              bottom: '5%',
-              zIndex: '-1',
-            }}
-          />
-        </>
-      )}
     </Box>
   )
 }

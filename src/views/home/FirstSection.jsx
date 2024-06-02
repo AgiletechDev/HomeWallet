@@ -1,18 +1,17 @@
-import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import imgSect1 from '../../assets/images/portal/pag1/vista 1.png'
 import { Expectations } from '../../components/Expectations'
 import { useTranslation } from 'react-i18next'
 import { Logo } from '../../components/Logo'
+import background from './../../assets/images/background.svg'
 
 export const FirstSection = () => {
 
   const { t } = useTranslation();
 
-  const theme = useTheme()
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
     <>
-      <Box sx={{ width: isMobile ? '100%' : '900px', position: 'relative' }}>
+      <Box sx={{ width: '100%', position: 'relative' }}>
         <Box
           sx={{
             borderRadius: '10px',
@@ -57,7 +56,11 @@ export const FirstSection = () => {
           alignItems: 'center',
           padding: '1em',
           position: 'relative',
-          maxWidth: isMobile ? '100%' : '900px', 
+          width: '100%',
+          paddingX: 'calc(50% - 450px)',
+          backgroundImage: `url(${background})`,
+          backgroundSize: '100% auto',
+          backgroundPosition: 'center center',
         }}
       >
         <Typography

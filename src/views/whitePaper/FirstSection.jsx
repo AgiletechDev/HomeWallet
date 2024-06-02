@@ -1,10 +1,7 @@
 import { Box, Button, Typography, useTheme, useMediaQuery } from '@mui/material'
-import lineahorizonta1 from '../../assets/images/portal/lineahorizonta1.png'
-import apoyo2_1 from '../../assets/images/portal/apoyo2_1.png'
-import apoyo4 from '../../assets/images/portal/apoyo4.png'
-import circulos from '../../assets/images/portal/circulos.png'
-import cuadrodescargar from '../../assets/images/portal/cuadrodescargar.png'
 import { useTranslation } from 'react-i18next'
+
+import background from './../../assets/images/background.svg'
 
 export const FirstSection = () => {
 
@@ -16,90 +13,61 @@ export const FirstSection = () => {
     <Box
       sx={{
         display: 'flex',
-        height: isMobile ? '100%' : '500px',
-        width: isMobile ? '100%' : '99vw',
+        width: '100%',
         overflow: 'hidden',
         position: 'relative',
+        paddingY: 15,
+        paddingX: 'calc(50% - 450px)',
+        backgroundImage: `url(${background})`,
+        backgroundSize: '100% auto',
+        backgroundPosition: 'center center',
       }}
     >
-      {!isMobile && (
-        <img
-          src={apoyo2_1}
-          alt="circulo"
-          height="500px"
-          width="500px"
-          style={{ position: 'absolute', left: '0', bottom: '0' }}
-        />
-      )}
       <Box
         sx={{
+          position: 'relative',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           marginTop: '40px',
-          height: isMobile ? '100%' : '1000px',
-          width:  '99vw',
+          height: isMobile ? '100%' : '500px',
+          width:  '100%',
           mb:'2em'
         }}
       >
         <Typography
+          variant='h3'
+          fontWeight='900'
+          fontSize='80px'
+          top={-40}
+          className='absolute text-white text-shadow z-0'
+        >
+          WHITEPAPER
+        </Typography>
+        <Typography
           variant="h5"
+          className='z-10'
           sx={{
             fontSize: '35px',
             fontWeight: '600',
             marginTop: '20px',
-            color: '#33277b',
           }}
         >
           WHITEPAPER
         </Typography>
-        <img src={lineahorizonta1} alt="" width="15%" />
-        <Typography
-          sx={{
-            width: isMobile ? '100%' : '50%',
-            mt: '30px',
-            color: '#33277b',
-            fontWeight: '600',
-            textAlign: 'center',
-            marginBottom: '50px',
-          }}
-        >
-          {t("WHITEPAPER_TEXT")}
-        </Typography>
         <Button
           sx={{
             color: 'white',
-            fontWeight: '800',
-            fontSize: '30px',
-            textTransform: 'capitalize',
-            background: `url(${cuadrodescargar})`,
-            height: '50px',
-            width: '230px',
-            borderRadius: '20px',
+            fontSize: '20px',
+            borderRadius: '30px',
+            marginTop: '60px',
+            paddingX: 4,
+            backgroundColor: '#0A85D9',
           }}
         >
           {t("WHITEPAPER_DOWNLOAD")}
         </Button>
       </Box>
-      {!isMobile && (
-        <>
-          <img
-            src={apoyo4}
-            alt="circulo"
-            height="500px"
-            width="500px"
-            style={{ position: 'absolute', right: '0', bottom: '0' }}
-          />
-
-          <img
-            src={circulos}
-            alt="circulo"
-            height="150px"
-            width="120px"
-            style={{ position: 'absolute', right: '5%', bottom: '5%' }}
-          />
-        </>
-      )}
     </Box>
   )
 }

@@ -1,10 +1,11 @@
 import { Box, Typography, useTheme, useMediaQuery, Stack } from '@mui/material'
 import imgSect1 from '../../assets/images/portal/pag1/ilustracion 2.png'
 import imgSect3 from '../../assets/images/portal/pag1/vista 3.png'
-import qr from '../../assets/images/portal/pag1/apps 1.png'
+import qr from '../../assets/images/portal/qr.svg'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { FaAngleDown, FaAngleUp, FaChevronRight } from 'react-icons/fa'
+import background from './../../assets/images/background.svg'
 
 export const ThirdSection = () => {
   //
@@ -60,7 +61,7 @@ export const ThirdSection = () => {
           display: 'flex',
           alignItems: 'center',
           flexDirection: isMobile ? 'column' : 'row-reverse',
-          width: isMobile ? '100%' : '900px',
+          width: '100%',
           margin: '0',
           mt: '5em',
           zIndex: '1',
@@ -154,7 +155,7 @@ export const ThirdSection = () => {
               {t("TEXT3_SECTION2")}
             </Typography>
           </Box>
-          <Stack direction='row'>
+          <Stack direction='row' gap={4}>
             <Box>
               <img width={133} height={133} src={qr} />
             </Box>
@@ -162,7 +163,7 @@ export const ThirdSection = () => {
               <Typography>
                 Scan to download
               </Typography>
-              <Typography>
+              <Typography fontWeight={900} fontSize='20px'>
                 App Wallet
               </Typography>
             </Stack>
@@ -177,12 +178,16 @@ export const ThirdSection = () => {
       <Box
         sx={{
           display: 'flex',
-          width: isMobile ? '100%' : '900px',
           mt: '5em',
           marginInline: 'auto',
           gap: '20px',
           flexDirection: 'column',
           alignItems: 'center',
+          width: '100%',
+          paddingX: 'calc(50% - 450px)',
+          backgroundImage: `url(${background})`,
+          backgroundSize: '100% auto',
+          backgroundPosition: 'center center',
         }}
       >
         <Typography

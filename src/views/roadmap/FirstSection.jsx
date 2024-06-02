@@ -1,5 +1,6 @@
 import { Box, Typography, useTheme, useMediaQuery, Stack } from '@mui/material'
 import roadmap from '../../assets/images/portal/roadmap.png'
+import background from './../../assets/images/background.svg'
 
 export const FirstSection = () => {
   const theme = useTheme()
@@ -9,8 +10,12 @@ export const FirstSection = () => {
       sx={{
         display: 'flex',
         height: isMobile ? '100%' : '900px',
-        width: '100%',
         position: 'relative',
+        width: '100%',
+        paddingX: 'calc(50% - 450px)',
+        backgroundImage: `url(${background})`,
+        backgroundSize: '100% auto',
+        backgroundPosition: 'center center',
       }}
     >
       <Stack
@@ -28,12 +33,13 @@ export const FirstSection = () => {
           fontWeight='900'
           fontSize='80px'
           top={0}
-          className='absolute text-white text-shadow -z-10'
+          className='absolute text-white text-shadow -z-0'
         >
           ROADMAP
         </Typography>
         <Typography
           variant="h5"
+          className='z-10'
           sx={{
             fontSize: '35px',
             fontWeight: '600',

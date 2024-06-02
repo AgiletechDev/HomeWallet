@@ -16,7 +16,6 @@ const Footer = () => {
         display: 'flex',
         flexDirection: 'column',
         background: 'white',
-        height: '100%',
       }}
     >
       <Box
@@ -30,6 +29,7 @@ const Footer = () => {
           margin: 'auto',
           borderRadius: '10px',
           background: 'white',
+          marginY: 15,
         }}
       >
         <Box

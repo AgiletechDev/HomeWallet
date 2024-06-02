@@ -5,6 +5,12 @@ import imgSect3 from '../../assets/images/portal/pag1/vista 3.png'
 import { MultiUtility } from '../../components/MultiUtility'
 import { useTranslation } from 'react-i18next'
 
+
+import etherum from '../../assets/images/launchpad/etherum.png'
+import binance from '../../assets/images/launchpad/bitcoin.png'
+import bitcoin from '../../assets/images/launchpad/bitcoin.png'
+import tron from '../../assets/images/launchpad/etherum.png'
+
 export const SecondSection = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
@@ -31,7 +37,7 @@ export const SecondSection = () => {
             padding: '2em',
           }}
         >
-          <Typography variant="h4" fontWeight="800" color="#33277b">
+          <Typography variant="h4" fontWeight="800" color="#0A85D9">
             Wallet
           </Typography>
           <Typography>
@@ -70,17 +76,32 @@ export const SecondSection = () => {
             ml: '2em',
           }}
         >
-          <Typography variant="h4" fontWeight="700" color="#4d4d4d" mt="1em">
+          <Typography variant="h4" fontWeight="700" color="#0A85D9" mt="1em">
             {t("SECTION2_SUBTITLE1")}
           </Typography>
-          <Typography variant="h6" color="#4d4d4d">
+          <Typography variant="h6">
             {t("SECTION2_TEXT1")}
           </Typography>
-          <ul style={{ listStyle: 'none', color: '#4d4d4d', fontSize: '25px' }}>
-            <li>Ethereum</li>
-            <li>Binance</li>
-            <li>Bitcoin</li>
-            <li>Tron</li>
+          <ul className='flex flex-col gap-2 mt-4'>
+            <li className='flex gap-3 items-center text-black font-bold'>
+              <img src={etherum} alt="etherum"/>
+              <span>Ethereum</span>
+            </li>
+            <li className='flex gap-3 items-center text-black font-bold'>
+              <img src={binance} alt="etherum"/>
+              <span>Binance</span>
+            </li>
+            <li className='flex gap-3 items-center text-black font-bold'>
+              <img src={bitcoin} alt="etherum"/>
+              <span>Bitcoin</span>
+            </li>
+            <li className='flex gap-3 items-center text-black font-bold'>
+              <img src={tron} alt="etherum"/>
+              <span>Tron</span>
+            </li>
+            <li className='text-black font-bold'>
+              ...
+            </li>
           </ul>
         </Box>
       </Box>
