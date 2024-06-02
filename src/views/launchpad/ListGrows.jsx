@@ -6,7 +6,7 @@ import {
   useTheme,
   useMediaQuery,
 } from '@mui/material'
-import rabbit from '../../assets/images/launchpad/personaje3.png'
+import rabbit from '../../assets/images/launchpad/grow/hero.png'
 import CurrentSale from '../../components/CurrentSale'
 import icono from '../../assets/images/launchpad/icono.png'
 

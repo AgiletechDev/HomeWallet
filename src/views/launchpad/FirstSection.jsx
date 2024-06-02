@@ -1,7 +1,11 @@
 import { Box, Button, Typography, useTheme, useMediaQuery  } from '@mui/material'
-import rabbit from '../../assets/images/launchpad/personaje.png'
-import bitcoin from '../../assets/images/launchpad/bitcoin.png'
-import etherum from '../../assets/images/launchpad/etherum.png'
+import rabbit from '../../assets/images/launchpad/main/hero.png'
+import etherum from '../../assets/shared/coins/ETH.svg'
+import binace from '../../assets/shared/coins/BNB.svg'
+import bitcoin from '../../assets/shared/coins/btc.svg'
+import tron from '../../assets/shared/coins/TRX.svg'
+import busd from '../../assets/shared/coins/BUSD.svg'
+import dai from '../../assets/shared/coins/DAI.svg'
 import { useTranslation } from 'react-i18next'
 
 export const FirstSection = () => {
@@ -106,10 +110,14 @@ export const FirstSection = () => {
           </Box>
         </Box>
           <Box>
-          <img src={rabbit} alt="img rabbbit" style={{width: isMobile ? '50%' : '100%',
-            flexShrink: 0,
-            marginLeft: isMobile ? 'auto' : '0',
-            marginRight: isMobile ? 'auto' : '0',}}/>
+            <img
+              src={rabbit}
+              alt="img rabbbit"
+              className='sm:-translate-x-[200px]'
+              style={{
+                width: '568px',
+              }}
+            />
           </Box>
 
       </Box>
@@ -163,11 +171,11 @@ export const FirstSection = () => {
           }}
         >
           <img src={etherum} alt="etherum" style={{ marginRight: '50px' }} />
+          <img src={binace} alt="etherum" style={{ marginRight: '50px' }} />
           <img src={bitcoin} alt="etherum" style={{ marginRight: '50px' }} />
-          <img src={etherum} alt="etherum" style={{ marginRight: '50px' }} />
-          <img src={bitcoin} alt="etherum" style={{ marginRight: '50px' }} />
-          <img src={etherum} alt="etherum" style={{ marginRight: '50px' }} />
-          <img src={bitcoin} alt="etherum" style={{ marginRight: '50px' }} />
+          <img src={tron} alt="etherum" style={{ marginRight: '50px' }} />
+          <img src={busd} alt="etherum" style={{ marginRight: '50px' }} />
+          <img src={dai} alt="etherum" style={{ marginRight: '50px' }} />
         </Box>
       </Box>
     </Box>

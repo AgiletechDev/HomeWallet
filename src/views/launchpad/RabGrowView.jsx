@@ -12,7 +12,7 @@ import RadioGroup from '@mui/material/RadioGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import FormControl from '@mui/material/FormControl'
 
-import image11 from '../../assets/images/launchpad/cuadro imagen der.png'
+import image11 from '../../assets/images/launchpad/grow/image.png'
 import { useTranslation } from 'react-i18next'
 
 export const RabGrowView = () => {

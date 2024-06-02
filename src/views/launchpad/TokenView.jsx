@@ -1,6 +1,6 @@
 import { Box, Typography, Button, Card, TextField,useTheme,
   useMediaQuery } from '@mui/material'
-import image11 from '../../assets/images/launchpad/cuadro de imagen der4.png'
+import image11 from '../../assets/images/launchpad/token/image.png'
 import { useTranslation } from 'react-i18next'
 
 export const TokenView = () => {

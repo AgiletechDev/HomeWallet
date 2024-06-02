@@ -8,11 +8,11 @@ import {
   useMediaQuery,
   Stack,
 } from '@mui/material'
-import imageA from '../../assets/images/launchpad/icono 1.png'
-import imageB from '../../assets/images/launchpad/icono 2.png'
-import imageC from '../../assets/images/launchpad/icono 3.png'
+import imageA from '../../assets/images/launchpad/main/card.01.png'
+import imageB from '../../assets/images/launchpad/main/card.02.png'
+import imageC from '../../assets/images/launchpad/main/card.03.png'
 import icono from '../../assets/images/launchpad/caja conectar.png'
-import image11 from '../../assets/images/launchpad/cuadro imagen der.png'
+import image11 from '../../assets/images/launchpad/main/wallet.png'
 import CurrentSale from '../../components/CurrentSale'
 import { useTranslation } from 'react-i18next'
 
@@ -68,7 +68,7 @@ export const SecondSection = () => {
           }}
         >
           <Stack justifyContent='center' sx={{flexGrow: 1}}>
-            <img src={imageA} alt="imagec" style={{ width: '100px' }} />
+            <img src={imageA} alt="imagec" style={{ width: '180px' }} />
           </Stack>
           <Typography
             gutterBottom
@@ -99,7 +99,7 @@ export const SecondSection = () => {
           }}
         >
           <Stack justifyContent='center' sx={{flexGrow: 1}}>
-            <img src={imageB} alt="imagec" style={{ width: '100px' }} />
+            <img src={imageB} alt="imagec" style={{ width: '180px' }} />
           </Stack>
           <Typography
             gutterBottom
@@ -130,7 +130,7 @@ export const SecondSection = () => {
           }}
         >
           <Stack justifyContent='center' sx={{flexGrow: 1}}>
-            <img src={imageC} alt="imagec" style={{ width: '100px' }} />
+            <img src={imageC} alt="imagec" style={{ width: '180px' }} />
           </Stack>
           <Typography
             gutterBottom

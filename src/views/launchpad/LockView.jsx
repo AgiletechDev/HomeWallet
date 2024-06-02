@@ -8,7 +8,7 @@ import {
   useTheme,
   useMediaQuery
 } from '@mui/material'
-import image11 from '../../assets/images/launchpad/cuadro imagen der2.png'
+import image11 from '../../assets/images/launchpad/lock/image.png'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import Checkbox from '@mui/material/Checkbox'
 import InfoIcon from '@mui/icons-material/Info'

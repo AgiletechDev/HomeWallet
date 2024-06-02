@@ -12,7 +12,7 @@ import RadioGroup from '@mui/material/RadioGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import FormControl from '@mui/material/FormControl'
 
-import image11 from '../../assets/images/launchpad/cuadro imagen der3.png'
+import image11 from '../../assets/images/launchpad/sale/image.png'
 import { useTranslation } from 'react-i18next'
 
 export const RabSaleView = () => {
@@ -63,7 +63,7 @@ export const RabSaleView = () => {
             <img
               src={image11}
               alt="image11"
-              style={{ width: isMobile ? '100%' : '30%' }}
+              style={{ width: isMobile ? '100%' : '268px' }}
             />
           </Card>
 

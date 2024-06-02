@@ -6,10 +6,10 @@ import { MultiUtility } from '../../components/MultiUtility'
 import { useTranslation } from 'react-i18next'
 
 
-import etherum from '../../assets/images/launchpad/etherum.png'
-import binance from '../../assets/images/launchpad/bitcoin.png'
-import bitcoin from '../../assets/images/launchpad/bitcoin.png'
-import tron from '../../assets/images/launchpad/etherum.png'
+import etherum from '../../assets/shared/coins/ETH.svg'
+import binance from '../../assets/shared/coins/BNB.svg'
+import bitcoin from '../../assets/shared/coins/btc.svg'
+import tron from '../../assets/shared/coins/TRX.svg'
 
 export const SecondSection = () => {
   const theme = useTheme()
