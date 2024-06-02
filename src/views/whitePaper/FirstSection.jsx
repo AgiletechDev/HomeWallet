@@ -38,8 +38,8 @@ export const FirstSection = () => {
         <Typography
           variant='h3'
           fontWeight='900'
-          fontSize='80px'
-          top={-40}
+          fontSize={{xs: '40px', sm: '80px'}}
+          top={{xs: -5, sm: -40}}
           className='absolute text-white text-shadow z-0'
         >
           WHITEPAPER

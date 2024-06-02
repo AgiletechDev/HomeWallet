@@ -13,7 +13,7 @@ export const FirstSection = () => {
     <Box
       sx={{
         display: 'flex',
-        height:  isMobile ? '100%' :  '500px',
+        height:  '500px',
         overflow: 'hidden',
         position: 'relative',
         marginTop: 10,
@@ -40,8 +40,8 @@ export const FirstSection = () => {
           noWrap
           variant='h3'
           fontWeight='900'
-          fontSize='80px'
-          top={-35}
+          fontSize={{xs: '30px', sm: '80px'}}
+          top={{xs: 4, sm: -35}}
           className='absolute text-white text-shadow z-0'
         >
           Backers & Partners
@@ -49,6 +49,7 @@ export const FirstSection = () => {
         <Typography
           variant="h5"
           className='z-10'
+          textAlign={{ xs:'center', sm:'start' }}
           sx={{
             fontSize: '30px',
             fontWeight: '600',

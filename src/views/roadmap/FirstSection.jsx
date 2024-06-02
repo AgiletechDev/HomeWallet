@@ -31,8 +31,8 @@ export const FirstSection = () => {
         <Typography
           variant='h3'
           fontWeight='900'
-          fontSize='80px'
-          top={0}
+          fontSize={{xs: '50px', sm: '80px'}}
+          top={{xs: 30, sm: 0}}
           className='absolute text-white text-shadow -z-0'
         >
           ROADMAP

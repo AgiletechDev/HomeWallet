@@ -28,13 +28,13 @@ export const FirstSection = () => {
           <Typography
             variant='h3'
             fontWeight='900'
-            fontSize='80px'
+            fontSize={{xs: '50px', sm: '80px'}}
             bottom={20}
-            className='absolute text-white text-shadow z-0'
+            className='absolute left-0 bottom-0 -translate-y-5 sm:translate-y-0 text-white text-shadow z-0'
           >
             {t("TOKENOMIC_TITLE")}
           </Typography>
-          <Typography className='z-10' variant="h2" paddingLeft={10} fontWeight="700">
+          <Typography className='relative z-10' variant="h2" paddingLeft={{sm:10}} fontWeight="700">
             {t("TOKENOMIC_TITLE")}
           </Typography>
         </Box>

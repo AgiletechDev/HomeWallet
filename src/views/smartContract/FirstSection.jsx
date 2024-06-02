@@ -54,8 +54,8 @@ export const FirstSection = () => {
         <Typography
           variant='h3'
           fontWeight='900'
-          fontSize='80px'
-          top={-40}
+          fontSize={{xs: '25px', sm: '80px'}}
+          top={{xs: 0, sm: -40}}
           className='absolute text-white text-shadow -z-10'
         >
           {t("TITLE_SMARTCONTRACT")}
@@ -123,7 +123,7 @@ export const FirstSection = () => {
             {t('SUBTITLE3')}
           </Typography>
           <a href='https://github.com/solidproof/projects/tree/main/Wallet%20Token'>
-            https://github.com/solidproof/projects/tree/main/Wallet%20Token
+            https://github.com/solidproof/projects/...
           </a>
           <img
             src={solidprooficon}

@@ -12,7 +12,7 @@ export const FirstSection = () => {
   return (
     <Box sx={{
       display: 'flex',
-      height: '500px',
+      height: '560px',
       width: '100%',
       paddingY: 15,
       overflow: 'hidden',
@@ -35,8 +35,8 @@ export const FirstSection = () => {
         <Typography
           variant='h3'
           fontWeight='900'
-          fontSize='80px'
-          top={-40}
+          fontSize={{xs: '50px', sm: '80px'}}
+          top={{xs: -20, sm: -40}}
           className='absolute text-white text-shadow -z-0'
         >
           Buy Wallet
@@ -49,7 +49,7 @@ export const FirstSection = () => {
           {t("BUYWALLET_TITLE")}
         </Typography>
         <Stack
-          direction='row'
+          direction={{xs:'column', sm:'row'}}
           gap={5}
           sx={{
             zIndex: '1',

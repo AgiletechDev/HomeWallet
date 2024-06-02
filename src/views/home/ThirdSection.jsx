@@ -86,10 +86,10 @@ export const ThirdSection = () => {
             }}
           >
             <Typography
-              className='text-white text-shadow translate-y-8 -z-10'
+              className='text-white text-shadow sm:translate-y-8 -z-10'
               variant='h3'
               fontWeight='900'
-              fontSize='80px'
+              fontSize={{xs:'40px', sm:'80px'}}
             >
               SECURITY
             </Typography>
@@ -97,12 +97,12 @@ export const ThirdSection = () => {
               variant="h4"
               fontWeight="800"
             >
-              <span className='text-nowrap'>{t("SUBTITLE_SECTION3")}</span>
+              <span className='sm:text-nowrap'>{t("SUBTITLE_SECTION3")}</span>
               <br />
-              <span className='text-white text-nowrap saturate-0 text-shadow px-2'>
+              <span className='text-lg sm:text-2xl text-white text-nowrap saturate-0 text-shadow px-2'>
                 {t("SUBTITLE_SECTION3.2")}
               </span>
-              <span className='text-2xl text-nowrap'>{t("SUBTITLE_SECTION3.3")}</span>
+              <span className='text-2xl sm:text-nowrap'>{t("SUBTITLE_SECTION3.3")}</span>
             </Typography>
             <ul className='mt-16 flex flex-col gap-4' style={{ fontSize: '20px' }}>
               <li className='flex gap-3'>
