@@ -27,7 +27,7 @@ export const RabGrowView = () => {
         sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
         <Typography textAlign="center" variant="h3" fontWeight="bold">
-          Create VICGrow
+          {t("VICGROW_TITLE")}
         </Typography>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '3em', mt:'2em' }}>
           <Card

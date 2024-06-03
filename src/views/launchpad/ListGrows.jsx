@@ -9,8 +9,10 @@ import {
 import rabbit from '../../assets/images/launchpad/grow/hero.png'
 import CurrentSale from '../../components/CurrentSale'
 import icono from '../../assets/images/launchpad/icono.png'
+import { useTranslation } from 'react-i18next'
 
 export const ListGrowsView = () => {
+  const { t } = useTranslation()
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
@@ -35,14 +37,14 @@ export const ListGrowsView = () => {
               color='transparent'
               noWrap
             >
-              Connect your wallet
+              {t("RABSALE_TITLE1")}
             </Typography>
             <Typography
               textAlign={isMobile ? 'center' : 'left'}
               variant="h3"
               fontWeight="700"
             >
-              & start exploring
+              {t("RABSALE_TITLE2")}
             </Typography>
             <Box
               sx={{
