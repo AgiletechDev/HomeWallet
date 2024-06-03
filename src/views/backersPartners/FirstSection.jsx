@@ -40,11 +40,11 @@ export const FirstSection = () => {
           noWrap
           variant='h3'
           fontWeight='900'
-          fontSize={{xs: '30px', sm: '80px'}}
+          fontSize={{xs: '20px', sm: '80px'}}
           top={{xs: 4, sm: -35}}
           className='absolute text-white text-shadow z-0'
         >
-          Backers & Partners
+          {t("BACKERSANDPARTNERS")}
         </Typography>
         <Typography
           variant="h5"

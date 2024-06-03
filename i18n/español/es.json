@@ -47,7 +47,10 @@
     "MULTIPLY_TITLE7": "Programa de referencia",
     "MULTIPLY_TEXT7": "Recompensas gratuitas por compartir dispositivos de Wallets con la comunidad",
 
-    "SUBTITLE_SECTION3": "La seguridad es y siempre será la máxima prioridad para las billeteras",
+    "TITLE_SECTION3": "SEGURIDAD",
+    "SUBTITLE_SECTION3": "La seguridad es y",
+    "SUBTITLE_SECTION3.2": "siempre será",
+    "SUBTITLE_SECTION3.3": "la máxima prioridad para las billeteras",
     "TEXT1_SECTION3": "Creemos que la seguridad y la privacidad de los datos son esenciales para establecer la confianza del usuario.",
     "TEXT2_SECTION3": "Invertimos mucho en capacitación continua sobre seguridad y privacidad para todos los empleados para reforzar nuestra postura de seguridad.",
     "TEXT3_SECTION3": "Su billetera está cifrada localmente en su dispositivo y protegida bimétricamente.",

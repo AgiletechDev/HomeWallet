@@ -54,7 +54,7 @@ export const FirstSection = () => {
         <Typography
           variant='h3'
           fontWeight='900'
-          fontSize={{xs: '25px', sm: '80px'}}
+          fontSize={{xs: '20px', sm: '80px'}}
           top={{xs: 0, sm: -40}}
           className='absolute text-white text-shadow -z-10'
         >

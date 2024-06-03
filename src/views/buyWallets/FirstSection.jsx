@@ -35,15 +35,17 @@ export const FirstSection = () => {
         <Typography
           variant='h3'
           fontWeight='900'
-          fontSize={{xs: '50px', sm: '80px'}}
-          top={{xs: -20, sm: -40}}
+          fontSize={{xs: '50px', sm: '70px'}}
+          top={{xs: -70, sm: -40}}
+          textAlign='center'
           className='absolute text-white text-shadow -z-0'
         >
-          Buy Wallet
+          {t("BUYWALLET_TITLE")}
         </Typography>
         <Typography
           variant="h5"
           className='z-10'
+          textAlign='center'
           sx={{fontSize: '35px', fontWeight: '600', marginTop: '20px' }}
         >
           {t("BUYWALLET_TITLE")}

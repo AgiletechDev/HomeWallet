@@ -53,7 +53,7 @@ export const ThirdSection = () => {
 
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
-  
+
   return (
     <>
       <Box
@@ -91,7 +91,7 @@ export const ThirdSection = () => {
               fontWeight='900'
               fontSize={{xs:'40px', sm:'80px'}}
             >
-              SECURITY
+              {t("TITLE_SECTION3")}
             </Typography>
             <Typography
               variant="h4"

@@ -163,19 +163,20 @@ export const FirstSection = () => {
         <Box
           sx={{
             display: 'flex',
-            flexDirection: isMobile ? 'column' : 'row',
+            flexDirection: 'row',
             justifyContent: 'center',
             alignItems: 'center',
+            flexWrap: { xs:'wrap', sm: 'nowrap' },
             width: '100%',
-            gap:'10px'
+            gap: '40px'
           }}
         >
-          <img src={etherum} alt="etherum" style={{ marginRight: '50px' }} />
-          <img src={binace} alt="etherum" style={{ marginRight: '50px' }} />
-          <img src={bitcoin} alt="etherum" style={{ marginRight: '50px' }} />
-          <img src={tron} alt="etherum" style={{ marginRight: '50px' }} />
-          <img src={busd} alt="etherum" style={{ marginRight: '50px' }} />
-          <img src={dai} alt="etherum" style={{ marginRight: '50px' }} />
+          <img src={etherum} alt="etherum" />
+          <img src={binace} alt="etherum" />
+          <img src={bitcoin} alt="etherum" />
+          <img src={tron} alt="etherum" />
+          <img src={busd} alt="etherum" />
+          <img src={dai} alt="etherum" />
         </Box>
       </Box>
     </Box>
