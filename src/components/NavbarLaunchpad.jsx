@@ -507,7 +507,7 @@ const NavbarLaunchpad = () => {
               gap: '20px',
             }}
           >
-            <Link to="/launchpad/buywallet">
+            <Link to="/buywallets">
               <Button
                 variant="contained"
                 sx={{
