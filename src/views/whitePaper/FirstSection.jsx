@@ -55,6 +55,13 @@ export const FirstSection = () => {
         >
           WHITEPAPER
         </Typography>
+        <Typography
+          variant='caption'
+          textAlign='center'
+          sx={{maxWidth: '100ch'}}
+        >
+          This detailed document is your exclusive passport to fully understanding our innovative technology, our platform goals, and the exciting future we are building.
+        </Typography>
         <Button
           sx={{
             color: 'white',

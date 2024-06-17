@@ -139,7 +139,7 @@
     "LAUNCHPAD_SUBTITLE1_TEXT4": "Finalizado",
     "LAUNCHPAD_SECTION2_INPUT1": "Introduzca el nombre del token o el símbolo del token",
     "LAUNCHPAD_SECTION2_BUTTON1": "Conectar",
-    "LAUNCHPAD_CARD4": "Solicite el lanzamiento ahora para llevar su proyecto a más de 30 capitalistas de riesgo e inversores globales de VicNet LaunchPad",
+    "LAUNCHPAD_CARD4": "Solicite el lanzamiento ahora para llevar su proyecto a más de 30 capitalistas de riesgo e inversores globales de Rabbit LaunchPad.",
     "LAUNCHPAD_CARD4_BUTTON": "Conectar",
 
     "LAUNCHPAD_LOCKLIST_TITLE": "Bloqueo de Fichas",
@@ -161,7 +161,7 @@
     "RABSALE_TITLE1": "Conecte su billetera y",
     "RABSALE_TITLE2": "comience a explorar",
 
-    "VICGROW_TITLE": "Crear RAB Crecer",
+    "VICGROW_TITLE": "Crear VIC Grow",
     "VICGROW_DESCRIPTION": "Conecte directamente los 30 principales VC de Rabbit Launchpad y obtenga soporte integral de marketing en plataformas de redes sociales",
     "VICGROW_SUBTITLE": "Empecemos",
 
@@ -193,7 +193,7 @@
     "FORM_TOKEN_TEXTFIELDDATE": "Seleccionar fecha",
     "TOKEN_ALERT": "Excluya la dirección de bloqueo 0x79554D14Ac42F42177509B5e55E2614B2415C118 de las tarifas, recompensas y monto máximo de transmisión para comenzar a bloquear tokens. No admitimos tokens de rebase",
 
-    "CREATE_SALE_TITLE": "Crear venta RAB",
+    "CREATE_SALE_TITLE": "Crear venta VIC",
     "CREATE_SALE_DESCRIPTION": "Recaude capital y lance su proyecto con pasos sencillos y las mejores tarifas del mercado para llegar a nuestros inversores globales.Incluya automáticamente su Token después de una recaudación de fondos exitosa en: PancakeSwap, UniSwap"
 
 }    

@@ -13,7 +13,7 @@ export const TokenDesc = () => {
     first: [
       {
         title: t("TOKENDESC_TEXT1"),
-        subtitle: 'WALLET',
+        subtitle: 'VIC',
       },
       {
         title: 'Token Symbol',
@@ -27,11 +27,11 @@ export const TokenDesc = () => {
     second: [
       {
         title: 'Max supply',
-        subtitle: '100,000,000 RAB',
+        subtitle: '100,000,000',
       },
       {
         title: 'Blockchain network',
-        subtitle: 'BNB Smart Chain (BEP20) & Arbitrum',
+        subtitle: 'BNB Smart Chain (BEP20) & Arbitrum (ETH)',
       },
       {
         title: 'Token Decimal',
