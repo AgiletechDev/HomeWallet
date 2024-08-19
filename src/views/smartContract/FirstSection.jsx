@@ -1,14 +1,16 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import { Box, Button, Typography, useTheme, useMediaQuery } from '@mui/material'
 import solidprooficon from '../../assets/images/portal/solidprooficon.png'
-import cuadro1 from '../../assets/images/portal/cuadro1.png'
+// import cuadro1 from '../../assets/images/portal/cuadro1.png'
 import lineahorizonta1 from '../../assets/images/portal/lineahorizonta1.png'
 import apoyo2 from '../../assets/images/portal/apoyo2.png'
 import apoyo2_1 from '../../assets/images/portal/apoyo2_1.png'
 import apoyo4 from '../../assets/images/portal/apoyo4.png'
 import circulos from '../../assets/images/portal/circulos.png'
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
+import image1 from './../../assets/logos/image-1.png'
+import image2 from './../../assets/logos/image-2.png'
+import image3 from './../../assets/logos/image-3.png'
 
 const shortenUrl = (url, isMobile) => {
   if (isMobile) {
@@ -157,9 +159,9 @@ export const FirstSection = () => {
               maxWidth: '700px',
             }}
           >
-            <img src={cuadro1} alt="" style={{ marginRight: '10px' }} />
-            <img src={cuadro1} alt="" style={{ marginRight: '10px' }} />
-            <img src={cuadro1} alt="" style={{ marginRight: '10px' }} />
+            <img src={image1} alt="" style={{ marginRight: '10px' }} />
+            <img src={image2} alt="" style={{ marginRight: '10px' }} />
+            <img src={image3} alt="" style={{ marginRight: '10px' }} />
           </Box>
           <Link to='/buywallets'>
             <Button

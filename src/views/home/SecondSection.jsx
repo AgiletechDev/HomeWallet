@@ -1,9 +1,13 @@
-import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery, Stack } from '@mui/material'
+import { useTranslation } from 'react-i18next'
+import { Timer } from '../../components'
+import { Calculator } from '../../components'
+
 import imgSect1 from '../../assets/images/portal/pag1/ilustracion 1.png'
 import imgSect2 from '../../assets/images/portal/pag1/vista 2.png'
 import imgSect3 from '../../assets/images/portal/pag1/vista 3.png'
+import background from '../../assets/backgrounds/fondo.png'
 import { MultiUtility } from '../../components/MultiUtility'
-import { useTranslation } from 'react-i18next'
 
 export const SecondSection = () => {
   const theme = useTheme()
@@ -35,10 +39,10 @@ export const SecondSection = () => {
             Wallet
           </Typography>
           <Typography>
-            {t("TEXT_SECTION2")}
-            <span style={{ fontWeight: 'bold' }}>{t("TEXT1_SECTION2")}</span>
+            {t('TEXT_SECTION2')}
+            <span style={{ fontWeight: 'bold' }}>{t('TEXT1_SECTION2')}</span>
             <br />
-            {t("TEXT3_SECTION2")}
+            {t('TEXT3_SECTION2')}
           </Typography>
         </Box>
 
@@ -71,10 +75,10 @@ export const SecondSection = () => {
           }}
         >
           <Typography variant="h4" fontWeight="700" color="#4d4d4d" mt="1em">
-            {t("SECTION2_SUBTITLE1")}
+            {t('SECTION2_SUBTITLE1')}
           </Typography>
           <Typography variant="h6" color="#4d4d4d">
-            {t("SECTION2_TEXT1")}
+            {t('SECTION2_TEXT1')}
           </Typography>
           <ul style={{ listStyle: 'none', color: '#4d4d4d', fontSize: '25px' }}>
             <li>Ethereum</li>
@@ -84,6 +88,11 @@ export const SecondSection = () => {
           </ul>
         </Box>
       </Box>
+
+      <Stack direction="row">
+        <Timer title="Timer" background={background} />
+        <Calculator background={background} />
+      </Stack>
 
       <Box
         sx={{
@@ -103,10 +112,10 @@ export const SecondSection = () => {
           }}
         >
           <Typography variant="h4" fontWeight="800" color="#4d4d4d">
-            {t("SECTION2_SUBTITLE2")}
+            {t('SECTION2_SUBTITLE2')}
           </Typography>
           <Typography color="#4d4d4d" fontWeight="bold">
-            {t("SECTION2_TEXT2")}
+            {t('SECTION2_TEXT2')}
           </Typography>
           <MultiUtility />
         </Box>

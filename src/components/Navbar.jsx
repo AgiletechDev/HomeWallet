@@ -183,7 +183,7 @@ const Navbar = () => {
                 }}
               />
             </Link>
-
+            {/* 
             <Link
               to="/launchpad"
               onClick={handleDrawerClose}
@@ -191,6 +191,7 @@ const Navbar = () => {
             >
               <Typography>Launchpad</Typography>
             </Link>
+             */}
             <Link
               to="/tokenomics"
               onClick={handleDrawerClose}
@@ -226,6 +227,7 @@ const Navbar = () => {
             >
               <Typography>Backers & Partners</Typography>
             </Link>
+            {/*
             <Link
               to="/blog"
               onClick={handleDrawerClose}
@@ -233,6 +235,7 @@ const Navbar = () => {
             >
               <Typography>Blog</Typography>
             </Link>
+            */}
           </Box>
         </Drawer>
       </React.Fragment>
@@ -319,6 +322,7 @@ const Navbar = () => {
                 </Button>
               </Typography>
             ))}
+            {/*
             <Link to="/blog">
               <Button
                 sx={{
@@ -332,6 +336,7 @@ const Navbar = () => {
                 Blog
               </Button>
             </Link>
+            */}
 
             <Button
               sx={{ marginLeft: isMobile ? '-28px' : '-12px' }}
@@ -421,7 +426,7 @@ const Navbar = () => {
             Wallet
           </MenuItem>
         </Link>
-
+        {/* 
         <Link to="/launchpad" style={{ textDecoration: 'none' }}>
           <MenuItem
             onClick={handleClose}
@@ -437,6 +442,7 @@ const Navbar = () => {
             Launchpad
           </MenuItem>
         </Link>
+         */}
       </Menu>
 
       <Menu

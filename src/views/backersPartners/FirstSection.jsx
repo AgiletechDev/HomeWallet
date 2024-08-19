@@ -3,8 +3,10 @@ import lineahorizonta1 from '../../assets/images/portal/lineahorizonta1.png'
 import apoyo2_1 from '../../assets/images/portal/apoyo2_1.png'
 import apoyo4 from '../../assets/images/portal/apoyo4.png'
 import circulos from '../../assets/images/portal/circulos.png'
-import cuadro1 from '../../assets/images/portal/cuadro1.png'
+// import cuadro1 from '../../assets/images/portal/cuadro1.png'
 import { useTranslation } from 'react-i18next'
+import image1 from './../../assets/logos/image-1.png'
+import image2 from './../../assets/logos/image-2.png'
 
 export const FirstSection = () => {
   const { t } = useTranslation();
@@ -64,8 +66,8 @@ export const FirstSection = () => {
             mb:'2em'
           }}
         >
-          <img src={cuadro1} alt="cuadro1" style={{ marginRight: '20px' }} />
-          <img src={cuadro1} alt="cuadro1" style={{ marginRight: '20px' }} />
+          <img src={image1} alt="cuadro1" style={{ marginRight: '20px' }} />
+          <img src={image2} alt="cuadro1" style={{ marginRight: '20px' }} />
         </Box>
       </Box>
       {!isMobile && (
