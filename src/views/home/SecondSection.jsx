@@ -6,7 +6,7 @@ import { Calculator } from '../../components'
 import imgSect1 from '../../assets/images/portal/pag1/ilustracion 1.png'
 import imgSect2 from '../../assets/images/portal/pag1/vista 2.png'
 import imgSect3 from '../../assets/images/portal/pag1/vista 3.png'
-import background from '../../assets/backgrounds/fondo.png'
+import background from '../../assets/backgrounds/image.png'
 import { MultiUtility } from '../../components/MultiUtility'
 
 export const SecondSection = () => {
@@ -89,9 +89,9 @@ export const SecondSection = () => {
         </Box>
       </Box>
 
-      <Stack direction="row">
-        <Timer title="Timer" background={background} />
+      <Stack direction={{ xs: 'column', lg: 'row' }} gap={4} paddingY="2em">
         <Calculator background={background} />
+        <Timer title={t('comp.timer.title')} background={background} />
       </Stack>
 
       <Box

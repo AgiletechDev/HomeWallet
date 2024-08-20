@@ -21,10 +21,10 @@ export const TimerProgress = ({ progress }) => {
       />
       <Stack direction="row" justifyContent="space-between">
         <Typography variant="h6" color="white" fontSize="18px" maxWidth="80px">
-          {t('plat.sec1.limt1')}
+          {t('comp.timer.bar.start')}
         </Typography>
         <Typography variant="h6" color="white" fontSize="18px" maxWidth="100px">
-          {t('plat.sec1.limt2')}
+          {t('comp.timer.bar.end')}
         </Typography>
       </Stack>
     </>

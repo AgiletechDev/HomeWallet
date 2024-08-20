@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import { Container, Box } from '@mui/material'
 import NavbarLaunchpad from './components/NavbarLaunchpad'
 import { FooterLaunchpad } from './components'
+import { AppTheme } from './theme/AppTheme'
 
 function App() {
   const location = useLocation()
@@ -42,30 +43,28 @@ function App() {
       )
     } else {
       return (
-
-          <Container
-            sx={{
-              maxWidth: '1280px',
-              marginInline: 'auto',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              marginTop: '50px',
-            }}
-          >
-            <Outlet />
-          </Container>
-
+        <Container
+          sx={{
+            maxWidth: '1280px',
+            marginInline: 'auto',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            marginTop: '50px',
+          }}
+        >
+          <Outlet />
+        </Container>
       )
     }
   }
   return (
-    <>
+    <AppTheme>
       {renderNavbar()}
       {renderOutlet()}
 
       {renderFooter()}
-    </>
+    </AppTheme>
   )
 }
 

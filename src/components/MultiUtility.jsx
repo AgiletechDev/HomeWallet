@@ -18,7 +18,7 @@ const boxStyle = {
   background: 'linear-gradient(97deg, rgba(62,56,123,1) 0%, rgba(49,76,116,1) 100%)',
   color:'white',
   padding:'0.5em 1em',
-  borderRadius:'30px',
+  borderRadius:'10px',
 
 };
 

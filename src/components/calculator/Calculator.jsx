@@ -43,9 +43,11 @@ export const Calculator = ({ background }) => {
       paddingX={4}
       paddingY={2}
       borderRadius={2}
+      justifyContent="space-between"
       // border={3}
       // borderColor="#b0cd2d"
       style={{
+        color: 'white',
         background: `url(${background})`,
       }}
     >
@@ -64,15 +66,12 @@ export const Calculator = ({ background }) => {
       <Typography fontWeight={900}>
         RAISED: ${Intl.NumberFormat('en-EN').format(priceRaised)} USD
       </Typography>
-      <Button
-        variant="contained"
-        sx={{
-          fontWeight: 900,
-        }}
-      >
+      <Button color="base" variant="contained" sx={{ fontWeight: 900 }}>
         {Math.round(percent * 100) / 100}%
       </Button>
-      <Button variant="contained">BNB</Button>
+      <Button color="base" variant="contained">
+        BNB
+      </Button>
       <Typography>
         1 Agra token = ${Intl.NumberFormat('en-EN').format(priceAgraToken)} USD
       </Typography>
@@ -81,14 +80,14 @@ export const Calculator = ({ background }) => {
       </Typography>
       <Stack position="relative" gap={1} direction="row">
         <TextField
-          sx={{ bgcolor: '#90cd2d' }}
+          color="base"
           label="BNB"
           variant="filled"
           onChange={onChangeBnb}
           value={bnbAmount}
         />
         <TextField
-          sx={{ bgcolor: '#90cd2d' }}
+          color="base"
           label="Agra token"
           variant="filled"
           placeholder="Agra token amount"
@@ -101,20 +100,22 @@ export const Calculator = ({ background }) => {
           bottom={'100%'}
           marginBottom={1}
           padding={1}
-          bgcolor="#90cd2d"
+          bgcolor="base.main"
           color="black"
           borderRadius={2}
         >
           ${Math.round(agraAmount * priceAgraToken * 100) / 100} USD
         </Typography>
       </Stack>
-      <Button variant="contained" sx={{ fontWeight: 900 }}>
+      <Button color="base" variant="contained" sx={{ fontWeight: 900 }}>
         Connect wallet
       </Button>
-      <Button variant="contained" sx={{ fontWeight: 900 }}>
+      <Button color="base" variant="contained" sx={{ fontWeight: 900 }}>
         Buy Agra token
       </Button>
-      <Button variant="contained">MY TOKENS</Button>
+      <Button color="base" variant="contained">
+        MY TOKENS
+      </Button>
     </Stack>
   )
 }

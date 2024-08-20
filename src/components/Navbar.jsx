@@ -361,6 +361,7 @@ const Navbar = () => {
               <Button
                 variant="contained"
                 sx={{
+                  minWidth: '100px',
                   borderRadius: '20px',
                   height: '40px',
                   textTransform: 'capitalize',

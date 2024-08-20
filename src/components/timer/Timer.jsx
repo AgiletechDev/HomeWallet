@@ -39,7 +39,7 @@ export const Timer = ({ title, background }) => {
     return () => {
       clearInterval(timer.current)
     }
-  }, [])
+  }, [initialCounter])
 
   const timec = useMemo(
     () => ({
@@ -53,11 +53,10 @@ export const Timer = ({ title, background }) => {
 
   return (
     <Stack
-      width="100%"
       height="100%"
+      width={{ sx: '50%', lg: '100%' }}
       justifyContent="center"
       alignItems="center"
-      flexGrow={1}
     >
       <Stack
         position="relative"
@@ -66,6 +65,7 @@ export const Timer = ({ title, background }) => {
         alignItems="center"
         justifyContent="center"
         textAlign="center"
+        width="100%"
         zIndex={1}
       >
         <img
@@ -75,8 +75,7 @@ export const Timer = ({ title, background }) => {
             objectFit: 'cover',
             zIndex: '-1',
             width: '100%',
-            borderRadius: '30px',
-            filter: 'hue-rotate(160deg)',
+            borderRadius: '10px',
             height: '100%',
           }}
         />
@@ -98,26 +97,20 @@ export const Timer = ({ title, background }) => {
               gap: '20px',
             }}
           >
-            <TimerNumber value={timec.days} name={t('plat.sec1.item1')} />
+            <TimerNumber value={timec.days} name={t('comp.timer.days')} />
 
-            <TimerNumber value={timec.hours} name={t('plat.sec1.item2')} />
+            <TimerNumber value={timec.hours} name={t('comp.timer.hours')} />
 
-            <TimerNumber value={timec.minutes} name={t('plat.sec1.item3')} />
+            <TimerNumber value={timec.minutes} name={t('comp.timer.minutes')} />
 
-            <TimerNumber value={timec.seconds} name={t('plat.sec1.item4')} />
+            <TimerNumber value={timec.seconds} name={t('comp.timer.seconds')} />
           </Grid>
 
           <TimerProgress progress={progress} />
         </Box>
 
-        <Button
-          variant="contained"
-          sx={{
-            bgcolor: 'rgb(51, 39, 123)',
-            ':hover': { bgcolor: 'rgb(51, 39, 123)' },
-          }}
-        >
-          {t('plat.sec1.btn')}
+        <Button variant="contained" color="base">
+          {t('comp.timer.button.buy')}
         </Button>
       </Stack>
     </Stack>

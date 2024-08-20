@@ -190,11 +190,15 @@
     "TOKEN_ALERT": "Please exclude lockup address 0x7955....5C11B from fees, rewards, max tx amount to start locking tokens. We don't support rebase tokens",
 
     "CREATE_SALE_TITLE": "Create Sale VIC",
-    "CREATE_SALE_DESCRIPTION": "Raise capital and launch your project with easy steps and the best rates on the market to reach our global investors. Automatically list your Token after a successful fundraising on: PancakeSwap, UniSwap"
+    "CREATE_SALE_DESCRIPTION": "Raise capital and launch your project with easy steps and the best rates on the market to reach our global investors. Automatically list your Token after a successful fundraising on: PancakeSwap, UniSwap",
 
-
-
-    
-
+    "comp.timer.title": "Token Sale Ends In:",
+    "comp.timer.days": "days",
+    "comp.timer.hours": "hours",
+    "comp.timer.minutes": "minutes",
+    "comp.timer.seconds": "seconds",
+    "comp.timer.bar.start": "Selfcap in few days",
+    "comp.timer.bar.end": "Maximum token limit",
+    "comp.timer.button.buy": "Buy more tokens"
 
 }

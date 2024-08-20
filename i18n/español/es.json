@@ -190,6 +190,15 @@
     "TOKEN_ALERT": "Excluya la dirección de bloqueo 0x79554D14Ac42F42177509B5e55E2614B2415C118 de las tarifas, recompensas y monto máximo de transmisión para comenzar a bloquear tokens. No admitimos tokens de rebase",
 
     "CREATE_SALE_TITLE": "Crear venta VIC",
-    "CREATE_SALE_DESCRIPTION": "Recaude capital y lance su proyecto con pasos sencillos y las mejores tarifas del mercado para llegar a nuestros inversores globales.Incluya automáticamente su Token después de una recaudación de fondos exitosa en: PancakeSwap, UniSwap"
+    "CREATE_SALE_DESCRIPTION": "Recaude capital y lance su proyecto con pasos sencillos y las mejores tarifas del mercado para llegar a nuestros inversores globales.Incluya automáticamente su Token después de una recaudación de fondos exitosa en: PancakeSwap, UniSwap",
 
-}    
+    "comp.timer.title": "La Venta de Tokens Finaliza en:",
+    "comp.timer.days": "días",
+    "comp.timer.hours": "horas",
+    "comp.timer.minutes": "minutos",
+    "comp.timer.seconds": "segundos",
+    "comp.timer.bar.start": "Selfcap en pocos días",
+    "comp.timer.bar.end": "Limite máximo de token",
+    "comp.timer.button.buy": "Compra más Tokens"
+
+}
