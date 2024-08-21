@@ -55,7 +55,8 @@ export const Timer = ({ title, background }) => {
     <Stack height="100%" justifyContent="center" alignItems="center">
       <Stack
         position="relative"
-        padding="1em"
+        paddingX="1em"
+        paddingY={2}
         borderRadius={2}
         alignItems="center"
         justifyContent="center"

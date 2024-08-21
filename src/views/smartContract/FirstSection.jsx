@@ -29,11 +29,11 @@ export const FirstSection = () => {
   const list = [
     {
       title: title1,
-      url: 'https://bscscan.com/address/0x24Ef78C7092d255Ed14a028lac1800C359aF3afe',
+      url: 'https://bscscan.com/address/0x0000000000000000000000000000000000000000',
     },
     {
       title: title2,
-      url: 'https://bscscan.com/address/0x24Ef78C7092d255Ed14a028lac1800C359aF3afe',
+      url: 'https://bscscan.com/address/0x0000000000000000000000000000000000000000',
     },
   ]
 
@@ -163,7 +163,7 @@ export const FirstSection = () => {
             <img src={image2} alt="" style={{ marginRight: '10px' }} />
             <img src={image3} alt="" style={{ marginRight: '10px' }} />
           </Box>
-          <Link to='/buywallets'>
+          <Link hidden to='/buywallets'>
             <Button
               sx={{
                 background: '#33277b',

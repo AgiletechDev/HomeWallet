@@ -10,7 +10,7 @@
     "NAVBARTITLE3": "Compañia",
     "NAVBUTTON": "Comprar",
 
-    "TITLE_HOME": "SÚPER APLICACIÓN VicNet WALLET",
+    "TITLE_HOME": "SÚPER APLICACIÓN VICNET WALLET",
     "TITLE_HOME2": "MULTIUTILIDAD DE NUEVA GENERACIÓN",
     "SUBTITLE_HOME1": "MÁS QUE TU EXPECTATIVA",
     "SUBTITLE_PARRAFO": "La billetera que necesitas para entrar al mundo del Crypto",
@@ -205,6 +205,19 @@
     "comp.calc.token.placename": "Cantidad de Vic Token",
     "comp.calc.token.connect": "Connectar Billetera",
     "comp.calc.token.buy": "Comprar VIC TOKEN",
-    "comp.calc.token.own": "Mis Tokens"
+    "comp.calc.token.own": "Mis Tokens",
+
+    "home.form.btn": "Enviar Mensaje",
+    "home.form.label1": "Nombre",
+    "home.form.label1.placeholder": "Ingrese nombre",
+    "home.form.label2": "Correo",
+    "home.form.label2.placeholder": "Ingrese correo",
+    "home.form.label3": "Mensaje",
+    "home.form.label3.placeholder": "Ingrese mensaje",
+
+    "home.form.status.error.title": "Ocurrió un problema al enviar el mensaje",
+    "home.form.status.error.button":"Intentar otra vez",
+    "home.form.status.ok.title":"Mensaje enviado exitosamente",
+    "home.form.status.ok.button":"Enviar otro mensaje"
 
 }

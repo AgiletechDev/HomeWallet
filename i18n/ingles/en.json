@@ -10,7 +10,7 @@
     "NAVBARTITLE3": "Company",
     "NAVBUTTON": "Buy",
 
-    "TITLE_HOME": "VicNet WALLET SUPER APP",
+    "TITLE_HOME": "VICNET WALLET SUPER APP",
     "TITLE_HOME2": "NEW GENERATION MULTI-UTILITY",
     "SUBTITLE_HOME1": "MORE THAN YOUR EXPECTATION",
     "SUBTITLE_PARRAFO": "The wallet you need to enter the world of Crypto",
@@ -205,6 +205,20 @@
     "comp.calc.token.placename": "Vic Token amount",
     "comp.calc.token.connect": "Connect Wallet",
     "comp.calc.token.buy": "BUY VIC TOKEN",
-    "comp.calc.token.own": "My Tokens"
+    "comp.calc.token.own": "My Tokens",
+
+
+    "home.form.btn": "Send Message",
+    "home.form.label1": "Name",
+    "home.form.label1.placeholder": "Insert name",
+    "home.form.label2": "Email",
+    "home.form.label2.placeholder": "Insert email",
+    "home.form.label3": "Message",
+    "home.form.label3.placeholder": "Insert message",
+
+    "home.form.status.error.title": "There was a problem sending the message",
+    "home.form.status.error.button":"Retry",
+    "home.form.status.ok.title":"Message sent successfully",
+    "home.form.status.ok.button":"Send Another message"
 
 }

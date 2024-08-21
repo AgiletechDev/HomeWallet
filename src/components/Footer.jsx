@@ -5,6 +5,8 @@ import iconodiscord from '../assets/images/portal/svg/iconodiscord.svg'
 import iconoYT from '../assets/images/portal/svg/iconoYT.svg'
 import { useTranslation } from 'react-i18next'
 
+import { Contact } from './../components/contact'
+
 const Footer = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
@@ -26,7 +28,7 @@ const Footer = () => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          width: isMobile ? '90%' :'70%',
+          width: isMobile ? '90%' :'900px',
           height:  isMobile ? '80%' :'60%',
           textAlign: 'center',
           margin: 'auto',
@@ -83,6 +85,9 @@ const Footer = () => {
           {t("CONTACT_US")}
         </Typography>
 
+        <Contact />
+
+        {/* 
         <Box
           sx={{
             display: 'flex',
@@ -105,6 +110,7 @@ const Footer = () => {
             contact@agrawallet.com
           </a>
         </Box>
+         */}
 
         <Box
           sx={{

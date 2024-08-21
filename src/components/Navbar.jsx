@@ -16,7 +16,7 @@ import {
 import { useTranslation } from 'react-i18next'
 import spainFlag from '../assets/images/portal/spain.png'
 import estadosunidos from '../assets/images/portal/estadosunidos.png'
-import logoconjunto from '../assets/images/portal/logoconjunto.png'
+import logoconjunto from '../assets/logos/icon-2.png'
 import botoncomprar from '../assets/images/portal/botoncomprar.png'
 import flechadesplazamiento from '../assets/images/portal/svg/flechadesplazamiento.svg'
 import playstore from '../assets/images/portal/svg/playstore.svg'
@@ -67,7 +67,7 @@ const Navbar = () => {
     setOpen3(true)
   }
 
-  const [englishLanguage, setEnglishLanguage] = useState(false)
+  const [englishLanguage, setEnglishLanguage] = useState(true)
 
   const { t, i18n } = useTranslation()
 
@@ -132,14 +132,7 @@ const Navbar = () => {
                 position: 'relative',
               }}
             >
-              <img
-                src={logoconjunto}
-                alt="logo"
-                style={{
-                  width: '100%',
-                  height: '50px',
-                }}
-              />
+              <img src={logoconjunto} alt="logo" style={{ height: 50 }} />
             </Link>
             <IconButton color="inherit" onClick={handleDrawerOpen}>
               <MenuIcon />
@@ -276,8 +269,7 @@ const Navbar = () => {
               src={logoconjunto}
               alt="logo"
               style={{
-                width: isMobile ? '65%' : '100%',
-                height: isMobile ? '35px' : '50px',
+                height: '80%',
                 position: 'absolute',
                 top: '5px',
                 marginLeft: isMobile ? '-10px' : '-50px',

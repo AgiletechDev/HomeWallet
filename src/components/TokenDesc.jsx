@@ -40,7 +40,7 @@ export const TokenDesc = () => {
           <Typography fontWeight="bold" sx={{ mt: '1em', fontSize: isMobile ? '20px' : '25px' }}>
             {t("TOKENDESC_TEXT1")}
           </Typography>
-          <Typography sx={{ mt: '1em', fontSize: isMobile ? '20px' :'25px' }}>VIC</Typography>
+          <Typography sx={{ mt: '1em', fontSize: isMobile ? '20px' :'25px' }}>VIC Token</Typography>
         </Box>
         <Box
           sx={{
@@ -73,7 +73,7 @@ export const TokenDesc = () => {
           <Typography fontWeight="bold" sx={{ fontSize: isMobile ? '20px' :'25px' }}>
             Token Symbol:
           </Typography>
-          <Typography sx={{ fontSize:isMobile ? '20px' : '25px' }}>RAB</Typography>
+          <Typography sx={{ fontSize:isMobile ? '20px' : '25px' }}>VIC</Typography>
         </Box>
         <Box
           sx={{

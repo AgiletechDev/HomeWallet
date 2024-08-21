@@ -63,14 +63,12 @@ export const Calculator = () => {
       color="white"
       gap={1}
       paddingX={3}
-      paddingY={4}
+      paddingY={2}
       flexGrow={1}
       height="100%"
       maxWidth="400px"
       marginX="auto"
       justifyContent="space-between"
-      // border={3}
-      // borderColor="#b0cd2d"
       style={{
         color: 'white',
       }}
