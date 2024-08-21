@@ -2,7 +2,7 @@
     "TITLE_SMARTCONTRACT": "CONTRATO INTELIGENTE",
     "SUBTITLE1": "Cadena inteligente BNB:",
     "SUBTITLE2": "Arbitraje:",
-    "SUBTITLE3": "Contrato inteligente Agra auditado por SolidProofArbitraje:",
+    "SUBTITLE3": "Contrato inteligente Vic auditado por SolidProofArbitraje:",
     "SUBTITLE4": "LISTADO EN",
     "BUTTONNAME": "Comprar",
 
@@ -10,7 +10,7 @@
     "NAVBARTITLE3": "Compañia",
     "NAVBUTTON": "Comprar",
 
-    "TITLE_HOME": "SÚPER APLICACIÓN DEX WALLET",
+    "TITLE_HOME": "SÚPER APLICACIÓN VicNet WALLET",
     "TITLE_HOME2": "MULTIUTILIDAD DE NUEVA GENERACIÓN",
     "SUBTITLE_HOME1": "MÁS QUE TU EXPECTATIVA",
     "SUBTITLE_PARRAFO": "La billetera que necesitas para entrar al mundo del Crypto",
@@ -58,16 +58,16 @@
 
     "FREQUENT_QUESTIONS": "Preguntas Frecuentes",
     "PREGUNTA1": "¿Es segura la billetera?",
-    "RESPUESTA1": "La capa de blockchain pública facilita contratos inteligentes de productos básicos, contratos inteligentes de carga, datos de prueba de origen y transacciones AGRA. La blockchain pública de Ethereum y los intercambios de terceros operan independientemente de Graintech y brindan seguridad y descentralización para contratos inteligentes y tokens AGRA.",
-    "PREGUNTA2": "¿Cómo instalar la billetera?",
-    "RESPUESTA2": "La criptomoneda AGRA, ya que con esta se podra uso de las funciones de la app, para acceder a ellas se realiza pagos con tarjeta de crédito en la cual se utilizarán para comprar tokens AGRA en intercambios públicos, que luego seguirán el mismo proceso que un pago directo de AGRA.",
+    "RESPUESTA1": "La capa de blockchain pública facilita contratos inteligentes de productos básicos, contratos inteligentes de carga, datos de prueba de origen y transacciones Vic. La blockchain pública de Ethereum y los intercambios de terceros operan independientemente de Graintech y brindan seguridad y descentralización para contratos inteligentes y tokens Vic.",
+    "PREGUNTA2": "¿Cómo instalar la billetera Vicnet?",
+    "RESPUESTA2": "La criptomoneda Vic, ya que con esta se podra uso de las funciones de la app, para acceder a ellas se realiza pagos con tarjeta de crédito en la cual se utilizarán para comprar tokens Vic en intercambios públicos, que luego seguirán el mismo proceso que un pago directo de Vic.",
     "PREGUNTA3": "¿Cómo importo o restauro mi billetera?",
     "RESPUESTA3": "A medida que los productos básicos avanzan a lo largo de la cadena de suministro, se puede establecer una prueba de origen creando un registro blockchain inmutable.En cada etapa se registran los participantes clave de la cadena de suministro, así como los nodos de la cadena de suministro que pertenecen y están controlados por cada una de estas entidades (como campos, silos, camiones y lugares de entrega).",
     "PREGUNTA4": "¿Cómo recibir dinero (moneda digital) en la billetera?",
-    "RESPUESTA4": "La Plataforma de Pago Graintech permite realizar pagos directos por el acceso a las Aplicaciones. Las pasarelas de pago admiten pagos en tokens AGRA.",
+    "RESPUESTA4": "La Plataforma de Pago Graintech permite realizar pagos directos por el acceso a las Aplicaciones. Las pasarelas de pago admiten pagos en tokens Vic.",
     "PREGUNTA5": "Tarifas de transacción en la billetera",
     "RESPUESTA5": "A medida que se recoge y entrega cada carga, se recopilan datos y se les marca la hora en cada punto de la cadena de suministro. Todas las partes se actualizan en tiempo real a medida que se realiza cada transacción.",
-    "PREGUNTA6": "¿Es posible crear varias billeteras en la billetera Agra?",
+    "PREGUNTA6": "¿Es posible crear varias billeteras en la billetera Vicnet?",
     "RESPUESTA6": "A medida que se recoge y entrega cada carga, se recopilan datos y se les marca la hora en cada punto de la cadena de suministro. Todas las partes se actualizan en tiempo real a medida que se realiza cada transacción.",
 
     "TOKENOMIC_TITLE": "Tokenomic",
@@ -199,6 +199,12 @@
     "comp.timer.seconds": "segundos",
     "comp.timer.bar.start": "Selfcap en pocos días",
     "comp.timer.bar.end": "Limite máximo de token",
-    "comp.timer.button.buy": "Compra más Tokens"
+    "comp.timer.button.buy": "Compra más Tokens",
+
+    "comp.calc.token.name": "Vic Token",
+    "comp.calc.token.placename": "Cantidad de Vic Token",
+    "comp.calc.token.connect": "Connectar Billetera",
+    "comp.calc.token.buy": "Comprar VIC TOKEN",
+    "comp.calc.token.own": "Mis Tokens"
 
 }

@@ -89,7 +89,12 @@ export const SecondSection = () => {
         </Box>
       </Box>
 
-      <Grid container spacing={2} paddingY="2em">
+      <Grid
+        container
+        spacing={2}
+        paddingY="2em"
+        width={{ xs: '100%', md: '900px' }}
+      >
         <Grid item xs={12} md={6}>
           <Timer title={t('comp.timer.title')} background={background} />
         </Grid>

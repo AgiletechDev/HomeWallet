@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { Button, Stack, TextField, Typography } from '@mui/material'
 
 import commingsoon from './../../assets/logos/commingsoon.png'
+import { useTranslation } from 'react-i18next'
 
 const textFieldStyle = {
   '& .MuiOutlinedInput-root': {
@@ -21,6 +22,8 @@ const textFieldStyle = {
 }
 
 export const Calculator = () => {
+  const { t } = useTranslation()
+
   const priceRaised = parseFloat(import.meta.env.VITE_CALCULATOR_RAISED)
   const priceAgraToken = parseFloat(import.meta.env.VITE_CALCULATOR_PRICE_AGRA)
   const priceBNB = parseFloat(import.meta.env.VITE_CALCULATOR_PRICE_BNB)
@@ -103,7 +106,7 @@ export const Calculator = () => {
           border: '1px #fff2 solid',
         }}
       >
-        <Typography>1 Agra token</Typography>
+        <Typography>1 {t('comp.calc.token.name')}</Typography>
         <Typography>
           ${Intl.NumberFormat('en-EN').format(priceAgraToken)} USD
         </Typography>
@@ -140,9 +143,9 @@ export const Calculator = () => {
         />
         <TextField
           color="app"
-          label="Agra token"
+          label={t('comp.calc.token.name')}
           variant="outlined"
-          placeholder="Agra token amount"
+          placeholder={t('comp.calc.token.placename')}
           onChange={onChangeAgra}
           value={agraAmount}
           sx={textFieldStyle}
@@ -161,13 +164,13 @@ export const Calculator = () => {
         </Typography>
       </Stack>
       <Button color="app" variant="contained" sx={{ fontWeight: 900 }}>
-        Connect wallet
+        {t('comp.calc.token.connect')}
       </Button>
       <Button color="app" variant="contained" sx={{ fontWeight: 900 }}>
-        Buy Agra token
+        {t('comp.calc.token.buy')}
       </Button>
       <Button color="app" variant="contained">
-        MY TOKENS
+        {t('comp.calc.token.own')}
       </Button>
     </Stack>
   )

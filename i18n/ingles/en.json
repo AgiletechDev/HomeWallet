@@ -10,7 +10,7 @@
     "NAVBARTITLE3": "Company",
     "NAVBUTTON": "Buy",
 
-    "TITLE_HOME": "DEX WALLET SUPER APP",
+    "TITLE_HOME": "VicNet WALLET SUPER APP",
     "TITLE_HOME2": "NEW GENERATION MULTI-UTILITY",
     "SUBTITLE_HOME1": "MORE THAN YOUR EXPECTATION",
     "SUBTITLE_PARRAFO": "The wallet you need to enter the world of Crypto",
@@ -58,16 +58,16 @@
 
     "FREQUENT_QUESTIONS": "Frequent Questions",
     "PREGUNTA1": "Is the wallet safe?",
-    "RESPUESTA1": "The public blockchain layer facilitates commodity smart contracts, cargo smart contracts, proof of origin data, and AGRA transactions. The Ethereum public blockchain and third-party exchanges operate independently of Graintech and provide security and decentralization for smart contracts and AGRA tokens.",
-    "PREGUNTA2": "How to install the wallet?",
-    "RESPUESTA2": "The AGRA cryptocurrency, since with this you can use the functions of the app, to access them you make payments with a credit card in which they will be used to buy AGRA tokens in public exchanges, which will then follow the same process as a direct payment from AGRA.",
+    "RESPUESTA1": "The public blockchain layer facilitates commodity smart contracts, cargo smart contracts, proof of origin data, and Vic transactions. The Ethereum public blockchain and third-party exchanges operate independently of Graintech and provide security and decentralization for smart contracts and Vic tokens.",
+    "PREGUNTA2": "How to install the Vicnet wallet?",
+    "RESPUESTA2": "The Vic cryptocurrency, since with this you can use the functions of the app, to access them you make payments with a credit card in which they will be used to buy Vic tokens in public exchanges, which will then follow the same process as a direct payment from Vic.",
     "PREGUNTA3": "How do I import or restore my wallet?",
     "RESPUESTA3": "As commodities move along the supply chain, proof of origin can be established by creating an immutable blockchain record. At each stage key supply chain participants as well as chain nodes are recorded. that are owned and controlled by each of these entities (such as fields, silos, trucks, and delivery locations).",
     "PREGUNTA4": "How to receive money (digital currency) in the wallet?",
-    "RESPUESTA4": "The Graintech Payment Platform allows direct payments to be made for access to the Applications. Payment gateways support payments in AGRA tokens.",
+    "RESPUESTA4": "The Graintech Payment Platform allows direct payments to be made for access to the Applications. Payment gateways support payments in Vic tokens.",
     "PREGUNTA5": "Transaction fees in the wallet",
     "RESPUESTA5": "As each load is picked up and delivered, data is collected and time-stamped at each point in the supply chain. All parties are updated in real time as each transaction is made.",
-    "PREGUNTA6": "Is it possible to create multiple wallets in Agra wallet?",
+    "PREGUNTA6": "Is it possible to create multiple wallets in VicNet wallet?",
     "RESPUESTA6": "As each load is picked up and delivered, data is collected and time-stamped at each point in the supply chain. All parties are updated in real time as each transaction is made.",
 
     "TOKENOMIC_TITLE": "Tokenómica",
@@ -199,6 +199,12 @@
     "comp.timer.seconds": "seconds",
     "comp.timer.bar.start": "Selfcap in few days",
     "comp.timer.bar.end": "Maximum token limit",
-    "comp.timer.button.buy": "Buy more tokens"
+    "comp.timer.button.buy": "Buy more tokens",
+
+    "comp.calc.token.name": "Vic Token",
+    "comp.calc.token.placename": "Vic Token amount",
+    "comp.calc.token.connect": "Connect Wallet",
+    "comp.calc.token.buy": "BUY VIC TOKEN",
+    "comp.calc.token.own": "My Tokens"
 
 }
