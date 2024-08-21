@@ -1,4 +1,4 @@
-import { Box, Typography, useTheme, useMediaQuery, Stack } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery, Grid } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Timer } from '../../components'
 import { Calculator } from '../../components'
@@ -89,10 +89,14 @@ export const SecondSection = () => {
         </Box>
       </Box>
 
-      <Stack direction={{ xs: 'column', lg: 'row' }} gap={4} paddingY="2em">
-        <Calculator background={background} />
-        <Timer title={t('comp.timer.title')} background={background} />
-      </Stack>
+      <Grid container spacing={2} paddingY="2em">
+        <Grid item xs={12} md={6}>
+          <Timer title={t('comp.timer.title')} background={background} />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Calculator />
+        </Grid>
+      </Grid>
 
       <Box
         sx={{

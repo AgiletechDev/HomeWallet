@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material'
+import { createTheme } from '@mui/material/styles'
 
 export const mainTheme = createTheme({
   palette: {
@@ -12,14 +12,10 @@ export const mainTheme = createTheme({
       dark: '#f0ed3d',
       contrastText: 'black',
     }, */
-  },
-  components: {
-    MuiTextField: {
-      styleOverrides: {
-        root: {
-          color: '#fff',
-        },
-      },
+    app: {
+      main: '#4968fe',
+      dark: '#4968fe',
+      contrastText: '#fff',
     },
   },
 })

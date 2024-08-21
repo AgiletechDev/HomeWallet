@@ -52,12 +52,7 @@ export const Timer = ({ title, background }) => {
   )
 
   return (
-    <Stack
-      height="100%"
-      width={{ sx: '50%', lg: '100%' }}
-      justifyContent="center"
-      alignItems="center"
-    >
+    <Stack height="100%" justifyContent="center" alignItems="center">
       <Stack
         position="relative"
         padding="1em"

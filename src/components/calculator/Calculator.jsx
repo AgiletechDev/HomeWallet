@@ -1,10 +1,26 @@
-import PropTypes from 'prop-types'
 import { useMemo, useState } from 'react'
 import { Button, Stack, TextField, Typography } from '@mui/material'
 
-// import commingsoon from './../../../assets/launchpad/banners/commingsoon.png'
+import commingsoon from './../../assets/logos/commingsoon.png'
 
-export const Calculator = ({ background }) => {
+const textFieldStyle = {
+  '& .MuiOutlinedInput-root': {
+    '& fieldset': {
+      borderColor: '#505d82',
+    },
+    '&:hover fieldset': {
+      borderColor: '#fff',
+    },
+  },
+  '& .MuiInputBase-input': {
+    color: '#fff',
+  },
+  '& .MuiInputLabel-root': {
+    color: '#fff',
+  },
+}
+
+export const Calculator = () => {
   const priceRaised = parseFloat(import.meta.env.VITE_CALCULATOR_RAISED)
   const priceAgraToken = parseFloat(import.meta.env.VITE_CALCULATOR_PRICE_AGRA)
   const priceBNB = parseFloat(import.meta.env.VITE_CALCULATOR_PRICE_BNB)
@@ -14,7 +30,9 @@ export const Calculator = ({ background }) => {
 
   const percent = useMemo(() => {
     if (isNaN(agraAmount)) return 0
-    return (100 * agraAmount * priceAgraToken) / priceRaised
+    const result = (100 * agraAmount * priceAgraToken) / priceRaised
+    if (isNaN(result) || priceRaised === 0) return 0
+    return result
   }, [agraAmount, priceAgraToken, priceRaised])
 
   const formatNumber = (n) => {
@@ -37,21 +55,23 @@ export const Calculator = ({ background }) => {
 
   return (
     <Stack
-      bgcolor="#21470c"
+      position="relative"
+      bgcolor="#0c183f"
       color="white"
       gap={1}
-      paddingX={4}
-      paddingY={2}
-      borderRadius={2}
+      paddingX={3}
+      paddingY={4}
+      flexGrow={1}
+      height="100%"
+      maxWidth="400px"
+      marginX="auto"
       justifyContent="space-between"
       // border={3}
       // borderColor="#b0cd2d"
       style={{
         color: 'white',
-        background: `url(${background})`,
       }}
     >
-      {/* 
       <Stack position="absolute" width="100%" height="100%" left={0} top={0}>
         <img
           src={commingsoon}
@@ -59,40 +79,73 @@ export const Calculator = ({ background }) => {
             width: '50%',
             zIndex: 1,
             userSelect: 'none',
+            opacity: '90%',
           }}
         />
       </Stack>
-       */}
       <Typography fontWeight={900}>
         RAISED: ${Intl.NumberFormat('en-EN').format(priceRaised)} USD
       </Typography>
-      <Button color="base" variant="contained" sx={{ fontWeight: 900 }}>
+      <Button color="app" variant="outlined" sx={{ fontWeight: 900 }}>
         {Math.round(percent * 100) / 100}%
       </Button>
-      <Button color="base" variant="contained">
+      <Button color="app" variant="contained">
         BNB
       </Button>
-      <Typography>
-        1 Agra token = ${Intl.NumberFormat('en-EN').format(priceAgraToken)} USD
-      </Typography>
-      <Typography>
-        1 BNB = ${Intl.NumberFormat('en-EN').format(priceBNB)} USD
-      </Typography>
-      <Stack position="relative" gap={1} direction="row">
+      <Stack
+        direction="row"
+        justifyContent="space-between"
+        padding={1}
+        sx={{
+          bgcolor: '#fff2',
+          backdropFilter: 'blur(2px)',
+          borderRadius: 2,
+          border: '1px #fff2 solid',
+        }}
+      >
+        <Typography>1 Agra token</Typography>
+        <Typography>
+          ${Intl.NumberFormat('en-EN').format(priceAgraToken)} USD
+        </Typography>
+      </Stack>
+      <Stack
+        direction="row"
+        justifyContent="space-between"
+        padding={1}
+        sx={{
+          bgcolor: '#fff2',
+          backdropFilter: 'blur(2px)',
+          borderRadius: 2,
+          border: '1px #fff2 solid',
+        }}
+      >
+        <Typography>1 BNB</Typography>
+        <Typography>
+          ${Intl.NumberFormat('en-EN').format(priceBNB)} USD
+        </Typography>
+      </Stack>
+      <Stack
+        position="relative"
+        direction="row"
+        marginTop={6}
+        marginBottom={2}
+        gap={1}
+      >
         <TextField
-          color="base"
           label="BNB"
-          variant="filled"
+          variant="outlined"
           onChange={onChangeBnb}
           value={bnbAmount}
+          sx={textFieldStyle}
         />
         <TextField
-          color="base"
+          color="app"
           label="Agra token"
-          variant="filled"
+          variant="outlined"
           placeholder="Agra token amount"
           onChange={onChangeAgra}
           value={agraAmount}
+          sx={textFieldStyle}
         />
         <Typography
           position="absolute"
@@ -100,26 +153,22 @@ export const Calculator = ({ background }) => {
           bottom={'100%'}
           marginBottom={1}
           padding={1}
-          bgcolor="base.main"
-          color="black"
-          borderRadius={2}
+          bgcolor="app.main"
+          color="white"
+          borderRadius={1}
         >
           ${Math.round(agraAmount * priceAgraToken * 100) / 100} USD
         </Typography>
       </Stack>
-      <Button color="base" variant="contained" sx={{ fontWeight: 900 }}>
+      <Button color="app" variant="contained" sx={{ fontWeight: 900 }}>
         Connect wallet
       </Button>
-      <Button color="base" variant="contained" sx={{ fontWeight: 900 }}>
+      <Button color="app" variant="contained" sx={{ fontWeight: 900 }}>
         Buy Agra token
       </Button>
-      <Button color="base" variant="contained">
+      <Button color="app" variant="contained">
         MY TOKENS
       </Button>
     </Stack>
   )
-}
-
-Calculator.propTypes = {
-  background: PropTypes.string,
 }
