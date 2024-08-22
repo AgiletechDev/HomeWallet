@@ -44,6 +44,7 @@ function App() {
     } else {
       return (
         <Container
+          disableGutters
           sx={{
             maxWidth: '1280px',
             marginInline: 'auto',

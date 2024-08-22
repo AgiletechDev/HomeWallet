@@ -3,14 +3,10 @@ import iconotelegram from '../assets/images/portal/svg/iconotelegram.svg'
 import iconox from '../assets/images/portal/svg/iconox.svg'
 import iconodiscord from '../assets/images/portal/svg/iconodiscord.svg'
 import iconoYT from '../assets/images/portal/svg/iconoYT.svg'
-import { useTranslation } from 'react-i18next'
-
-import { Contact } from './../components/contact'
 
 const Footer = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
-  const { t } = useTranslation();
 
   return (
     <Box
@@ -71,21 +67,6 @@ const Footer = () => {
             AGILETECH
           </Typography>
         </Box>
-
-        <Typography
-          variant="p"
-          component="p"
-          sx={{
-            fontSize: '25px',
-            letterSpacing: '2px',
-            marginBottom: '20px',
-            color: 'white',
-          }}
-        >
-          {t("CONTACT_US")}
-        </Typography>
-
-        <Contact />
 
         {/* 
         <Box

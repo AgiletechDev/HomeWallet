@@ -1,4 +1,4 @@
-import { Box, Typography, useTheme, useMediaQuery, Grid } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery, Grid, Stack } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Timer } from '../../components'
 import { Calculator } from '../../components'
@@ -7,6 +7,8 @@ import imgSect1 from '../../assets/images/portal/pag1/ilustracion 1.png'
 import imgSect2 from '../../assets/images/portal/pag1/vista 2.png'
 import imgSect3 from '../../assets/images/portal/pag1/vista 3.png'
 import background from '../../assets/backgrounds/image.png'
+import bgWallet from './../../assets/backgrounds/bg-wallet.png'
+import bgDec from './../../assets/backgrounds/bg-multisuses-dec-01.png'
 import { MultiUtility } from '../../components/MultiUtility'
 
 export const SecondSection = () => {
@@ -17,15 +19,25 @@ export const SecondSection = () => {
 
   return (
     <>
-      <Box
-        sx={{
-          display: 'flex',
-          width: isMobile ? '100%' : '900px',
-          position: 'relative',
-          mt: '5em',
-          flexDirection: isMobile ? 'column' : 'row',
-        }}
+      <Stack
+        direction='row'
+        justifyContent='center'
+        position='relative'
+        marginTop='5em'
+        width='100%'
       >
+        <div
+          style={{
+            position: 'absolute',
+            width: '120%',
+            left: '-20%',
+            aspectRatio: '1920/862',
+            backgroundSize: 'cover',
+            backgroundImage: `url(${bgWallet})`,
+            zIndex: -1,
+          }}
+        />
+        <Stack direction={{xs:'column', sm:'row'}} width={{xs:'100%', sm:'900px'}}>
         <Box
           sx={{
             display: 'flex',
@@ -33,9 +45,10 @@ export const SecondSection = () => {
             flexDirection: 'column',
             textAlign: 'left',
             padding: '2em',
+            color: 'white',
           }}
         >
-          <Typography variant="h4" fontWeight="800" color="#33277b">
+          <Typography variant="h4" fontWeight="800">
             Wallet
           </Typography>
           <Typography>
@@ -49,7 +62,8 @@ export const SecondSection = () => {
         <Box>
           <img src={imgSect1} style={{ width: '100%', zIndex: '-1' }} />
         </Box>
-      </Box>
+        </Stack>
+      </Stack>
 
       <Box
         sx={{
@@ -104,6 +118,7 @@ export const SecondSection = () => {
       </Grid>
 
       <Box
+        position='relative'
         sx={{
           display: 'flex',
           flexDirection: isMobile ? 'column' : 'row',
@@ -114,6 +129,17 @@ export const SecondSection = () => {
           alignItems: 'center',
         }}
       >
+        <div
+          style={{
+            position: 'absolute',
+            width: '200px',
+            height: '200px',
+            backgroundSize: 'cover',
+            left: -200,
+            zIndex: 10,
+            backgroundImage: `url(${bgDec})`
+          }}
+          />
         <Box
           sx={{
             display: 'flex',

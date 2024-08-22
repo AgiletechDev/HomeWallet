@@ -1,5 +1,7 @@
 import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
 import imgSect1 from '../../assets/images/portal/pag1/vista 1.png'
+import bgMainTop from '../../assets/backgrounds/bg-main-top.png'
+import mgMainExpectations from './../../assets/backgrounds/bg-main-expectations.png'
 import { Expectations } from '../../components/Expectations'
 import { useTranslation } from 'react-i18next'
 
@@ -11,6 +13,30 @@ export const FirstSection = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   return (
     <>
+      <div
+        style={{
+          position: 'absolute',
+          backgroundImage: `url(${bgMainTop})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '100%',
+          height: '100vh',
+          backgroundRepeat: 'no-repeat',
+          zIndex: 0
+        }}
+      >
+      <div
+        style={{
+          position: 'absolute',
+          top: '100%',
+          right: '0',
+          width: '674px',
+          height: '889px',
+          backgroundImage: `url(${mgMainExpectations})`
+        }}
+        />
+      </div>
+
       <Box sx={{ width: isMobile ? '100%' : '900px', position: 'relative' }}>
         <Box
           sx={{
@@ -26,7 +52,8 @@ export const FirstSection = () => {
           <Typography
             variant="h4"
             sx={{
-              color: '#33277b',
+              color: 'white',
+              textShadow: '0px 0px 8px white',
               fontWeight: '800',
               textAlign: 'center',
               mt: '0.5em',
@@ -60,7 +87,8 @@ export const FirstSection = () => {
         <Typography
           variant="h4"
           sx={{
-            color: '#4d4d4d',
+            color: '#33277b',
+            textShadow: '0px 0px 32px #fff8',
             fontWeight: '800',
             textAlign: 'center',
             mt: '0.5em',
@@ -71,7 +99,8 @@ export const FirstSection = () => {
         <Typography
           variant="h6"
           sx={{
-            color: '#4d4d4d',
+            color: '#33277b',
+            textShadow: '0px 0px 32px #fff8',
             fontWeight: '700',
             textAlign: 'center',
             mt: '0.5em',

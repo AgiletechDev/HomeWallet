@@ -1,3 +1,4 @@
+import { ContactView } from '../../components/contact/ContactView'
 import { SecondSection, ThirdSection, FirstSection } from '../../views/home'
 
 
@@ -7,6 +8,7 @@ const Home = () => {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
+      <ContactView />
     </>
   )
 }

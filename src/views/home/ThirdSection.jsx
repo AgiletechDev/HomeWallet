@@ -1,7 +1,8 @@
-import { Box, Typography, useTheme, useMediaQuery } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery, Stack } from '@mui/material'
 import imgSect1 from '../../assets/images/portal/pag1/ilustracion 2.png'
-
 import imgSect3 from '../../assets/images/portal/pag1/ilustracion 3.png'
+import bgSecurity from './../../assets/backgrounds/bg-security.png'
+import bgDec02 from './../../assets/backgrounds/bg-app-dec-02.png'
 import qr from '../../assets/images/portal/pag1/apps 1.png'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -55,6 +56,26 @@ export const ThirdSection = () => {
   
   return (
     <>
+      <Stack
+        direction='row'
+        position='relative'
+        width='100%'
+        justifyContent='center'
+        color='white'
+      >
+      <div
+        style={{
+          position: 'absolute',
+          width: '1200px',
+          bottom: -40,
+          right: 'calc(10px + (100% - (100vw)) / 2)',
+          aspectRatio: '1923/1183',
+          backgroundSize: 'cover',
+          backgroundImage: `url(${bgSecurity})`,
+          zIndex: -1,
+        }}
+      />
+
       <Box
         sx={{
           display: 'flex',
@@ -76,27 +97,27 @@ export const ThirdSection = () => {
           }}
         >
           <Box
+            color='white'
             sx={{
               display: 'flex',
               flexDirection: 'column',
               textAlign: 'justify',
               zIndex: '10',
               padding: '2em',
-              color: '#4d4d4d',
             }}
           >
-            <Typography variant="h4" fontWeight="800" color="#4d4d4d">
+            <Typography variant="h4" fontWeight="800" color='white'>
               {t("SUBTITLE_SECTION3")}
             </Typography>
             <ul style={{ fontSize: '20px' }}>
               <li>
-                {t("TEXT1_SECTION3")}
+                - {t("TEXT1_SECTION3")}
               </li>
               <li>
-                {t("TEXT2_SECTION3")}
+                - {t("TEXT2_SECTION3")}
               </li>
               <li>
-                {t("TEXT3_SECTION3")}
+                - {t("TEXT3_SECTION3")}
               </li>
             </ul>
           </Box>
@@ -105,8 +126,22 @@ export const ThirdSection = () => {
           <img src={imgSect1} style={{ width: '90%' }} />
         </Box>
       </Box>
+      </Stack>
 
       <Box sx={{ position: 'relative', mt: '5em' }}>
+        <div
+          style={{
+            position: 'absolute',
+            top: -100,
+            left: -200,
+            width: '177px',
+            height: '227px',
+            zIndex: 2,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundImage: `url(${bgDec02})`
+          }}
+        />
         <Box
           sx={{
             borderRadius: '10px',
