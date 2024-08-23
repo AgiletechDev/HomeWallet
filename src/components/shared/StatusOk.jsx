@@ -9,7 +9,7 @@ export const StatusOK = ({ onAction }) => {
 
   return (
     <StatusContainer>
-      <Typography>{t('home.form.status.ok.title')}</Typography>
+      <Typography color='black'>{t('home.form.status.ok.title')}</Typography>
       <Button
         variant="contained"
         color="success"

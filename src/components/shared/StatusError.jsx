@@ -9,7 +9,7 @@ export const StatusError = ({ onAction }) => {
 
   return (
     <StatusContainer>
-      <Typography>{t('home.form.status.error.title')}</Typography>
+      <Typography color='black'>{t('home.form.status.error.title')}</Typography>
       <Button
         variant="contained"
         color="error"

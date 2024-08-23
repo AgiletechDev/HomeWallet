@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Grid,
   Stack,
@@ -21,14 +22,17 @@ const textFieldStyle = {
       borderColor: '#505d82',
     },
     '&:hover fieldset': {
-      borderColor: '#fff',
+      borderColor: '#33277B',
+    },
+    '& input:focus': {
+      borderColor: '#f00',
     },
   },
   '& .MuiInputBase-input': {
-    color: '#fff',
+    color: '#000',
   },
   '& .MuiInputLabel-root': {
-    color: '#fff',
+    color: '#000',
   },
 }
 
@@ -79,7 +83,7 @@ export const Contact = () => {
   }
 
   return (
-    <Stack position="relative">
+    <Stack position="relative" bgcolor='white' padding={4} borderRadius={4} boxShadow='0px 0px 5px gray'>
       {status === formState.OK && (
         <StatusOK onAction={() => setStatus(formState.EDIT)} />
       )}
@@ -98,10 +102,30 @@ export const Contact = () => {
           xs={12}
           sm={5}
           sx={{
-            borderRight: { xs: 'none', sm: '2px solid #fff4' },
+            borderRight: { xs: 'none', sm: '2px solid #33277B' },
             paddingRight: { xs: '0', sm: '2em' },
           }}
         >
+
+          <Typography
+            variant="p"
+            component="p"
+            sx={{
+              fontSize: '25px',
+              letterSpacing: '2px',
+              marginBottom: '20px',
+              fontWeight: 900
+            }}
+          >
+            {t('CONTACT_US')}
+          </Typography>
+
+          <Box
+            height={8}
+            bgcolor='#33277B'
+            width='30%'
+          />
+
           <TextField
             disabled={loading}
             label={t('home.form.label1')}
@@ -141,14 +165,13 @@ export const Contact = () => {
             sx={{
               mb: { xs: '1em', sm: '1em' },
               fontWeight: 600,
-              color: 'white',
             }}
           >
             {t('home.form.label3')}
           </Typography>
           <TextareaAutosize
             disabled={loading}
-            className="outline-none bg-[#486284]/90 rounded-md text-white border-2 p-4 disabled:text-[#49454f]"
+            className="outline-none bg-white rounded-md border-[1px] p-4 border-[#505d82] focus:border-[#33277B] focus:border-2"
             aria-label="textarea"
             placeholder={t('home.form.label3.placeholder')}
             name="message"
@@ -162,7 +185,6 @@ export const Contact = () => {
               boxShadow: 'none',
               fontFamily: 'inherit',
               fontSize: 'inherit',
-              color: '#49454f',
               rows: 10,
             }}
           />

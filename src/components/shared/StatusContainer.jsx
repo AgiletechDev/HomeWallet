@@ -6,7 +6,6 @@ export const StatusContainer = ({ children }) => {
     <Box className="absolute flex w-full h-full backdrop-blur-md z-10 top-0 left-0 justify-center items-center">
       <Stack
         gap={4}
-        bgcolor="#486284"
         color="white"
         padding={4}
         className="shadow-lg rounded-lg"

@@ -63,6 +63,7 @@ const Navbar = () => {
   }
 
   const handleClick3 = (e) => {
+    console.log("XD")
     setAnchorElm3(e.currentTarget)
     setOpen3(true)
   }
@@ -88,7 +89,7 @@ const Navbar = () => {
   const links = [
     { title: product, click: handleClick },
     { title: 'Tokenomic', click: handleClick2 },
-    { title: Company, click: handleClick3 },
+    { title: Company, click: handleClick3, path: '/roadmap' },
   ]
 
   const [drawerOpen, setDrawerOpen] = useState(false)
