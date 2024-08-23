@@ -88,7 +88,7 @@ const Navbar = () => {
 
   const links = [
     { title: product, click: handleClick },
-    { title: 'Tokenomic', click: handleClick2 },
+    { title: 'Tokenomic', click: handleClick2, path: '/tokenomics' },
     { title: Company, click: handleClick3, path: '/roadmap' },
   ]
 
