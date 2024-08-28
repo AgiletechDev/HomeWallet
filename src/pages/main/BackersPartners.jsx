@@ -1,12 +1,9 @@
+import { FirstSection } from '../../views/backersPartners/FirstSection';
 
-import { FirstSection } from '../../views/backersPartners/FirstSection'
-
-const BackersPartners = () => {
+export const BackersPartners = () => {
   return (
     <>
-        <FirstSection/>
+      <FirstSection />
     </>
-  )
-}
-
-export default BackersPartners
+  );
+};

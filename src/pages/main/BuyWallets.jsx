@@ -1,11 +1,9 @@
-import {FirstSection} from "../../views/buyWallets"
+import { FirstSection } from '../../views/buyWallets';
 
-const BuyWallets = () => {
+export const BuyWallets = () => {
   return (
     <>
-        <FirstSection/>
+      <FirstSection />
     </>
-  )
-}
-
-export default BuyWallets
+  );
+};

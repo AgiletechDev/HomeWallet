@@ -1,16 +1,37 @@
-import { ContactView } from '../../components/contact/ContactView'
-import { SecondSection, ThirdSection, FirstSection } from '../../views/home'
+import { AppLayout } from '../../layouts/AppLayout';
 
+import { ContactView } from '../../components/contact/ContactView';
+import { ViewSection } from '../../components';
+import {
+  HeroHomeView,
+  ExpectationHomeView,
+  WalletHomeView,
+  ExchangeHomeView,
+  PresaleHomeView,
+  MultiUtilityHomeView,
+  SecurityHomeView,
+  DownloadAppHomeView,
+  FAQHomeView,
+} from '../../views/home';
 
-const Home = () => {
+export const Home = () => {
   return (
-    <>
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <ContactView />
-    </>
-  )
-}
+    <AppLayout>
+      <HeroHomeView />
+      <ExpectationHomeView />
 
-export default Home
+      <WalletHomeView />
+      <ExchangeHomeView />
+      <PresaleHomeView />
+      <MultiUtilityHomeView />
+
+      <SecurityHomeView />
+      <DownloadAppHomeView />
+      <FAQHomeView />
+
+      <ViewSection>
+        <ContactView />
+      </ViewSection>
+    </AppLayout>
+  );
+};

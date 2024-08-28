@@ -1,12 +1,9 @@
-import { FirstSection } from '../../views/tokenomics'
+import { FirstSection } from '../../views/tokenomics';
 
-
-const Tokenomics = () => {
+export const Tokenomics = () => {
   return (
     <>
       <FirstSection />
     </>
-  )
-}
-
-export default Tokenomics
+  );
+};

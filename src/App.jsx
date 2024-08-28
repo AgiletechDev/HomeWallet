@@ -1,72 +1,16 @@
-import { Outlet, useLocation } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import { Container, Box } from '@mui/material'
-import NavbarLaunchpad from './components/NavbarLaunchpad'
-import { FooterLaunchpad } from './components'
-import { AppTheme } from './theme/AppTheme'
+import { HashRouter } from 'react-router-dom';
+
+import { AppTheme } from './theme';
+import { Router } from './Router';
 
 function App() {
-  const location = useLocation()
-
-  const renderNavbar = () => {
-    if (location.pathname.startsWith('/launchpad')) {
-      return <NavbarLaunchpad />
-    } else {
-      return <Navbar />
-    }
-  }
-
-  const renderFooter = () => {
-    if (location.pathname.startsWith('/launchpad')) {
-      return <FooterLaunchpad />
-    } else {
-      return <Footer />
-    }
-  }
-
-  const renderOutlet = () => {
-    if (location.pathname.startsWith('/launchpad')) {
-      return (
-        <Box
-          sx={{
-            background: 'linear-gradient(60deg, #d8f0ff, #FFF ,  #d8f0ff)',
-            marginInline: 'auto',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginTop: '50px',
-          }}
-        >
-          <Outlet />
-        </Box>
-      )
-    } else {
-      return (
-        <Container
-          disableGutters
-          sx={{
-            maxWidth: '1280px',
-            marginInline: 'auto',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginTop: '50px',
-          }}
-        >
-          <Outlet />
-        </Container>
-      )
-    }
-  }
   return (
     <AppTheme>
-      {renderNavbar()}
-      {renderOutlet()}
-
-      {renderFooter()}
+      <HashRouter>
+        <Router />
+      </HashRouter>
     </AppTheme>
-  )
+  );
 }
 
-export default App
+export default App;

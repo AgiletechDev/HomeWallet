@@ -1,11 +1,9 @@
-import { FirstSection } from '../../views/whitePaper'
+import { FirstSection } from '../../views/whitePaper';
 
-const WhitePaper = () => {
+export const WhitePaper = () => {
   return (
     <>
-        <FirstSection/>
+      <FirstSection />
     </>
-  )
-}
-
-export default WhitePaper
+  );
+};

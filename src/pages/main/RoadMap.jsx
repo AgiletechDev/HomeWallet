@@ -1,11 +1,9 @@
-import { FirstSection } from "../../views/roadmap"
+import { FirstSection } from '../../views/roadmap';
 
-const RoadMap = () => {
+export const RoadMap = () => {
   return (
     <>
-        <FirstSection/>
+      <FirstSection />
     </>
-  )
-}
-
-export default RoadMap
+  );
+};
